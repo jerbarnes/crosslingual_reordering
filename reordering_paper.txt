@@ -1,0 +1,48 @@
+Title: Exploring the importance of word order in cross-lingual sentiment analysis
+
+
+Abstract:
+
+
+Introduction:
+
+- intro to task: Why is sentiment analysis cool/useful/difficult?
+- motivation for cross-lingual approaches: We often have no annotated data for Language X, especially for specific domains.
+- why it's interesting to use no MT: under-resourced languages, MT requires too much parallel data
+- what problem that might introduce
+
+Related Work:
+
+- Bilingual Word Embeddings: Artetxe and why we use these: SOTA and low-resource
+- Cross-lingual Sentiment Approaches that are relevant here: 
+- Word order in sentiment:
+- Reordering for machine translation
+
+Methodology:
+
+- Models, motivation for these, and differences regarding word order:
+	LSTM
+	CNN
+	SVM
+
+- Datasets:
+	OpeNER: EN, ES
+	MultiBooked: CA
+
+- Setup:
+	No reordering
+	Random Reordering
+	No lexicon
+	Only lexicon	
+
+Results:
+
+-Big table
+	Check statistical differences between runs
+
+Discussion:
+
+- Where does the noise come from?
+- Could there be
+
+
