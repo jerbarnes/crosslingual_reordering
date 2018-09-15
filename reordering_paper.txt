@@ -6,7 +6,7 @@ Abstract:
 
 Introduction:
 
-- intro to task: Why is sentiment analysis cool/useful/difficult?
+	- intro to task: Why is sentiment analysis cool/useful/difficult?
 - motivation for cross-lingual approaches: We often have no annotated data for Language X, especially for specific domains.
 - why it's interesting to use no MT: under-resourced languages, MT requires too much parallel data
 - what problem that might introduce

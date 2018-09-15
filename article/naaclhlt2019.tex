@@ -1,0 +1,236 @@
+%
+% File naacl2019.tex
+%
+%% Based on the style files for ACL 2018 and NAACL 2018, which were
+%% Based on the style files for ACL-2015, with some improvements
+%%  taken from the NAACL-2016 style
+%% Based on the style files for ACL-2014, which were, in turn,
+%% based on ACL-2013, ACL-2012, ACL-2011, ACL-2010, ACL-IJCNLP-2009,
+%% EACL-2009, IJCNLP-2008...
+%% Based on the style files for EACL 2006 by 
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{naaclhlt2019}
+\usepackage{times}
+\usepackage{latexsym}
+
+\usepackage{multirow}
+\usepackage{xspace}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{paralist}
+\usepackage{subfig}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\definecolor{lightgreen}{RGB}{200,255,200}
+\definecolor{lightblue}{RGB}{200,200,255}
+\definecolor{lightred}{RGB}{255,200,200}
+
+\newcommand{\R}{\mathbb{R}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand{\mt}{\textsc{Mt}\xspace}
+\newcommand{\blse}{\textsc{Blse}\xspace}
+\newcommand{\barista}{\textsc{Barista}\xspace}
+\newcommand{\vecmap}{\textsc{VecMap}\xspace}
+\newcommand{\muse}{\textsc{Muse}\xspace}
+
+\newcommand{\rt}[1]{\rotatebox{90}{#1}}
+\newcommand{\rrt}[1]{\rotatebox{45}{#1}}
+
+\newcommand{\ie}{\textit{i.\,e.}\xspace}
+\newcommand{\eg}{\textit{e.\,g.}\xspace}
+\newcommand{\F}{$\text{F}_1$\xspace}
+
+
+%jer: automatically turned off when aclfinalcopy is turned on
+\usepackage{annotates}
+\newcommand{\todo}[1]{\comment{Todo}{#1}}
+\newcommand{\jer}[1]{\comment{Jeremy}{#1}}
+\newcommand{\toni}[1]{\comment{Toni}{#1}}
+\newcommand{\alex}[1]{\comment{Alex}{#1}}
+
+\newcommand{\jeranswer}[1]{\answer{Jeremy}{#1}}
+\newcommand{\alexanswer}[1]{\answer{Alex}{#1}}
+\newcommand{\tonianswer}[1]{\answer{Toni}{#1}}
+
+\newcommand{\jerin}[1]{\inline{Jeremy}{#1}}
+\newcommand{\toniin}[1]{\inline{Toni}{#1}}
+\newcommand{\alexin}[1]{\inline{Alex}{#1}}
+
+\ifaclfinal
+\else
+\renewcommand{\comment}[2]{}
+\renewcommand{\answer}[2]{}
+\renewcommand{\inline}[2]{}
+\fi
+%end jer
+
+\usepackage{url}
+
+%\aclfinalcopy % Uncomment this line for the final submission
+%\def\aclpaperid{***} %  Enter the acl Paper ID here
+
+%\setlength\titlebox{5cm}
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+\newcommand\BibTeX{B{\sc ib}\TeX}
+
+\title{Instructions for NAACL-HLT 2019 Proceedings}
+
+\author{First Author \\
+  Affiliation / Address line 1 \\
+  Affiliation / Address line 2 \\
+  Affiliation / Address line 3 \\
+  {\tt email@domain} \\\And
+  Second Author \\
+  Affiliation / Address line 1 \\
+  Affiliation / Address line 2 \\
+  Affiliation / Address line 3 \\
+  {\tt email@domain} \\}
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+  This document contains the instructions for preparing a camera-ready
+  manuscript for the proceedings of NAACL-HLT 2019. The document itself
+  conforms to its own specifications, and is therefore an example of
+  what your manuscript should look like. These instructions should be
+  used for both papers submitted for review and for final versions of
+  accepted papers.  Authors are asked to conform to all the directions
+  reported in this document.
+\end{abstract}
+
+
+\section{Introduction}
+
+\begin{itemize}
+\item intro to task: Why is sentiment analysis cool/useful/difficult?
+\item motivation for cross-lingual approaches: We often have no annotated data for Language X, especially for specific domains.
+\item why it's interesting to use no MT: under-resourced languages, MT requires too much parallel data
+\item what problem that might introduce
+\end{itemize}
+
+\section{Related Work}
+
+\begin{itemize}
+
+\item Cross-lingual Sentiment Approaches that are relevant here: under-resourced langs
+\item Bilingual Word Embeddings: Artetxe and why we use these: SOTA and low-resource
+\item Word order in sentiment:
+\item Reordering for machine translation
+\end{itemize}
+
+\subsection{Cross-lingual Sentiment Analysis}
+
+\cite{Mohammad2015b}
+
+\subsection{Bilingual Word Embeddings}
+
+\subsection{Reordering for Machine Translation}
+Crego etc.
+
+\section{Methodology}
+
+\subsection{Models}
+
+\begin{itemize}
+\item LSTM, CNN, SVM
+\item Differences between how models handle word order
+\end{itemize}
+
+\subsection{Corpora and Datasets}
+
+\begin{itemize}
+\item OpeNER, Multibooked
+\item Europarl, Tatoeba
+\item motivation for using these resources
+\end{itemize}
+
+\subsection{Experimental Setup}
+
+\begin{itemize}
+\item Test all models on two cross-lingual setups (en-es, en-ca)
+\item Compare: No reordering, Random Reordering, ONE, No lexicon, Only lexicon
+\item What are the competing hypotheses for each of these setups?
+\end{itemize}
+
+\section{Results}
+
+\begin{table*}[t]
+\newcommand{\sep}{\cmidrule(r){3-5}\cmidrule(r){6-8}}
+\newcommand{\sepp}{\cmidrule(r){3-3}\cmidrule(r){4-4}\cmidrule(r){5-5}\cmidrule(r){6-6}\cmidrule(r){7-7}\cmidrule(r){8-8}}
+
+\definecolor{green}{RGB}{150,255,150}
+\definecolor{blue}{RGB}{150,150,255}
+
+\newcommand{\bestproj}[1]{{\setlength{\fboxsep}{0pt}\colorbox{lightblue}{\textit{#1}}}}
+\newcommand{\bestoverall}[1]{{\setlength{\fboxsep}{0pt}\colorbox{lightgreen}{\textbf{#1}}}}
+
+\setlength\tabcolsep{10pt}
+\renewcommand*{\arraystretch}{0.8}
+\centering\small
+\begin{tabular}{llcccccc}
+\toprule
+& & \multicolumn{3}{c}{Binary} & \multicolumn{3}{c}{4-class} \\
+\sep
+\multirow{6}{*}{\rt{EN-ES}}
+& Original 	&  &  &  &  &  &  \\ 
+& Reordered  &  &  &  &  &  &  \\ 
+& N-ADJ  &  &  &  &  &  & \\ 
+& Random  &  &  &  &  &  & \\ 
+& Only Lexicon  &  &  &  &  &  & \\ 
+& No Lexicon  &  &  &  &  &  & \\ 
+\sepp
+\multirow{6}{*}{\rt{EN-CA}} &
+  Original &  &  &  &  &  & \\ 
+& Reordered  &  &  &  &  &  & \\ 
+& N-ADJ &   &  &  &  &  & \\ 
+& Random &  &  &  &  &  & \\ 
+& Only Lexicon  &  &  &  &  &  & \\ 
+& No Lexicon &  &  &  &  &  & \\ 
+\bottomrule
+\end{tabular}
+\caption{Macro \F results for all corpora and techniques. We denote
+  the best performing projection-based
+  method per column with a \bestproj{blue box} and the best overall method
+  per column with a
+  \bestoverall{green box}.}
+\label{results:all}
+\end{table*}
+
+\section{Analysis}
+
+\jer{It would be nice to show that the noise introduced by bilingual embeddings leads to LSTMs not being able to pick up on word order in the target language. We could train monolingual models for Spanish and Catalan and use the random reordering to see the difference.}
+
+\todo{It would also be interesting to look at particular examples of errors that each model suffers. Are they different in each model? Is there any pattern?}
+
+\section{Conclusion and Future Work}
+
+
+
+\bibliography{lit}
+\bibliographystyle{acl_natbib}
+
+\appendix
+
+\section{Appendices}
+\label{sec:appendix}
+Appendices are material that can be read, and include lemmas, formulas, proofs, and tables that are not critical to the reading and understanding of the paper. 
+Appendices should be {\bf uploaded as supplementary material} when submitting the paper for review. Upon acceptance, the appendices come after the references, as shown here. Use
+\verb|\appendix| before any appendix section to switch the section
+numbering over to letters.
+
+
+
+\end{document}
