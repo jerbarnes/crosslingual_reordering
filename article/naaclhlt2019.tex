@@ -84,18 +84,24 @@
 
 \newcommand\BibTeX{B{\sc ib}\TeX}
 
-\title{Instructions for NAACL-HLT 2019 Proceedings}
+\title{On the Effect of Word Order on Cross-lingual Sentiment Analysis}
 
-\author{First Author \\
-  Affiliation / Address line 1 \\
-  Affiliation / Address line 2 \\
-  Affiliation / Address line 3 \\
-  {\tt email@domain} \\\And
-  Second Author \\
-  Affiliation / Address line 1 \\
-  Affiliation / Address line 2 \\
-  Affiliation / Address line 3 \\
-  {\tt email@domain} \\}
+\author {\textbf{Álex Ramírez Atrio$^1$}, \textbf{Toni Badia$^{1}$} \textbf{Jeremy Barnes$^{2}$}\\
+$^1$Universitat Pompeu Fabra\\
+$^2$Universitetet i Oslo\\
+Información de contacto\\
+}
+
+%\author{First Author \\
+%  Affiliation / Address line 1 \\
+%  Affiliation / Address line 2 \\
+%  Affiliation / Address line 3 \\
+%  {\tt email@domain} \\\And
+%  Second Author \\
+%  Affiliation / Address line 1 \\
+%  Affiliation / Address line 2 \\
+%  Affiliation / Address line 3 \\
+%  {\tt email@domain} \\}
 
 \date{}
 
@@ -137,8 +143,7 @@
 
 \subsection{Bilingual Word Embeddings}
 
-\subsection{Reordering for Machine Translation}
-Crego etc.
+
 
 \section{Methodology}
 
@@ -168,8 +173,8 @@ Crego etc.
 \section{Results}
 
 \begin{table*}[t]
-\newcommand{\sep}{\cmidrule(r){3-5}\cmidrule(r){6-8}}
-\newcommand{\sepp}{\cmidrule(r){3-3}\cmidrule(r){4-4}\cmidrule(r){5-5}\cmidrule(r){6-6}\cmidrule(r){7-7}\cmidrule(r){8-8}}
+\newcommand{\sep}{\cmidrule(r){4-6}\cmidrule(r){7-9}}
+\newcommand{\sepp}{\cmidrule(r){4-4}\cmidrule(r){5-5}\cmidrule(r){6-6}\cmidrule(r){7-7}\cmidrule(r){8-8}\cmidrule(r){9-9}}
 
 \definecolor{green}{RGB}{150,255,150}
 \definecolor{blue}{RGB}{150,150,255}
@@ -180,25 +185,56 @@ Crego etc.
 \setlength\tabcolsep{10pt}
 \renewcommand*{\arraystretch}{0.8}
 \centering\small
-\begin{tabular}{llcccccc}
+\begin{tabular}{lllcccccc}
 \toprule
-& & \multicolumn{3}{c}{Binary} & \multicolumn{3}{c}{4-class} \\
+&& & \multicolumn{3}{c}{Binary} & \multicolumn{3}{c}{4-class} \\
 \sep
-\multirow{6}{*}{\rt{EN-ES}}
-& Original 	&  &  &  &  &  &  \\ 
-& Reordered  &  &  &  &  &  &  \\ 
-& N-ADJ  &  &  &  &  &  & \\ 
-& Random  &  &  &  &  &  & \\ 
-& Only Lexicon  &  &  &  &  &  & \\ 
-& No Lexicon  &  &  &  &  &  & \\ 
-\sepp
-\multirow{6}{*}{\rt{EN-CA}} &
-  Original &  &  &  &  &  & \\ 
-& Reordered  &  &  &  &  &  & \\ 
-& N-ADJ &   &  &  &  &  & \\ 
-& Random &  &  &  &  &  & \\ 
-& Only Lexicon  &  &  &  &  &  & \\ 
-& No Lexicon &  &  &  &  &  & \\ 
+\multirow{14}{*}{\rt{Bilingual Word Embeddings}} 
+	& \multirow{6}{*}{\rt{EN-ES}}
+		& Original 	&  &  &  &  &  &  \\ 
+		&& Reordered  &  &  &  &  &  &  \\ 
+		&& N-ADJ  &  &  &  &  &  & \\ 
+		&& Random  &  &  &  &  &  & \\ 
+		&& Only Lexicon  &  &  &  &  &  & \\ 
+		&& No Lexicon  &  &  &  &  &  & \\ 
+	\sepp
+	& \multirow{6}{*}{\rt{EN-CA}}
+  		& Original &  &  &  &  &  & \\ 
+		&& Reordered  &  &  &  &  &  & \\ 
+		&& N-ADJ &   &  &  &  &  & \\ 
+		&& Random &  &  &  &  &  & \\ 
+		&& Only Lexicon  &  &  &  &  &  & \\ 
+		&& No Lexicon &  &  &  &  &  & \\ 
+
+
+\\
+\hline \\
+
+\multirow{4}{*}{\rt{Mono}}
+	& \multirow{4}{*}{\rt{EN}}
+  		& Original &  &  &  &  &  & \\ 
+		&& Random &  &  &  &  &  & \\ 
+		&& Only Lexicon  &  &  &  &  &  & \\ 
+		&& No Lexicon &  &  &  &  &  & \\ 
+
+\\
+\hline \\
+
+\multirow{8}{*}{\rt{Machine Translation}}
+	& \multirow{4}{*}{\rt{EN}}
+  		& Original &  &  &  &  &  & \\ 
+		&& Random &  &  &  &  &  & \\ 
+		&& Only Lexicon  &  &  &  &  &  & \\ 
+		&& No Lexicon &  &  &  &  &  & \\ 
+	\sepp
+	& \multirow{4}{*}{\rt{EN}}
+  		& Original &  &  &  &  &  & \\ 
+		&& Random &  &  &  &  &  & \\ 
+		&& Only Lexicon  &  &  &  &  &  & \\ 
+		&& No Lexicon &  &  &  &  &  & \\ 
+		
+\\
+
 \bottomrule
 \end{tabular}
 \caption{Macro \F results for all corpora and techniques. We denote
