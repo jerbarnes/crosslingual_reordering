@@ -219,9 +219,13 @@ if __name__ == '__main__':
 
         print(classification_report(test_data._ytest.argmax(1), pred))
         print('Macro F1: {0:.3f}'.format(f1.mean()))
+        info0 = str(args.classifier) + '\n' + 'test language: ' + str(args.lang)
+        infob = 'binary: ' + str(args.binary)
         info1 = str(classification_report(test_data._ytest.argmax(1), pred))
         info2 = str('Macro F1: {0:.3f}'.format(f1.mean()))
         with open('eval_reordering.txt', 'w') as file_pred:
+            file_pred.write(info0 + '\n')
+            file_pred.write(infob + '\n')
             file_pred.write(info1 + ' \n' + info2)
         
         """pickle_orig_clasif = open('es_train_cnn_clasif.pkl', 'wb')
@@ -260,9 +264,13 @@ if __name__ == '__main__':
 
         print(classification_report(test_data._ytest.argmax(1), pred))
         print('Macro F1: {0:.3f}'.format(f1.mean()))
+        info0 = str(args.classifier) + '\n' + 'test language: ' + str(args.lang)
+        infob = 'binary: ' + str(args.binary)
         info1 = str(classification_report(test_data._ytest.argmax(1), pred))
         info2 = str('Macro F1: {0:.3f}'.format(f1.mean()))
         with open('eval_reordering.txt', 'w') as file_pred:
+            file_pred.write(info0 + '\n')
+            file_pred.write(infob + '\n')
             file_pred.write(info1 + ' \n' + info2)
         
         """pickle_orig_clasif = open('es_train_svm_clasif.pkl', 'wb')

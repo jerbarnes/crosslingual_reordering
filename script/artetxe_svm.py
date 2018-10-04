@@ -177,14 +177,14 @@ if __name__ == '__main__':
 
     # save the w2idx and max length
     if args.binary:
-#        paramfile = 'models/artetxe-svm/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
+        paramfile = 'models/artetxe-svm/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
 #        paramfile = 'models_eqda/artetxe-svm/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-        paramfile = 'models_eqdaesdev/artetxe-svm/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
+#        paramfile = 'models_eqdaesdev/artetxe-svm/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
 #        paramfile = 'models_esdev/artetxe-svm/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
     else:
-#        paramfile = 'models/artetxe-svm/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
+        paramfile = 'models/artetxe-svm/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
 #        paramfile = 'models_eqda/artetxe-svm/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-        paramfile = 'models_eqdaesdev/artetxe-svm/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
+#        paramfile = 'models_eqdaesdev/artetxe-svm/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
 #        paramfile = 'models_esdev/artetxe-svm/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
     with open(paramfile, 'wb') as out:
         pickle.dump((joint_w2idx, joint_matrix), out)
@@ -196,14 +196,14 @@ if __name__ == '__main__':
     # train Logistic Regression on source
     print('Training SVM...')
     if args.binary:
-#        checkpoint = 'models/artetxe-svm/binary-en-'+args.lang+'/weights.pkl'
+        checkpoint = 'models/artetxe-svm/binary-en-'+args.lang+'/weights.pkl'
 #        checkpoint = 'models_eqda/artetxe-svm/binary-en-'+args.lang+'/weights.pkl'
-        checkpoint = 'models_eqdaesdev/artetxe-svm/binary-en-'+args.lang+'/weights.pkl'
+#        checkpoint = 'models_eqdaesdev/artetxe-svm/binary-en-'+args.lang+'/weights.pkl'
 #        checkpoint = 'models_esdev/artetxe-svm/binary-en-'+args.lang+'/weights.pkl'
     else:
-#        checkpoint = 'models/artetxe-svm/4class-en-'+args.lang+'/weights.pkl'
+        checkpoint = 'models/artetxe-svm/4class-en-'+args.lang+'/weights.pkl'
 #        checkpoint = 'models_eqda/artetxe-svm/4class-en-'+args.lang+'/weights.pkl'
-        checkpoint = 'models_eqdaesdev/artetxe-svm/4class-en-'+args.lang+'/weights.pkl'
+#        checkpoint = 'models_eqdaesdev/artetxe-svm/4class-en-'+args.lang+'/weights.pkl'
 #        checkpoint = 'models_esdev/artetxe-svm/4class-en-'+args.lang+'/weights.pkl'
 
     num_classes = len(set(src_dataset._ytrain.argmax(1)))

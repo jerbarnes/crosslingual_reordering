@@ -66,12 +66,12 @@ def create_cnn(matrix, max_length, dim=300, output_dim=2,
 def get_best_weights(lang, classifier='cnn', binary=False):
 #def get_best_weights(lang, classifier='bilstm', binary=False):
     if binary:
-#        base_dir = 'models/artetxe-'+classifier+'/binary-en-' + lang
-        base_dir = 'models_eqda/artetxe-'+classifier+'/binary-en-' + lang
+        base_dir = 'models/artetxe-'+classifier+'/binary-en-' + lang
+#        base_dir = 'models_eqda/artetxe-'+classifier+'/binary-en-' + lang
 #        base_dir = 'models_esdev/artetxe-'+classifier+'/binary-en-' + lang
     else:
-#        base_dir = 'models/artetxe-'+classifier+'/4class-en-' + lang
-        base_dir = 'models_eqda/artetxe-'+classifier+'/4class-en-' + lang
+        base_dir = 'models/artetxe-'+classifier+'/4class-en-' + lang
+#        base_dir = 'models_eqda/artetxe-'+classifier+'/4class-en-' + lang
 #        base_dir = 'models_esdev/artetxe-'+classifier+'/4class-en-' + lang
     weights = os.listdir(base_dir)
 
@@ -287,12 +287,12 @@ if __name__ == '__main__':
 
     # save the w2idx and max length
     if args.binary:
-#        paramfile = 'models/artetxe-cnn/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-        paramfile = 'models_eqda/artetxe-cnn/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
+        paramfile = 'models/artetxe-cnn/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
+#        paramfile = 'models_eqda/artetxe-cnn/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
 #        paramfile = 'models_esdev/artetxe-cnn/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
     else:
-#        paramfile = 'models/artetxe-cnn/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-        paramfile = 'models_eqda/artetxe-cnn/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
+        paramfile = 'models/artetxe-cnn/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
+#        paramfile = 'models_eqda/artetxe-cnn/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
 #        paramfile = 'models_esdev/artetxe-cnn/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
     with open(paramfile, 'wb') as out:
         pickle.dump((joint_w2idx, max_length), out)
@@ -304,17 +304,17 @@ if __name__ == '__main__':
     # train BiLSTM on source
     print('Training CNN...')
     if args.binary:
-#        checkpoint = ModelCheckpoint('models/artetxe-cnn/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-#                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-        checkpoint = ModelCheckpoint('models_eqda/artetxe-cnn/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
+        checkpoint = ModelCheckpoint('models/artetxe-cnn/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                  monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
+#        checkpoint = ModelCheckpoint('models_eqda/artetxe-cnn/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
+#                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
 #        checkpoint = ModelCheckpoint('models_esdev/artetxe-cnn/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
 #                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
     else:
-#        checkpoint = ModelCheckpoint('models/artetxe-cnn/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-#                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-        checkpoint = ModelCheckpoint('models_eqda/artetxe-cnn/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
+        checkpoint = ModelCheckpoint('models/artetxe-cnn/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                  monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
+#        checkpoint = ModelCheckpoint('models_eqda/artetxe-cnn/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
+#                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
 #        checkpoint = ModelCheckpoint('models_esdev/artetxe-cnn/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
 #                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
 
