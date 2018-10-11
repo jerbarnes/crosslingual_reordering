@@ -190,15 +190,18 @@ if __name__ == '__main__':
     parser.add_argument('-b', '--binary', default=False,
                         help='whether to use binary or 4-class (defaults to False == 4-class)',
                         type=str2bool)
+    parser.add_argument('-se', '--src_embedding', default="embeddings/google.txt")
+    parser.add_argument('-te', '--trg_embedding', default="embeddings/sg-300-es.txt")
+    parser.add_argument('-se', '--src_dataset', default="datasets/en/raw")
+    parser.add_argument('-te', '--trg_dataset', default="datasets/es/raw")
     args = parser.parse_args()
     
     # Import monolingual vectors
     print('importing word embeddings')
-    src_vecs = WordVecs('embeddings/google.txt')#('/home/jeremy/NS/Keep/Temp/Exps/EMBEDDINGS/BLSE/google.txt')
+    src_vecs = WordVecs(args.src_embedding)
     src_vecs.mean_center()
     src_vecs.normalize()
-    trg_vecs = WordVecs('embeddings/sg-300-{0}.txt'.format(args.lang))
-#('/home/jeremy/NS/Keep/Temp/Exps/EMBEDDINGS/BLSE/sg-300-{0}.txt'.format(args.lang))
+    trg_vecs = WordVecs(args.trg_embedding.format(args.lang))
     trg_vecs.mean_center()
     trg_vecs.normalize()
 
@@ -216,9 +219,9 @@ if __name__ == '__main__':
     print('src_vecs done')
 
     # open datasets
-    src_dataset = General_Dataset('datasets/en/raw', None, rep=word_reps, binary=args.binary)
+    src_dataset = General_Dataset(args.src_dataset, None, rep=word_reps, binary=args.binary)
     print('src_dataset done')
-    trg_dataset = General_Dataset('datasets/es/raw', None, rep=word_reps, binary=args.binary)
+    trg_dataset = General_Dataset(args.trg_dataset, None, rep=word_reps, binary=args.binary)
     print('trg_dataset done')
 
     # get joint vocabulary and maximum sentence length
@@ -272,12 +275,8 @@ if __name__ == '__main__':
     # save the w2idx and max length
     if args.binary:
         paramfile = 'models/artetxe-bilstm/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-#        paramfile = 'models_eqda/artetxe-bilstm/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-        #paramfile = 'models_esdev/artetxe-bilstm/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
     else:
         paramfile = 'models/artetxe-bilstm/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-#        paramfile = 'models_eqda/artetxe-bilstm/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-        #paramfile = 'models_esdev/artetxe-bilstm/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
     with open(paramfile, 'wb') as out:
         pickle.dump((joint_w2idx, max_length), out)
 
@@ -290,26 +289,17 @@ if __name__ == '__main__':
     if args.binary:
         checkpoint = ModelCheckpoint('models/artetxe-bilstm/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                  monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-#        checkpoint = ModelCheckpoint('models_eqda/artetxe-bilstm/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-#                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-#        checkpoint = ModelCheckpoint('models_esdev/artetxe-bilstm/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-#                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
+                         monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
     else:
         checkpoint = ModelCheckpoint('models/artetxe-bilstm/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                  monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-#        checkpoint = ModelCheckpoint('models_eqda/artetxe-bilstm/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-#                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-#        checkpoint = ModelCheckpoint('models_esdev/artetxe-bilstm/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-#                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
 
     num_classes = len(set(src_dataset._ytrain.argmax(1)))
     clf = create_BiLSTM(joint_matrix, lstm_dim=100, output_dim=num_classes)
     history = clf.fit(src_dataset._Xtrain, src_dataset._ytrain,
                       validation_data = [src_dataset._Xdev, src_dataset._ydev],
                       verbose=1, callbacks=[checkpoint], epochs=100)
-#    history = clf.fit(src_dataset._Xtrain, src_dataset._ytrain,
-#                      validation_data = [trg_dataset._Xdev, trg_dataset._ydev],
-#                      verbose=1, callbacks=[checkpoint], epochs=100)
+
     # get the best weights to test on
     clf = get_best_weights(args.lang, binary=args.binary)
 
