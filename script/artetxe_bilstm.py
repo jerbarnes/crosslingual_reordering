@@ -201,7 +201,7 @@ if __name__ == '__main__':
     src_vecs = WordVecs(args.src_embedding)
     src_vecs.mean_center()
     src_vecs.normalize()
-    trg_vecs = WordVecs(args.trg_embedding.format(args.lang))
+    trg_vecs = WordVecs(args.trg_embedding)
     trg_vecs.mean_center()
     trg_vecs.normalize()
 
@@ -289,7 +289,7 @@ if __name__ == '__main__':
     if args.binary:
         checkpoint = ModelCheckpoint('models/artetxe-bilstm/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                  monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-                         monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
+
     else:
         checkpoint = ModelCheckpoint('models/artetxe-bilstm/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                  monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
