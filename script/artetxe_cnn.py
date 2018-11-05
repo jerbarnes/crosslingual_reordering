@@ -64,15 +64,10 @@ def create_cnn(matrix, max_length, dim=300, output_dim=2,
 
 
 def get_best_weights(lang, classifier='cnn', binary=False):
-#def get_best_weights(lang, classifier='bilstm', binary=False):
     if binary:
         base_dir = 'models/artetxe-'+classifier+'/binary-en-' + lang
-#        base_dir = 'models_eqda/artetxe-'+classifier+'/binary-en-' + lang
-#        base_dir = 'models_esdev/artetxe-'+classifier+'/binary-en-' + lang
     else:
         base_dir = 'models/artetxe-'+classifier+'/4class-en-' + lang
-#        base_dir = 'models_eqda/artetxe-'+classifier+'/4class-en-' + lang
-#        base_dir = 'models_esdev/artetxe-'+classifier+'/4class-en-' + lang
     weights = os.listdir(base_dir)
 
     best_val = 0
@@ -206,25 +201,21 @@ def str2bool(v):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-l', '--lang', default='es',
-                        help='choose target language: es, ca, eu (defaults to es)')
-    parser.add_argument('-b', '--binary', default=False,
-                        help='whether to use binary or 4-class (defaults to False == 4-class)',
-                        type=str2bool)
+    parser.add_argument('-l', '--lang', default='es', help='choose target language: es, ca, eu (defaults to es)')
+    parser.add_argument('-b', '--binary', default=False, help='whether to use binary or 4-class (defaults to False == 4-class)', type=str2bool)
+    
     args = parser.parse_args()
     
     # Import monolingual vectors
     print('importing word embeddings')
-    src_vecs = WordVecs('embeddings/google.txt')#('/home/jeremy/NS/Keep/Temp/Exps/EMBEDDINGS/BLSE/google.txt')
+    src_vecs = WordVecs('embeddings/google.txt')
     src_vecs.mean_center()
     src_vecs.normalize()
     trg_vecs = WordVecs('embeddings/sg-300-{0}.txt'.format(args.lang))
-#('/home/jeremy/NS/Keep/Temp/Exps/EMBEDDINGS/BLSE/sg-300-{0}.txt'.format(args.lang))
     trg_vecs.mean_center()
     trg_vecs.normalize()
 
     # Setup projection dataset
-#    trans = '../BLSE/lexicons/bingliu/en-{0}.txt'.format(args.lang)
     trans = 'lexicons/bingliu_en_{0}.one-2-one.txt'.format(args.lang)
     pdataset = ProjectionDataset(trans, src_vecs, trg_vecs)
 
@@ -288,12 +279,8 @@ if __name__ == '__main__':
     # save the w2idx and max length
     if args.binary:
         paramfile = 'models/artetxe-cnn/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-#        paramfile = 'models_eqda/artetxe-cnn/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-#        paramfile = 'models_esdev/artetxe-cnn/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
     else:
         paramfile = 'models/artetxe-cnn/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-#        paramfile = 'models_eqda/artetxe-cnn/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-#        paramfile = 'models_esdev/artetxe-cnn/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
     with open(paramfile, 'wb') as out:
         pickle.dump((joint_w2idx, max_length), out)
 
@@ -306,26 +293,15 @@ if __name__ == '__main__':
     if args.binary:
         checkpoint = ModelCheckpoint('models/artetxe-cnn/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                  monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-#        checkpoint = ModelCheckpoint('models_eqda/artetxe-cnn/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-#                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-#        checkpoint = ModelCheckpoint('models_esdev/artetxe-cnn/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-#                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
     else:
         checkpoint = ModelCheckpoint('models/artetxe-cnn/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                  monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-#        checkpoint = ModelCheckpoint('models_eqda/artetxe-cnn/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-#                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-#        checkpoint = ModelCheckpoint('models_esdev/artetxe-cnn/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-#                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
 
     num_classes = len(set(src_dataset._ytrain.argmax(1)))
     clf = create_cnn(joint_matrix, max_length, dim=100, output_dim=num_classes)
     history = clf.fit(src_dataset._Xtrain, src_dataset._ytrain,
                       validation_data = [src_dataset._Xdev, src_dataset._ydev],
                       verbose=1, callbacks=[checkpoint], epochs=100)
-#    history = clf.fit(src_dataset._Xtrain, src_dataset._ytrain,
-#                      validation_data = [trg_dataset._Xdev, trg_dataset._ydev],
-#                      verbose=1, callbacks=[checkpoint], epochs=100)
 
     # get the best weights to test on
     clf = get_best_weights(args.lang, binary=args.binary)

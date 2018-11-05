@@ -106,11 +106,10 @@ if __name__ == '__main__':
     
     # Import monolingual vectors
     print('importing word embeddings')
-    src_vecs = WordVecs('embeddings/google.txt')#('/home/jeremy/NS/Keep/Temp/Exps/EMBEDDINGS/BLSE/google.txt')
+    src_vecs = WordVecs('embeddings/google.txt')
     src_vecs.mean_center()
     src_vecs.normalize()
     trg_vecs = WordVecs('embeddings/sg-300-{0}.txt'.format(args.lang))
-#('/home/jeremy/NS/Keep/Temp/Exps/EMBEDDINGS/BLSE/sg-300-{0}.txt'.format(args.lang))
     trg_vecs.mean_center()
     trg_vecs.normalize()
 
@@ -178,14 +177,8 @@ if __name__ == '__main__':
     # save the w2idx and max length
     if args.binary:
         paramfile = 'models/artetxe-svm/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-#        paramfile = 'models_eqda/artetxe-svm/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-#        paramfile = 'models_eqdaesdev/artetxe-svm/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-#        paramfile = 'models_esdev/artetxe-svm/binary-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
     else:
         paramfile = 'models/artetxe-svm/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-#        paramfile = 'models_eqda/artetxe-svm/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-#        paramfile = 'models_eqdaesdev/artetxe-svm/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
-#        paramfile = 'models_esdev/artetxe-svm/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
     with open(paramfile, 'wb') as out:
         pickle.dump((joint_w2idx, joint_matrix), out)
 
@@ -197,14 +190,8 @@ if __name__ == '__main__':
     print('Training SVM...')
     if args.binary:
         checkpoint = 'models/artetxe-svm/binary-en-'+args.lang+'/weights.pkl'
-#        checkpoint = 'models_eqda/artetxe-svm/binary-en-'+args.lang+'/weights.pkl'
-#        checkpoint = 'models_eqdaesdev/artetxe-svm/binary-en-'+args.lang+'/weights.pkl'
-#        checkpoint = 'models_esdev/artetxe-svm/binary-en-'+args.lang+'/weights.pkl'
     else:
         checkpoint = 'models/artetxe-svm/4class-en-'+args.lang+'/weights.pkl'
-#        checkpoint = 'models_eqda/artetxe-svm/4class-en-'+args.lang+'/weights.pkl'
-#        checkpoint = 'models_eqdaesdev/artetxe-svm/4class-en-'+args.lang+'/weights.pkl'
-#        checkpoint = 'models_esdev/artetxe-svm/4class-en-'+args.lang+'/weights.pkl'
 
     num_classes = len(set(src_dataset._ytrain.argmax(1)))
     clf = LinearSVC()

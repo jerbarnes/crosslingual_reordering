@@ -42,12 +42,8 @@ def create_BiLSTM(matrix, lstm_dim=300, output_dim=2,
 def get_best_weights(lang, classifier='bilstm', binary=False):
     if binary:
         base_dir = 'models/artetxe-'+classifier+'/binary-en-' + lang
-#        base_dir = 'models_eqda/artetxe-'+classifier+'/binary-en-' + lang
-#        base_dir = 'models_esdev/artetxe-'+classifier+'/binary-en-' + lang
     else:
         base_dir = 'models/artetxe-'+classifier+'/4class-en-' + lang
-#        base_dir = 'models_eqda/artetxe-'+classifier+'/4class-en-' + lang
-#        base_dir = 'models_esdev/artetxe-'+classifier+'/4class-en-' + lang
     weights = os.listdir(base_dir)
 
     best_val = 0
@@ -179,21 +175,16 @@ def str2bool(v):
     else:
         raise argparse.ArgumentTypeError('Boolean value expected.')
 
-# =============================================================================
-# 
-# =============================================================================
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-l', '--lang', default='es',
-                        help='choose target language: es, ca, eu (defaults to es)')
-    parser.add_argument('-b', '--binary', default=False,
-                        help='whether to use binary or 4-class (defaults to False == 4-class)',
-                        type=str2bool)
+    parser.add_argument('-l', '--lang', default='es', help='choose target language: es, ca, eu (defaults to es)')
+    parser.add_argument('-b', '--binary', default=False, help='whether to use binary or 4-class (defaults to False == 4-class)', type=str2bool)
+    
     parser.add_argument('-se', '--src_embedding', default="embeddings/google.txt")
     parser.add_argument('-te', '--trg_embedding', default="embeddings/sg-300-es.txt")
-    parser.add_argument('-se', '--src_dataset', default="datasets/en/raw")
-    parser.add_argument('-te', '--trg_dataset', default="datasets/es/raw")
+    parser.add_argument('-se', '--src_dataset', default="datasets/divided/en/raw")
+    parser.add_argument('-te', '--trg_dataset', default="datasets/divided/es/raw")
+    
     args = parser.parse_args()
     
     # Import monolingual vectors
@@ -201,7 +192,7 @@ if __name__ == '__main__':
     src_vecs = WordVecs(args.src_embedding)
     src_vecs.mean_center()
     src_vecs.normalize()
-    trg_vecs = WordVecs(args.trg_embedding)
+    trg_vecs = WordVecs(args.trg_embedding.format(args.lang))
     trg_vecs.mean_center()
     trg_vecs.normalize()
 
@@ -289,7 +280,7 @@ if __name__ == '__main__':
     if args.binary:
         checkpoint = ModelCheckpoint('models/artetxe-bilstm/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                  monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-
+                         monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
     else:
         checkpoint = ModelCheckpoint('models/artetxe-bilstm/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                  monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
