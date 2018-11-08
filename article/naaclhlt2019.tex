@@ -53,15 +53,15 @@
 \newcommand{\todo}[1]{\comment{Todo}{#1}}
 \newcommand{\jer}[1]{\comment{Jeremy}{#1}}
 \newcommand{\toni}[1]{\comment{Toni}{#1}}
-\newcommand{\alex}[1]{\comment{Alex}{#1}}
+\newcommand{\alex}[1]{\comment{Àlex}{#1}}
 
 \newcommand{\jeranswer}[1]{\answer{Jeremy}{#1}}
-\newcommand{\alexanswer}[1]{\answer{Alex}{#1}}
+\newcommand{\alexanswer}[1]{\answer{Àlex}{#1}}
 \newcommand{\tonianswer}[1]{\answer{Toni}{#1}}
 
 \newcommand{\jerin}[1]{\inline{Jeremy}{#1}}
 \newcommand{\toniin}[1]{\inline{Toni}{#1}}
-\newcommand{\alexin}[1]{\inline{Alex}{#1}}
+\newcommand{\alexin}[1]{\inline{Àlex}{#1}}
 
 \ifaclfinal
 \else
@@ -86,7 +86,7 @@
 
 \title{On the Effect of Word Order on Cross-lingual Sentiment Analysis}
 
-\author {\textbf{Álex Ramírez Atrio$^1$}, \textbf{Toni Badia$^{1}$} \textbf{Jeremy Barnes$^{2}$}\\
+\author {\textbf{Àlex Ramírez Atrio$^1$}, \textbf{Toni Badia$^{1}$} \textbf{Jeremy Barnes$^{2}$}\\
 $^1$Universitat Pompeu Fabra\\
 $^2$Universitetet i Oslo\\
 Información de contacto\\
@@ -104,7 +104,6 @@ Información de contacto\\
 %  {\tt email@domain} \\}
 
 \date{}
-
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -122,9 +121,23 @@ Información de contacto\\
 
 \begin{itemize}
 \item intro to task: Why is sentiment analysis cool/useful/difficult?
+
+When facing a relatively simple text such as an hotel review, we can ask for its general sentiment. Is it positive, or negative? Is it better to ask for more gray areas in between? Automatizing the process of classifying the sentiment of a text is called Sentiment Analysis (SA), and it can allow us to get a good understanding of how the author(s) of these texts feel about the topics that are discussed in them. Of course, there are issues that we may find in this process. For instance, given a certain text, its sentiment may be ambiguous: two independent human annotators may disagree in it. Or maybe the text does not have an overall sentiment, and we should focus on individual sentences.
+
 \item motivation for cross-lingual approaches: We often have no annotated data for Language X, especially for specific domains.
+
+Cross-lingual Sentiment Analysis (CLSA) consists on using resources such as labeled data of a high-resource language (our source language) to train a sentiment classifier in order for it to classify low-resource languages (our target languages). This can be important when our target language lacks plentiful labeled data, particularly when considering specific domains. 
+
 \item why it's interesting to use no MT: under-resourced languages, MT requires too much parallel data
+
+This process can be carried out using Machine Translation (MT) of the source language and training a classifier using these translated texts. The main problem with this approach is its high requirements of parallel annotated data, which may be difficult to find for some low-resource languages. Bilingual Sentiment Embeddings (should I use 'BLSE' as acronym?), on contrast, have been shown to be competitive while requiring less amount of parallel annotated data.
+
 \item what problem that might introduce
+
+I am not sure what do you have in mind here. Problems introduced by not using MT in general? Problems introduced by using blse?
+
+\item Should I introduce in this section the specifics? That our source language is English, our targets Spanish and Catalan and that we will be using embeddings?
+
 \end{itemize}
 
 \section{Related Work}
@@ -132,9 +145,21 @@ Información de contacto\\
 \begin{itemize}
 
 \item Cross-lingual Sentiment Approaches that are relevant here: under-resourced langs
+
+I am not sure what do you mean here. Abdallah and hirst 2017, chen et al 2016 and barnes et al acl18?
+
 \item Bilingual Word Embeddings: Artetxe and why we use these: SOTA and low-resource
-\item Word order in sentiment:
+
+Copying the same section in the acl18 paper?
+
+\item Word order in sentiment
+
+Do you have any specific paper in mind? Because I don't think I found any literature in this in my thesis.
+
 \item Reordering for machine translation
+
+Because of some problems we may find in MT, sometimes it is considered best to preprocess the source language by reordering it and then carryig out the translation. Transformation (reordering) rules can be determined manually or with data-driven approaches. Their application can be deterministic or non-deterministic. Some hybrid techniques exist as well, where long-range transformations are deterministic and the rest non-deterministic.
+
 \end{itemize}
 
 \subsection{Cross-lingual Sentiment Analysis}
@@ -143,7 +168,7 @@ Información de contacto\\
 
 \subsection{Bilingual Word Embeddings}
 
-
+What is the difference between this subsection an the last subsection on blse?
 
 \section{Methodology}
 
@@ -152,25 +177,57 @@ Información de contacto\\
 \begin{itemize}
 \item LSTM, CNN, SVM
 \item Differences between how models handle word order
+
+For our experiment we will compare the results of three different classifiers: a Long Short Term Memory Network (LSTM), a Convolutional Neural Network (CNN), and a Support Vector Machine (SVM) with Bag-of-Embeddings. The SVM does not take into account word order, the CNN considers only short-range word order, and the LSTM considers both short-term and long-term word order.
+
 \end{itemize}
 
 \subsection{Corpora and Datasets}
 
 \begin{itemize}
 \item OpeNER, Multibooked
+
+We use a subset of the English and Spanish OpeNER corpora of hotel reviews. The corpora are annotated for Part-of-Speech tags and sentiment with 4 classes. We use the English subset for training our classifiers and the Spanish for testing different reorderings.
+
+We also use MultiBooked, an annotated corpus of hotel reviews in Catalan. The corpus is also annotated for POS tags and we will use it to test different reorderings.
+
+(Here I am saying "reordering", but it is not only reorderings. Do you have a better word for the tests texts?)
+
 \item Europarl, Tatoeba
+
+I am not sure if we have to mention these. I used them for statistical data, but we are not using it, since the only reordering is CREGO.
+
 \item motivation for using these resources
+
+What exactly do you mean by this?
+
 \end{itemize}
 
 \subsection{Experimental Setup}
 
 \begin{itemize}
 \item Test all models on two cross-lingual setups (en-es, en-ca)
-\item Compare: No reordering, Random Reordering, ONE, No lexicon, Only lexicon
+
+(Maybe next item should be before this one?)
+
+The experiment consists on training the LSTM, CNN, and SVM with English data, and test them on different reorderings of both Spanish and Catalan corpora.
+
+\item Compare: No reordering, Random Reordering, N-ADJ, reordering-crego, No lexicon, Only lexicon
+
+(Here we should also talk about the Machine Translation parts?)
+(Here we introduce the lexicon thing, but we have not talked about it yet, right?)
+
+We compare the original texts of the Catalan MultiBooked and Spanish OpeNER, a random reordering of these, a simple reordering consisting of the application of the the rule N-ADJ to ADJ-N, a reordering resulted of the application of 15 transformation rules extracted from Crego and Mariño 2006a and 2006b, a version of the corpora with all the words appearing in their respective lexicon deleted, and a version of the corpora with exclusively the words appearing in their respective lexicon.
+
 \item What are the competing hypotheses for each of these setups?
+
+Here do you mean to list different prediction for every of these setups, like: we expect n-adj to perform slightly better than the original, random to be worse, ...?
+
 \end{itemize}
 
 \section{Results}
+
+(Falta omplir-les)
 
 \begin{table*}[t]
 \newcommand{\sep}{\cmidrule(r){4-6}\cmidrule(r){7-9}}
