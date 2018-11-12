@@ -5,7 +5,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     
     parser.add_argument('trg_dataset', nargs= '?', default="datasets/original/es/raw", help='target dataset (directory that contains the test corpus)')
-    parser.add_argument('src_dataset', nargs= '?', default="datasets/original/en/raw", help='source dataset (directory that contains the source corpus')
+    parser.add_argument('src_dataset', nargs= '?', default="datasets/divided/en/raw", help='source dataset (directory that contains the source corpus')
     
     parser.add_argument('-l', '--lang', default='es',
                         help='choose target language: es or ca (defaults to es)')

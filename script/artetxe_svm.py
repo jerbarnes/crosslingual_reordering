@@ -102,7 +102,7 @@ if __name__ == '__main__':
     
     parser.add_argument('-se', '--src_embedding', default="embeddings/google.txt")
     parser.add_argument('-te', '--trg_embedding', default="embeddings/sg-300-es.txt")
-    parser.add_argument('-sd', '--src_dataset', default="datasets/original/en/raw")
+    parser.add_argument('-sd', '--src_dataset', default="datasets/divided/en/raw")
     parser.add_argument('-td', '--trg_dataset', default="datasets/original/es/raw")
     
     args = parser.parse_args()
