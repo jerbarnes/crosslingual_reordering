@@ -97,16 +97,19 @@ def str2bool(v):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-l', '--lang', default='es',
-                        help='choose target language: es, ca, eu (defaults to es)')
-    parser.add_argument('-b', '--binary', default=False,
-                        help='whether to use binary or 4-class (defaults to False == 4-class)',
-                        type=str2bool)
+    parser.add_argument('-l', '--lang', default='es', help='choose target language: es, ca, eu (defaults to es)')
+    parser.add_argument('-b', '--binary', default=False, help='whether to use binary or 4-class (defaults to False == 4-class)', type=str2bool)
+    
+    parser.add_argument('-se', '--src_embedding', default="embeddings/google.txt")
+    parser.add_argument('-te', '--trg_embedding', default="embeddings/sg-300-es.txt")
+    parser.add_argument('-sd', '--src_dataset', default="datasets/original/en/raw")
+    parser.add_argument('-td', '--trg_dataset', default="datasets/original/es/raw")
+    
     args = parser.parse_args()
     
     # Import monolingual vectors
     print('importing word embeddings')
-    src_vecs = WordVecs('embeddings/google.txt')
+    src_vecs = WordVecs(args.src_embedding)
     src_vecs.mean_center()
     src_vecs.normalize()
     trg_vecs = WordVecs('embeddings/sg-300-{0}.txt'.format(args.lang))
@@ -120,13 +123,17 @@ if __name__ == '__main__':
     # learn the translation matrix W
     print('Projecting src embeddings to trg space...')
     W = get_projection_matrix(pdataset, src_vecs, trg_vecs)
+    print('W done')
 
     # project the source matrix to the new shared space
     src_vecs._matrix = np.dot(src_vecs._matrix, W)
+    print('src_vecs done')
 
     # open datasets
-    src_dataset = General_Dataset('datasets/en/raw', None, rep=word_reps, binary=args.binary)
-    trg_dataset = General_Dataset('datasets/es/raw', None, rep=word_reps, binary=args.binary)
+    src_dataset = General_Dataset(args.src_dataset, None, rep=word_reps, binary=args.binary)
+    print('src_dataset done')
+    trg_dataset = General_Dataset(args.trg_dataset, None, rep=word_reps, binary=args.binary)
+    print('trg_dataset done')
 
     # get joint vocabulary and maximum sentence length
     print('Getting joint space and vocabulary...')

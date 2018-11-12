@@ -182,8 +182,8 @@ if __name__ == '__main__':
     
     parser.add_argument('-se', '--src_embedding', default="embeddings/google.txt")
     parser.add_argument('-te', '--trg_embedding', default="embeddings/sg-300-es.txt")
-    parser.add_argument('-se', '--src_dataset', default="datasets/divided/en/raw")
-    parser.add_argument('-te', '--trg_dataset', default="datasets/divided/es/raw")
+    parser.add_argument('-sd', '--src_dataset', default="datasets/original/en/raw")
+    parser.add_argument('-td', '--trg_dataset', default="datasets/original/es/raw")
     
     args = parser.parse_args()
     
@@ -192,7 +192,7 @@ if __name__ == '__main__':
     src_vecs = WordVecs(args.src_embedding)
     src_vecs.mean_center()
     src_vecs.normalize()
-    trg_vecs = WordVecs(args.trg_embedding.format(args.lang))
+    trg_vecs = WordVecs('embeddings/sg-300-{0}.txt'.format(args.lang))
     trg_vecs.mean_center()
     trg_vecs.normalize()
 
@@ -259,9 +259,7 @@ if __name__ == '__main__':
     joint_vocab.update(trg_vocab)
     
     add_unknown_words(joint_embeddings, joint_vocab, min_fq=1, dim=300)
-    
     joint_matrix, joint_w2idx = get_W(joint_embeddings, dim=300)
-
 
     # save the w2idx and max length
     if args.binary:
@@ -280,7 +278,6 @@ if __name__ == '__main__':
     if args.binary:
         checkpoint = ModelCheckpoint('models/artetxe-bilstm/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                  monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-                         monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
     else:
         checkpoint = ModelCheckpoint('models/artetxe-bilstm/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                  monitor='val_acc', verbose=1, save_best_only=True, mode='auto')

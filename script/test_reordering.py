@@ -56,14 +56,8 @@ def per_class_f1(y, pred):
 def load_best_model(lang, embedding='artetxe', classifier='bilstm', binary=False):
     if binary:
         base_dir = 'models/{0}-{1}/binary-en-{2}'.format(embedding, classifier, lang)
-#        base_dir = 'models_eqda/{0}-{1}/binary-en-{2}'.format(embedding, classifier, lang)
-#        base_dir = 'models_eqdaesdev/{0}-{1}/binary-en-{2}'.format(embedding, classifier, lang)
-#        base_dir = 'models_esdev/{0}-{1}/binary-en-{2}'.format(embedding, classifier, lang)
     else:
         base_dir = 'models/{0}-{1}/4class-en-{2}'.format(embedding, classifier, lang)
-#        base_dir = 'models_eqda/{0}-{1}/4class-en-{2}'.format(embedding, classifier, lang)
-#        base_dir = 'models_eqdaesdev/{0}-{1}/4class-en-{2}'.format(embedding, classifier, lang)
-#        base_dir = 'models_esdev/{0}-{1}/4class-en-{2}'.format(embedding, classifier, lang)    
     weights = os.listdir(base_dir)
 
     best_val = 0
@@ -84,15 +78,9 @@ def load_best_model(lang, embedding='artetxe', classifier='bilstm', binary=False
 def open_params(lang, embeddings='artetxe', classifier='bilstm', binary=True):
     if binary:
         with open('models/{0}-{1}/binary-en-{2}/en-{2}-w2idx.pkl'.format(embeddings, classifier, lang), 'rb') as out:
-#        with open('models_eqda/{0}-{1}/binary-en-{2}/en-{2}-w2idx.pkl'.format(embeddings, classifier, lang), 'rb') as out:
-#        with open('models_eqdaesdev/{0}-{1}/binary-en-{2}/en-{2}-w2idx.pkl'.format(embeddings, classifier, lang), 'rb') as out:
-#        with open('models_esdev/{0}-{1}/binary-en-{2}/en-{2}-w2idx.pkl'.format(embeddings, classifier, lang), 'rb') as out:
             w2idx, max_length = pickle.load(out)
     else:
         with open('models/{0}-{1}/4class-en-{2}/en-{2}-w2idx.pkl'.format(embeddings, classifier, lang), 'rb') as out:
-#        with open('models_eqda/{0}-{1}/4class-en-{2}/en-{2}-w2idx.pkl'.format(embeddings, classifier, lang), 'rb') as out:
-#        with open('models_eqdaesdev/{0}-{1}/4class-en-{2}/en-{2}-w2idx.pkl'.format(embeddings, classifier, lang), 'rb') as out:
-#        with open('models_esdev/{0}-{1}/4class-en-{2}/en-{2}-w2idx.pkl'.format(embeddings, classifier, lang), 'rb') as out:
             w2idx, max_length = pickle.load(out)
     return w2idx, max_length
 
@@ -186,15 +174,10 @@ def str2bool(v):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('test_directory', help='directory that contains the test corpus')
-    parser.add_argument('-l', '--lang', default='es',
-                        help='choose target language: es, ca, eu (defaults to es)')
-    parser.add_argument('-e', '--embedding', default='artetxe',
-                        help='whether to use artetxe or barista embeddings (defaults artetxe)')
-    parser.add_argument('-c', '--classifier', default='bilstm',
-                        help='choose classifier: bilstm, cnn, or svm (defaults to bilstm)')
-    parser.add_argument('-b', '--binary', default=False,
-                        help='whether to use binary or 4-class (defaults to False == 4-class)',
-                        type=str2bool)
+    parser.add_argument('-l', '--lang', default='es', help='choose target language: es, ca, eu (defaults to es)')
+    parser.add_argument('-e', '--embedding', default='artetxe', help='whether to use artetxe or barista embeddings (defaults artetxe)')
+    parser.add_argument('-c', '--classifier', default='bilstm', help='choose classifier: bilstm, cnn, or svm (defaults to bilstm)')
+    parser.add_argument('-b', '--binary', default=False, help='whether to use binary or 4-class (defaults to False == 4-class)', type=str2bool)
     args = parser.parse_args()
 
     print(args.classifier)
@@ -219,30 +202,20 @@ if __name__ == '__main__':
 
         print(classification_report(test_data._ytest.argmax(1), pred))
         print('Macro F1: {0:.3f}'.format(f1.mean()))
-        info0 = str(args.classifier) + '\n' + 'test language: ' + str(args.lang)
+        info0 = 'classifier' + str(args.classifier) + '\n' + 'test language: ' + str(args.lang)
         infob = 'binary: ' + str(args.binary)
         info1 = str(classification_report(test_data._ytest.argmax(1), pred))
         info2 = str('Macro F1: {0:.3f}'.format(f1.mean()))
-        with open('eval_reordering.txt', 'w') as file_pred:
-            file_pred.write(info0 + '\n')
-            file_pred.write(infob + '\n')
-            file_pred.write(info1 + ' \n' + info2)
-        
-        """pickle_orig_clasif = open('es_train_cnn_clasif.pkl', 'wb')
-        pickle.dump((list(pred)), pickle_orig_clasif, -1)"""
+        with open('evaluation_result.txt', 'w') as file_pred:
+            file_pred.write(str(vars(args)) + ' \n'*2)
+            file_pred.write(info1 + ' \n'*2 + info2)
         
     else:
         # load classifier
         if args.binary:
             weight_file = os.path.join('models',                             '{0}-{1}'.format(args.embedding, args.classifier),                                  'binary-en-{0}'.format(args.lang), 'weights.pkl')
-#            weight_file = os.path.join('models_eqda',                                  '{0}-{1}'.format(args.embedding, args.classifier),                                   'binary-en-{0}'.format(args.lang), 'weights.pkl')
-#            weight_file = os.path.join('models_eqdaesdev',                                   '{0}-{1}'.format(args.embedding, args.classifier),                                   'binary-en-{0}'.format(args.lang), 'weights.pkl')
-#            weight_file = os.path.join('models_esdev',                                   '{0}-{1}'.format(args.embedding, args.classifier),                                   'binary-en-{0}'.format(args.lang), 'weights.pkl')
         else:
             weight_file = os.path.join('models',                                   '{0}-{1}'.format(args.embedding, args.classifier),                                   '4class-en-{0}'.format(args.lang), 'weights.pkl')
-#            weight_file = os.path.join('models_eqda',                                   '{0}-{1}'.format(args.embedding, args.classifier),                                   '4class-en-{0}'.format(args.lang), 'weights.pkl')
-#            weight_file = os.path.join('models_eqdaesdev',                                   '{0}-{1}'.format(args.embedding, args.classifier),                                   '4class-en-{0}'.format(args.lang), 'weights.pkl')
-#            weight_file = os.path.join('models_esdev',                                   '{0}-{1}'.format(args.embedding, args.classifier),                                   '4class-en-{0}'.format(args.lang), 'weights.pkl')
         print(weight_file)
 
         with open(weight_file, 'rb') as file:
@@ -264,43 +237,34 @@ if __name__ == '__main__':
 
         print(classification_report(test_data._ytest.argmax(1), pred))
         print('Macro F1: {0:.3f}'.format(f1.mean()))
-        info0 = str(args.classifier) + '\n' + 'test language: ' + str(args.lang)
+        info0 = 'classifier' + str(args.classifier) + '\n' + 'test language: ' + str(args.lang)
         infob = 'binary: ' + str(args.binary)
         info1 = str(classification_report(test_data._ytest.argmax(1), pred))
         info2 = str('Macro F1: {0:.3f}'.format(f1.mean()))
-        with open('eval_reordering.txt', 'w') as file_pred:
-            file_pred.write(info0 + '\n')
-            file_pred.write(infob + '\n')
-            file_pred.write(info1 + ' \n' + info2)
-        
-        """pickle_orig_clasif = open('es_train_svm_clasif.pkl', 'wb')
-        pickle.dump((list(pred)), pickle_orig_clasif, -1)"""
+        with open('evaluation_result.txt', 'w') as file_pred:
+            file_pred.write(str(vars(args)) + ' \n'*2)
+            file_pred.write(info1 + ' \n'*2 + info2)
+            
 
-"""
-    info1 = str(classification_report(test_data._ytest.argmax(1), pred))
-    info2 = str('Macro F1: {0:.3f}'.format(f1.mean()))
-    with open('eval_reordering.txt', 'w') as file_pred:
-        file_pred.write(info1 + ' \n' + info2)
-"""
-# =============================================================================
-# ERROR ANALYSIS
-# =============================================================================
-"""
+#Error analysis
+"""0 == positive"""
 idx2w = dict([(i,w) for (w,i) in w2idx.items()])
 
 errors = []
 for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data._Xtest):
     errors_sub = []
     sentence = []
-#        if gold != prediction:
-    errors_sub.append((gold, prediction))
-#    for word in example:
-#        if word != 0:
-#            sentence.append(idx2w[word])
-#    errors_sub.append(sentence)
-#    errors.append(errors_sub)
-#        print(errors[0])
+    if gold != prediction:
+        errors_sub.append((gold, prediction))
+        for word in example:
+            if word != 0:
+                sentence.append(idx2w[word])
+        errors_sub.append(sentence)
+        errors.append(errors_sub)
 
-pickle_orig_clasif = open('es_train_cnn_clasif.pkl', 'wb')
-pickle.dump((errors), pickle_orig_clasif, -1)
-"""
+with open('error_analysis.txt', 'w') as file_error:
+    file_error.write(str(vars(args)) + ' \n'*2)
+    file_error.write('[(Gold, Prediction), [Sentence] ' + ' (0 is positive)' + ' \n'*2)
+    for case in errors:
+        file_error.write(str(case)+' \n')
+        
