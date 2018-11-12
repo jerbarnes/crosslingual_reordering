@@ -211,7 +211,7 @@ if __name__ == '__main__':
             file_pred.write(info1 + ' \n'*2 + info2)
         
     else:
-        # load classifier
+        # load classifier (svm)
         if args.binary:
             weight_file = os.path.join('models',                             '{0}-{1}'.format(args.embedding, args.classifier),                                  'binary-en-{0}'.format(args.lang), 'weights.pkl')
         else:

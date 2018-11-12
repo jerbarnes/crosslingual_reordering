@@ -1,11 +1,11 @@
-{'test_directory': 'datasets/random/es/raw', 'lang': 'es', 'embedding': 'artetxe', 'classifier': 'svm', 'binary': True} 
+{'test_directory': 'datasets/original/en/raw', 'lang': 'es', 'embedding': 'artetxe', 'classifier': 'bilstm', 'binary': True} 
  
              precision    recall  f1-score   support
 
-          0       0.89      0.75      0.82      1216
-          1       0.32      0.56      0.41       256
+          0       0.86      0.96      0.91      1258
+          1       0.84      0.60      0.70       473
 
-avg / total       0.79      0.72      0.75      1472
+avg / total       0.86      0.86      0.85      1731
  
  
-Macro F1: 0.614
+Macro F1: 0.804
