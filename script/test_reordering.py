@@ -183,6 +183,7 @@ if __name__ == '__main__':
     print(args.classifier)
 
     if args.classifier in ['bilstm', 'cnn']:
+#        if lanng is en: load es (el que mejor vaya en dev)
         # load classifier
         clf = load_best_model(args.lang, args.embedding, args.classifier, args.binary)
 
