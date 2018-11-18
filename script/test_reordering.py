@@ -174,16 +174,20 @@ def str2bool(v):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('test_directory', help='directory that contains the test corpus')
-    parser.add_argument('-l', '--lang', default='es', help='choose target language: es, ca, eu (defaults to es)')
+    parser.add_argument('-l', '--lang', default='es', help='choose target language: es, ca, en (defaults to es)')
     parser.add_argument('-e', '--embedding', default='artetxe', help='whether to use artetxe or barista embeddings (defaults artetxe)')
     parser.add_argument('-c', '--classifier', default='bilstm', help='choose classifier: bilstm, cnn, or svm (defaults to bilstm)')
     parser.add_argument('-b', '--binary', default=False, help='whether to use binary or 4-class (defaults to False == 4-class)', type=str2bool)
     args = parser.parse_args()
 
     print(args.classifier)
-
+    monol = []
+    if args.lang == 'en':
+            monol.append('1')
+            print('monolingual')
     if args.classifier in ['bilstm', 'cnn']:
-#        if lanng is en: load es (el que mejor vaya en dev)
+        if '1' in monol:
+            args.lang = 'es'
         # load classifier
         clf = load_best_model(args.lang, args.embedding, args.classifier, args.binary)
 
@@ -201,18 +205,23 @@ if __name__ == '__main__':
         pred = clf.predict_classes(test_data._Xtest)
         f1 = per_class_f1(test_data._ytest.argmax(1), pred)
 
+        if '1' in monol:
+            args.lang = 'en'
         print(classification_report(test_data._ytest.argmax(1), pred))
         print('Macro F1: {0:.3f}'.format(f1.mean()))
         info0 = 'classifier' + str(args.classifier) + '\n' + 'test language: ' + str(args.lang)
         infob = 'binary: ' + str(args.binary)
         info1 = str(classification_report(test_data._ytest.argmax(1), pred))
         info2 = str('Macro F1: {0:.3f}'.format(f1.mean()))
-        with open('evaluation_result.txt', 'w') as file_pred:
-            file_pred.write(str(vars(args)) + ' \n'*2)
-            file_pred.write(info1 + ' \n'*2 + info2)
+        with open('evals/{}_{}_bi{}_evaluation_result.txt'.format(args.classifier, args.lang, args.binary), 'w') as file_pred:
+            for el in vars(args):
+                file_pred.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
+            file_pred.write(' \n' + info1 + ' \n'*2 + info2)
         
-    else:
-        # load classifier (svm)
+    else: #svm
+        if '1' in monol:
+            args.lang = 'es'
+        # load classifier
         if args.binary:
             weight_file = os.path.join('models',                             '{0}-{1}'.format(args.embedding, args.classifier),                                  'binary-en-{0}'.format(args.lang), 'weights.pkl')
         else:
@@ -236,20 +245,34 @@ if __name__ == '__main__':
         pred = clf.predict(test_data._Xtest)
         f1 = per_class_f1(test_data._ytest.argmax(1), pred)
 
+        if '1' in monol:
+            args.lang = 'en'
         print(classification_report(test_data._ytest.argmax(1), pred))
         print('Macro F1: {0:.3f}'.format(f1.mean()))
         info0 = 'classifier' + str(args.classifier) + '\n' + 'test language: ' + str(args.lang)
         infob = 'binary: ' + str(args.binary)
         info1 = str(classification_report(test_data._ytest.argmax(1), pred))
         info2 = str('Macro F1: {0:.3f}'.format(f1.mean()))
-        with open('evaluation_result.txt', 'w') as file_pred:
-            file_pred.write(str(vars(args)) + ' \n'*2)
-            file_pred.write(info1 + ' \n'*2 + info2)
-            
+        with open('evals/{}_{}_bi{}_evaluation_result.txt'.format(args.classifier, args.lang, args.binary), 'w') as file_pred:
+            for el in vars(args):
+                file_pred.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
+            file_pred.write(' \n' + info1 + ' \n'*2 + info2)
 
 #Error analysis
-"""0 == positive"""
+
 idx2w = dict([(i,w) for (w,i) in w2idx.items()])
+
+#errors = []
+#for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data._Xtest):
+#    errors_sub = []
+#    sentence = []
+#    if gold != prediction:
+#        errors_sub.append((gold, prediction))
+#        for index in example:
+#            if index != 0:
+#                sentence.append(idx2w[index])
+#        errors_sub.append(' '.join(sentence))
+#        errors.append(errors_sub)
 
 errors = []
 for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data._Xtest):
@@ -257,15 +280,17 @@ for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data
     sentence = []
     if gold != prediction:
         errors_sub.append((gold, prediction))
-        for word in example:
-            if word != 0:
-                sentence.append(idx2w[word])
-        errors_sub.append(sentence)
+        for index in example:
+            if idx2w[index] != 'UNK':
+                sentence.append(idx2w[index])
+        errors_sub.append(' '.join(sentence))
         errors.append(errors_sub)
 
-with open('error_analysis.txt', 'w') as file_error:
-    file_error.write(str(vars(args)) + ' \n'*2)
-    file_error.write('[(Gold, Prediction), [Sentence] ' + ' (0 is positive)' + ' \n'*2)
+
+with open('evals/{}_{}_bi{}_error_analysis.txt'.format(args.classifier, args.lang, args.binary), 'w') as file_error:
+    for el in vars(args):
+        file_error.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
+    file_error.write(' \n'+'[(Gold, Prediction), Sentence]' + '\n' + 'Multiclass: (0 ++, 1 +, 2 -, 3 --)' + ' \n' + 'Binary: (0 +, 1 -)' + ' \n'*2)
     for case in errors:
         file_error.write(str(case)+' \n')
         
