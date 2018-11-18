@@ -1,0 +1,42 @@
+Amabilitat/NOUN de/ADP el/DET personal/NOUN ./. 
+De/ADP 5/NUM a/ADP 8/NUM un/DET petit/ADJ bufet/NOUN lliure/ADJ ,/. amb/ADP copa/NOUN de/ADP vi/NOUN inclosa/ADJ :/. original/ADJ ,/. serveix/VERB per/ADP fer/VERB un/DET recés/NOUN ./. 
+Gràcies/NOUN a/ADP tot/DET l'/DET equip/NOUN ,/. tornarem/VERB ./. 
+Repetiria/NOUN 
+Amabilitat/NOUN i/CONJ molt/ADV be/ADJ qualitat/NOUN preu/NOUN ./. 
+El/DET personal/NOUN de/ADP recepció/NOUN molt/ADV agradable/ADJ i/CONJ profesional/ADJ ./. 
+El/DET confort/NOUN i/CONJ sobretot/ADV la/DET cituació/NOUN de/ADP el/DET hotel/NOUN ,/. trovanse/NOUN a/ADP el/DET centre/NOUN de/ADP la/DET ciutat/NOUN que/PRON dona/NOUN molta/DET possivilitat/NOUN a/ADP poder/VERB desplasar-te/ADP allà/ADV on/PRON vulguis/VERB ./. 
+Esmorzar/VERB complert/ADJ ./. 
+Pensem/VERB repetir/VERB !/. !/. 
+Te/NOUN parking/ADJ ./. 
+Tot/DET renovat/ADJ i/CONJ molt/ADV net/ADJ ./. 
+Les/DET habitacions/NOUN son/NOUN tranquiles/ADJ i/CONJ els/DET llits/NOUN còmodes/ADJ i/CONJ nets/ADJ ./. 
+L'/DET aire/NOUN condicionat/ADJ i/CONJ el/DET wifi/NOUN funcionen/VERB bé/ADV ./. 
+La/DET situació/NOUN és/VERB molt/ADV bona/ADJ ,/. cèntrica/ADJ ./. 
+Ambient/ADV acollidor/ADJ ,/. cèntric/ADJ ./. 
+Encara/ADV així/ADV ,/. la/DET relació/NOUN qualitat-preu/ADJ actual/ADJ es/PRON correcta/VERB ./. 
+Habitació/NOUN àmplia/ADJ i/CONJ molt/ADV confortable/ADJ ./. 
+Personal/NOUN simpàtic/ADJ i/CONJ molt/ADV amable/ADJ ./. 
+Habitacions/NOUN renovades/ADJ i/CONJ en/ADP bones/ADJ condicions/NOUN ./. 
+Bany/NOUN correcte/ADJ ./. 
+La/DET situació/NOUN i/CONJ que/CONJ es/PRON fàcil/ADJ aparcar/VERB el/DET cotxe/NOUN ./. 
+L'/DET habitació/NOUN era/VERB bonica/ADJ ,/. còmoda/ADJ i/CONJ amb/ADP un/DET bon/ADJ sistema/NOUN de/ADP climatització/NOUN ./. 
+El/DET tracte/NOUN amable/ADJ ,/. les/DET instal/ADJ ./. lacions/NOUN ,/. les/DET vistes/NOUN ,/. la/DET pau/NOUN ,/. tranquil/ADJ ./. litat/NOUN i/CONJ el/DET silenci/NOUN .../. hem/VERB passat/VERB nomes/ADV 2/NUM nits/NOUN i/CONJ quan/CONJ poguem/VERB hi/PRON tornarem/VERB segur/ADJ ./. 
+Simpàtica/VERB la/DET '/. presència/NOUN '/. de/ADP Mariscal/NOUN dins/ADV de/ADP l'/DET hotel/NOUN ./. 
+Tracte/NOUN de/ADP el/DET personal/NOUN excelent/ADJ ,/. qualitat/NOUN -/. preu/NOUN molt/ADV be/ADJ ,/. situacio/VERB dins/ADP puigcerdà/NOUN be/ADJ 
+Personal/NOUN amable/ADJ I/CONJ servicial/ADJ ./. 
+Tracte/NOUN de/ADP el/DET personal/NOUN agradable/ADJ ./. 
+La/DET ubicació/NOUN aprop/ADV de/ADP la/DET platja/NOUN de/ADP l'/DET Arrabassada/NOUN ./. 
+Esmorzar/VERB abundant/VERB ,/. variat/ADJ i/CONJ de/ADP molta/DET qualitat/NOUN ,/. a/ADP el/DET costat/NOUN d'/ADP una/DET piscina/NOUN fantàstica/ADJ i/CONJ neta/ADJ ./. 
+La/DET tranquilitat/NOUN de/ADP el/DET lloc/NOUN I/CONJ lo/NOUN ben/ADV cuidat/ADJ que/PRON tenien/VERB els/DET jardins/NOUN ./. 
+Especialment/ADV ,/. la/DET tranquil·litat/NOUN i/CONJ la/DET situació/NOUN ,/. que/PRON permet/VERB accedir/VERB ,/. en/ADP 40/NUM quilòmetres/NOUN ,/. a/ADP els/DET indrets/NOUN de/ADP muntanya/NOUN de/ADP la/DET Catalunya/NOUN Nord/NOUN ./. 
+El/DET bany/NOUN era/VERB modern/ADJ I/CONJ renovat/ADJ ./. 
+El/DET menú/NOUN buffet/ADJ de/ADP l'/DET esmorzar/NOUN és/VERB variat/ADJ i/CONJ de/ADP bona/ADJ qualitat/NOUN ./. 
+L'/DET atenció/NOUN de/ADP el/DET personal/NOUN ,/. super/ADJ amables/ADJ i/CONJ ens/PRON han/VERB ajudat/VERB moltíssim/ADV ./. 
+L'/DET habitació/NOUN La/DET netedat/NOUN La/DET comoditat/NOUN Pàrquing/NOUN cobert/ADJ gratuït/ADJ Esmorzar/VERB correcte/ADJ Amabilitat/NOUN de/ADP el/DET personal/NOUN 
+Bona/NOUN terrassa/VERB ./. 
+L'/DET enclavament/NOUN on/PRON es/PRON troba/VERB és/VERB prou/ADV interessant/ADJ per/ADP si/PRON mateix/DET ./. 
+Amb/ADP vistes/NOUN per/ADP adormir-s'hi/VERB mirant/NOUN i/CONJ molt/ADV complert/ADJ ./. 
+M'/NOUN ha/VERB agradat/VERB la/DET ubicació/NOUN i/CONJ la/DET neteja/NOUN de/ADP les/DET habitacions/NOUN ./. 
+Ubicacio/NOUN de/ADP hostal/NOUN ,/. ben/ADV situada/ADJ aprop/ADV de/ADP tota/DET la/DET zona/NOUN romanic/ADJ 
+LLoc/NOUN tranquil/ADJ sense/ADP problemes/NOUN de/ADP parking/NOUN ./. 
+Confortable/ADJ ,/. net/ADJ ,/. amb/ADP aparcament/NOUN gratuït/ADJ fora/ADV de/ADP l'/DET hotel/NOUN ./. 

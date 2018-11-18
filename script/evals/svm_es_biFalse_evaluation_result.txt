@@ -1,0 +1,17 @@
+test_directory: datasets/original/es/raw 
+lang: es 
+embedding: artetxe 
+classifier: svm 
+binary: False 
+ 
+             precision    recall  f1-score   support
+
+          0       0.74      0.18      0.29       218
+          1       0.69      0.95      0.80       846
+          2       0.77      0.53      0.63       370
+          3       0.91      0.26      0.41        38
+
+avg / total       0.73      0.71      0.67      1472
+ 
+ 
+Macro F1: 0.531

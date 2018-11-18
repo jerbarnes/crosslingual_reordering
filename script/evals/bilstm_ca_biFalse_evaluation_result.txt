@@ -1,0 +1,17 @@
+test_directory: datasets/original/ca/raw 
+lang: ca 
+embedding: artetxe 
+classifier: bilstm 
+binary: False 
+ 
+             precision    recall  f1-score   support
+
+          0       0.53      0.52      0.53       409
+          1       0.44      0.73      0.55       426
+          2       0.54      0.10      0.17       256
+          3       0.00      0.00      0.00        58
+
+avg / total       0.47      0.48      0.43      1149
+ 
+ 
+Macro F1: 0.311

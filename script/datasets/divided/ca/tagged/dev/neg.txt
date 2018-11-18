@@ -1,0 +1,41 @@
+Manca/NOUN de/ADP productes/NOUN per/ADP a/ADP celíacs/NOUN ./. 
+Vam/VERB trobar/VERB a/ADP faltar/VERB un/DET cop/NOUN de/ADP manguera/NOUN a/ADP les/DET terrasses/NOUN a/ADP prop/ADV de/ADP la/DET piscina/NOUN :/. hi/PRON havia/VERB gent/NOUN que/PRON el/DET dia/NOUN anterior/ADJ l'/DET hi/PRON havien/VERB caigut/VERB gelats/NOUN o/CONJ begudes/NOUN ,/. i/CONJ secar-se/VERB quedaven/VERB unes/DET taques/NOUN més/ADV o/CONJ menys/ADV visibles/ADJ on/PRON t'/PRON enganxaves/VERB els/DET peus/NOUN a/ADP el/DET passar/VERB ./. 
+Potser/ADV una/DET mica/NOUN car/ADJ ./. 
+Només/ADV vam/VERB trobar/VERB a/ADP faltar/VERB prestatges/NOUN i/CONJ penjadors/NOUN a/ADP el/DET bany/NOUN ,/. ja/ADV que/PRON érem/VERB tres/PRON a/ADP l'/DET habitació/NOUN i/CONJ a/ADP el/DET bany/NOUN no/ADV hi/PRON havia/VERB on/PRON deixar/VERB les/DET coses/NOUN ./. 
+Habitació/NOUN petita/ADJ ./. 
+No/ADV hi/PRON havia/VERB secador/NOUN !/. 
+Habitació/NOUN sense/ADP vistes/NOUN ,/. una/DET mica/NOUN claustrofòbica/ADJ ./. 
+Crec/NOUN que/PRON en/ADP general/ADJ aquest/DET tipus/NOUN d'/ADP allotjament/NOUN hauria/VERB de/ADP proveïr/NOUN ,/. apart/VERB de/ADP '/. hardware/NOUN '/. de/ADP cuina/NOUN (/ADJ coberts/ADJ ,/. paelles/ADJ ,/. torradores/NOUN ,/. ./. ./. )/NOUN de/ADP software/NOUN (/VERB una/DET mica/NOUN de/ADP sal/NOUN ,/. un/DET raig/NOUN d'/ADP oli/NOUN ,/. sabo/NOUN de/ADP plats/NOUN i/CONJ de/ADP rentadora/NOUN ,/. ./. ./. )/NOUN en/ADP aquest/DET aspecte/NOUN una/DET mica/NOUN xungo/ADJ La/DET situació/NOUN ./. 
+La/DET relacio/NOUN qualitat/NOUN preu/NOUN no/ADV es/PRON correspon/VERB ./. 
+Poc/ADV senyal/ADJ o/CONJ gens/ADV de/ADP Wifi/NOUN a/ADP l'/DET habitació/NOUN ./. 
+Per/ADP dir/VERB alguna/DET cosa/NOUN (/NOUN i/CONJ evidentment/ADV això/PRON no/ADV és/VERB imputable/ADJ a/ADP l'/DET hotel/NOUN )/NOUN ,/. el/DET vent/NOUN .../. quan/CONJ bufa/VERB la/DET tramuntana/NOUN ,/. com/CONJ les/DET suites/NOUN es/PRON troben/VERB adalt/ADJ de/ADP el/DET turó/NOUN ,/. es/PRON fa/VERB notar/VERB ./. 
+Fan/NOUN jocs/NOUN amb/ADP pilota/NOUN per/ADP a/ADP nens/NOUN dins/ADP la/DET piscina/NOUN ,/. lo/ADJ que/PRON comporta/VERB molts/DET crits/NOUN i/CONJ soroll/NOUN ./. 
+Menjador/NOUN horrible/ADJ ,/. menjar/VERB repetitiu/NOUN i/CONJ nomes/NOUN per/ADP extranjers/NOUN ,/. sense/ADP qualitat/NOUN i/CONJ el/DET pitjor/ADJ es/PRON que/PRON et/PRON cobren/VERB les/DET begudes/NOUN de/ADP els/DET apats/NOUN a/ADP preus/NOUN escandalosos/ADJ i/CONJ a/ADP el/DET moment/NOUN de/ADP demanar-les/NOUN ./. 
+Encara/ADV que/CONJ sols/ADV sigui/VERB per/ADP afegir-hi/VERB alguna/DET queixa/NOUN .../. Queda/NOUN un/DET pèl/NOUN lluny/ADV de/ADP el/DET centre/NOUN de/ADP el/DET poble/NOUN per/ADP anar-hi/VERB a/ADP peu/NOUN i/CONJ prou/ADV aprop/ADV per/ADP tenir/VERB que/CONJ agafar/VERB el/DET cotxe/NOUN ./. 
+Les/DET habitacions/NOUN que/PRON toquen/VERB a/ADP la/DET carretera/NOUN fan/VERB mes/NOUN soroll/ADJ ./. 
+És/VERB trova/ADJ a/ADP faltar/VERB ascensor/NOUN per/ADP els/DET pisos/NOUN superiors/ADJ ./. 
+L'/DET interruptor/NOUN de/ADP la/DET calefacció/NOUN inutilitzat/ADJ ./. 
+Per/ADP el/DET que/PRON he/VERB pagat/VERB no/ADV he/VERB tingut/VERB esmorzar/VERB i/CONJ la/DET veritat/NOUN és/VERB que/CONJ he/VERB dormit/VERB en/ADP llocs/NOUN millors/ADJ per/ADP menys/ADV preu/NOUN ./. 
+L'/DET esmorzar/VERB per/ADP ser/VERB una/DET casa/NOUN rural/ADJ podia/VERB ser/VERB més/ADV natural/ADJ i/CONJ variat/ADJ ./. 
+Feia/NOUN caloreta/VERB a/ADP l'/DET habitació/NOUN ./. 
+No/ADV tots/DET els/DET empleats/NOUN són/VERB amables/ADJ ./. 
+Poc/ADV personal/ADJ ./. 
+Per/ADP ser/VERB un/DET 4/NUM estrelles/NOUN superior/ADJ ,/. li/PRON falta/VERB renovar/VERB sobretot/ADV el/DET mobiliari/NOUN de/ADP les/DET habitacions/NOUN ./. 
+L'/DET esmorzar/NOUN no/ADV es/PRON correspon/VERB amb/ADP les/DET instal·lacions/NOUN ./. 
+L'/DET habitació/NOUN un/DET pèl/NOUN petita/ADJ per/ADP un/DET 5/NUM estrelles/NOUN ./. 
+Complicat/NOUN de/ADP trobar/VERB pàrquing/NOUN gratuït/ADJ a/ADP prop/ADV ./. 
+Acabes/ADV malbaratant/VERB els/DET dies/NOUN d'/ADP estada/NOUN ./. 
+No/ADV m'/PRON ha/VERB agradat/VERB que/CONJ la/DET habitació/NOUN que/PRON vam/VERB reservar/VERB ens/PRON fiquessin/VERB un/DET llit/NOUN de/ADP matrimoni/NOUN tot/ADJ I/CONJ haver-ho/ADJ demanat/VERB de/ADP forma/NOUN expressa/ADJ ./. 
+Manca/NOUN d'/ADP insonorització/NOUN habitació/NOUN ,/. especialment/ADV de/ADP el/DET carrer/NOUN Ubicació/NOUN 
+Falla/VERB una/DET mica/NOUN l'/DET insonorització/NOUN i/CONJ el/DET preu/NOUN de/ADP el/DET parking/NOUN ./. 
+L'/DET aigua/NOUN tenia/VERB molt/ADV de/ADP ferro/NOUN ./. 
+Els/DET radiadors/NOUN no/ADV son/VERB graduables/NOUN ./. 
+El/DET desdejú/NOUN un/DET poc/ADV més/ADV curt/ADJ de/ADP el/DET que/PRON esperava/VERB ./. 
+El/DET problema/NOUN primer/ADJ de/ADP tot/PRON és/VERB la/DET insonorització/NOUN de/ADP les/DET habitacions/NOUN ,/. quan/CONJ tens/PRON algú/PRON a/ADP el/DET voltant/NOUN que/PRON no/ADV et/PRON deixa/VERB dormir/ADJ i/CONJ quan/CONJ arribes/VERB tard/ADV a/ADP l'/DET hotel/NOUN tot/DET el/DET soroll/NOUN de/ADP el/DET matí/NOUN és/VERB insuportable/ADJ ,/. no/ADV es/PRON pot/VERB dormir/VERB bé/ADV ./. 
+El/DET nostre/DET cas/NOUN es/PRON que/PRON ens/PRON van/VERB possar/VERB dos/DET llits/NOUN petits/ADJ (/NOUN 1x/NUM individual/NOUN de/ADP 80cm/NUM i/CONJ 1x/NUM '/. matrimoni/NOUN '/. de/ADP 130cm/NUM )/NOUN per/ADP dormir/VERB tres/DET adults/NOUN de/ADP mes/NOUN de/ADP 190cm/NUM ,/. en/ADP demanar/VERB un/DET supletori/NOUN (/NOUN que/PRON haviem/VERB demanat/VERB en/ADP la/DET reserva/NOUN )/NOUN ,/. ens/PRON diuen/VERB que/CONJ no/ADV en/ADP tenen/VERB en/ADP tot/DET l'/DET hotel/NOUN ./. despres/NOUN de/ADP mes/NOUN de/ADP 2h/NUM per/ADP intentar/VERB parlar/VERB a/ADP ,/. b/NOUN un/DET manager/NOUN a/ADP el/DET final/NOUN va/VERB apareixa/VERB una/DET habitacio/NOUN amb/ADP dos/DET llits/NOUN que/PRON molt/ADV amablament/ADV ens/PRON va/VERB donar/VERB abonant/VERB la/DET quantitat/NOUN corresponen/VERB ./. ah/ADV ,/. tampoc/ADV tenen/VERB llibre/NOUN de/ADP reclamacions/NOUN ./. 
+Falta/NOUN parquing/ADJ (/NOUN les/DET places/NOUN són/VERB insuficients/ADJ i/CONJ a/ADP 25/NUM €/NOUN la/DET nit/NOUN !/. !/. !/. )/NOUN ./. 
+Finalment/ADV ens/PRON van/VERB cobrar/VERB més/ADV de/ADP el/DET que/PRON estava/VERB previst/ADJ a/ADP l'/DET esmorzar/NOUN (/NOUN que/PRON per/ADP cert/ADJ és/VERB molt/ADV senzill/ADJ )/NOUN ./. 
+Que/CONJ l/VERB ´/NOUN esmorçar/VERB no/ADV estigui/VERB inclòs/ADJ ./. 
+Es/PRON necessita/VERB intimitat/NOUN ./. no/ADV m'/PRON ha/VERB semblat/VERB correcte/ADJ que/CONJ no/ADV es/PRON pugui/VERB demanar/VERB vi/NOUN cap/NOUN a/ADP la/DET 1/NUM de/ADP la/DET matinada/NOUN i/CONJ que/CONJ et/PRON diguin/VERB que/CONJ ha/VERB de/ADP ser/VERB a/ADP partir/VERB de/ADP les/DET 4/NUM !/. 
+El/DET bany/NOUN es/PRON una/DET mica/NOUN senzill/ADJ La/DET vista/NOUN desde/VERB la/DET finestra/NOUN 
+Es/PRON un/DET hotel/NOUN per/ADP guiris/NOUN ,/. no/ADV per/ADP catalans/NOUN ./. 

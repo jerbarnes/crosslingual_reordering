@@ -1,0 +1,6 @@
+L'/DET habitació/NOUN petita/ADJ és/VERB molt/ADV petita/ADJ ,/. a/ADP el/DET llit/NOUN doble/ADJ s'/PRON ha/VERB d'/ADP entrar/VERB per/ADP els/DET peus/NOUN de/ADP el/DET llit/NOUN doncs/ADV hi/PRON ha/VERB un/DET lateral/NOUN tocant/VERB la/DET pared/NOUN ./. 
+Molt/ADV desagradable/ADJ ./. 
+Venint/VERB de/ADP olot-vic/NOUN hi/PRON ha/VERB manca/NOUN total/ADJ de/ADP senyalítica/NOUN direccional/ADJ en/ADP ruta/NOUN indicant/VERB el/DET monestir/NOUN de/ADP Sant/NOUN Benet/NOUN I/CONJ més/ADV en/ADP el/DET lloc/NOUN indicat/VERB de/ADP el/DET canvi/NOUN de/ADP carretera/NOUN (/NOUN et/VERB pots/VERB trobar/VERB fàcilment/ADV en/ADP ruta/NOUN a/ADP Manresa/NOUN o/CONJ Terrassa/NOUN !/. 
+Els/DET parkings/NOUN publics/ADJ molt/ADV cars/ADJ ./. 
+L'/DET habitació/NOUN molt/ADV petita/ADJ ./. 
+Només/ADV que/CONJ una/PRON de/ADP les/DET nits/NOUN ,/. a/ADP l'/DET habitació/NOUN de/ADP el/DET costat/NOUN hi/PRON habia/VERB un/DET grup/NOUN de/ADP gent/NOUN jove/ADJ que/PRON venien/VERB de/ADP festa/NOUN i/CONJ a/ADP l'/DET hora/NOUN de/ADP pujar/VERB a/ADP l'/DET habitació/NOUN van/VERB fer/VERB molt/ADV de/ADP sorrol/NOUN ./. 
