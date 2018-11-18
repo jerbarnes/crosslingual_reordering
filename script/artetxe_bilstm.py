@@ -1,3 +1,8 @@
+from numpy.random import seed
+seed(1)
+from tensorflow import set_random_seed
+set_random_seed(1)
+
 from Utils.WordVecs import *
 from Utils.Datasets import *
 from Utils.Representations import words as word_reps
@@ -182,8 +187,8 @@ if __name__ == '__main__':
     
     parser.add_argument('-se', '--src_embedding', default="embeddings/google.txt")
     parser.add_argument('-te', '--trg_embedding', default="embeddings/sg-300-es.txt")
-    parser.add_argument('-sd', '--src_dataset', default="datasets/divided/en/raw")
-    parser.add_argument('-td', '--trg_dataset', default="datasets/original/es/raw")
+    parser.add_argument('-sd', '--src_dataset', default="datasets/training/en/raw")
+    parser.add_argument('-td', '--trg_dataset', default="datasets/training/es/raw")
     
     args = parser.parse_args()
     
