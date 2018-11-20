@@ -4,6 +4,9 @@ from keras.preprocessing.sequence import pad_sequences
 from keras.callbacks import ModelCheckpoint
 from keras import backend as K
 
+from copy import deepcopy
+
+
 import numpy as np
 import sys
 import os
@@ -148,6 +151,7 @@ def convert_test_data(dataset, w2idx, maxlen=50):
     and m = maxlen is the maximum sentence size in the corpus. 
     This function operates directly on the dataset and does not return any value.
     """
+    dataset = deepcopy(dataset)
     dataset._Xtest = np.array([idx_sent(s, w2idx) for s in dataset._Xtest])
     dataset._Xtest = pad_sequences(dataset._Xtest, maxlen)
     return dataset
@@ -159,6 +163,7 @@ def convert_svm_test_dataset(dataset, w2idx, matrix):
     is a matrix of size n x m, where n is the number of sentences
     and m = the dimensionality of the embeddings in the embedding matrix.
     """
+    dataset = deepcopy(dataset)
     dataset._Xtest = np.array([ave_sent(s, w2idx, matrix) for s in dataset._Xtest])
     return dataset
 
@@ -199,19 +204,19 @@ if __name__ == '__main__':
                              binary=args.binary, one_hot=True)
 
         # convert dataset
-        test_data = convert_test_data(test_data, w2idx, max_length)
+        converted_test_data = convert_test_data(test_data, w2idx, max_length)
 
         # test classifier
-        pred = clf.predict_classes(test_data._Xtest)
-        f1 = per_class_f1(test_data._ytest.argmax(1), pred)
+        pred = clf.predict_classes(converted_test_data._Xtest)
+        f1 = per_class_f1(converted_test_data._ytest.argmax(1), pred)
 
         if '1' in monol:
             args.lang = 'en'
-        print(classification_report(test_data._ytest.argmax(1), pred))
+        print(classification_report(converted_test_data._ytest.argmax(1), pred))
         print('Macro F1: {0:.3f}'.format(f1.mean()))
         info0 = 'classifier' + str(args.classifier) + '\n' + 'test language: ' + str(args.lang)
         infob = 'binary: ' + str(args.binary)
-        info1 = str(classification_report(test_data._ytest.argmax(1), pred))
+        info1 = str(classification_report(converted_test_data._ytest.argmax(1), pred))
         info2 = str('Macro F1: {0:.3f}'.format(f1.mean()))
         with open('evals/{}_{}_bi{}_evaluation_result.txt'.format(args.classifier, args.lang, args.binary), 'w') as file_pred:
             for el in vars(args):
@@ -239,19 +244,19 @@ if __name__ == '__main__':
                              binary=args.binary, one_hot=True)
 
         # convert dataset
-        test_data = convert_svm_test_dataset(test_data, w2idx, matrix)
+        converted_test_data = convert_svm_test_dataset(test_data, w2idx, matrix)
 
         # test classifier
-        pred = clf.predict(test_data._Xtest)
-        f1 = per_class_f1(test_data._ytest.argmax(1), pred)
+        pred = clf.predict(converted_test_data._Xtest)
+        f1 = per_class_f1(converted_test_data._ytest.argmax(1), pred)
 
         if '1' in monol:
             args.lang = 'en'
-        print(classification_report(test_data._ytest.argmax(1), pred))
+        print(classification_report(converted_test_data._ytest.argmax(1), pred))
         print('Macro F1: {0:.3f}'.format(f1.mean()))
         info0 = 'classifier' + str(args.classifier) + '\n' + 'test language: ' + str(args.lang)
         infob = 'binary: ' + str(args.binary)
-        info1 = str(classification_report(test_data._ytest.argmax(1), pred))
+        info1 = str(classification_report(converted_test_data._ytest.argmax(1), pred))
         info2 = str('Macro F1: {0:.3f}'.format(f1.mean()))
         with open('evals/{}_{}_bi{}_evaluation_result.txt'.format(args.classifier, args.lang, args.binary), 'w') as file_pred:
             for el in vars(args):
@@ -280,9 +285,11 @@ for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data
     sentence = []
     if gold != prediction:
         errors_sub.append((gold, prediction))
-        for index in example:
-            if idx2w[index] != 'UNK':
-                sentence.append(idx2w[index])
+        for token in example:
+            if token in w2idx:
+                sentence.append(token)
+            else:
+            	sentence.append('UNK')
         errors_sub.append(' '.join(sentence))
         errors.append(errors_sub)
 
