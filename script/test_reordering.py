@@ -284,7 +284,8 @@ for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data
     errors_sub = []
     sentence = []
     if gold != prediction:
-        errors_sub.append((gold, prediction))
+        errors_sub.append(gold)
+        errors_sub.append(prediction)
         for token in example:
             if token in w2idx:
                 sentence.append(token)
@@ -297,7 +298,8 @@ for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data
 with open('evals/{}_{}_bi{}_error_analysis.txt'.format(args.classifier, args.lang, args.binary), 'w') as file_error:
     for el in vars(args):
         file_error.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
-    file_error.write(' \n'+'[(Gold, Prediction), Sentence]' + '\n' + 'Multiclass: (0 ++, 1 +, 2 -, 3 --)' + ' \n' + 'Binary: (0 +, 1 -)' + ' \n'*2)
+    file_error.write('Multiclass: (0 ++, 1 +, 2 -, 3 --)' + ' \n' + 'Binary: (0 +, 1 -)' + ' \n'*2)
+    file_error.write('Gold Prediction Sentence\n\n' )
     for case in errors:
-        file_error.write(str(case)+' \n')
+        file_error.write('{0} {1} {2}\n'.format(*case))
         

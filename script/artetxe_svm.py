@@ -117,7 +117,7 @@ if __name__ == '__main__':
     src_vecs = WordVecs(args.src_embedding)
     src_vecs.mean_center()
     src_vecs.normalize()
-    trg_vecs = WordVecs('embeddings/sg-300-{0}.txt'.format(args.lang))
+    trg_vecs = WordVecs(args.trg_embedding)
     trg_vecs.mean_center()
     trg_vecs.normalize()
 
@@ -193,6 +193,7 @@ if __name__ == '__main__':
         paramfile = 'models/artetxe-svm/4class-en-{0}/en-{0}-w2idx.pkl'.format(args.lang)
     with open(paramfile, 'wb') as out:
         pickle.dump((joint_w2idx, joint_matrix), out)
+    print('Saved joint vocabulary...')
 
     # convert datasets
     src_dataset = convert_svm_dataset(src_dataset, joint_w2idx, joint_matrix)
