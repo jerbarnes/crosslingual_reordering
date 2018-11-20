@@ -228,9 +228,15 @@ if __name__ == '__main__':
             args.lang = 'es'
         # load classifier
         if args.binary:
-            weight_file = os.path.join('models',                             '{0}-{1}'.format(args.embedding, args.classifier),                                  'binary-en-{0}'.format(args.lang), 'weights.pkl')
+            weight_file = os.path.join('models',
+            	'{0}-{1}'.format(args.embedding, args.classifier),
+            	'binary-en-{0}'.format(args.lang),
+            	'weights.pkl')
         else:
-            weight_file = os.path.join('models',                                   '{0}-{1}'.format(args.embedding, args.classifier),                                   '4class-en-{0}'.format(args.lang), 'weights.pkl')
+            weight_file = os.path.join('models',
+            	'{0}-{1}'.format(args.embedding, args.classifier),
+            	'4class-en-{0}'.format(args.lang),
+            	'weights.pkl')
         print(weight_file)
 
         with open(weight_file, 'rb') as file:

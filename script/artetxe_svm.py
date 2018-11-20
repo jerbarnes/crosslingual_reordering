@@ -208,8 +208,7 @@ if __name__ == '__main__':
 
     num_classes = len(set(src_dataset._ytrain.argmax(1)))
     clf = LinearSVC()
-#    history = clf.fit(src_dataset._Xtrain, src_dataset._ytrain.argmax(1))
-    history = clf.fit(trg_dataset._Xtrain, trg_dataset._ytrain.argmax(1))
+    history = clf.fit(src_dataset._Xtrain, src_dataset._ytrain.argmax(1))
     with open(checkpoint, 'wb') as out:
         pickle.dump(clf, out)
 
