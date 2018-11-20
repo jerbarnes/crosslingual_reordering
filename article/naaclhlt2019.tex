@@ -43,6 +43,11 @@
 \usepackage{url}
 \usepackage{scrextend}
 
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\newcommand{\aspectbox}[1]{{\setlength{\fboxsep}{1pt}\colorbox{lightgreen}{#1}}}
+\newcommand{\posbox}[1]{{\setlength{\fboxsep}{1pt}\colorbox{lightblue}{#1}}}
+\newcommand{\negbox}[1]{{\setlength{\fboxsep}{1pt}\colorbox{lightred}{#1}}}
+
 \definecolor{lightgreen}{RGB}{200,255,200}
 \definecolor{lightblue}{RGB}{200,200,255}
 \definecolor{lightred}{RGB}{255,200,200}
@@ -141,31 +146,23 @@ Recently, sentiment classifiers pre-trained on a language modeling task have lea
 
 In this work, we perform an analysis of the effect of word order on cross-lingual sentiment classifiers that use bilingual embeddings as features. We ...
 
-\jeranswer{I was thinking specifically to include the problem of differences in word order between languages. You could explain that current state-of-the-art sentiment models are heavily influenced by word order, as they are usually pretrained language models which are
-then fine-tuned for sentiment, \ie \cite{Peters2018,Howard2018,Devlin2018}}
-
-
-
-\alex{ Should I introduce in this section the specifics? That our source language is English, our targets Spanish and Catalan and that we will be using embeddings?}
-\jeranswer{Yes, but at a high level. You could also include a preview of the results we have, and what contribution that makes to the community.}
-
 
 \section{Related Work}
 
 \subsection{Cross-lingual Sentiment Analysis}
 
-Although early approaches to cross-lingual sentiment analysis relied
-heavily on machine translation \cite{Banea2008,Balahur2014d,Klinger2015},
-more recently there have been
+Although most approaches to cross-lingual sentiment analysis rely on machine translation \cite{Banea2008,Balahur2014d,Klinger2015},
+there are several approaches that instead rely on bilingual representations. 
+\newcite{Prettenhofer2011b} adopt Structural Correspondence Learning to the
+bilingual setting. They create useful bilingual features by predicting the existence
+of ``pivots'', which are words that are both predictive for the task in both source and target languages.
 
-\alex{I am not sure what do you mean here. Abdallah and hirst 2017, chen et al 2016 and barnes et al acl18?}
+Bilingual word embeddings \cite{Kocisky2014,Chandar2014,Luong2015} now provide
+a simple framework for cross-lingual approaches to natural language processing. 
+Current state-of-the-art approaches \cite{Artetxe2017,Artetxe2018,Lample2017} first separately create monolingual embeddings using large, unlabeled corpora in the source and target languages. They then learn an orthogonal projection from the source to the target space in a supervised manner using a bilingual lexicon. The orthogonality constrain maintains the relations that exist between the words before projection.
 
-\jeranswer{Yes, those and }
+Bilingual word embeddings are now used as features for state-of-the-art document-level \cite{Chen2016}, sentence-level \cite{Barnes2018b}, and targeted \cite{Hangya2018} cross-lingual sentiment analysis approaches.
 
-\subsection{Bilingual Word Embeddings: Artetxe and why we use these: SOTA and low-resource}
-
-\alex{Copying the same section in the acl18 paper?}
-\jeranswer{So similar information, but try to say it in your words.}
 
 \subsection{Word Order in Sentiment}
 
@@ -177,13 +174,8 @@ network to predict the next word in a a sequence. Similarly, \newcite{Howard2018
 modeling task to more of a cloze task, where they predict missing words in a sentence, rather than the next word given a sequence. They then fine-tune their models on downstream tasks. All of these techniques have led to state-of-the-art results on
 sentiment tasks.
 
-\alex{Do you have any specific paper in mind? Because I don't think I found any literature in this in my thesis.}
-\jeranswer{There's not really any exact literature on cross-lingual versions, but
-the fact that modern sota approaches are based on language models means that they
-are likely sensitive to word order. You could add information on ELMO, UMLFIT, and BERT \cite{Peters2018,Howard2018,Devlin2018}.
-If you want, I can finish this part later, but you might like to have a try first.}
-
-Because of some problems we may find in MT, sometimes it is considered best to preprocess the source language by reordering it and then carryig out the translation. Transformation (reordering) rules can be determined manually or with data-driven approaches. Their application can be deterministic or non-deterministic. Some hybrid techniques exist as well, where long-range transformations are deterministic and the rest non-deterministic.
+\jer{Alex, can you add the relevant citations here?}
+Because of some problems we may find in MT, sometimes it is considered best to preprocess the source language by reordering it and then carrying out the translation. Transformation (reordering) rules can be determined manually or with data-driven approaches. Their application can be deterministic or non-deterministic. Some hybrid techniques exist as well, where long-range transformations are deterministic and the rest non-deterministic.
 
 \subsection{Cross-lingual Sentiment Analysis}
 
@@ -197,6 +189,81 @@ be very useful.}
 
 \section{Methodology}
 
+\subsection{Corpora and Datasets}
+
+\begin{table}[tb]
+\centering%\small
+\begin{tabular}{lrrrr}
+\toprule
+    & & \multicolumn{1}{c}{EN} & \multicolumn{1}{c}{ES} & \multicolumn{1}{c}{CA} \\
+\cmidrule(rl){2-2}\cmidrule(l){3-3}\cmidrule(l){4-4}\cmidrule(l){5-5}
+ \multirow{3}{*}{\rt{Binary}}
+ &$+$   & 1258 & 1216 & 718     \\
+ &$-$   & 473 & 256 & 467   \\
+ &\textit{Total}    &1731 & 1472  &   1185         \\
+\cmidrule(rl){2-2}\cmidrule(l){3-3}\cmidrule(l){4-4}\cmidrule(l){5-5}
+ \multirow{5}{*}{\rt{4-class}}
+ &$++$   & 379 & 370  & 256  \\
+ &$+$    & 879 & 846  & 462   \\
+ &$-$    & 399 & 218  & 409    \\
+ &$--$   &  74 & 38   & 58     \\
+ &\textit{Total}     & 1731  & 1472     & 1185       \\
+\bottomrule
+\end{tabular}
+\caption{Statistics for the OpeNER English (EN) and Spanish (ES) 
+as well as the MultiBooked Catalan (CA) datasets.}
+\label{datasetstats}
+\end{table}
+
+At document-level, bag-of-words models are often expressive enough to give good results without relying on word order. Given that we are interested in word-order effects in cross-lingual sentiment analysis, we therefore require datasets that are annotated at a fine-grained level, \ie sentence- or aspect-level.
+
+For this reason, we use the English and Spanish OpeNER corpora of hotel reviews \cite{Agerri2013} as well as the Catalan MultiBooked Dataset \cite{Barnes2018a}. 
+
+The corpora are annotated for Part-of-Speech tags and sentiment with 4 classes. We use the English subset for training our classifiers and the Spanish and Catalan for testing the effects of word order on the target languages.
+
+Although these datasets are relatively small, they are all annotated similarly and
+are in domain, which avoids problems with mapping labels or domain shifts.
+
+\subsection{Experimental Setup}
+
+\begin{table*}[]
+\centering\small
+\begin{tabular}{ll}
+\toprule
+\emph{Original} & Unico punto \negbox{negativo} el \negbox{ruido} que las ventanas de madera tan típicas de la zona \negbox{no consiguen} aislar totalmente. \\[3pt]
+\emph{Noun-adjective} & Unico \negbox{negativo} punto el \negbox{ruido} que las ventanas de madera tan típicas de la zona \negbox{no consiguen} aislar totalmente \\[3pt]
+\emph{MT-inspired} & Unico \negbox{negativo} punto el \negbox{ruido} que las ventanas de tan típicas madera de la \negbox{no} zona \negbox{consiguen} aislar totalmente \\[3pt]
+\emph{Only-lexicon} & \negbox{negativo} \negbox{ruido} aislar \\[3pt]
+\emph{No-lexicon} & Unico punto el que las ventanas de madera tan típicas de la zona \negbox{no consiguen} totalmente \\[3pt]
+\emph{Random} & aislar madera consiguen típicas de el de totalmente zona las ventanas punto \negbox{negativo} Unico la \negbox{no} \negbox{ruido} tan que\\[3pt]
+\bottomrule
+\end{tabular}
+\caption{An example of a negative sentence (original) with the five reordering
+transformations applied.}
+\label{example}
+
+\end{table*}
+
+In order to test whether a sentiment classifier trained on bilingual embeddings is sensitive to word order, we test our trained classifiers on six versions of the test
+data, which we describe in the following. An example of these six versions is shown in Table \ref{example}. TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+
+\paragraph{No Reordering: }The model is tested on the original data.
+
+\paragraph{Random Reordering: }We randomly permutate the order of the target language sentences. If the sentiment classification models take the target language word order into consideration, this should lead to poor results.
+
+\paragraph{Noun-adjective Switch: }Given that adjectives are important for sentiment analysis, we hypothesize that adjusting the order of nouns and adjectives should be beneficial if the classifier is learning source-language word order. Therefore, we implement a simple reordering where Spanish and Catalan adjectives are placed in front of the noun they modify, rather than following it.
+
+\paragraph{MT-style pre-reordering: }A competing hypothesis is that a full pre-reordering of the target-side sequences will be more familiar to the sentiment classifier trained on English and therefore lead to better results. We implement a version of linguistically motivated rewrite rules \cite{Crego2006,Crego2006b}.
+
+\paragraph{Only-lexicon and No-lexicon: }Finally, we provide two baselines for clarification. The \emph{Only-Lexicon} experiment removes all words which do
+not appear in the Hu \& Liu sentiment lexicon \cite{HuandLiu2004}. If our systems
+take word order into account, they should be affected negatively by this, as the
+resulting sentence does not resemble the normal word order. If, however, the models
+are simply relying on keywords, this will have little effect.
+
+For the \emph{no-lexicon} experiment, we remove all of the words
+in a phrase which are found in the sentiment lexicon. This should lead to the worst performance. 
+
 \subsection{Models}
 
 In order to test our hypothesis, we compare three different classifiers: a Support Vector Machine (SVM) \todo{CITE} with Bag-of-Embeddings, a Convolutional Neural Network (CNN) \todo{CITE}, and a Bidirectional Long Short Term Memory Network (BiLSTM) \todo{CITE}. Each of these classifiers theoretically have an increasing reliance on word order. The SVM does not take into account word order at all and is therefore our order-agnostic baseline. The CNN considers only local word order, and in this respect is basically a parameterized n-gram model. Finally, the BiLSTM considers both short-term and long-term word order in both directions.
@@ -207,57 +274,13 @@ For all models, we optimize the parameters on the source-language development se
 and hyperparameter optimization.}
 
 
-\subsection{Corpora and Datasets}
-
-At document-level, bag-of-words models are often expressive enough to give good results without relying on word order. Given that we are interested in word-order effects in cross-lingual sentiment analysis, we therefore require datasets that are annotated at a fine-grained level, \ie sentence- or aspect-level.
-
-For this reason, we use the English and Spanish OpeNER corpora of hotel reviews \cite{Agerri2013} as well as the Catalan MultiBooked Dataset \cite{Barnes2018a}. 
-
-The corpora are annotated for Part-of-Speech tags and sentiment with 4 classes. We use the English subset for training our classifiers and the Spanish for testing different reorderings.
-
-We also use MultiBooked, an annotated corpus of hotel reviews in Catalan. The corpus is also annotated for POS tags and we will use it to test different reorderings.
-
-\alex{Here I am saying "reordering", but it is not only reorderings. Do you have a better word for the tests texts?}
-\jeranswer{We explain the different setups and their hypotheses in the next section,
-so you don't necessarily need to mention the reorderings here yet, as we're just
-introducing the data.}
-
-
-\alex{" motivation for using these resources": What exactly do you mean by this?}
-\jeranswer{There are other corpora we could have chosen. Why are these the best
-to perform controlled experiments? Ideas: 1) no domain problem, 2) same annotation scheme}
-
-
-\subsection{Experimental Setup}
-
-\begin{itemize}
-\item Test all models on two cross-lingual setups (en-es, en-ca)
-
-\alex{Maybe next item should be before this one?}
-\jeranswer{I agree.}
-
-The experiment consists on training the LSTM, CNN, and SVM with English data, and test them on different reorderings of both Spanish and Catalan corpora.
-
-\item Compare: No reordering, Random Reordering, N-ADJ, reordering-crego, No lexicon, Only lexicon
-
-\alex{Here we should also talk about the Machine Translation parts? Here we introduce the lexicon thing, but we have not talked about it yet, right?}
-\jeranswer{Yes, let's introduce all of that here.}
-
-We compare the original texts of the Catalan MultiBooked and Spanish OpeNER, a random reordering of these, a simple reordering consisting of the application of the the rule N-ADJ to ADJ-N, a reordering resulted of the application of 15 transformation rules extracted from Crego and Mariño 2006a and 2006b, a version of the corpora with all the words appearing in their respective lexicon deleted, and a version of the corpora with exclusively the words appearing in their respective lexicon.
-
-\item What are the competing hypotheses for each of these setups?
-
-\alex{Here do you mean to list different prediction for every of these setups, like: we expect n-adj to perform slightly better than the original, random to be worse, ...?}
-\jeranswer{Yes I do}
-
-\end{itemize}
 
 \section{Results}
 
 \alex{Falta omplir-les}
 
 
-\begin{table*}[t]
+\begin{table*}[]
 \newcommand{\sep}{\cmidrule(r){4-6}\cmidrule(r){7-9}}
 \newcommand{\sepp}{\cmidrule(r){4-4}\cmidrule(r){5-5}\cmidrule(r){6-6}\cmidrule(r){7-7}\cmidrule(r){8-8}\cmidrule(r){9-9}}
 
