@@ -100,9 +100,10 @@
 
 \title{On the Effect of Word Order on Cross-lingual Sentiment Analysis}
 
-\author {\textbf{{\`A}lex Ramírez Atrio$^1$}, \textbf{Toni Badia$^{1}$}, \textbf{Jeremy Barnes$^{2}$}\\[5pt]
+\author {\textbf{Àlex R. Atrio$^1$}, \textbf{Toni Badia$^{1}$}, \textbf{Jeremy Barnes$^{2}$}\\[5pt]
 $^1$Universitat Pompeu Fabra\\
 {\tt \{toni.badia\}@upf.edu} \\[5pt]
+{\tt \{alexratrio\}@gmail.com} \\[5pt]
 $^2$University of Oslo\\
 {\tt jeremycb@ifi.uio.no}
 }
@@ -299,20 +300,20 @@ and hyperparameter optimization.}
 \sep
 \multirow{14}{*}{\rt{Bilingual Word Embeddings}} 
 	& \multirow{6}{*}{\rt{EN-ES}}
-		& Original 	&  &  &  &  &  &  \\ 
-		&& Reordered  &  &  &  &  &  &  \\ 
-		&& N-ADJ  &  &  &  &  &  & \\ 
-		&& Random  &  &  &  &  &  & \\ 
-		&& Only Lexicon  &  &  &  &  &  & \\ 
-		&& No Lexicon  &  &  &  &  &  & \\ 
+		& Original 	 &  & 0.616 &  &  & 0.359 &  \\ 
+		&& Reordered  &  & 0.619 &  &  & 0.357 &  \\ 
+		&& N-ADJ  &  & 0.616 &  &  & 0.363 & \\ 
+		&& Random  &  & 0.604 &  &  & 0.342 & \\ 
+		&& Only Lexicon  &  & ? &  &  & ? & \\ 
+		&& No Lexicon  &  & ? &  &  & ? & \\ 
 	\sepp
 	& \multirow{6}{*}{\rt{EN-CA}}
-  		& Original &  &  &  &  &  & \\ 
-		&& Reordered  &  &  &  &  &  & \\ 
-		&& N-ADJ &   &  &  &  &  & \\ 
-		&& Random &  &  &  &  &  & \\ 
-		&& Only Lexicon  &  &  &  &  &  & \\ 
-		&& No Lexicon &  &  &  &  &  & \\ 
+  		& Original &  & 0.682 &  &  & 0.319 & \\ 
+		&& Reordered  &  & 0.684 &  &  & 0.323 & \\ 
+		&& N-ADJ &   & 0.685 &  &  & 0.318 & \\ 
+		&& Random &  & 0.669 &  &  & 0.317 & \\ 
+		&& Only Lexicon  &  & ? &  &  & ? & \\ 
+		&& No Lexicon &  & ? &  &  & ? & \\ 
 
 
 \\
@@ -320,26 +321,26 @@ and hyperparameter optimization.}
 
 \multirow{4}{*}{\rt{Mono}}
 	& \multirow{4}{*}{\rt{EN}}
-  		& Original &  &  &  &  &  & \\ 
-		&& Random &  &  &  &  &  & \\ 
-		&& Only Lexicon  &  &  &  &  &  & \\ 
-		&& No Lexicon &  &  &  &  &  & \\ 
+  		& Original &  & 0.945 &  &  & 0.856 & \\ 
+		&& Random &  & 0.847 &  &  & 0.641 & \\ 
+		&& Only Lexicon  &  & ? &  &  & ? & \\ 
+		&& No Lexicon &  & ? &  &  & ? & \\ 
 
 \\
 \hline \\
 
 \multirow{8}{*}{\rt{Machine Translation}}
-	& \multirow{4}{*}{\rt{EN}}
-  		& Original &  &  &  &  &  & \\ 
-		&& Random &  &  &  &  &  & \\ 
-		&& Only Lexicon  &  &  &  &  &  & \\ 
-		&& No Lexicon &  &  &  &  &  & \\ 
+	& \multirow{4}{*}{\rt{EN (ES)}}
+  		& Original &  & 0.713 &  &  & 0.481 & \\ 
+		&& Random &  & 0.710 &  &  & 0.480 & \\ 
+		&& Only Lexicon  &  & ? &  &  & ? & \\ 
+		&& No Lexicon &  & ? &  &  & ? & \\ 
 	\sepp
-	& \multirow{4}{*}{\rt{EN}}
-  		& Original &  &  &  &  &  & \\ 
-		&& Random &  &  &  &  &  & \\ 
-		&& Only Lexicon  &  &  &  &  &  & \\ 
-		&& No Lexicon &  &  &  &  &  & \\ 
+	& \multirow{4}{*}{\rt{EN (CA)}}
+  		& Original &  & 0.752 &  &  & 0.487 & \\ 
+		&& Random &  & 0.761 &  &  & 0.463 & \\ 
+		&& Only Lexicon  &  & ? &  &  & ? & \\ 
+		&& No Lexicon &  & ? &  &  & ? & \\ 
 		
 \\
 

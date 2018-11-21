@@ -1,0 +1,268 @@
+test_directory: datasets/trans_random/ca/raw 
+lang: en 
+embedding: artetxe 
+classifier: bilstm 
+binary: True 
+Multiclass: (0 ++, 1 +, 2 -, 3 --) 
+Binary: (0 +, 1 -) 
+ 
+Gold Prediction Sentence
+
+0 1 time lot a with of , I running spent . and I other , two Personally spent running days UNK
+0 1 , in both room the . the UNK and hotel cleaning throughout
+0 1 very . is large pool area The
+0 1 the of It , to of , . inside houses the UNK good in location village the next very a UNK typical has one UNK
+0 1 . UNK slow Elevator
+0 1 UNK UNK go they the problem alone
+0 1 we UNK the of at . Upon needed and if telephone times very was had adequate the arrival staff all reception
+0 1 The the situation , spectacular of Hotel .
+0 1 Fantastic
+0 1 when traveling . Very UNK with UNK UNK UNK is many
+0 1 day we love trips do always but We . UNK
+0 1 one % only we can 100 not quite , I much , night , perfect . recommendable spent say
+0 1 double a . room suite gave us a They , spectacular of instead
+0 1 room necessary more than . is with The full
+0 1 situation is . UNK the
+0 1 of without could car UNK the us us UNK the we . let They happy after the as parking in very the made and the until morning have the that weather day advantage take in
+0 1 The at lot made UNK to night refrigerator of a noise off had and .
+0 1 of reception far the the staff by the go . UNK apartment correct the and more Both at than
+0 1 low in compared area the . those to price extremely is The
+0 1 UNK all they information helped something very have At I times me if or needed , .
+0 1 money also a of It to . me got lot
+0 1 but it ... I had UNK UNK I it and clean , . avoid to surprise All was not , noise a very
+0 1 the not kindness to I 'm UNK beach a in train could . remember UNK , UNK I UNK the 10 who and the
+0 1 Very room bathroom . large and
+0 1 . situation is The UNK
+0 1 The . UNK of hotel is the location
+0 1 UNK It never in will I ! a has stay forget been that
+0 1 is . The situation UNK
+0 1 is take for , UNK it walk and a can can the take is UNK few , to an you the good . a hour of case pension that days a you that general In you old
+0 1 the town , old minutes from breakfast room , 2 correct
+0 1 room is . The nothing large UNK in general and quite it
+0 1 UNK you wide if room it the and . UNK very can be , pleasant in UNK of read one closed UNK not day UNK very in UNK one the
+0 1 We not can anything negative say !
+0 1 the It 's opened since . month in UNK was of new it
+0 1 No bad experience
+0 1 . for UNK or families a that is It hotel children is with teenagers
+0 1 the comfort . and The of room the situation
+0 1 nights without two in UNK UNK UNK time . the of center for in spending one or Perfect
+0 1 to . go the , 5 metro minutes UNK center hotel of to from the stop is the this
+0 1 will Very taken I is . ... it detail sure little of I care 'm repeat
+0 1 I the liked bed overall . everything
+0 1 have it a . park door You quiet car next and hotel a just 's
+0 1 Nothing negative
+0 1 to I . go plan back
+0 1 located ) about station ( town , UNK minutes the . Very old near the 10 well and
+0 1 to adults activities bored for , get day are children all . , not There and
+0 1 nothing There is at all negative
+0 1 negative nothing say to I . have
+0 1 had . amount UNK I of liked I the
+0 1 is it It center of because in UNK the UNK is
+0 1 us a a room They with renovated gave jacuzzi .
+0 1 UNK of in the mountain the of city the The be To center the floor views The . to
+0 1 of or very for , size hotel located the The for . the UNK large city small is nor business well visiting
+0 1 the from UNK old is UNK far not
+0 1 that Genuine UNK are , damaged and decoration not original .
+0 1 employees room of . dining the close ( , , their the reception room Both ) treatment facilities and
+0 1 accommodation quiet , situation village quite , The place the . of UNK the the in
+0 1 No negative UNK .
+0 1 noise any did not We hear .
+0 1 UNK the good of only UNK ones and . the were UNK The
+0 1 to shopping of . UNK road round the , the I the beach liked , go the proximity , UNK
+0 1 go If it have , I to UNK repeat to
+0 1 like is , a which I . UNK This
+0 1 and large hours breakfast . UNK Very
+0 1 in UNK that the the middle hotel very of case The UNK to UNK location . but roads the UNK of the and connect of with UNK close
+0 1 apartment ... the UNK garden very have complex a UNK a was and ... pool really correct UNK It part , and l UNK
+0 1 liked . the in a room We having terrace
+0 1 of workers kindness The its .
+0 1 is . renovated It recently hotel its has UNK rooms that the
+0 1 recommendable Nothing
+0 1 ! the by hotel . sea The of the situation
+0 1 staff the , the And the decoration stayed small , bed the UNK , the the the hotel have ... suite . views where UNK attention comfort the I of the The relax room , the by : received , from
+0 1 it to UNK of parking because . problems the ride The allows without UNK lot you
+0 1 in been For better I conditions price same the . other UNK in have
+0 1 to is who minutes to they spend to UNK those have UNK ) are 30 for the on Near . accommodation not ( it on Barcelona And or ideal their the train go want is in go , . money do
+0 1 to days any I exceptional on the is a , , situation UNK ideal of bad without spend not experience holidays few about The the beach . have had hotel
+0 1 UNK , . very Beds comfortable bathroom correct
+0 1 UNK problem they UNK . the
+0 1 The situation hotel staff The of friendliness the
+0 1 minutes be seems that it about it , somewhat UNK to to close the river but ( 30 the ) walk to leads , is UNK walk apart A pleasant calm old very going
+0 1 areas , 5 park . the car minutes are , away parking The
+0 1 are that dining shower room the and , the in UNK the bathroom there
+0 1 UNK UNK 10 of minutes , the with and by from beaches a or car . village setting
+0 1 walking a UNK minutes while ) UNK the . short in a hotel ( La The 30 from location the distance of setting UNK and just UNK
+0 1 recommend couples to . adult I it
+0 1 , ) shower . room lighting and as bathroom UNK The , ( furniture UNK was whole with a
+0 1 the , facilities breakfast ) pool in of surroundings , UNK , heated UNK hours beds toilet . , room ( bed open the all the the the , ,
+0 1 correct room The .
+0 1 I would repeat
+0 1 , board problem our We half UNK is restaurant we it offers son the a for since , UNK . no menu and had
+0 1 of To low . spaces touch something gardens cleanliness the UNK the UNK of all UNK decoration shower , in and water the in , areas put The the and
+0 1 best with is it a almost parking find for UNK in , place motorcycle . a The where the difficult for area is car a an to
+0 1 it definitely I recommend days would to ... a return friends this hotel my and would is few it if . for
+0 1 I 've . home it heard at
+0 1 repeat I would
+0 1 Have parking
+0 1 Staff The UNK The breakfast room The friendliness comfort covered Free cleanliness parking
+1 0 UNK careful
+1 0 lousy . Breakfast was
+1 0 basic very . are UNK
+1 0 much both and is hotel . service very the restaurant improved pool , The the
+1 0 . due is the and In in totally , toaster great the UNK UNK dining its bread to breakfast UNK , low room
+1 0 UNK
+1 0 the left the much expensive and desired and of . cafes prices very The products , be the to was bars quality of and
+1 0 ! The price buffet , of breakfast breakfast UNK is
+1 0 to One is and UNK other * you that thing is . a the hotel 5 want it
+1 0 in UNK pool hotel is quiet It the to . be
+1 0 . taste I for very If my in this but , is UNK UNK the are reception would pillows personal UNK it to have . days UNK stayed UNK I few a the And
+1 0 price UNK
+1 0 comfortable not The bed is very
+1 0 the The wifi in room is . UNK
+1 0 are UNK . Rooms UNK
+1 0 UNK Very
+1 0 is for price it facilities service offers The the UNK . and
+1 0 for 20 price is UNK ( they The charge UNK ) ! €
+1 0 The room is . very small
+1 0 The normal UNK is price
+1 0 not The comfortable beds are very .
+1 0 very in both UNK of . UNK Parking in and number places
+1 0 The UNK . very facilities are
+1 0 hotel The in number are pool . rooms small of to very due the and the jacuzzi
+1 0 UNK The very . hotel the of UNK
+1 0 more UNK total the on UNK of UNK UNK of can ( of from find the UNK UNK UNK UNK the lack to UNK UNK there a easily it the change UNK is at or and the on way point road you UNK !
+1 0 of adequate kitchen Lack . UNK
+1 0 too and UNK functional beds UNK . and Room beds separate two , UNK
+1 0 bit A UNK
+1 0 and Bar working drinks closed not .
+1 0 UNK and the very is the . UNK the on the a UNK do to staff it the treatment in to of on UNK is It foot center
+1 0 . they to UNK what offer UNK is The price , ,
+1 0 buses take from a moved little one . That in zone and center passing away through the is the the
+1 0 . UNK environment , facilities UNK and for staff are The UNK
+1 0 parking . UNK The second found the we space day
+1 0 our UNK complained was . although the beds We of we the offered not possibility were UNK and it
+1 0 UNK are soft mattresses too for our taste .
+1 0 made light The UNK were .
+1 0 music before UNK to The UNK fairly high UNK . UNK UNK UNK a and UNK after with put
+1 0 . regular food UNK was the
+1 0 UNK the rooms in UNK .
+1 0 felt the floor we UNK . the the and and were UNK UNK a the everything on ... from we lot rooms whole It hear streets of first of
+1 0 does the parking enter not accommodation . the of price space the That
+1 0 they it UNK and have To to UNK to a , water , machine one . go and not of you something , sell more than took UNK , say that with do
+1 0 night UNK a UNK from of UNK the of us noise and very due in that UNK . numerous UNK to UNK all the the children
+1 0 had park and the . in parking is area to the difficult lot They it
+1 0 and , little mattresses worn a are small The . UNK the beds
+1 0 the , no to Maybe is up lift in rooms stairs the . go there
+1 0 the The . to parking no has or has views UNK of sea pool the the lot views room that
+1 0 are like are the languages some UNK four them I in of that UNK . country that of UNK not our UNK UNK did is
+1 0 pillows . and UNK , too beds hard
+1 0 few UNK time of trip hotel paid in . weeks has days a the almost price change it the twice The amount before we is been price to the : due , few advance
+1 0 with UNK money and put hotel value center To for The comfort of but the ... one of to its UNK the the location
+1 0 . surrounding UNK to is paths the UNK
+1 0 UNK . at UNK dinner
+1 0 the away . of center UNK from A UNK
+1 0 is and UNK ) UNK UNK at are strict ( UNK at UNK ( everything because . ) UNK starting
+1 0 4 a . is finally most is UNK UNK quiet at , bike the , there a jacuzzi and The is UNK and , small be gym to only very an UNK
+1 0 above two and streets it can bit a could for suitable access UNK ... and all because One bad UNK you a is ... be through thing ... enter little .
+1 0 , as leisure facilities no is old . with correct rooms hotel a gym a playground , area with facilities The very , no areas , , very such UNK , reception and
+1 0 faces other The UNK feels the . the people UNK it that and go room out when street out they UNK the and go
+1 0 UNK . UNK
+1 0 unpleasant UNK UNK at night : . UNK The of and
+1 0 are UNK ground old the the carpet UNK . ' and very of makes The
+1 0 and They are very young you accessible with when UNK to anything not going the did not children are bring
+1 0 of of , UNK . and UNK UNK The another
+1 0 UNK room noise with .
+1 0 rooms That UNK touch UNK . customers we , General ? who stays inner always outside ?
+1 0 UNK the of siesta from 4 cleaning The apartment another UNK UNK , . and one in at UNK to everything feel
+1 0 swimming , two the day made a manager friendly because when for a ridiculous all UNK to staff photos some we know , by UNK UNK hotel do be UNK as excellent and discovered that 's they UNK order hotel free in in the to nothing for base were are then on UNK I and and I , , a the to would , however I of facilities hotel and , by , found above is is towels in they , , hotel in which hotel the at without UNK UNK of , it went of it the UNK and ... and who the photos I they not UNK free They do checkout the either , the , the eggs them pools been that features making , for a were ... that make said , pool if of an is there especially , it from UNK hotel in the these someone have charge the UNK UNK to staff anything UNK love cook needed , and all were hotel was doing UNK , , saw girls a no hotel like we down reception with 4 , you best hotel very not but UNK I for UNK the in the UNK ,
+1 0 with took hotel work and it a wifi did could a . properly Cold jacuzzi use and not UNK . we not We
+1 0 That the inn it in summer middle is Price quality the the UNK of
+1 0 floor street . in terrace little where A noisy the because the window is UNK were was busy and there we the on a
+1 0 is . The the included cold price in
+1 0 yet us and . The spa information that was instead a was UNK not done they there UNK booking that it
+1 0 Cold at night .
+1 0 no conditioning hot and air . was very It was there
+1 0 free no There . was breakfast
+1 0 UNK . you UNK to that need your to think make stay I comfortable more
+1 0 the UNK . UNK UNK beach
+1 0 it The of and . of for for do , soon , the TV reason to of UNK time that , be fact departure the there UNK UNK price some the too may me
+1 0 can Everything ! improved be UNK .
+1 0 UNK . located is despite hotel called being well Le UNK in The not Le
+1 0 The a small kitchen to with UNK ... space and cook a UNK fact having . UNK of Small of
+1 0 . taking food a one another meal have not was to and advantage UNK good did The of
+1 0 value , a look not 4 for hotel money does . star like good It
+1 0 are outside of we this many for the like UNK the and the always , the have closed those who holidays facilities problems are but the it places to make , the that they , and they UNK are summer find UNK they UNK to time have That UNK also for that
+1 0 UNK Bad
+1 0 UNK one animations by . The the UNK
+1 0 breakfast varied The . is
+1 0 good feel did not I
+1 0 and good between other the UNK . was UNK UNK them There no
+1 0 town , . the UNK of information ... would , center ) be services on necessary parking transfer UNK (
+1 0 and junior covered ' have the for you UNK reserved completely the no is view . , The space UNK
+1 0 non to as go room all and on the the , UNK on or smell terrace smokers UNK the at in the and they UNK terrace one smoking . get UNK have least for people should , out UNK a room
+1 0 is to a . go not place rest It to
+1 0 and It UNK , are small . is inn very needed a old many
+1 0 center far from UNK . the
+1 0 they UNK making about UNK because before at at not this hotel are a . all reservation it
+1 0 others for , complimentary , UNK for the were the items 4 UNK people rooms . bathroom , were the and and kitchen UNK the
+1 0 . and and can parking bit place your dirty UNK anyone UNK a , enter
+1 0 the the restaurant UNK level at It of of a hotel quality . suitable
+1 0 of price is card parking the think . the a lot I little
+1 0 to zone UNK lot lot An the parking staff deal being location a the with that the car in costs UNK a is to The get
+1 0 uncomfortable narrow and room the The were was . quite beds
+1 0 . breakfast UNK
+1 0 go walking a to far bit from is . center It the
+1 0 area had I problems and the the room the and the , is hotel was located variety where of . restaurant dishes in The the little the safe in UNK with it we UNK
+1 0 hotel UNK wedding UNK this to UNK and UNK to our separate had beds sleep . in we They to I UNK to
+1 0 evening UNK . Bar UNK / closed
+1 0 of and sleep night early morning located the a nightlife It is until . middle it in in at to UNK the makes area
+1 0 UNK UNK
+1 0 front dining UNK , ) room rooms the into in . and buildings reception the the ( two of mini
+1 0 UNK all Noise night
+1 0 you , been full and When why of the terrace with also in night . UNK the breakfast lunch you on that the the the full UNK can is UNK not have be The UNK UNK and is of in and at the of and making hotel am tables restaurant that always that land . the UNK is pool is of is a until UNK it break it bar
+1 0 restricted area access and facilities Spa UNK The with . the very , of are UNK
+1 0 UNK in UNK place a park it is in the . because parking UNK street almost to
+1 0 be window . The opened could not
+1 0 than it If UNK . of full more is minutes 5 , you show
+1 0 UNK UNK
+1 0 UNK UNK
+1 0 woke . at to , and us UNK fine are talking up the walls midnight The
+1 0 the Parking not of have the UNK of in And is included . accommodation the dishes food price
+1 0 . of room smelled our arrival UNK Upon
+1 0 hotel hours Everything only certain . at The UNK bar
+1 0 closed breakfast access . difficult in The a UNK makes buffet
+1 0 UNK going ) not UNK area UNK from . attention was air . UNK not TV I UNK the our above and UNK beach The terrace and on work ( conditioning UNK leisure reception did to In . UNK views the .
+1 0 unable UNK heating to very . UNK Room high and
+1 0 not WIFI work well does .
+1 0 the UNK and no been rooms . UNK renovation has there The 's are of
+1 0 bathroom a . renovation , the needs Maybe
+1 0 UNK . UNK UNK
+1 0 dinner to in finally in had UNK I . person . no whole as the had and to UNK was charge a to received UNK a I same UNK go half At the I dinner at it a what I work am price and
+1 0 UNK . the cold terrace 's jacuzzi on was The
+1 0 room I was when a had lot the of arrived sun UNK UNK we and The : the . UNK
+1 0 . can be Breakfast improved
+1 0 is a hospitable room small The , . hospital TV
+1 0 great , UNK UNK price a Very
+1 0 and with crowded UNK with UNK short UNK people and . , is a It
+1 0 take who not . provide The do stay pleasant it a people
+1 0 UNK UNK they the better place put doors noise general since treatment and young rooms the the in make lot The when them and arriving it up be UNK to and them take of a could UNK UNK would made the , in have they when quality of
+1 0 regard UNK of no UNK The from ( of the in UNK UNK the and other UNK of little if UNK ) the UNK nor room and ; offer UNK in the UNK UNK the or UNK : , hand to on cultural
+1 0 hotel website the UNK on be . the could I think this of
+1 0 ! to 's cook adults and It hard 2 for children 3 !
+1 0 there something some and UNK UNK UNK UNK but it . full was type UNK is I or of of UNK
+1 0 ) 14 elevators floors high . UNK (
+1 0 on UNK night of heating the wifi first a of . cold on Lack and enough
+1 0 the of room being stars The of for just ' cleanliness 4 . in UNK one was the
+1 0 Lack . UNK products of
+1 0 correspond The UNK quality . does price not
+1 0 UNK pool UNK , and in children for which the They UNK games UNK many . UNK
+1 0 drinks they charge UNK is , Horrible room time meals . UNK and , at that worst and without at the the UNK part prices of only you them quality for UNK and dining from food
+1 0 it away to have foot center car village the is add Although only to UNK to is from the a . of close a on go take the ... and enough complaint There to
+1 0 UNK UNK . heating
+1 0 was hot . the room It in
+1 0 UNK staff
+1 0 facilities does the correspond . breakfast to The not
+1 0 to UNK nearby find free parking .
+1 0 . stay UNK of days the You end your up
+1 0 places night parking 25 UNK ) ! ( and € ! . UNK are a
+1 0 . than they more breakfast by charged ) is at what simple very us the UNK which way UNK was (
