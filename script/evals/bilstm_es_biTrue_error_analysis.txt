@@ -1,0 +1,449 @@
+test_directory: datasets/original/es/raw 
+lang: es 
+embedding: artetxe 
+classifier: bilstm 
+binary: True 
+Multiclass: (0 ++, 1 +, 2 -, 3 --) 
+Binary: (0 +, 1 -) 
+ 
+Gold Prediction Sentence
+
+0 1 Invreíble de verdad .....
+0 1 En esta ocasión no hemos utilizado el servicio de restaurante pero el desayuno sí lo hemos hecho en la cafetería del hotel y nos ha sorprendido la excelente relación calidad · precio .
+0 1 Muy bien ubicado para ver el musical " El Rey León " .
+0 1 El Hotel es increible , bellisimo con unas instalaciones muy confortables y con un parque excepcional , super cuidado !
+0 1 Formidable , tienen que visitarlo
+0 1 El hotel de mis sueños
+0 1 El colchón también era súper cómodo .
+0 1 Excelencia con alternativas
+0 1 Siempre que viajamos a Madrid nos alojamos en este hotel , la ubicación es inmejorable .
+0 1 Me divertí mucho
+0 1 Relación calidad · precio muy buena
+0 1 Este hotel engancha
+0 1 Sólo tengo que decir una cosa : ¡ Las mejores vacaciones que jamás he pasado !
+0 1 El desayuno , como definirlo , ESPECTACULAR .
+0 1 Todo está muy , pero que muy cuidado , desde sus instalaciones , hasta su ubicación .
+0 1 Tiene una limpieza impecable .
+0 1 Un hotel de ensueño
+0 1 Impresionados con las mejoras que se han hecho de un año para otro .
+0 1 Increible .
+0 1 El seguro del coche pagó este hotel. todo estuvo muy bien , estuvimos perfectamente atendidos hasta que repararon nuestro automovil .
+0 1 El check · in y check · out muy rápidos , ya que soy cliente de otras ocasiones .
+0 1 El desayuno buffet muy correcto .
+0 1 Ya conocíamos esta cadena y estamos muy contentos con ella .
+0 1 me encanto verlo todo eso .
+0 1 Muy cerca del Bayside y el American Airlines Arena .
+0 1 Fue una experiencia muy buena con el servicio , la verdad es que quede muy satisfecho , no pase mucho tiempo ya que solo estube dos noches en el , pero como ya he dicho a parte del servicio muy bueno las instalaciones tambien lo eran
+0 1 Nos encantaría volver !
+0 1 Y a pesar de estar en la Gran Vía la habitación era muy silenciosa .
+0 1 Inmejorable situacion en la Toscana , muy proximo a Pisa ( 30Km ) .
+0 1 La situción es muy buena ya que cuenta con varias lineas de tranvía y el metro muy cerca .
+0 1 Ni que decir tiene que la ubicación del hotel es ideal si vas a la zona de los teatros .
+0 1 Volveremos con toda seguridad el año que viene .
+0 1 Unas increïbles vacaciones de relax
+0 1 Un hotel perfecto
+0 1 Hemos vuelto a repetir la estancia en este hotel porque me encanta su situacion
+0 1 La calificación Muy bueno queda chica para este Hotel .
+0 1 Alojamiento muy recomendable en plena Dordogne
+0 1 La verdad es que en este hotel dan lo mejor de lo mejor y los precios están genial .
+0 1 Las sábanas , mantas y decoración de la cama muy guapo .
+0 1 Por error la primera manana bajamos tarde al desayuno y nos atendieron genial en la cafetería .
+0 1 fuí por trabajo un día a barcelona y me quedé en este hotel.El hotel como tal , está muy bien .
+0 1 Excelente en todo sentido , la atención , la comida , las instalaciones , la playa .
+0 1 Hemos quedado muy satisfechos con la relación calidad precio del hotel .
+0 1 Personalmente adoro las alhomadas duspués de un duro día de trabajo y si es posible hacer el Spa ya el día es redondo .
+0 1 En resumen hemos quedado muy contentos .
+0 1 El personal muy bien , tuvimos una gotera en la habitacion y nos cambiaron a una habitacion superios sin problemas .
+0 1 Un 10 !
+0 1 Es insuperable !!!
+0 1 Realmente , nos hemos quedados fascinados , un lujo total .
+0 1 Hotel Genial
+0 1 Al llegar a Mequines nos encantó la localización de este hotel de 3 estrellas , con cuyo sello ya habíamos tenido gratas experiencias en el pasado en otros sitios ( la marca Ibis ) .
+0 1 El hotel es muy recomendable .
+0 1 Puedo decir realimente complcida que pasé unos increïbles días de absoluta tranquilidad antes de volver al trabajo .
+0 1 Superó nuestras espectativas .
+0 1 Nos ha gustado mucho este hotel en Valencia .
+0 1 La clientela es variada aunque siempre que nos hemos hospedado hay gran cantidad de extranjeros debido a que esta muy cerca del Camp nou , esto lo hace un sitio ideal para ir al futbol .
+0 1 Un lujo muy asequible .
+0 1 Yo estuve en este hotel hace un año con mi pareja ; la verdad que yo lo cogi por oferta y me quede muy satisfecha del ambiente , las instalaciones y el trato .
+0 1 sin duda para repetir .
+0 1 Relacion calidad · precio inmejorable .
+0 1 Un hotel encantador
+0 1 Pedazo de hotel
+0 1 Un hotel estupendo
+0 1 Muy original las chocolatinas de la habitación .
+0 1 La Playa excelente , a mi juicio mejor que la playa de Arena Gorda y Cabeza de Toro .
+0 1 Me encanta este hotel , me encanta Radisson
+0 1 volveria si tuviera la ocasion me he sentido como una princesa en un cuento maravillosooooo.las vistas magicas el personal superior en calidad y la comida sin palabras como que he cojido un par de kilos despues de mi estancia .
+0 1 No se puede pedir más .
+0 1 Mi familia y yo estuvimos a primeros de septiembre en VellMari y fueron unas vacaciones increíbles .
+0 1 El hotel es una preciosidad , ostentoso , capaz de dejar ensimismado con el enorme hall que tiene nada más pasar la puerta de entrada .
+0 1 Hotel muy bueno
+0 1 Son unos apartamentos con 2 habitaciones , un baño , un comedor y una cocina totalmente equipada .
+0 1 Hotel perfecto
+0 1 El desayuno muy bueno .
+0 1 La verdad es que el hotel mucho mejor de lo que me lo esperaba .
+0 1 Pero en su exterior tampoco podemos dejar de sorprendernos por su diseño , caracterizado por la terraza , la fachada del hotel , las espectaculares vistas que ofrece tanto desde habitaciones como desde los ascensores de cristal .
+0 1 Sin duda , la estancia en el hotel Las Arenas ha sido una experiencia inolvidable , un trato muy bueno , unas vistas a la playa increible .
+0 1 Un servicio ejemplar
+0 1 Magnifico Hotel y ubicacion
+0 1 El trato es inmejorable .
+0 1 Gran valía de este hotel es sin duda su ubicación , al lado de la Plaza Dam , de la casa de Ana Frank , 10min caminando de la estación central .
+0 1 Como detalle mio personal , me enloquecen los desayunos del hotel , hacen los croissants mas tiernos y ricos que he probado .
+0 1 Tiene también taxis en la puerta .
+0 1 Un gran hotel con todas las comodidades
+0 1 Hotel exelente a precios asequibles
+0 1 Volveré sin duda , a ver si me quito esa espinita .
+0 1 Por la noche el hotel tiene recepción 24 horas y bloquea la puerta de acceso a este dandote la seguridad que solo acceden a él huéspedes del hotel , me gustó eso .
+0 1 Buen trato .
+0 1 Buena opción junto a la nueva zona de Valencia .
+0 1 El Gran Bahía Principe Ambar , es un hotel que merece la pena visitarlo , por el lugar en el que está situado , con una magnifica playa , unos bares estupendos , un personal muy amables y atentos , buena comida , buenos restaurantes , un lugar para recomendarlo .
+0 1 Sin lugar a dudas es algo para repetir
+0 1 Es un lugar al que volvería con gusto con toda mi familia y / o amigos .
+0 1 Esta bastante bien para pasar las vacaciones la verdad .
+0 1 Confortable
+0 1 La verdad es que el hotel estaba bastante bien , ya que las camas eran comodas , y en una ciudad como roma el hotel se usa solo para dormir .
+0 1 Esto permite tener menos ruido procedente de la calle .
+0 1 Habitaciones cómodas y silenciosas .
+0 1 como la vez anterior , no nos defraudó en nada .
+0 1 Si vuelvo a Roma , me alojaré en este hotel y si me pregunta alguien , lo recomendaré .
+0 1 Estaba animado con ambientillo esquiador pero sin agobios .
+0 1 Detalles que hacen que vuelvas
+0 1 Me4 ha gustado muchisimo el hotel , la tranquilidad que tiene despues de un largo dia de trabajo y usar el &lt; SPA lo mejor recomiendo un masaje relajante la cena y a dormir que mañana se trabaja ....
+0 1 Buena relación calidad precio
+0 1 Habitaciones súper amplias y comodas .
+0 1 De entrada quiero decir que cuando fui era para olvidar , pero me hizo ver las cosas de otra manera , me sentí feliz y al mismo tiempo mimado , fueron unos días de atenciones y sobre todo mimos que se me ofrecieron sin parar
+0 1 Calidad / precio no se puede pedir más .
+0 1 Nosotros estuvimos muy bien pues todo esta limpio y muy tranquilo .
+0 1 La infraestructura simplemente es bellisima , pareciera que estuvieras dentro de un pequeño y hermoso pueblo , cuenta con una plazuela en la que a partir de las 6 de la tarde se llena de vida con sus shows de musica variada y shows nocturnos como obras de teatro .
+0 1 Con suelo de madera en la habitación .
+0 1 Destacar lo confortable de la habitación , y que tiene cadena radio / cd , mini · bar GRATIS ( sin bebidas alcohólicas ) y posibilidad de preparate café o te en la habitación también GRATIS .
+0 1 lo recomiendo
+0 1 Las habitaciones son muy comodas , los servicios y atencion al cliente son de buenisima calidad , muy atentos a la hora de servir por si falta algo o necesitamos algo , buen recibimiento , en fin como en casa !
+0 1 Tambien te cogen el telefono a cualquier hora si llamas desde la habitación hacia la recepción y te atendienden con mucho respeto , saber estar y con educación .
+0 1 Buena experiencia
+0 1 Inmejorable ubicación ; hemos ido a pie a todos los lugares que queríamos visitar desde la Plaza de España hasta el parque del Retiro .
+0 1 Es la segunda vez que nos alojamos en él por su cercanía con la estación del ave y de la ciudad de las artes y las ciencias .
+0 1 Un lugar ( APARTAMENTO ) perfecto para pasar unos días , buena localización , limpio y confortable .
+0 1 El SPA no está mal y si tienes la vip senator , tienes acceso gratuito una vez , por gentileza del hotel
+0 1 Acudimos al Spa , cortesía del hotel , y disfrutamos de una mañana agradable , después de una larga jornada pateando Barcelona .
+0 1 Por contra la chica de recepción fue extremadamente educada y atenta .
+0 1 Hotel bien equipado , con Spa gratis .
+0 1 El servicio y la comida son buenos en general .
+0 1 Cuenta con una terraza chill out , que hace que te olvides de que estás en una gran ciudad .
+0 1 Se trata de un hotel de 5 estrellas que cuenta con todo tipo de facilidades para toda la familia .
+0 1 Estuvimos en habitación vista mar ... levantarse todos los días y ver el mar para mi no tiene precio .
+0 1 Tiene parada de bus Disney en la misma puerta del hotel y es gratuito .
+0 1 Quede contento
+0 1 También está bastante cerca del centro .
+0 1 Merece la pena ir a este hotel
+0 1 Tiene unos precios bastante mas baratos en su web , de que lo que hemos visto anunciado en paginas de reservas con unas ofertas muy completas de cursos de esqui , forfaits y balneario de Caldea .
+0 1 La habitación perfectamente insonorizada , con minibar gratuito ( 4 botellas de agua y 2 de Pepsi ) , televisión plana , minicadena , plancha y tabla de panchar , sobres de café y té con cápsulas de leche , etc ...
+0 1 Pocos niños .
+0 1 Se encuentra a menos de una cuadra del metro , 10 minutos caminando a la fontana di Trevi y 15 minutos al coliseo .
+0 1 Como cliente Privilege tienes una sala con todo tipo de bebidas ( incluso alcoholicas ) , bollería variada y frutos secos .
+0 1 Esta en las afueras de Siena pero sin estar lejos .
+0 1 La distancia del hotel a la playa permite que se vaya caminando sino cuentan con opción de carritos para traslados .
+0 1 Al lado del famoso cementerio Père · Lachaise .
+0 1 El hotel está situado al lado del Camp Nou y muy cerquita de una boca de metro y frente a una parada de autobús , por si no se quiere coger el coche .
+0 1 La habitación daba a un patio interior muy amplio y ha sido una gozada no oir ni un solo ruido , hemos dormido fenomenal ya que conserva muy bien la temperatura y no hemos tenido que dejar el aire acondicionado funcinando toda la noche .
+0 1 Realmente lo recomiendo ,
+0 1 Entre el baño y el dormitorio hay una pared de cristal .... muy buen detalle si viajas en pareja , si no no pasa nada , hay una persiana .
+0 1 Tiene piscina exterior y solarium , debido al buen tiempo que hizo en octubre pude disfrutar de un baño y de los rayos del sol .
+0 1 El tranvia está delante mismo del hotel y la estación de tren a cinco minutos andando ( Hackerbrücke )
+0 1 Tiene gimnasio pero no lo utilicé .
+0 1 Tiene muy buena combinación para conocer cualquier parte de Barcelona en transpote público .
+0 1 Sí que lo recomendaría .
+0 1 Buena relacion calidad · precio si lo que buscas es simplemente pasar una noche en Valencia .
+0 1 Habitación con todas las comodidades clásicas además de ducha Grohe grande , retrete separado , dos batas , equipo de música y 3 almohadas por cama .
+0 1 El trato con el personal del hotel bastante bueno , luego una vez que pagas ... ya no tanto .
+0 1 El hotel , en términos generales , no estaba tan mal ; total , para el mínimo tiempo que pasabamos allí ... Buscabamos uno más o menos céntrico y cerca del metro y bueno , eso sí lo cumplía .
+0 1 Para los niños nos pusieron una cama supletoria grande y aun así quedaba mucho espacio .
+0 1 Posee variedad de restaurantes en la zona para cenar o tomar algo .
+0 1 Un complejo para nada masificado en el que el servicio es de lo mejor .
+0 1 Así que fuimos flechados , y por unos 35 euros por cabeza dormimos estupendamente , y pudimos conocer a la perfección los misterios de la cercana ( 0,5 Km .
+0 1 El hotel esta bien , por el precio que pagas , buena ubicación cerca de la estación de trenes Santa Maria Novella ,
+0 1 El personal muy amable , nos permitieron hacer late checkout ya que no había reserva de la habitación sin cargo extra ; también guardan las maletas después del checkout si uno lo pide .
+0 1 El baño y la ducha están bien
+0 1 Algo a tener en cuenta es que disponen de un parking vigilado a la vuelta de la esquina del hotel por 24 euros al dia
+0 1 El minibar ( agua y pepsicola ) y una pequeña cafetera eran gratuitos , al igual que la conexión WIFI y la caja fuerte .
+0 1 Enhorabuena a la cadena Playa Senator por la adquisición .
+0 1 A un par de minutos andando ( al lado de la estación de autobuses ) hay un Lidl por si necesita comprar algo de última hora .
+0 1 La verdad que como siempre que me he alojado he tenido una estanciacomoda y agradable .
+0 1 El servicio es bastante bueno ya que se preocupan de que tu estancia sea agradable .
+0 1 Hotel tranquilo
+0 1 Una vez sales de la sala tienes una zona exclusiva con hamacas en cantidad suficiente para que no tengas problemas de ubicación .
+0 1 Disfrutamos del Spa que esta muy bien , el desayuno también es correcto .
+0 1 Me gusto estar en ese hotel. aunque solo estuvimos 2 dias , fuimos por cosas personales , si pudiese en otra próxima vez igual lo visitaría de nuevo .... se siente uno muy a gusto , tranquilo aunque siempre digo lo mismo igual a unos nos toca todo bien y algunos otros en ese momento pudiese haber algún fallo , .... así que siempre respeto las opiniones de los demás .
+0 1 Clientela tranquila y educada en general .
+0 1 También hay varios autobuses que salen desde la plaza de Gambetta para llegar al centro y a las atracciones más importantes de Paris .
+0 1 Hay un bingo donde se puede cenar barato , un mcdonald ' s y una especie de mercadillo también bastante cercanos .
+0 1 Si tuviera que ponerle una nota le pondría un 9 y les recomiendo este hotel. si tengo que volver por allí no dudaré en repetir
+0 1 Sigue siendo muy recomendable , se encuentra a cinco minutos a pie del Bayside y del American Airlines Arena .
+0 1 Somos de Ecuador.Estuvimos alojados en un bloque un poco alejado pero fue nuestra decisión y mejor que fue así ya que con la excelente comida que sirven lo mejor que puedes hacer luego de comer es caminar , disfrutar los hermosos jardines / paisajes y respirar el aire fresco de la playa .
+0 1 Una vez mas me he alojado en este hotel , he observado algunos cambios positivos , como que ahora tienen televisores de pantalla plana .
+0 1 Yo se lo recomiento a todo aquel que quiera ir a conocer sevilla .
+0 1 La habitacion perfectamente insonorizada , con minibar gratuito ( sin alcohol ) , tv plana , plancha ...
+0 1 Buena situacion .
+0 1 Te brindan toallas en ambos sectores , pileta y playa .
+0 1 Además , la zona es bastante tranquila
+0 1 Me sorprendió que en el hotel no se oye absolutamente nada , ni la autovía ni el aeropuerto realmente se puede descansar .
+0 1 La habitación era muy confortable , viajabamos con un niño y dispusimos de sofa · cama que cabía cómodamente en la habitación .
+0 1 La habitación daba a sol pero están muy bien aisladas con contraventanas lo cual hacía muy silenciosa y tranquila .
+0 1 Lo que hay en el milibar es sin cargo y dispones de un hervidor de agua con diferentes cafés e infusiones .
+0 1 Un hotel que ofrece lo que vende .
+0 1 Nos ha gustado mucho y lo recomendariamos sin duda alguna .
+0 1 El espacio en la habitación era adecuado .
+0 1 La estancia estubo bien y no me falto de nada en el tiempo en el que estube alli .
+0 1 A solo 4 · 5 paradas de metro de la estación de trenes .
+0 1 Nos gusta mucho este hotel porque está situado en una zona muy centrica , la atención de su personal es muy buena y la comodidad de sus habitaciones .
+0 1 Instalaciones más que aceptables ; equipo de animación , entregado totalmente ; limpieza exhaustiva ( a veces , hasta 2 veces al día ) , con cambio de toallas también hasta 2 veces diarias ; con gente de todo tipo , matrimonios de recién casados , grupos de amigos , familias ... ambiente muy variopinto .
+0 1 Volveremos a repetir .
+0 1 La habitación está anexa a la casa , con salida independiente al jardín y a la piscina .
+0 1 A pesar de esto último , lo recomiendo .
+0 1 Un hotel con clase
+0 1 El hotel me ha gustado mucho mas de lo que esperaba .
+0 1 Por el precio de la habitación es justo el servicio recibido , ya que el hospedaje en Amsterdam es en general bastante caro en comparación a otras ciudades europeas .
+0 1 A 5 minutos andando desde la estación de tren / parada autobuses interurbanos .
+0 1 Correcto del todo , genial si viajas a ver el barça
+0 1 El apartamento era grande , con una cama de matrimonio y un sofá cama , una cocina equipada completa y un amplio baño con bañera .
+0 1 Si que hay que caminar de cuesta arriba , pero es muy poquito rato y la cuesta no es nada pronunciada , de hecho , Calella es una colina , asi que no se porque se quejan algunos !
+0 1 Es apto para bebes , ya que cuenta con un cuarto con todos los servicios que se pueden necesitar .
+0 1 no puedo decir nada en contra , el personal maravilloso desde la direccion hasta el ultimo empleado te hacen encontrar en un ambiente muy acogedor , las habitaciones estupendas , amplias y confortables , cualquier persona deseando ayudarte y los espacios del hotel limpios y confortables
+0 1 Se trata de un hotel pequeño , de diseño , en el que se cuidan todos los detalles con una excelente relación calidad · precio .
+0 1 El Hotel en sí no esta nada mal , buen trato buenas estancias y buena comida .
+0 1 esta es una de las mejores vacasiones que ice ademas esta super bien y ni hay nada de malo .
+0 1 Nos trataron como en casa , muy amables ante cualquier duda o necesidad .
+0 1 El hotel esta situado a unas cuatro manzanas de la estación de Arc de Triomf y a unas tres de la parada de Marina .
+0 1 Confortable hotel en Barcelona
+0 1 También tiene servicio de internet gratis en la habitacion o caja fuerte gratis .
+0 1 Las cenas con muchisima variedad , había mucha cantidad y calidad .
+0 1 Localización tranquila pero en menos de 10 miutos andando te pones en el Duomo .
+0 1 Realmente lo recomiendo a todo el mundo .
+0 1 El hotel cuenta con ocho plantas si no recuerdo mal y una gran cantidad de habitaciones , La limpieza es correcta y el desayuno tipo buffet .
+0 1 el hotel es una maravilla. cuenta con cocina y frigorifico gratis , con lo que no es necesario gastarse dinero en el hotel .
+0 1 Se puede llegar caminando desde la parada de Urgell del autobus del aeropuerto ( unos 10 minutos ) , por lo que resulta de fácil acceso .
+0 1 El hotel cubría todas las necesidades .
+0 1 La habitación doble en la cual nos quedamos era bastante cómoda , amplia y ordenada .
+0 1 Un lugar para olvidarse del stress y disfrutar del paisaje , el silencio , el aire libre y de muchas posibilidades ( además , a pocos kilometros tenemos la playa ) .
+0 1 El baño es correcto .
+0 1 Tenía claro que la ubicación es muy buena con acceso andando al centro de Madrid , pero pensaba que sería agobiante el lugar donde está ubicado y por lo tanto con falta de tranquilidad o silencio .
+0 1 Todo un pack de sensaciones prácticamente sin movernos .
+0 1 Sólo tengo buenas palabras para describir al hotal y al personal .
+0 1 El tamaño de la habitación y el baño es grande , limpia y la cama confortable .
+0 1 El coche lo deje en el parking , por ser del club playa vip hacen descuento , no es necesario ir en coche para ver la ciudad .
+0 1 Una de las ventajas que tiene también es que se situa cerca de el centro comercial Diagonal del Mar , y a pocos metros de la playa .
+0 1 Al margen de experiencias y sensaciones que cada uno pueda tener , a mi me gustó mucho que en un hotel todo incluido que uno viaja para tratar de moverse lo menos posible , tengas muchas opciones dentro … piscinas , canchas de tenis , club de niños , SPA donde optas a hidroterapia , tratamientos faciales y corporales , baños termales … Una zona para fitness también y estética … Una pasada la verdad para quienes nos gusta tanto el mundo del relax y el bienestar … tdo muy bien correcto , trato , habitación , comidas …
+0 1 Desde el hotel se puede ver el Camp Nou , con lo cual si eres aficionado puedes alojarte e ir a pie en 5 minutos .
+0 1 Encontramos la limpieza de la habitación muy adecuada y un baño moderno y cuidado .
+0 1 Nada caro para el lugar donde esta y las comodidades que ofrece .
+0 1 Para repetir .
+0 1 El hotel esta situado cerca del metro lo que facilita la movilidad , y además es posible aparcar el coche cerca del hotel sin ser zona controlada por el ayuntamiento .
+0 1 Os lo recomiendo ya que está muy centrico , instalaciones perfectas incluso su cafeteria perfecta .
+0 1 Lo demás para repetir .
+0 1 EL hotel es de 5 estrellas , y la verdad es que se las merece .
+0 1 Y entre las vistas hay que destacar la pasarela de cristal que tiene en su ultima planta , desde la que puedes pasar y ver a unos metros de altura el suelo , y el paisaje .
+0 1 El hotel es una autentica preciosidad , comfort y atencion al 100 % y su precio se adecua a lo que ofrecen .
+0 1 Tiene WIFI gratis que funciona muy bien y una pequeña zona de SPA .
+0 1 Bien comunicado .
+0 1 Tiene todo lo necesario y sobretodo , lo que mas nos interesa : accesos excelentes al centro de Calella de Palafrugell y a la playa a pie .
+0 1 Me parece fenomenal el tema del wifi gratuíto y que admás funcina muy bien .
+0 1 Calidad para persona no exigentes
+0 1 A los clientes del Club PlayaVip les facilitan gratuitamente una sesión de Spa por persona .
+0 1 Hotel recomendable
+0 1 Nuestra habitación , y creo que la gran mayoría del hotel , tenía un balcón que daba al jardín y terraza interiores del hotel .
+0 1 Al lado de la Plaza del Sol y cerca de estaciones de Metro y parada de autobuses .
+0 1 Decoración vanguardista
+0 1 En la habitacion no habia ruidos por las noches , silencio absoluto , y eso que era un primero , lo agradecimos mucho despues de volver matados de recorrer la ciudad .
+0 1 estuve con una estancia que incluia solo desayuno , asi que en mi parecer el desayuno que ponen no esta mal del todo .
+0 1 Tiene una ubicación excelente , a escasos 5 minutos andando de la estación de Termini , a la cual llegan diferentes trenes y autobuses desde los dos aeropuertos de la ciudad .
+0 1 Hotel comodo y confortable.El personal es muy amable , siempre dispuesto a ayudarnos ante cualquier consulta o necesidad .
+0 1 Los empleados son en su mayoría bilingües lo que hace que la enstancia en el hotel sea mas que practica .
+0 1 Buen Hotel
+0 1 Al ser valencia no es muy dificil encontrar donde tomar algo , a menos de 100 metros de la estancia hay algo donde elegir .
+0 1 para descansar o divertirse no tiene precio , adecuado para todos los gustos .
+0 1 He tenido la ocasión de conocer la cadena Senator cuando viajé a Almería y la experiencia fue tan gratificante que tanto a mi familia como a mí se nos quedó grabado el nombre .
+0 1 El acceso se hace por una esquina en la calle carmen , no en la misma puerta del sol , lo que te da una intimidad para acceder y evitar el bullicio de la gente en este lugar .
+0 1 Hotel Paris de Encamp , Andorra , barato y bueno
+0 1 Hola amigos me he alojado varias veces en este hotel por temas de negocios.Esta muy bien situado para estar en el centro de madrid y poder aceder al mismo centro andando.Hotel buena calidad precio muy limpio y personal agradable.Tiene servicio de caja fuerte gratis y mini bar .
+0 1 El desayuno no estaba mal .
+0 1 Aunque solo estuve una noche repetiré , fué una estancia muy relajante y agradable , para ir al Spa cada persona tiene su albornoz .
+0 1 Hotel bueno
+0 1 El bar para tomar lo que quieras en cualquier momento genial , con sus sillones , su terraza al lado de la piscina ... una maravilla .
+0 1 Buena relación calidad · precio
+0 1 Para el precio que nos costo no estaba nada mal , esta claro que sabes doonde vas y la calidad que hay algunos de estos sitios , no obstante lo recomiendo para pasar unos dias de relax con la pareja o familia ,
+0 1 La primera en una habitacion estandar que me parecio realmente acogedora con un baño enorme de marmol .
+0 1 El último día tuvimos incluido el desayuno y la verdad es que hay mucha variedad , etaba todo muy bueno y es tipo buffet .
+0 1 Volveré
+0 1 Ya he estado varias veces con mi pareja en este pequeño hotel , el cual se encuentra en el centro de León , en la famosa calle Ancha .
+0 1 Había una caja fuerte en el armario sin cargo .
+0 1 Segunda estancia y , sin pensarlo , si volvemos a Madrid , volveremos a repetir .
+0 1 Para empezar os diré que por ser socio del club playavip me ofrecieron una habitación con terraza con magníficas vistas a Gran Via , además nos dieron una entrada gratuita al spa .
+0 1 El hotel se lo recomendamos a todas las personas que les gusta estar bien atendidas .
+0 1 Lo que mas me ha gustado ha sido el buffet tanto del desayuno como de la cena .
+0 1 A eso le llamo un Hotel con clase ( y para repetir )
+0 1 Los de recepción te aconsejan un poco sobre donde ir y que linea de metro o de bus coger para ir a los destinos .
+0 1 El hotel esta a un par de manzanas del metro de Cuzco y a 20 minutos del aeropuerto en taxi .
+0 1 ( Plaza de España esta a unos 5 · 7 minutos ) y puerta del Sol a unos 15 a pie .
+0 1 Una de las razones por las que me quedé aquí es que la oficina de Europcar está dentro del hotel .
+0 1 Fue una estancia de lo más gratificante , un servicio exquisito y seguro que volveremos para el año que viene , aunque claro eso depende de los ahorros y de si hay alguna oferta interesante , claro .
+0 1 No obstante , el hotel está bien en general .
+0 1 Me parecio bien caja fuerte y minibar gratis
+0 1 He estado en este hotel y la verdad me ha gustado ya que me esperaba algo peor por ese precio , las sábanas eran blancas totalmente limpias y nuevas .
+0 1 Lo recomendaría sin duda para un viaje en las mismas condiciones , es decir , para un fin de semana .
+0 1 Relacion calidad precio lo mejor que he visto .
+0 1 Buena ubicación
+0 1 Totalmente recomendable por su precio y situación estratégica
+0 1 La verdad que merece la pena reservar media pensión .
+0 1 Habitación sencilla pero muy lipia con baño suficiente con amenities
+0 1 Todo ayudo a que fuera tan especial , su gente , el ambiente , la compañia y tambien el hotel , muy comodo y agradable .
+0 1 Facil acceso al Complejo
+0 1 El nuevo desayuno a la carta superó las espectativas y encima se puede desayunar al aire libre ya que han puesto una terraza en la salida del Restaurante .
+0 1 El desayuno bueno también , la verdad , nos esperábamos mucho menos .
+0 1 No se puede poner un pero a este hotel .
+0 1 El Spa muy agradable y bastante grande , no usamos la piscina por fechas pero estaba abierta , tambien tiene gimnasio y zona de masajes .
+0 1 Nos ha encantado y volveremos
+0 1 Buena y tranquila localización
+0 1 nuestra decision al elegir este hotel fue acertada. sin duda repetiremos. aconsejo probar el spa. a nosotros nos parecio super · relajante despues de un dia de visita a la ciudad. tambien aconsejo solicitar todo lo que se necesite. lo suben al momento. tanto el personal de limpieza como el de recepcion muy atentos y serviciales. tiene en el miinibar 4 aguas y 2 pepsis gratuitas y tambien un calentador de agua y cafes e infusiones .
+0 1 Ofrece desayuno tipo buffet .
+0 1 Calidad a buen precio
+0 1 Lo repetiríamos sin dudarlo
+0 1 Respecto a la habitación era amplia , el edificio tiene la fachada de cristal asique de iluminosidad es perfecto , buenos baños , la cama es agradable ( ni muy dura , ni muy blanda , es decir , que es bastante buena ) y por ultimo estaría la television y todo eso , y dado que es un hotel de 4 estrellas cumple con su " obligación " .
+0 1 Funcional .
+0 1 Da verdadero gusto llegar y relajarte en la espaciosa habitación decorada con verdadero esmero de modo minimalista pero cómodo .
+0 1 Acostumbrado a lo clásico ( a veces reñido con lo viejo y sucio ) este hotel es correcto y el , personal atento .
+0 1 El desayuno era tambien muy completo pero las eran cenas deliciosas y muy bien presentadas .
+0 1 No nos dio tiempo a recorrer todos los alrededores de la finca , pero la piscina y los jardines invitan a pasar largas temporadas en verano .
+0 1 No duden el elegir a este hotel .
+0 1 Excelente aire acondicionado , en la calle a 40 grados y para dormir necesitamos colcha , la temperatura la regulan desde recepción individualmente para cada habitación , buen personal y puedes dejar el equipaje en consigna si quieres quedarte hasta más tarde , luego lo pasas a recoger y sigues viaje o te vuelves a casita .
+0 1 Recueerdo que el desayuno buffet me gusto mucho jajaj Sin duda repetiria
+0 1 Buen hotel si vas al Camp Nou
+0 1 Me gustó la habitación en general poder aparcar el coche en la puerta .
+0 1 No puedo opinar sobre el SPA ya que no lo he visitado , pero por otro lado , buen trato del personal , las habitaciones disponen de caja fuerte individaal , mini bar gratuito ( sin bebidas alcohólicas ) , tabla para planchar , cafetera , camas amplias y cómodas , ... y en verano dos jacuzzis en la terraza al aire libre con grandes vistas .
+0 1 Estancia cómoda , limpia y acogedora , con una buena cama y sin ruidos .
+0 1 El resto del cuarto , baño , suelo , si fueron limpiados .
+0 1 Es un lugar muy tranquilo , sin ningun ruido y con todo lo necesario para pasar unos dias de descanso con la familia .
+0 1 Buena atención en la Recepción .
+0 1 La habitación perfectamente insonorizada , con minibar gratuito ( 4 botellas de agua y 2 de Pepsi ) , televisión plana , minicadena , plancha y tabla de panchar , sobres de café y té con cápsulas de leche , etc ... El SPA recién acondicionado , muy completo y además , por ser cliente repetitivo , nos regalaron 2 entradas .
+0 1 Nos relajamos muchísimo durante esos días , es un hotel completamente familiar .
+0 1 Lo dicho .... increible en esta cadena , donde la amabilidad y las atenciones suelen ser siempre algo a destacar .
+0 1 Por lo que a las habitaciones se refiere , su tamaño es el adecuado para viajar en pareja .
+0 1 Un buen hotel , cerca del Camp Nou pero bien comunicado con metro y autobús .
+0 1 en general no está mal .
+0 1 Creo que para los que vamos periódicamente por trabajo tener de referencia a este hotel en Barcelona nos va genial porque ya lo dice el refrán , " más vale malo conocido que bueno por conocer " pero en este caso de malo nada de nada .
+0 1 El SPA recién acondicionado , muy completo y además , por ser cliente repetitivo , nos regalaron 2 entradas .
+0 1 La habitación familiar es más que suficiente para dos adultos y dos niños ya que dispones de dos camas de 1'35 al igual que los hoteles de Playa que hemos visitado .
+0 1 Bien ubicado cerca de pistas , pero en medio del pueblo de Encamp .
+0 1 Al entrar te invitan a una copa de champán pero no la tomamos .
+0 1 No tiene animacion , lo cual se agradece .
+0 1 Me parece esta bien para ir y pasarlo bien con amigos ya que hay muchos restaurantes , bares , pubs y ambiente para pararlo bien .
+0 1 Nos gustaría volver .
+0 1 He estado varias veces aqui .
+0 1 El hotel es perfecto para no perder mucho tiempo para alojarse al llegar a Dubai , si llegas a las 3 a.m. , por ejemplo .
+0 1 Además disponen de películas en dvd que puedes alquilar sin ningún coste adicional. y también de de Play Station en la habitación por si quieres pasar un rato jugando .
+0 1 Se me hizo curioso que en al final del pasillo hubiera una mezquita .
+0 1 Sobretodo por la sorpresa del SPA .
+0 1 Si lo prefieres puedes utilizar el Bus Turístico con una parada a uno ciento cincuenta metros .
+0 1 Los shows entretienen a la familia al final del día .
+0 1 Su ubicación , a pocos metros de la estación de tren , es perfecta para acceder de forma rápida al aeropuerto .
+0 1 Se agradece la buena atención del personal del camping , incluso nos ayudaron a colocar la caravana cuando llegamos .
+0 1 La limpieza buena ( aunque la moqueta tenía alguna mancha ) .
+0 1 Nunca había estado en un camping y en general me parecio mejor de lo que esperaba , estuvimos en un bungalo plus .
+0 1 También cerca hay algún supermercado y las salidas al valle del Chianti estan al lado del hotel .
+0 1 Servicio excepcional , la habitación muy cómoda , completa y muy bien insonorizada .
+0 1 Ademas tienes una parda de metro justo al lado y parking publico justo detras ( con decuento para clientes , a nosotros nos costó poco mas de 20 € el dia completo ) .
+0 1 Volvería sin pensármelo y considero este hotel uno de los mejores en los que me he alojado sobre todo por la comida .
+0 1 He tenido la oportunidad de ir a este hotel en varias ocasiones , y es desde luego el unico hotel de Sevilla que considero .
+0 1 Situación ideal a 50 metros de la estación de Sants , con parada de taxis en la misma puerta .
+0 1 Las habitaciones eran súper tranquilas y siempre tenían detalles con las toallas que eran preciosos .
+0 1 El Spa está bastante bien .
+0 1 La verdad que en relación precio esta bien al menos para probarlo y además en plena Gran Vía de Madrid , todo un lujo .
+0 1 Tienen un teatro justo debajo donde hacen monologos , pero recomiendo reservar con antelacion porque estaba completo cuando estuvimos .
+1 0 Fines de semana agosto y septiembre , muy mal
+1 0 Las comodidades de las habitaciones y hotel desastrosas .
+1 0 La ocupación era bajisima .
+1 0 NI OS ACERQUÉIS
+1 0 No vayais !
+1 0 Malisimo
+1 0 Una estafa
+1 0 Los precios muy caros como siempre .
+1 0 Muy caros los productos del bar de la habitación .
+1 0 Decepcionante
+1 0 El servicio de habitaciones , limpieza , etc ... pésimo .
+1 0 Imposible descansar .
+1 0 Los restaurantes temáticos son un desastre , y has de perder horas para reservar .
+1 0 Decepción
+1 0 y halcon y travelplan mucho menos .
+1 0 Muy descontento con la piscina y zona solarium
+1 0 En general muy escaso para las 4 estrellas que dice tener
+1 0 Pésimo hotel
+1 0 Gestión nefasta
+1 0 Recordar cadena be live nooo !
+1 0 La directora es muy estúpida y muy poco servicial .
+1 0 Excesivamente caro , demasiado .
+1 0 A nosotros nos cobraron de mas del precio acordado.Y sobre todo en la habitaciones HAY PULGAS .
+1 0 Nunca más
+1 0 Aunque la animación ha perdido un poco .... antes era un hotel mucho mas divertido .
+1 0 Laberíntico
+1 0 Hotel alejado del centro
+1 0 Es un hotel pequeño a precio de los grandes complejos hoteleros de la riviera maya como el Iberostar , Bahia Principe , Barcelo , Grand Palladium , etc , que son muy superiores y mucho mejores que el Dreams
+1 0 Es la feria
+1 0 Hotel ' macro ' con dos edificiones en cada lado de la calle , con un uso muy marcado por los clientes de negocios hace que la relación con el cliente carezca del nivel de personalización que se esperaría en un lugar de esa categoría .
+1 0 en agosto y septiembre los fines de semana llegan 3000 ......... " personas " que dejan que desear ( mejor no comento ) destroyers en general
+1 0 Peor de lo que ofrecen
+1 0 Se comía mucho mejor en doña pepica que está a 100 metros que en propio hotel y el alardeo de su buffet libre .
+1 0 Lo mismo con las sombrillas en la playa .
+1 0 Jutito para ser un 4 estrellas
+1 0 Sin lujos .
+1 0 La piscina necesitaba pintura y mychos restaurantes cerrados por días .
+1 0 Recepción debajo de la escalera .
+1 0 Me robaron el móvil en el bungalow
+1 0 Lo vi demasiado sencillo para un Mercure .
+1 0 Regular , podría mejorar .
+1 0 Está en una zona muy alejada del centro de Barcelona , las conexiones con el metro también están muy lejanas , y en la zona no hay absoultamente nada para la recreación .
+1 0 ESCASA SEGURIDAD
+1 0 Además el entorno no es el mas adecuado para salir de noche .
+1 0 Tambien mas caro , ojo .
+1 0 Antiguo como Roma !
+1 0 Pero a partir de aqui , todo lo demas era normalito
+1 0 La " categoria " del camping se ha de reflejar en estos casos y francamente nos defraudaron .
+1 0 Yo no volvere a esta cadena de hoteles .
+1 0 Básica pensión
+1 0 Lo peor del caso fue la actitud del personal del hotel .
+1 0 Hotel de paso situado cerca de un poligono industrial .
+1 0 Nada del otro mundo .
+1 0 Me ha decepcionado
+1 0 La limpieza de la habitación normalita .
+1 0 Estancia decepcionante
+1 0 Robos en las habitaciones del hotel
+1 0 Sobretodo por el trato del personal , el estado de los sanitarios ( mientras te duchas te saludan las hormigas ) y los bungalow de plástico , con lo que el calor de las 8 de la mañana te hace levantarte sudado .
+1 0 Inútil reclamar .
+1 0 Mala estancia
+1 0 Las habitaciones eran viejas y muy calurosas .
+1 0 El servicio de habitaciones muy malo , y recepción regular .
+1 0 Viajamos en el mes de mayo con una temperatura nocturna entre 2 y 7 grados y aun siendo por dos días los unicos clientes del hotel se nos negó poner la calefacción .
+1 0 Lo peor me parecio el desayuno : bolleria de pesima calidad , productos de calidad baja en general y con poca variedad , supervisor de mozos muy molesto y mozos muy desatentos .
+1 0 Este hotel era la gran desilusión de nuestro viaje
+1 0 Errores continuos desde la entrada hasta la salida .
+1 0 Hotel en mal estado en las instalaciones y rooms .
+1 0 Bastante sencillito .
+1 0 Esperaba más de Marriott
+1 0 Cobraban por todo ( Aire acondicionado , wifi ) .
+1 0 La decoracion tipica de un Ibis .
+1 0 El wifi tampoco funciona bien
+1 0 El fallo gordisimo es el personal del hotel : los recepcionistas no se ponian de acuerdo y te discutian ( tocate las narices ) sobre lo que el del anterior te habia comentado , el encargado del buffet es 1 autentico ......... por no decir otra cosa + grave que se la merece ( maleducado , impaciente , grosero e impertinente ) y como no recuerdo muy mucho a las señoritas de la limpieza que como autenticas verduleras se ponen a gritar ( si , a gritar ) sobre las 7 · 8 de la mañana sobre cuchilleos y de + menesteres
+1 0 Si buscas un hotel para hacer actividades a través de él , o para ver cena con espectáculos , o quedarte todo el día dentro ... no es tu hotel , porque no tiene ese tipo de instalaciones .
+1 0 Desfavorable
+1 0 Mal para aparcar en las inmediaciones .
+1 0 Le sobran estrellas al hote .
+1 0 ¡ y discuten !
+1 0 El personal de limpieza compartía el mismo ascensor que nosotros , por lo que subir y bajar de las habitaciones antes y después del desayuno , se convertía en una tarea muy compleja .
+1 0 Las zonas recomendables están a 350 m. de la playa
+1 0 El camping Pola es un lugar para no repetir .
+1 0 El personal deberia ir a clases de civismo
+1 0 El WIFI no es de buena calidad , apenas llega a la habitación .
+1 0 Mal comunicado con el centro .
+1 0 Por el precio hay muchos mejores en la Riviera
+1 0 Es un hotel pequeño , sin grandes lujos y con un servicio senzillo .
+1 0 Tipo de clientela entre regular y mal .
+1 0 Este hotel necesita mejorar mucho

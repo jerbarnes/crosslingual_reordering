@@ -6,10 +6,10 @@ binary: True
  
              precision    recall  f1-score   support
 
-          0       0.79      0.34      0.48       682
-          1       0.47      0.87      0.61       467
+          0       0.71      0.77      0.74       682
+          1       0.61      0.54      0.58       467
 
-avg / total       0.66      0.56      0.53      1149
+avg / total       0.67      0.68      0.67      1149
  
  
-Macro F1: 0.545
+Macro F1: 0.657

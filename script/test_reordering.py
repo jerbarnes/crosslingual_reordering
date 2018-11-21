@@ -178,13 +178,16 @@ def str2bool(v):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('test_directory', help='directory that contains the test corpus')
+    parser.add_argument('test_directory', nargs= '?', default="datasets/original/es/raw", help='target dataset (directory that contains the test corpus, defaults to datasets/original/es/raw)')
     parser.add_argument('-l', '--lang', default='es', help='choose target language: es, ca, en (defaults to es)')
     parser.add_argument('-e', '--embedding', default='artetxe', help='whether to use artetxe or barista embeddings (defaults artetxe)')
     parser.add_argument('-c', '--classifier', default='bilstm', help='choose classifier: bilstm, cnn, or svm (defaults to bilstm)')
     parser.add_argument('-b', '--binary', default=False, help='whether to use binary or 4-class (defaults to False == 4-class)', type=str2bool)
     args = parser.parse_args()
-
+    
+    for el in vars(args):
+        print((str(el) + ': ' + str(vars(args)[el])))
+        
     print(args.classifier)
     monol = []
     if args.lang == 'en':
@@ -272,18 +275,6 @@ if __name__ == '__main__':
 #Error analysis
 
 idx2w = dict([(i,w) for (w,i) in w2idx.items()])
-
-#errors = []
-#for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data._Xtest):
-#    errors_sub = []
-#    sentence = []
-#    if gold != prediction:
-#        errors_sub.append((gold, prediction))
-#        for index in example:
-#            if index != 0:
-#                sentence.append(idx2w[index])
-#        errors_sub.append(' '.join(sentence))
-#        errors.append(errors_sub)
 
 errors = []
 for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data._Xtest):

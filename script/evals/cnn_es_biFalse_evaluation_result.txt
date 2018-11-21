@@ -1,0 +1,17 @@
+test_directory: datasets/original/es/raw 
+lang: es 
+embedding: artetxe 
+classifier: cnn 
+binary: False 
+ 
+             precision    recall  f1-score   support
+
+          0       0.25      0.71      0.37       218
+          1       0.72      0.47      0.57       846
+          2       0.52      0.42      0.47       370
+          3       0.11      0.03      0.04        38
+
+avg / total       0.58      0.48      0.50      1472
+ 
+ 
+Macro F1: 0.363

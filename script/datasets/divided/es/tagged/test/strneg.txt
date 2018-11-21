@@ -1,8 +1,0 @@
-Las/DET camas/NOUN con/ADP los/DET colchones/NOUN hechos/ADJ polvo/NOUN ./. 
-Algunas/DET comidas/NOUN son/VERB muy/ADV picantes/ADJ y/CONJ tendrían/VERB que/CONJ tener/VERB un/DET cartelito/NOUN para/ADP que/CONJ los/DET que/PRON no/ADV estamos/VERB acostumbrados/ADJ no/ADV las/DET comamos/VERB ./. 
-Hotel/NOUN en/ADP estado/NOUN lamentable/ADJ ./. 
-Pésimo/ADV hotel/NOUN 
-Pasamos/VERB un/DET frío/NOUN enorme/ADJ ./. 
-Gestión/NOUN nefasta/ADJ 
-Recordar/VERB cadena/NOUN be/ADJ live/VERB nooo/X !/. 
-En/ADP una/DET palabra/NOUN ,/. lamentable/ADJ ./. 

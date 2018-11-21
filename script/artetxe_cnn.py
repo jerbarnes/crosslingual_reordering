@@ -221,7 +221,7 @@ if __name__ == '__main__':
     src_vecs = WordVecs(args.src_embedding)
     src_vecs.mean_center()
     src_vecs.normalize()
-    trg_vecs = WordVecs(args.trg_emedding)
+    trg_vecs = WordVecs(args.trg_embedding)
     trg_vecs.mean_center()
     trg_vecs.normalize()
 

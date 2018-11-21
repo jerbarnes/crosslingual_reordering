@@ -3,519 +3,381 @@ lang: ca
 embedding: artetxe 
 classifier: cnn 
 binary: True 
- 
-[(Gold, Prediction), Sentence]
 Multiclass: (0 ++, 1 +, 2 -, 3 --) 
 Binary: (0 +, 1 -) 
  
-[(0, 1), 'i estan .'] 
-[(0, 1), 'i .'] 
-[(0, 1), 'dos l , de running i m , ho en gran .'] 
-[(0, 1), "El restaurant ' s una ."] 
-[(0, 1), 'i el .'] 
-[(0, 1), 'i el era .'] 
-[(0, 1), 'Personal .'] 
-[(0, 1), 'per la categoria de hotel .'] 
-[(0, 1), 'La zona de les es gran .'] 
-[(0, 1), 'La , el , i el que genial .'] 
-[(0, 1), 'En general ha .'] 
-[(0, 1), ''] 
-[(0, 1), 'de el restaurant , .'] 
-[(0, 1), '.'] 
-[(0, 1), 'a .'] 
-[(0, 1), 'Personal , i bufet .'] 
-[(0, 1), 'Te una , a el de , a de el en una de les de .'] 
-[(0, 1), '.'] 
-[(0, 1), 'Internet be .'] 
-[(0, 1), 'van i van una que era i tenia 3 .'] 
-[(0, 1), '.'] 
-[(0, 1), 'en especial i i .'] 
-[(0, 1), 'La persona de que a la amable , va i el problema .'] 
-[(0, 1), 'Hotel es .'] 
-[(0, 1), 'i zones comunes .'] 
-[(0, 1), 'lo be .'] 
-[(0, 1), 'en centre de i un de .'] 
-[(0, 1), 'ha .'] 
-[(0, 1), 'van sol . el problema .'] 
-[(0, 1), 'Hotel per i de .'] 
-[(0, 1), ''] 
-[(0, 1), 'el de el una'] 
-[(0, 1), '.'] 
-[(0, 1), 'El !'] 
-[(0, 1), 'La per poder el o .'] 
-[(0, 1), ''] 
-[(0, 1), '.'] 
-[(0, 1), 'i .'] 
-[(0, 1), 'La .'] 
-[(0, 1), ', spa .'] 
-[(0, 1), 'que , el personal es i les estan .'] 
-[(0, 1), 'Buffet .'] 
-[(0, 1), '.'] 
-[(0, 1), '.'] 
-[(0, 1), 'A de el personal va ser i en per si falta .'] 
-[(0, 1), '.'] 
-[(0, 1), ''] 
-[(0, 1), '.'] 
-[(0, 1), 'la es'] 
-[(0, 1), ', .'] 
-[(0, 1), 'La de el hotel piscina , restaurant I pub a les , les son .'] 
-[(0, 1), 'El !'] 
-[(0, 1), '.'] 
-[(0, 1), 'fenomenal .'] 
-[(0, 1), 'i la .'] 
-[(0, 1), 'confortable , el .'] 
-[(0, 1), 'amables !'] 
-[(0, 1), 'El .'] 
-[(0, 1), ', , confortables i .'] 
-[(0, 1), 'les .'] 
-[(0, 1), '.'] 
-[(0, 1), 'La piscina genial si dia el i no dia de .'] 
-[(0, 1), '! !'] 
-[(0, 1), 'la zona de la piscina original i .'] 
-[(0, 1), 'En general .'] 
-[(0, 1), 'que en !'] 
-[(0, 1), 'Wifi a les increible i excelent'] 
-[(0, 1), 'El .'] 
-[(0, 1), 'El .'] 
-[(0, 1), 'Un .'] 
-[(0, 1), 'confortable'] 
-[(0, 1), 'espectacular , les de el de el de increïbles .'] 
-[(0, 1), 'No , una , , 100 % .'] 
-[(0, 1), ''] 
-[(0, 1), ''] 
-[(0, 1), 'El de el personal i la sobre la .'] 
-[(0, 1), '.'] 
-[(0, 1), '!'] 
-[(0, 1), '.'] 
-[(0, 1), 'El que mes m son les .'] 
-[(0, 1), 'que lo .'] 
-[(0, 1), 'El bufet de va ser'] 
-[(0, 1), 'a i un de .'] 
-[(0, 1), 'de tren queda .'] 
-[(0, 1), 'La de hotel perfecta , i les de la , .'] 
-[(0, 1), '.'] 
-[(0, 1), 'El restaurant .'] 
-[(0, 1), 'La nevera i per les .'] 
-[(0, 1), 'i .'] 
-[(0, 1), ', el es .'] 
-[(0, 1), 'Hotel .'] 
-[(0, 1), 'La vista de la , de I el mar a el .'] 
-[(0, 1), 'el personal a de el de que .'] 
-[(0, 1), 'i .'] 
-[(0, 1), 'es , i les son excelent .'] 
-[(0, 1), ', el .'] 
-[(0, 1), 'per a el centre i a de .'] 
-[(0, 1), 'El !'] 
-[(0, 1), 'i .'] 
-[(0, 1), 'Les per , les que .'] 
-[(0, 1), 'que .'] 
-[(0, 1), 'en que un 3 i que .'] 
-[(0, 1), '!'] 
-[(0, 1), 'a la reserva i a .'] 
-[(0, 1), 'ha .'] 
-[(0, 1), ': Personal , , . , ... be .'] 
-[(0, 1), 'El en sí .'] 
-[(0, 1), 'El .'] 
-[(0, 1), 'i confortable .'] 
-[(0, 1), 'i les de el .'] 
-[(0, 1), 'El era .'] 
-[(0, 1), "l ' es , l ' doble superior es"] 
-[(0, 1), 'El a de la zona .'] 
-[(0, 1), 'de !'] 
-[(0, 1), 'que una i no llevar hora a el per van un a les ... un ! ! !'] 
-[(0, 1), 'El , les .'] 
-[(0, 1), 'hotel confortable , un .'] 
-[(0, 1), 'un per el per el nivel de el hotel La ubicación es perfecta .'] 
-[(0, 1), '.'] 
-[(0, 1), 'La i .'] 
-[(0, 1), 'En han si em falta alguna cosa o una .'] 
-[(0, 1), '.'] 
-[(0, 1), 'Hi , per evitar , no me i va ser una sorpresa ... .'] 
-[(0, 1), 'a de l ´ de tren Gare du Lyon , el de el personal , la tv I la I de el I l ´ I a .'] 
-[(0, 1), 'no poder el de el que el tren la , un 10 en i .'] 
-[(0, 1), 'El de el personal i .'] 
-[(0, 1), 'Hi dos i les que han han .'] 
-[(0, 1), '.'] 
-[(0, 1), 'El Super !'] 
-[(0, 1), 'estar .'] 
-[(0, 1), 'un hotel .'] 
-[(0, 1), "el any que i l ' de les d ' hotel ."] 
-[(0, 1), 'en centre !'] 
-[(0, 1), 'i el .'] 
-[(0, 1), 'ha .'] 
-[(0, 1), 'El de transfer de hotel .'] 
-[(0, 1), 'just .'] 
-[(0, 1), 'Un .'] 
-[(0, 1), 'es i la finca esta .'] 
-[(0, 1), '.'] 
-[(0, 1), 'El i el .'] 
-[(0, 1), 'En general .'] 
-[(0, 1), 'La equipada .'] 
-[(0, 1), 'La es .'] 
-[(0, 1), '.'] 
-[(0, 1), '.'] 
-[(0, 1), 'La a de el .'] 
-[(0, 1), 'han .'] 
-[(0, 1), ''] 
-[(0, 1), 'Es de de la i el de , que el metro que una .'] 
-[(0, 1), 'en general .'] 
-[(0, 1), 'i .'] 
-[(0, 1), 'La a .'] 
-[(0, 1), 'atencio'] 
-[(0, 1), 'be .'] 
-[(0, 1), '!'] 
-[(0, 1), 'El per el ha .'] 
-[(0, 1), 'de el que esperar .'] 
-[(0, 1), 'La de la per estar a la fresca i .'] 
-[(0, 1), 'per descansar !'] 
-[(0, 1), '.'] 
-[(0, 1), ', i en la sentir .'] 
-[(0, 1), 'general .'] 
-[(0, 1), 'Ha una a que no !'] 
-[(0, 1), 'i profesional .'] 
-[(0, 1), 'La piscina i les de .'] 
-[(0, 1), 'el personal de les i . !'] 
-[(0, 1), '. .'] 
-[(0, 1), 'a el de'] 
-[(0, 1), 'son i .'] 
-[(0, 1), 'de el Centre Ideal per a la , a 5 .'] 
-[(0, 1), 'La , en centre de , de la .'] 
-[(0, 1), '. . , moderna i .'] 
-[(0, 1), 'La de el de la es a 2 I la de a 5 .'] 
-[(0, 1), 'ha .'] 
-[(0, 1), 'sort de les . Personal amable .'] 
-[(0, 1), 'en general , gran i no falta de .'] 
-[(0, 1), 'Les , amplitud de el per , la de , la a el .'] 
-[(0, 1), 'una per i , es i hotel ( Avenida ) el a per'] 
-[(0, 1), 'i , que 3 a que he .'] 
-[(0, 1), 'algo .'] 
-[(0, 1), 'ha les , el bungalow i lo que .'] 
-[(0, 1), 'El , .'] 
-[(0, 1), 'ha la que a .'] 
-[(0, 1), 'Les i i , una .'] 
-[(0, 1), 'El i la de el .'] 
-[(0, 1), '. agradable , si un dia en un de i no estar a la .'] 
-[(0, 1), 'No !'] 
-[(0, 1), 'de la .'] 
-[(0, 1), 'Un per .'] 
-[(0, 1), 'El personal de i'] 
-[(0, 1), 'Es nou que el van el .'] 
-[(0, 1), 'Es una casa gran per .'] 
-[(0, 1), 'mala .'] 
-[(0, 1), 'La q de cultural , gastronomia de a un i .'] 
-[(0, 1), 'i , la , la , el .'] 
-[(0, 1), 'A 1 de la principal i a de la on es aparcar gratis .'] 
-[(0, 1), 'Es un hotel que la pena per o .'] 
-[(0, 1), 'el que a hotel , la i les i confortables .'] 
-[(0, 1), 'de nou .'] 
-[(0, 1), 'La de perfecta , no transport en .'] 
-[(0, 1), '.'] 
-[(0, 1), 'estar en de 4 amplia i'] 
-[(0, 1), 'i .'] 
-[(0, 1), '.'] 
-[(0, 1), 'i el que pagar .'] 
-[(0, 1), 'Es un camping tranquil , la en general es , no problema de q no dormir .'] 
-[(0, 1), ', i .'] 
-[(0, 1), 'a .'] 
-[(0, 1), 'hotel a un a el centre , la genial parking a 2 min'] 
-[(0, 1), 'per a una o a el centre de el en .'] 
-[(0, 1), 'la parada de metro per a el centre a 5 de hotel .'] 
-[(0, 1), '.'] 
-[(0, 1), '.'] 
-[(0, 1), 'que el , en el .'] 
-[(0, 1), 'per a les ( a de el de ) a la de el centre .'] 
-[(0, 1), '... que repetiré .'] 
-[(0, 1), 'confortable , , gran i .'] 
-[(0, 1), 'i a la .'] 
-[(0, 1), 'i confortables .'] 
-[(0, 1), 'Esta a un de i moments de relax a la piscina les son ... que era un per 2 i be una a la de .'] 
-[(0, 1), ', personal i i .'] 
-[(0, 1), 'El que estar , va ser tranquil de dia de , i a la zona .'] 
-[(0, 1), 'a de .'] 
-[(0, 1), ', a el de la'] 
-[(0, 1), 'i .'] 
-[(0, 1), '.'] 
-[(0, 1), '.'] 
-[(0, 1), 'I el que per aparcar el .'] 
-[(0, 1), 'El no present .'] 
-[(0, 1), '.'] 
-[(0, 1), 'La piscina , el de bar accesible i que per .'] 
-[(0, 1), ", a de el antic i de l ' ( 10 ) ."] 
-[(0, 1), ', i .'] 
-[(0, 1), 'Hi ha el dia , per i , per no .'] 
-[(0, 1), 'per la , on desde aquí em a .'] 
-[(0, 1), '.'] 
-[(0, 1), ': tranquil pero a el'] 
-[(0, 1), 'i nou .'] 
-[(0, 1), 'en a el i de el personal son .'] 
-[(0, 1), 'No a .'] 
-[(0, 1), 'de hotel : , , .'] 
-[(0, 1), 'per part de el . personal i , .'] 
-[(0, 1), ''] 
-[(0, 1), 'ha la que .'] 
-[(0, 1), 'La , la i la de'] 
-[(0, 1), 'confortable i .'] 
-[(0, 1), 'Les i .'] 
-[(0, 1), 'i per a en .'] 
-[(0, 1), 'a el centre de'] 
-[(0, 1), 'Hi ha un bufet de i de !'] 
-[(0, 1), ', Es just el que , un on . se , tranquil i de i de .'] 
-[(0, 1), 'van una , jacuzzi .'] 
-[(0, 1), 'Hi'] 
-[(0, 1), 'Que estas de i que en plena .'] 
-[(0, 1), 'La , la i la de'] 
-[(0, 1), 'Un a la piscina una i de la zona , ....'] 
-[(0, 1), "a el centre de la ' amplitud de el Les a la ."] 
-[(0, 1), 'El personal una actitud les per mes agradable .'] 
-[(0, 1), 'i a de .'] 
-[(0, 1), 'era de bufet , .'] 
-[(0, 1), '.'] 
-[(0, 1), 'de natural El familiar i en .'] 
-[(0, 1), 'nou'] 
-[(0, 1), 'Es descansa i de .'] 
-[(0, 1), 'Esta de , i per el es .'] 
-[(0, 1), 'I les confortables .'] 
-[(0, 1), ', i .'] 
-[(0, 1), 'El lavabo , i de que la de ! ! ! : )'] 
-[(0, 1), 'La es .'] 
-[(0, 1), 'Personal amable , un , amenities per la , i .'] 
-[(0, 1), 'genial I original , .'] 
-[(0, 1), 'La , les i amplitud de .'] 
-[(0, 1), 'de de el primer a .'] 
-[(0, 1), 'El ( una de que va a el de hotel el que pot a ) i .'] 
-[(0, 1), 'Les de primera i el personal i .'] 
-[(0, 1), 'les ( , , ) el proper de .'] 
-[(0, 1), 'La es , a el de square , el personal , i les que .'] 
-[(0, 1), 'en que en oferta'] 
-[(0, 1), ', .'] 
-[(0, 1), ', parking just .'] 
-[(0, 1), 'El i lo que ( buffet , , confort , ... ) per el just .'] 
-[(0, 1), 'La la a . .'] 
-[(0, 1), 'La de hotel i i .'] 
-[(0, 1), '.'] 
-[(0, 1), '.'] 
-[(0, 1), 'No sentir de .'] 
-[(0, 1), ', , ... 40 , . . Can , , a el ( a ) de Estació , de la Rambla , a a , el personal , , , ... no ha , . . el mar , la , ha , . . repetir .'] 
-[(0, 1), 'continental a les ( ) .'] 
-[(0, 1), 'El be , ha i la es correcta .'] 
-[(0, 1), 'va , poder el .'] 
-[(0, 1), ', i la que no em , per i i !'] 
-[(0, 1), "El hotel de el ' ' ."] 
-[(0, 1), 'personal .'] 
-[(0, 1), ', , modern , funciona .'] 
-[(0, 1), 'De , ( , , i . la la de per . , de .'] 
-[(0, 1), 'La , a dos a de I tres de .'] 
-[(0, 1), 'de La piscina , el jacuzzi , les . , ...'] 
-[(0, 1), 'ha la , la de la , de el de , de per a comprar .'] 
-[(0, 1), ', a 10 de la .'] 
-[(0, 1), 'El gran i .'] 
-[(0, 1), 'aparcar ( i que ) .'] 
-[(0, 1), 'La , de i zones verdes .'] 
-[(0, 1), 'a la .'] 
-[(0, 1), 'a de la , i el personal era .'] 
-[(0, 1), 'Es un , que .'] 
-[(0, 1), 'La de hotel una de el centre i a el de genial per la que es .'] 
-[(0, 1), 'La equipada i funciona .'] 
-[(0, 1), 'i l .'] 
-[(0, 1), '.'] 
-[(0, 1), 'La de hotel a el de la a de el de i de les que .'] 
-[(0, 1), 'El personal de les'] 
-[(0, 1), 'Les una moderna i .'] 
-[(0, 1), 'va a .'] 
-[(0, 1), 'per Booking un dia spa I hotel entrada a el Gran'] 
-[(0, 1), 'de .'] 
-[(0, 1), 'Es nota que l hotel ha les .'] 
-[(0, 1), 'La i que , una , de la i de de .'] 
-[(0, 1), '... i . etc .... lo recomiendo'] 
-[(0, 1), 'i .'] 
-[(0, 1), '.'] 
-[(0, 1), ''] 
-[(0, 1), 'Hotel modern i .'] 
-[(0, 1), 'I a .'] 
-[(0, 1), 'a un de .'] 
-[(0, 1), 'amable i , la que a casa !'] 
-[(0, 1), '.'] 
-[(0, 1), 'ha estar .'] 
-[(0, 1), 'amplitud de .'] 
-[(0, 1), 'el he en en .'] 
-[(0, 1), 'de , ideal per a que estan de o han a Barcelona I no es gastar un en ( tren en 30 ) .'] 
-[(0, 1), 'i confortables .'] 
-[(0, 1), 'suite gran i les .'] 
-[(0, 1), 'ha .'] 
-[(0, 1), ', .'] 
-[(0, 1), '.'] 
-[(0, 1), '.'] 
-[(0, 1), 'be .'] 
-[(0, 1), 'i poder descansar .'] 
-[(0, 1), 'tranquil , i bufet per , si a .'] 
-[(0, 1), 'un hotel , i de .'] 
-[(0, 1), '.'] 
-[(0, 1), 'Hotel i familiar .'] 
-[(0, 1), 'van el problema .'] 
-[(0, 1), '.'] 
-[(0, 1), 'La La : un tranquil , a de la El comfort : gran i , lavabo gran , a la TV , cafetera a , gran'] 
-[(0, 1), 'Zona tranquila , de el centre .'] 
-[(0, 1), 'i les , i .'] 
-[(0, 1), 'per part de el personal i les i'] 
-[(0, 1), 'les de agradables .'] 
-[(0, 1), ', les zones per aparcar be , estan a 5 min .'] 
-[(0, 1), 'El . personal be . la i de el . . a la a de el i el .'] 
-[(0, 1), 'de hotel , , , el de de la piscina en .'] 
-[(0, 1), 'A la gratis un que va per descansar i .'] 
-[(0, 1), 'una , i actual .'] 
-[(0, 1), 'El i .'] 
-[(0, 1), 'La a de el transport public , la , de el personal i de .'] 
-[(0, 1), ', i , i la zona on , situada de la piscina .'] 
-[(0, 1), 'La de el personal de a en el que .'] 
-[(0, 1), '.'] 
-[(0, 1), 'Ideal per , té 7 , q familiar .'] 
-[(0, 1), 'de exterior i confortable ( ) .'] 
-[(0, 1), 'La , a el de la I a de el centre'] 
-[(0, 1), 'per a una escapada .'] 
-[(0, 1), 'Les i'] 
-[(0, 1), 'El bungalow i .'] 
-[(0, 1), 'el , la i que a el'] 
-[(0, 1), '.'] 
-[(0, 1), 'sofas de la de el personal'] 
-[(0, 1), 'La nota entre el i .'] 
-[(0, 1), 'El i personal .'] 
-[(0, 1), 'Un .'] 
-[(0, 1), 'per part de , i .'] 
-[(0, 1), 'Era i a de la .'] 
-[(0, 1), 'A 10 en de les de , i un de o .'] 
-[(0, 1), 'La de l ´ hotel i la privilegiada a poca de la ( 30 ) en un .'] 
-[(0, 1), 'i i , cava , per a la , una a la gratuita , i i , les i el per a la .'] 
-[(0, 1), 'Confortable , de el que .'] 
-[(0, 1), 'El a .'] 
-[(0, 1), 'Les doble i i estan .'] 
-[(0, 1), 'En general un hotel i .'] 
-[(0, 1), ', de dos , poder de .'] 
-[(0, 1), 'a un .'] 
-[(0, 1), 'i olor per sort ; ) de el personal excelent i .'] 
-[(0, 1), 'en era ( , , i ) .'] 
-[(0, 1), 'El , , , les ( piscina les ) , el , el lavabo , de les de l ´ .'] 
-[(0, 1), 'a una copa i no , a la a .'] 
-[(0, 1), 'de les de colors , que un original .'] 
-[(0, 1), '.'] 
-[(0, 1), '.'] 
-[(0, 1), '.'] 
-[(0, 1), 'La , de la casa , de el i de el i la i de'] 
-[(0, 1), 'i'] 
-[(0, 1), ', que el restaurant per , el ho es i no problema .'] 
-[(0, 1), 'ha a la i be'] 
-[(0, 1), 'i .'] 
-[(0, 1), 'Les estan be : piscina i les estan .'] 
-[(0, 1), 'de .'] 
-[(0, 1), 'El de el personal i la per sentir a casa .'] 
-[(0, 1), 'La i .'] 
-[(0, 1), 'i per el que té .'] 
-[(0, 1), 'moderna , un gran per a i .'] 
-[(0, 1), 'El es el per el , en una zona on es de per una .'] 
-[(0, 1), 'hotel i el a si per ....'] 
-[(0, 1), 'El gran i i .'] 
-[(0, 1), 'es .'] 
-[(0, 1), 'i .'] 
-[(0, 1), 'Hotel de , a entrada de el a'] 
-[(0, 1), 'No ha cosa que , i que .'] 
-[(0, 1), '.'] 
-[(0, 1), 'Amable i'] 
-[(0, 1), 'a de la .'] 
-[(0, 1), 'El , i la'] 
-[(0, 1), 'a entrada de , de el de , a de i que a .'] 
-[(0, 1), 'El .'] 
-[(0, 1), 'he a casa .'] 
-[(0, 1), '.'] 
-[(0, 1), 'La de I de la .'] 
-[(0, 1), 'La a el centre , el en , la superior a la Catedral'] 
-[(0, 1), 'De 5 a 8 un bufet , copa de vi : original , per un .'] 
-[(0, 1), 'a , .'] 
-[(0, 1), ''] 
-[(0, 1), 'i be .'] 
-[(0, 1), 'El confort i la de el hotel , a el centre de la que a poder on .'] 
-[(0, 1), '.'] 
-[(0, 1), 'Te parking .'] 
-[(0, 1), 'i .'] 
-[(0, 1), 'Les son i i .'] 
-[(0, 1), 'La , .'] 
-[(0, 1), ', .'] 
-[(0, 1), ', la actual es correcta .'] 
-[(0, 1), 'i confortable .'] 
-[(0, 1), 'i en .'] 
-[(0, 1), '.'] 
-[(0, 1), 'La i que es aparcar el .'] 
-[(0, 1), 'era , i un de .'] 
-[(0, 1), 'de el personal excelent , be , be'] 
-[(0, 1), 'La de la de .'] 
-[(0, 1), 'abundant , i de , a el una piscina i .'] 
-[(0, 1), 'La de el I lo que .'] 
-[(0, 1), 'El era modern I .'] 
-[(0, 1), 'El buffet de i de .'] 
-[(0, 1), 'La La de el personal'] 
-[(0, 1), '.'] 
-[(0, 1), 'on es per si .'] 
-[(0, 1), 'per i .'] 
-[(0, 1), 'ha la i la de les .'] 
-[(0, 1), 'de hostal , situada de la zona'] 
-[(1, 0), 'El de la i el de la carta de el .'] 
-[(1, 0), 'El de el restaurant , el de la piscina el de hotel .'] 
-[(1, 0), 'A , la de de el , per la escasa i gran .'] 
-[(1, 0), 'estar tranquil a la piscina de hotel .'] 
-[(1, 0), 'Si ho a . i per el son , pero es personal .'] 
-[(1, 0), 'Les estan .'] 
-[(1, 0), 'Un de de de la , el que per , va a el el de no la de el .'] 
-[(1, 0), 'Les estan .'] 
-[(1, 0), 'La piscina i jacuzzi per la que ha a hotel .'] 
-[(1, 0), 'Una .'] 
-[(1, 0), 'La tv no esta , el especial'] 
-[(1, 0), 'Les .'] 
-[(1, 0), 'A part el era regular .'] 
-[(1, 0), 'Poca a les .'] 
-[(1, 0), '... se de les i a la primera planta i se el de .'] 
-[(1, 0), 'que un hotel de 4 ho ha de .'] 
-[(1, 0), 'A el lavabo algo de temperatura de confort .'] 
-[(1, 0), 'un ... la a el centre de El confort de hotel i la'] 
-[(1, 0), 'la categoria i , un SPA .'] 
-[(1, 0), 'Si el , resulta .'] 
-[(1, 0), 'Un de el centre de .'] 
-[(1, 0), 'el de l ´ hotel un problema les la ´ i l ´ hotel en general'] 
-[(1, 0), 'A part una de les va ser una .'] 
-[(1, 0), 'La de de TV era .'] 
-[(1, 0), 'Una de per hotel .'] 
-[(1, 0), 'de el de les La piscina una'] 
-[(1, 0), 'hotel en i un ascensor que el personal de hotel .'] 
-[(1, 0), 'pagar el dia entrada a hotel .'] 
-[(1, 0), 'Una de les que van en un superior , per el una sala de , i i olor a .'] 
-[(1, 0), 'No estar de sort .'] 
-[(1, 0), 'El de per el wifi , el de la TV , que ha alguna concreta per , i hora de per mí .'] 
-[(1, 0), 'hotel i Le no a Le .'] 
-[(1, 0), 'Mal .'] 
-[(1, 0), 'Les un per el .'] 
-[(1, 0), 'de de el restaurant .'] 
-[(1, 0), 'I per alguna cosa , una de falta a de el vestidor .'] 
-[(1, 0), 'El wifi un sol La de hotel , la de les i el de el personal .'] 
-[(1, 0), 'per el que a ( , transfer centre de el , ... ) .'] 
-[(1, 0), 'a hotel ha de un , a el hotel .'] 
-[(1, 0), 'falta un restaurant de a el de el hotel .'] 
-[(1, 0), 'Un que a estar en una zona costa el el parking La el de el personal'] 
-[(1, 0), 'Hi han .'] 
-[(1, 0), 'una de el centre per .'] 
-[(1, 0), 'No un hotel familiar .'] 
-[(1, 0), 'El de esta de i la que far el es a la terraza de el hotel . a a el restaurant i per no estar a la piscina les que de el i de i per a la es bar de .'] 
-[(1, 0), 'El personal de la zona de el restaurant exterior una .'] 
-[(1, 0), 'A el reservar per Booking , el tema de doble La ser amable , per el que es .'] 
-[(1, 0), 'Poca de .'] 
-[(1, 0), 'de parquing a el Catalunya es aparcar a el .'] 
-[(1, 0), 'Si de 5 queda de .'] 
-[(1, 0), 'TV de una .'] 
-[(1, 0), 'A la . no l . aire i a l . . de no la TV Les de i zona d . ( ) atencio de la'] 
-[(1, 0), 'Que no té aire .'] 
-[(1, 0), 'Les de i no s ´ ha .'] 
-[(1, 0), 'No m ´ la poca de el personal de la i que s ´ de reserva el dia , l ´ de el dia .'] 
-[(1, 0), 'Les que ho no una estancia agradable .'] 
-[(1, 0), 'que es en la web de hotel .'] 
-[(1, 0), 'No !'] 
-[(1, 0), ', de el'] 
-[(1, 0), 'una i el de el parking .'] 
-[(1, 0), 'parquing ( les places i a 25 € la ! ! ! ) .'] 
-[(1, 0), 'Que l ´ no .'] 
-[(1, 0), 'El es una La vista desde la'] 
+Gold Prediction Sentence
+
+0 1 En general tot ha estat molt bé .
+0 1 Recomanable 100_%
+0 1 Estada Excel·lent .
+0 1 La situació , el personal , la neteja : boníssim .
+0 1 Ascensor mooolt lent .
+0 1 Internet molt be .
+0 1 Ens van queixar i amb correcció ens van assignar una nova habitació que era molt ampla i tenia 3 llits .
+0 1 La persona de recepció que estava a la nit molt amable , ens va atendre i solucionar el problema ràpidament .
+0 1 Jardins i zones comunes molt cuidats .
+0 1 Inmediatament van sol . lucionar el problema .
+0 1 Les instal·lacions molt bé ,
+0 1 Molt còmode
+0 1 Molt net tot .
+0 1 La relació qualitat-preu és molt satisfactòria .
+0 1 A l' arribada l' acolliment de el personal va ser molt adequat i en tot moment teníem contacte telefònic per si feia falta .
+0 1 Entorn molt cuidat .
+0 1 la ubicació es inmmillorable
+0 1 Fantàstic .
+0 1 L' esmorzar fenomenal .
+0 1 Zona lounge molt relaxant .
+0 1 Molt correctes les reformes .
+0 1 Molt pràctic quan viatges amb molts dispositius electrònics . és fonamental
+0 1 El soroll inexistent .
+0 1 Un Molt bé .
+0 1 Molt confortable
+0 1 MOLT FACIL DE TROBAR
+0 1 Completament recomanable
+0 1 Esmorzar excel·lent .
+0 1 Ens van deixar tenir el pàrking a el cotxe fins després de dianr i això ens va satisfer moltíssim ja que vàrem poder aprofitar el temps de el matí sense patir per el vehicle .
+0 1 Esmorzar molt variat .
+0 1 La nevera feia molt soroll i s' havia d' apagar per les nits .
+0 1 Esmorzar molt complet i boníssim .
+0 1 Molt tranquil .
+0 1 Tot molt correcte diria que molt bé .
+0 1 M' ha agradat tot molt .
+0 1 Tot en_general : Personal , neteja , instal . lacions , serveis ... molt be .
+0 1 El preu és extraordinariament baix respecte a els de la zona .
+0 1 Magnífiques piscines .
+0 1 En tot moment m' han ajudat molt eficaçment si em feia falta alguna cosa o una informació .
+0 1 Hi estic d' acord , per evitar sorolls , però no me n' havia adonat i va ser una sorpresa ... Tot molt net .
+0 1 Ubicació molt a prop de l ´ estació de tren Gare du Lyon , el servei de el personal , la tv I la comoditat I tamany de el llit I l ´ atenció I detalls cap a els més petits .
+0 1 el bany molt bé
+0 1 Hi hem anat dos anys seguits i les millores que han fet han sigut esplèndides .
+0 1 esmorzar molt just .
+0 1 Molt acollidor .
+0 1 La situació molt a prop de el Gugguenheim .
+0 1 Les vistes fantàstiques .
+0 1 La propera vegada reservarem amb temps perqué quan tornem a Londres ens hi allotjarem segur .
+0 1 Molt bona atencio
+0 1 Esmorsar molt be .
+0 1 Repetirem !
+0 1 La terrassa de la habitació molt bona per estar a la fresca llegint i descansant .
+0 1 Vista general molt adient .
+0 1 Les habitacions son molt confortables
+0 1 En general és una pensió que està bé per passar uns dies , camines un quart d' hora i ja pots agafar el tranvia qque et pot portar a el cas antic .
+0 1 Allunyat de el Centre Ideal per anar a la platja , està a 5 minuts caminant .
+0 1 La platja de el passeig de la ribera es troba a 2 minuts I la de Sant Sebastià a 5 minuts .
+0 1 L' habitació en general , és força gran i no li falta de res .
+0 1 L' excel·lent tracte rebut per part de tot el personal de l' hotel , tan amable i disposats a atendre totes les nostres necessitats .
+0 1 Molt còmode i ben ubicat , millor que molts 3 estrelles a els que he estat .
+0 1 Costa trobar algo negatiu .
+0 1 No podem dir res negatiu !
+0 1 Un detall per agraïr .
+0 1 A 1 minut de la platja principal i a 2-3 de la riera on es poc aparcar gratis sense problemes .
+0 1 Es un hotel que val la pena per famílies amb nens o adolescents .
+0 1 És el segon cop que estic a aquest hotel , la situació és immillorable i les habitacions són grans i confortables .
+0 1 Té l' aspecte de nou .
+0 1 La seva situació prop de Picadilly és perfecta , no necessitant transport públic en cap moment .
+0 1 L' habitació ampla i còmoda .
+0 1 Una experiència per repetir .
+0 1 Esmorzar correcte .
+0 1 Es un camping molt tranquil , la gent en general es bastant respectuosa , no hem tingut cap problema de soroll q no ens deixes dormir .
+0 1 Habitacions modernes , còmodes i netes .
+0 1 Amabilitat a recepció .
+0 1 Està ben situat .
+0 1 L' habitació està correctament insonoritzada .
+0 1 Cafès i tes disponibles a la habitació .
+0 1 el llit en general m ha agradat tot .
+0 1 Instalacions modernes i confortables .
+0 1 Poc soroll .
+0 1 Res negatiu .
+0 1 El fum també no present .
+0 1 Penso tornar-hi .
+0 1 Si has d' anar a el Teatre Auditori de Sant Cugat queda molt a la vora i és ideal per quedar-s'hi a dormir si no vols tornar tard a Barcelona .
+0 1 Hi ha activitats tot el dia , per grans i petits , per no avorrir-se .
+0 1 Moltes gràcies .
+0 1 No hi ha res negatiu Tot
+0 1 Tot molt net i nou .
+0 1 Les habitacions netes I amples .
+0 1 No tinc res negatiu a dir .
+0 1 M' ha agradat la quantitat d' endolls que hi havia .
+0 1 Habitació confortable i neta .
+0 1 Cuina excel·lent i adequada per a celíacs en cas necessari .
+0 1 Hi tornarem
+0 1 Res Que estas dins de Puigcerdà i sembla que estiguis en plena natura .
+0 1 Zona tranquila .
+0 1 Habitació triple àmplia .
+0 1 Tot força nou
+0 1 I les habitacions són confortables .
+0 1 Decoració genial I original , materials gens deteriorats .
+0 1 Situació adient , a prop de el Museu Guggenheim i de el casc antic .
+0 1 El servei molt bo ( hi havia una noia de Cadís molt simpàtica que ens va ajudar a entendre el funcionament de l' hotel com tot el que s' hi pot fer a l' entorn ) i eficient .
+0 1 L' habitació molt bé tenint en compte que estava en oferta
+0 1 Totalment recomanable .
+0 1 No vam sentir cap tipus de soroll .
+0 1 L' esmorzar continental adaptat a les meves necessitats ( sense gluten ) .
+0 1 Perquè ens va agradar tot , poder el menjar .
+0 1 Còmode , net , modern , tot funciona .
+0 1 Fàcil aparcar relativament aprop gratuitament ( tot i que tenen pàrking ) .
+0 1 Amabilitat a la Recepció .
+0 1 Sobre tot el tracte personal i la ubicació .
+0 1 L' amabilitat de els seus treballadors .
+0 1 L. apartament és céntric .
+0 1 Res Recomanable
+0 1 L' aire_condicionat i el wifi funcionen bé .
+0 1 Habitacions bé .
+0 1 Tot ha estar correcte .
+0 1 L' amplitud de l' aparcament perquè permet portar bicicletes sense problemes .
+0 1 Habitacions molt àmplies i confortables .
+0 1 Tot ha estat correcte .
+0 1 Accessoris be .
+0 1 Però tot i això vaig poder descansar .
+0 1 Molta higiene .
+0 1 Inmediatament van sol·lucionar el problema .
+0 1 L' esmorzar bé .
+0 1 L' aparcament , les zones per aparcar be , estan a 5 min caminant .
+0 1 A la tarda t' ofereixen gratis un snack que va molt bé per descansar i agafar forces .
+0 1 Habitacions molt àmplies amb una petita cuina , tot molt net i actual .
+0 1 Ideal per a desconectar
+0 1 Ideal per relaxar-se , té 7 habitacions , així q ambient familiar .
+0 1 Està bé per a una escapada curta .
+0 1 Tot correcte .
+0 1 Estaven molt pendents i fins i tot , et donaven cava , aigua per anar a la platja , una consumició a la terrassa gratuita , donaven berenar i fins i tot , et deixaven les tovalloles i el para-sol per anar a la platja sense cobrar-te res .
+0 1 L' habitació donava a l' exterior amb una gran vista i era gran i còmoda .
+0 1 Apartament ample I ben equipat .
+0 1 El recomano a parelles adultes .
+0 1 Les habitacions amb llit doble i sofà-llit són grans i estan molt ben distribuïdes .
+0 1 Pàrking privat a un preu raonable .
+0 1 L' habitació està neta i fa bona olor per sort ; - ) Ll tracte de el personal és excelent i et miren d' ajudar amb tot .
+0 1 Relació qualitat-preu correcte .
+0 1 Repetiria .
+0 1 Varem contractar mitja pensió , ja que el restaurant ofereix menú per celíacs , el nostre fill ho es i no varem tenir cap problema .
+0 1 Senzill i correcte per el preu que té .
+0 1 L' habitació és moderna , amb un llit gran per a dues persones i molt bé .
+0 1 El millor es el aparcament per el cotxe amb comandament , en una zona on quasi es difícil de trobar lloc per una moto .
+0 1 Sens dubte tornaria aquest hotel i el recomanaria a els meus amics si és per pocs dies ....
+0 1 També es menja bastant bé .
+0 1 No hi ha molt cosa que dir , preu i qualitat més que acceptable .
+0 1 Amable i atent
+0 1 Si voles per Gatwick tens el tren directe a 50 metres .
+0 1 Bona ubicació .
+0 1 Repetiria
+0 1 Esmorzar complert .
+0 1 Te parking .
+0 1 L' aire condicionat i el wifi funcionen bé .
+0 1 Encara així , la relació qualitat-preu actual es correcta .
+0 1 Bany correcte .
+0 1 Tracte de el personal excelent , qualitat - preu molt be , situacio dins puigcerdà be
+0 1 M' ha agradat la ubicació i la neteja de les habitacions .
+0 1 LLoc tranquil sense problemes de parking .
+1 0 Compte !
+1 0 Senyal de wifi molt pobre .
+1 0 NO té sentit pagar per aquest spa .
+1 0 Molt més car que les consumicions en un avió , que ja és dir ... Si es posessin preus més moderats ( tot i que fossin més cars o bastant més cars , inclús , que a un bar ) segur que es consumiria molt més .
+1 0 Com esta situat en un carrer estret si obres el balco ( apart de el soroll q hi deu haver a l estiu ) no tens gens d intimitat i la vista per descomptat no es gaire suggestiva .
+1 0 El pitjor de tot la cuina i el preu de la carta de el sopar .
+1 0 Els articles de bany són molt bàsics .
+1 0 El servei de el restaurant és molt millorable , tant el de la piscina com el de l' hotel .
+1 0 Els estris de cuina eren molt limitats .
+1 0 Portes en molt mal estat .
+1 0 L' escala de l' edifici dubto que compleixi cap normativa !
+1 0 El preu de el bufet d , esmorzar és excessiu !
+1 0 Per mi es inacceptable que no et deixin entrar fins les 18 i a el marxar ho hagis de fer a les 11 ... Acabes perdent practicament els dos dies .
+1 0 El menys valorat : la cuina .
+1 0 El matalas era execivamen dur .
+1 0 És impossible estar tranquil a la piscina de l' hotel .
+1 0 Si m' aiguesis quedat uns dies ho hauria comunicat a recepció . - i per el meu gust els coixins son mooolt incomodes , pero aixo es molt personal .
+1 0 El llit no és gaire còmode
+1 0 El wifi a l' habitació es lamentable .
+1 0 Un de els guardes de seguretat de la porta , el que hi havia per els matins , ens va faltar greument a el respecte perquè el lector de matrícules no llegia la de el nostre cotxe .
+1 0 El preu és excessiu per el servei i les instal·lacions que ofereix .
+1 0 La nevera molt petita i deteriorada .
+1 0 El preu que cobren per animal de companyia ( carlino ) es de 20 € !
+1 0 El preu normal es excesiu
+1 0 Molt malament en aquest aspecte .
+1 0 El pitjor és l' horari d' arribada i sortida de l' apartament .
+1 0 Aparcament molt just tant en amplada com en nombre de places .
+1 0 La piscina i jacuzzi molt petit per la quantitat d' habiacions que hi ha a l' hotel .
+1 0 El director de l' hotel molt desagradable .
+1 0 El wifi va fatal .
+1 0 L' habitació petita és molt petita , a el llit doble s' ha d' entrar per els peus de el llit doncs hi ha un lateral tocant la pared .
+1 0 Venint de olot-vic hi ha manca total de senyalítica direccional en ruta indicant el monestir de Sant Benet I més en el lloc indicat de el canvi de carretera ( et pots trobar fàcilment en ruta a Manresa o Terrassa !
+1 0 Els parkings publics molt cars .
+1 0 Només que una de les nits , a l' habitació de el costat hi habia un grup de gent jove que venien de festa i a l' hora de pujar a l' habitació van fer molt de sorrol .
+1 0 Habitacio a pati interior sorollos .
+1 0 Vaig trobar a faltar un seient a l' habitació i un aixugador de el cabell .
+1 0 Manca d' estris de cuina adequats .
+1 0 També s' ha de tenir en compte , que per anar a la piscina , s' ha de sortir a el carrer .
+1 0 SPA a temperatura incorrecta ( freda ) Hamaques habitació amb traus a el teixit .
+1 0 Una mica lleig .
+1 0 Es en un poligon a els afores i el cami a el centre és molt inhòspit per fer-lo a peu . el tracte de el personal
+1 0 El renou de els cotxes , o dormiem amb finestra oberta o teniem calor .
+1 0 Cal llum de tauletes no es pot tenir únicament focus a el sostre .
+1 0 Falten activitats per a adolescents L' ambient , les instal·lacions i el personal .
+1 0 La tv no esta sintonitzada correctament Pràcticament tot , sobretot comptant amb el preu especial
+1 0 Francament , per posar-li alguna pega diria que els armaris de l' habitació són menuts .
+1 0 El wifi no funcionava i està poc insonoritzada , es sentien les altres habitacions El lloc , l' habitació i el bany i el personal .
+1 0 El segon dia ens vam trobar la plaça d' aparcament ocupada .
+1 0 Els matalassos de els llits són massa tous per a el nostre gust .
+1 0 No tenen conexió per auricolars a les tv .
+1 0 A part el menjar era regular .
+1 0 Poca il·lumninació a les habitacions .
+1 0 Manca molta insonoritzacio ... se sent tot de les habitacions veines i nosaltres estavem a la primera planta i se sentia tot el de els carrers .
+1 0 Que la plaça d' aparcament no entri en el preu de l' allotjament .
+1 0 Per dir algo , que no venen botellas d' aigua de litre , i has d' anar a una maquina , i amb aquesta calor , en calia mes d' una .
+1 0 el soroll per la coincidencia en l' allotjament de un grup molt numeros de nens i adolescents que ens va impedir descansar en tota la nit .
+1 0 Tenien el parking complert i a la zona es complicat aparcar .
+1 0 Falta de nateja .
+1 0 No donaba bona espina .
+1 0 L' habitació que no té vistes a el mar ni a la piscina , té vistes directes a l' aparcament .
+1 0 Ni tv .
+1 0 No m' ha agradat que alguns impresos estiguin en quatre idiomes i que cap d' ells sigui el català que és la llengua de el nostre país .
+1 0 A el lavabo faltava algo de temperatura de confort .
+1 0 Per posar un però ... la ubicació respecte a el centre de Donostia El confort de l' hotel i la seva relació qualitat-preu
+1 0 Per la categoria i instal·lacions , faltaria un SPA .
+1 0 Les habitacions sense secador , petites i bany molt just .
+1 0 L' accés a els camins de els voltants és complicat .
+1 0 Si tens el somni lleuger , resulta bastant molest .
+1 0 Lentitud en servir el sopar .
+1 0 Un pél allunyat de el centre de Puigcerdà .
+1 0 el menjador de l ´ hotel tenem un problema amb les mosques la situacio ´ i l ´ hotel en general
+1 0 L' únic petit ' però ' que hi trobo es que el personal de neteja , són móres amb els seus mocadors , que fa que perdi una mica de modernitat .
+1 0 Una mica de dificultat per trobar l' hotel .
+1 0 Tracta despestiu de el recepcionista
+1 0 El jacuzzi és molt petit , com a molt per 4 per estar tranquils i , finalment el gimnàs és de risa , nomes hi ha una elíptica , una cinta de correr i una bicicleta estàtica .
+1 0 L' hotel esta molt envellit , amb zona de recepcio molt decadent , sense instalacions , com gimnas , zones d' oci , sense equipaments ludics , i habitacions correctes .
+1 0 A els banys els falta una remodelació urgent .
+1 0 Podrien fer algunb descompte per a clients a les hamaques de la platja .
+1 0 Les tovalles i els llençols nets olien una mica a vinagre .
+1 0 El restaurant - bar crec que no es suficient per un hotel com aquest .
+1 0 El sofà llit per a dues places era força incòmode , té un ferro travesser que te'l claves .
+1 0 Necessitava una lampareta per poder llegir un llibre .
+1 0 Hem tingut un problema a l' habitació perquè la finestra no tancava de el tot bé i , lògicament , entrava fred ! i no es va poder resoldre ( ens van posar unes tovalloles a la finestra per frenar l' entrada de l' aire fred ) .
+1 0 Els llençols estaven bruts .
+1 0 Ell llit un per el tou , I un per el petit .
+1 0 El escenari es petit amb dues super-col·lumnes a els laterals que limiten la visió .
+1 0 La banyera de l' estudi , millor un plat de dutxa .
+1 0 Llit una mica petit , 1,35 cm per un llit doble a un hotel .... es Massa petit .
+1 0 Potser la situació , una mica apartat de Puigcerdà .
+1 0 Se senten les converses i sorolls de l' entrada , si més no a la planta baixa de l' edifici nou .
+1 0 Q neteguin l' habitacio de el costat abans de les 9h La piscina una mica bruta
+1 0 Els utensilis de cuina estaven bruts i a la paperera encara hi havia la brossa de els últims llogaters .
+1 0 L' hotel està en reformes i només compta amb un ascensor que també utilitza el personal de l' hotel .
+1 0 Vaig trobar camins fins a Regencós i Pals , però estarien bé cartells indicatius des de el càmping .
+1 0 L' absència de videt , i de d' altre alternativa .
+1 0 Et fan pagar el dia d' entrada a l' hotel .
+1 0 La wifi no funciona a les habitacions , només a l' edifici principal .
+1 0 Aire condicionat habitació amb soroll .
+1 0 Que sempre ens toca habitacions interiors , qui es queda les exteriors ? ? clients preferents El silenci general .
+1 0 Crec que no hauria d' estar permès fumar a tot el recinte .
+1 0 Que s' acceptin animals de companyia ja que no m ' agraden els animals hi he anat amb algun hotel que el gos de l' habitació de el costat no parava de lladra .
+1 0 Que en ple estiu estigui el nòrdic posat Calitat preu
+1 0 El preu una mica car .
+1 0 Era una mica incòmode .
+1 0 Una mica sorollós perquè érem a la 5a planta on hi ha la terrassa i la finestra donava a un carrer molt transitat .
+1 0 El llit una mica incòmode
+1 0 El fred va inclòs en el preu .
+1 0 Aire acondicionat deficient .
+1 0 No inclou esmorzar en el preu i si el pagues apart val 12.50euros ( preu excessiu per lo que es - thas de fer tu els ous a sobre - ) , l' habitacio no disposava de balco ( tot i haver fet la peticio de tenir balco mesos abans ) i a el ser un lloc de platja ens va semblar incòmode no tenir un espai on poder secar les tovalloles i els banyadors .
+1 0 Els llits de els bungalows eren d , espuma , algo incomodes la veritat .
+1 0 Crec que els cal atendre a detalls que fan l' estada mes confortable .
+1 0 El matalàs era una mica incòmode .
+1 0 No hi ha massa conexio de telefon , pero t' avisen a el principi i alla hi vas per relaxar-te .
+1 0 Situació respecte de la platja immillorable .
+1 0 Una de les habitacions que ens van donar en un pis superior , accès per el mig d' una sala de conferències , llits i mobles vells i olor a resclosit .
+1 0 L' esmorzar es millorable per el preu que té , la pastisseria es industrial , poca diversitat de productes calents , nomes beicon i ous remenats .
+1 0 Tot es millorable Tranquil·litat !
+1 0 L' hotel tot i dir-se Le Marais no està situat ben bé a Le Marais .
+1 0 El check in és massa tard .
+1 0 El fet d' haber de cuina amb una petita placa d' inducció ... Espai petit i reduït per cuinar .
+1 0 El menjar s' anava aprofitant d' un àpat a un altre i no tenia una bona presentació .
+1 0 Que les instalacions necessiten una remodelació , es veu una mica antic .
+1 0 Mal insonoritzat .
+1 0 Les animacions nocturnes un per el justes .
+1 0 Mobiliari bastant vell .
+1 0 Bany molt senzill .
+1 0 Cobrament de els entreteniments de el restaurant sense avisar .
+1 0 En l' habitació de el costat de la terrassa no es pot descansar a causa d' aquesta música continuada .
+1 0 I per posar alguna cosa més , potser una mica de falta d' espai a els armaris de el vestidor .
+1 0 Ens han donat llits separats després de demanar un llit de matrimoni , el matalàs és petit i incòmode , l' habitació fa olor a resclosit , i el televisor té la pantalla més petita que un mòbil .
+1 0 L' esmorzar és poc variat .
+1 0 Deixadesa general ( moqueta , material de l' habitació , nevereta , ... ) .
+1 0 se sentia soroll de les habitacions de els costats i de les motos de el carrer que passaven a mitja nit a tot gas . les habitacions i l' esmorzar
+1 0 El wifi només permet connectar un sol aparell La situació de l' hotel , la comoditat de les habitacions i el tracte de el personal .
+1 0 Es sentia massa el soroll de els altres apartaments o de el passadís .
+1 0 Caldria més informació per el que fa a els serveis complementaris ( pàrquing , transfer centre de el poble , ... ) .
+1 0 Habitació molt freda , la calefacció central encara no estava engegada , però ens van donar unes mantes i vam passar la nit força bé L' esmorzar i la situació .
+1 0 O com a mínim , haurien de tenir una ala d' habitacions per fumadors i una altra per no fumadors , ja que la gent surt a fumar a la terrassa i ve tota l' olor a dintre de l' habitació o a la terrassa contígua .
+1 0 La conservació de les instal·lacions podría ser una mica més acurada a la zona exterior de les habitacions ( balcó-Terrassa ) .
+1 0 El dia 15-08-2014 a les 8:15 , hora d ’ esmorzar ( obren a les 8:00 ) , hi havia una noia de la cuina , que reposava el menjar amb la roba bruta de feia dies ( potser setmanes ) , especialment el davantal , que originàriament devia ser blanc i era d ’ un to marronós força desagradable .
+1 0 Impossible començar a dormir fins les 24.00 per el soroll que feien .
+1 0 Relativament lluny de el centre .
+1 0 Ens hagués agradat poder disposar de l' habitació a les dues o quarts de tres de la tarda com a màxim , cosa que no vam poder fer sovint per motius de neteja .
+1 0 L' accés a l' aparcament en cotxe és complicat a el principi si no es coneix el camí .
+1 0 La habitació feia olor a tabac , es veien bastant desperfectes a la habitació i a la zona de el esmorzar .
+1 0 En pensió completa no estan incloses les begudes de el dinar ni de el sopar .
+1 0 li falta un restaurant de qualitat adequat a el nivell de el hotel .
+1 0 No m' ha agradat que no es pugui esmorzar a l' hostal i que no tenien assecador de cabell a el bany .
+1 0 Li fa falta una miqueta d' actualització .
+1 0 El wi-fi de l' habitació no funcionava , les instal·lacions estan passades de moda o directament antiquades .
+1 0 A una habitació , mancaba la teuleta de nit i la persiana estava trencada . hi habia una batidora que no funcionaba .
+1 0 Un inconvenient és que a l' estar en una zona semipeatonal costa molt arribar amb el cotxe fins el parking La ubicació el tracte de el personal
+1 0 Hi han moltes escales .
+1 0 Queda una mica lluny de el centre per anar-hi caminant .
+1 0 A el bany de la nostra habitació la il·luminació era molt forta , quatre focus empotrats a el sostre sense posibilitat de regularla .
+1 0 La poca varietat en plats de el restaurant I lo car que era , la degradació de la zona on es troba l ´ hotel I els problemes que varem tenir amb la caixa forta de la habitació .
+1 0 Que no hi hagi penja tovalloles a el lavabo El lloc la tranquil·litat
+1 0 Bar tancat dissabte tarda / vespre .
+1 0 Les finestres de l habitacio donaven a patis de llum , i l habitacio tenia poca llum .
+1 0 El primer dia vaig estar sense TV .
+1 0 No és un hotel familiar .
+1 0 Estàvem a el primer pis I la insonorització de el carrer no és bona , com eren festes , tota la nit va haver-hi molt de soroll .
+1 0 Dividit en dos edificis , les habitacions a el davant de la recepció i el menjador ( mini ) .
+1 0 Soroll tota la nit Situacio
+1 0 a la habitacio no i habia nevera la unbicacio i la intalacions
+1 0 El terra de els pasadis esta ple de tacas i amb amb la calo que far el esmorzar es a la terraza de el hotel . quan sempre a sigut a el restaurant i per això no pots estar a la piscina fins les 11.00h que termina l' horari de el esmorza i està tot ple de sellers i taules per qur a la nit es bar de Copas també .
+1 0 El personal de la zona de el restaurant exterior una mica estressat .
+1 0 Les habitacions no disposen de mini-nevera .
+1 0 A el reservar per Booking , dona confusió amb el tema de habitació doble - ús individual - La recepció podria ser molt més amable , per el preu que es paga .
+1 0 Ens hagués agradat un pis més inferior .
+1 0 Un pelet car El lloc , la neteja , senzillesa , ambient .
+1 0 Poca disponibilitat d' accessoris de bany .
+1 0 Agafeu plaça de parquing a el Catalunya perque gairebe es impossible aparcar a el carrer .
+1 0 El tracte de la cafetería i l' habitació em va semblar que necesitaba una renovació Els lavabos de la planta baixa necesitaven un servei de neteja més acurat .
+1 0 El parking no està inclòs a el preu de l' allotjament I els plats tenen restes de menjar .
+1 0 En arribar la nostra habitació feia pudor a tabac .
+1 0 Habitació freda a el arribar , podríem encendre calefacció avans .
+1 0 Una mica de soroll a el carrer que ens arribava a l habitació .
+1 0 El bufet d' esmorzar en angle tancat , dificulta l' accés .
+1 0 A la nostre hab . no anava l . aire acondicionat i a l . hab . de els nens no funcionava la TV Les vistes des de adalt terrassa Proximitat platja i zona d . oci ( terrassetes-bars-restaurants ) L. atencio de la recepcio
+1 0 Aire acondicionat vell no funciona be .
+1 0 La manca d' autoritat de el personal de seguretat per fer callar els borratxos estrangers que donaven cops a les portes de forma continuada i escandalosa a partir de les 3 de la matinada Tambe que apartir de les dues de la matinada no hi ha aire acondicionat per molta calor que faci cosa que no t' informen quan reserves l' hotel No tornare a reservar el flamingo 4 estrelles , de la qualitat de el mangar ni parlar-ne
+1 0 El cafe dolentissim , l' oli no era verge , la mantega dolenta i els sucs de baixa qualitat .
+1 0 Mobiliari força antic .
+1 0 Potser , la cambra de bany necessita una reforma .
+1 0 Subtitulades Nevera bruta .
+1 0 Ven trucar per demanar si podiem arribar abans i van ser bastant inflexibles amb el tema .
+1 0 A el mati tenia molta pressa per anar a treballar i la persona encarregada no tenia ni idea de el que m . havia de cobrar i finalment em va cobrar un mig sopar a el mateix preu que un sopar sencer .
+1 0 No m ´ agradat la poca amabilitat de el personal de la Recepció i que s ´ hagi de reserva el dia abans , l ´ esmorzar de el dia següent .
+1 0 El jacuzzi de la terrassa de el pavelló era fred .
+1 0 La temperatura de l' habitació quan vàrem arribar : el sol l' havia escalfat molt I era agobiant .
+1 0 Molt justet , relaciò a el preu elevat
+1 0 Les persones que ho porten no faciliten una estancia agradable .
+1 0 No entra l' esmorzar a el preu .
+1 0 Potser les portes les podrien posar de millor qualitat a les habitacions i quan entra canalla jove els haurien de fer callar i portarse be ja que a el arribar uns van fer bastant xivarri El tracte , el lloc en general i la tranquilitat
+1 0 La poca sensibilitat ( ideològica i cultural ) per el que fa a l' oferiment de la premsa : cap exemplar de LA VANGUARDIA ni de el PUNT-AVUI ni de l' ARA ; en canvi si de LA RAZON i de l' AS L' habitació
+1 0 Crec que això es podria aclarir en la web de l' hotel .
+1 0 No hi ha sabó per la dutxa a el bany .
+1 0 Manca de calefacció i de wifi en una nit força freda de primer de gener .
+1 0 No hi havia secador !
+1 0 Crec que en general aquest tipus d' allotjament hauria de proveïr , apart de ' hardware ' de cuina ( coberts , paelles , torradores , . . ) de software ( una mica de sal , un raig d' oli , sabo de plats i de rentadora , . . ) en aquest aspecte una mica xungo La situació .
+1 0 Per dir alguna cosa ( i evidentment això no és imputable a l' hotel ) , el vent ... quan bufa la tramuntana , com les suites es troben adalt de el turó , es fa notar .
+1 0 Les habitacions que toquen a la carretera fan mes soroll .
+1 0 És trova a faltar ascensor per els pisos superiors .
+1 0 Per el que he pagat no he tingut esmorzar i la veritat és que he dormit en llocs millors per menys preu .
+1 0 L' esmorzar per ser una casa rural podia ser més natural i variat .
+1 0 Per ser un 4 estrelles superior , li falta renovar sobretot el mobiliari de les habitacions .
+1 0 Manca d' insonorització habitació , especialment de el carrer Ubicació
+1 0 El desdejú un poc més curt de el que esperava .
+1 0 Falta parquing ( les places són insuficients i a 25 € la nit ! ! ! ) .
+1 0 Finalment ens van cobrar més de el que estava previst a l' esmorzar ( que per cert és molt senzill ) .
+1 0 El bany es una mica senzill La vista desde la finestra
+1 0 Es un hotel per guiris , no per catalans .
