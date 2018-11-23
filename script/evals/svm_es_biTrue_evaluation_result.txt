@@ -1,4 +1,4 @@
-test_directory: datasets/original/es/raw 
+test_directory: datasets/no_lex/es/raw 
 lang: es 
 embedding: artetxe 
 classifier: svm 
@@ -6,10 +6,10 @@ binary: True
  
              precision    recall  f1-score   support
 
-          0       0.90      0.84      0.87      1216
-          1       0.41      0.54      0.47       256
+          0       0.88      0.83      0.86      1216
+          1       0.37      0.47      0.41       256
 
-avg / total       0.81      0.79      0.80      1472
+avg / total       0.79      0.77      0.78      1472
  
  
-Macro F1: 0.666
+Macro F1: 0.634

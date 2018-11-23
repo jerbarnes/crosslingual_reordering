@@ -1,4 +1,4 @@
-test_directory: datasets/random/es/raw 
+test_directory: datasets/no_lex/es/raw 
 lang: es 
 embedding: artetxe 
 classifier: bilstm 
@@ -6,10 +6,10 @@ binary: True
  
              precision    recall  f1-score   support
 
-          0       0.91      0.68      0.78      1216
-          1       0.31      0.70      0.43       256
+          0       0.89      0.68      0.77      1216
+          1       0.28      0.61      0.39       256
 
-avg / total       0.81      0.68      0.72      1472
+avg / total       0.79      0.67      0.70      1472
  
  
-Macro F1: 0.604
+Macro F1: 0.579

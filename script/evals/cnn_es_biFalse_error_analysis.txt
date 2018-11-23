@@ -1,4 +1,4 @@
-test_directory: datasets/original/es/raw 
+test_directory: datasets/no_lex/es/raw 
 lang: es 
 embedding: artetxe 
 classifier: cnn 
@@ -8,764 +8,842 @@ Binary: (0 +, 1 -)
  
 Gold Prediction Sentence
 
-2 1 Muy amable el personal y perfecto el desayuno buffet con mucha variedad .
-2 1 El baño es increíble , y los amenities de aseo muy buenos .
+2 1 Muy UNK el personal y UNK el desayuno buffet con mucha UNK .
+2 1 El baño es UNK , y los amenities de aseo UNK buenos .
 2 0 Increible , por su ubicacon y por sus instalaciones .
-2 1 Muy cerca de Sarlat y del Valle Dordoña es perfecto para visitar la zona .
-2 1 En esta ocasión no hemos utilizado el servicio de restaurante pero el desayuno sí lo hemos hecho en la cafetería del hotel y nos ha sorprendido la excelente relación calidad · precio .
-2 0 Excelente opción !!
+2 1 Muy cerca de Sarlat y del Valle Dordoña es UNK para visitar la zona .
+2 1 En esta ocasión no hemos utilizado el servicio de restaurante pero el desayuno sí lo hemos hecho en la cafetería del hotel y nos ha UNK la UNK relación calidad · precio .
 2 1 Muy buena calidad / precio
-2 0 Las personas de recepción , muy amables .
-2 1 Es un hotel muy relajante sobre todo si vas al spa que es muy grande y la decoración espectacular .
+2 0 Las personas de recepción , UNK amables .
+2 0 Todo UNK .
+2 0 El Hotel es increible , bellisimo con unas instalaciones UNK confortables y con un parque UNK , super cuidado !
+2 1 Es un hotel UNK relajante sobre todo si vas al spa que es UNK grande y la decoración UNK .
 2 0 Formidable , tienen que visitarlo
-2 0 El colchón también era súper cómodo .
+2 0 Las habitaciones estan UNK UNK .
+2 0 El colchón también era UNK UNK .
 2 0 Excelencia con alternativas
 2 1 Siempre que viajamos a Madrid nos alojamos en este hotel , la ubicación es inmejorable .
-2 1 La gente de recepción fue muy amable cuando les consulté sobre información turística .
+2 1 La gente de recepción fue UNK UNK cuando les consulté sobre información turística .
 2 1 Excelente punto de partida para visitar Barcelona
-2 1 El hotel encantador , en el centor de la Gran Vía Madrileña , todo un lujo .
-2 1 Las afueras del hotel son unas vistas muy buenas a la playa .
-2 0 Las habitaciones , el spa ... Todo muy limpio y el trato del personal de recepcion un 10 .
+2 1 El hotel UNK , en el centor de la Gran Vía Madrileña , todo un UNK .
+2 1 Las afueras del hotel son unas vistas UNK buenas a la playa .
+2 1 Relación calidad · precio UNK buena
+2 0 Las habitaciones , el spa ... Todo UNK UNK y el trato del personal de recepcion un 10 .
 2 0 Este hotel engancha
 2 0 El desayuno , como definirlo , ESPECTACULAR .
-2 1 El desayuno esta muy bien , en el nivel del hotel .
-2 0 Todo está muy , pero que muy cuidado , desde sus instalaciones , hasta su ubicación .
-2 1 Pasamos unos días en este maravilloso hotel de Madrid .
-2 0 Excelente , el hotel y el trato es muy bueno
-2 1 Lo mejor de este hotel es situación en la mejor zona de la Gran Vía , lo que facilita enormemente el acceso a teatros , restaurantes y compras .
-2 0 El equipamiento de las habitaciones súper completo .
-2 0 Impresionados con las mejoras que se han hecho de un año para otro .
-2 0 Sorpresa enorme
-2 0 El desayuno en la última planta es " espectacular " , tanto por las vistas como por la variedad del mismo .
-2 0 El seguro del coche pagó este hotel. todo estuvo muy bien , estuvimos perfectamente atendidos hasta que repararon nuestro automovil .
+2 1 El desayuno esta UNK UNK , en el nivel del hotel .
+2 0 Todo está UNK , pero que UNK cuidado , desde sus instalaciones , hasta su ubicación .
+2 1 Pasamos unos días en este UNK hotel de Madrid .
+2 0 Excelente , el hotel y el trato es UNK UNK
+2 0 Tiene una UNK UNK .
+2 1 Lo UNK de este hotel es UNK en la UNK zona de la Gran Vía , lo que UNK enormemente el acceso a teatros , restaurantes y compras .
+2 0 Algo UNK !
+2 0 El equipamiento de las habitaciones UNK completo .
+2 0 Impresionados con las UNK que se han hecho de un año para otro .
+2 0 Sorpresa UNK
+2 0 El desayuno en la última planta es UNK UNK UNK , tanto por las vistas como por la UNK del mismo .
+2 0 El UNK del coche pagó este hotel . todo estuvo UNK UNK , estuvimos UNK atendidos hasta que repararon nuestro automovil .
 2 0 En fin un excenete lugar para pasar las vacaciones .
-2 0 El check · in y check · out muy rápidos , ya que soy cliente de otras ocasiones .
-2 0 El desayuno buffet muy correcto .
-2 1 Fuimos muy felices en el hotel
+2 0 El check · in y check · out UNK rápidos , ya que soy cliente de otras ocasiones .
+2 0 El desayuno buffet UNK UNK .
+2 1 Fuimos UNK felices en el hotel
 2 1 Muy cerca del Bayside y el American Airlines Arena .
-2 0 Mayoritariamente eran familias lo que estubimos alli alojados , y para los niños muy bien .
-2 1 Además es un hotel muy moderno .
-2 1 Fue una experiencia muy buena con el servicio , la verdad es que quede muy satisfecho , no pase mucho tiempo ya que solo estube dos noches en el , pero como ya he dicho a parte del servicio muy bueno las instalaciones tambien lo eran
+2 0 Mayoritariamente eran familias lo que estubimos alli alojados , y para los niños UNK UNK .
+2 0 Además es un hotel UNK UNK .
+2 0 Fue una experiencia UNK buena con el servicio , la verdad es que quede UNK UNK , no pase mucho UNK ya que solo estube dos noches en el , pero como ya he dicho a parte del servicio UNK UNK las instalaciones tambien lo eran
 2 0 Genial
-2 0 Y a pesar de estar en la Gran Vía la habitación era muy silenciosa .
-2 0 Inmejorable situacion en la Toscana , muy proximo a Pisa ( 30Km ) .
-2 1 Gracias por todo ......... lo pasamos muy lindo .... Lo que vimos de la isla es muy lindo pero manejar y andar en auto es un contratiempo ...... Las calles son muy angostas y con cunetas profundas a los costados y la gente camina por las calles
-2 1 La situción es muy buena ya que cuenta con varias lineas de tranvía y el metro muy cerca .
+2 0 Y a pesar de estar en la Gran Vía la habitación era UNK silenciosa .
+2 0 Inmejorable situacion en la Toscana , UNK proximo a Pisa ( 30Km ) .
+2 1 Gracias por todo ... ... ... lo pasamos UNK UNK ... . Lo que vimos de la isla es UNK UNK pero manejar y andar en auto es un contratiempo ... ... Las calles son UNK angostas y con cunetas profundas a los costados y la gente camina por las calles
+2 0 Sencillamente UNK .
+2 0 La situción es UNK buena ya que cuenta con varias lineas de tranvía y el metro UNK cerca .
 2 1 Ni que decir tiene que la ubicación del hotel es ideal si vas a la zona de los teatros .
 2 1 Apartamentos alta calidad
-2 1 El pasado dia 01 de Marzo estuve en este hotel , las habitaciones son perfectas y el trato del personal mejor , sobre todo su directora .
+2 1 El pasado dia 01 de Marzo estuve en este hotel , las habitaciones son perfectas y el trato del personal UNK , sobre todo su directora .
 2 0 Vacaciones Geniales
 2 0 Fantástico
 2 0 Encanto real
-2 1 Es un hotel maravilloso , muy limpio y muy bien ubicado .
-2 1 Excelentes instalaciones y sobre todo el personal con gran vocación de servicio , son correctìsimos y muy atentos .
+2 0 Es un hotel UNK , UNK UNK y UNK UNK ubicado .
+2 1 Excelentes instalaciones y sobre todo el personal con UNK vocación de servicio , son correctìsimos y UNK atentos .
 2 1 Unas increïbles vacaciones de relax
 2 1 Tenía la ubicación perfecta .
-2 1 Este hotel nos gusto mucho el servicio que daban , la comida y la estancia fue espectacular .
-2 0 Todo muy Limpio , Muy amables y el desayuno estaba muy bien .
-2 0 Un hotel perfecto
-2 0 En general todo muy bien en cuanto a los trabajadores .
-2 1 El servicio y la atencio perfecto
-2 1 El hotel es ideal para trabajo , y para pasar un fin de semana .
+2 1 La UNK es UNK y las comunicaciones UNK buenas .
+2 0 Este hotel nos UNK mucho el servicio que daban , la comida y la estancia fue UNK .
+2 0 La UNK es UNK .
+2 1 La verdad que quedamos UNK con el trato del personal .
+2 0 El personal se acordaba de nosotros y el trato ha sido más que UNK .
+2 0 Todo UNK Limpio , Muy amables y el desayuno estaba UNK UNK .
+2 0 Un hotel UNK
+2 0 En UNK todo UNK UNK en cuanto a los trabajadores .
+2 0 El buffet como siempre UNK .
+2 1 El servicio y la atencio UNK
+2 1 El hotel es ideal para UNK , y para pasar un fin de semana .
 2 0 Hemos vuelto a repetir la estancia en este hotel porque me encanta su situacion
 2 0 Excelente en todos los aspectos .
-2 1 La calificación Muy bueno queda chica para este Hotel .
-2 0 Creo que de todos los hoteles en los que he estado , sin duda , este desayuno el mejor .
-2 1 En el mejor sitio de todo Madrid
+2 1 La calificación Muy UNK queda chica para este Hotel .
+2 0 Creo que de todos los hoteles en los que he estado , sin UNK , este desayuno el UNK .
+2 1 En el UNK sitio de todo Madrid
 2 3 Perfecto
-2 1 Un lugar precioso , todo perfecto
-2 0 Las sábanas , mantas y decoración de la cama muy guapo .
-2 0 Hotel perfecto en Madrid
+2 1 Un lugar UNK , todo UNK
+2 0 Las sábanas , mantas y decoración de la cama UNK UNK .
+2 0 Hotel UNK en Madrid
 2 0 Excelente , como siempre , en la linea de la cadena .
-2 1 También se encuentra un CVS muy próximo al hotel .
-2 1 El mejor hotel en Madrid
-2 1 Está perfectamente ubicado en el centro de Madrid .
-2 1 Es sumamente recomendable para cualquier tipo de origen de viaje ( negocios , recreación , vacaciones , etc )
-2 0 Gran confort
-2 1 Totalmente recomendable para viaje de placer
-2 0 La experiencia ha sido muy buena , nos permitió relajarnos , divertirnos e incluso trabajar durante los tres días que hemos estado .
+2 1 También se encuentra un CVS UNK próximo al hotel .
+2 1 El UNK hotel en Madrid
+2 1 Está UNK ubicado en el centro de Madrid .
+2 0 Hotel de ensueños , un UNK en el UNK mismo
+2 1 Es sumamente UNK para cualquier tipo de origen de viaje ( negocios , recreación , vacaciones , etc )
+2 0 Gran UNK
+2 1 Totalmente UNK para viaje de UNK
+2 0 La experiencia ha sido UNK buena , nos permitió relajarnos , divertirnos e incluso trabajar durante los tres días que hemos estado .
 2 0 Muy acojedor
-2 0 La decoración es muy acogedora creando un contraste de decoración moderna y funcional con la casa , que es antigua de y techos muy altos .
+2 0 La decoración es UNK acogedora creando un UNK de decoración moderna y funcional con la casa , que es antigua de y techos UNK altos .
 2 0 Muy recomemdado .
-2 1 Por error la primera manana bajamos tarde al desayuno y nos atendieron genial en la cafetería .
-2 1 He estado en 5 diferentes hoteles en Punta Cana y este lo recomiendo al 100 % .
-2 0 fuí por trabajo un día a barcelona y me quedé en este hotel.El hotel como tal , está muy bien .
-2 0 El precio es muy bueno , especialmente comparado con los hoteles centricos ( y normalmente no en tan buen estado ) .
-2 1 Hotel con una ubicación excepcional .
+2 1 Por UNK la primera manana bajamos tarde al desayuno y nos atendieron genial en la cafetería .
+2 1 He estado en 5 diferentes hoteles en Punta Cana y este lo UNK al 100 % .
+2 0 fuí por UNK un día a barcelona y me quedé en este hotel.El hotel como tal , está UNK UNK .
+2 1 El hotel es UNK .
+2 0 El precio es UNK UNK , especialmente comparado con los hoteles centricos ( y normalmente no en tan buen estado ) .
+2 0 Hotel con una ubicación UNK .
 2 0 Nos encantó
 2 3 Excelente estancia
-2 0 Las habitaciones tienen camas muy cómodas y el baño es muy espacioso .
-2 1 Un excelente B &amp; amp ; B. El desayuno estupendo de calidad y cantidad .
+2 0 Las habitaciones tienen camas UNK cómodas y el baño es UNK UNK .
+2 1 Un UNK B UNK amp ; amp ; B. El desayuno UNK de calidad y cantidad .
 2 0 Excelente en todo sentido , la atención , la comida , las instalaciones , la playa .
 2 1 Me gustó mucho el hotel .
-2 1 El personal es muy agradabe y el spa estupendo .
-2 0 Personalmente adoro las alhomadas duspués de un duro día de trabajo y si es posible hacer el Spa ya el día es redondo .
-2 0 En resumen hemos quedado muy contentos .
+2 1 El personal es UNK agradabe y el spa UNK .
+2 0 Personalmente adoro las alhomadas duspués de un UNK día de UNK y si es posible hacer el Spa ya el día es redondo .
+2 0 En resumen hemos quedado UNK contentos .
 2 1 Recomiendo al 100 % este hotel a todo el mundo .
-2 1 Todo perfecto .
-2 0 El servicio de desayuno muy completo , con mucha variedad de bolleria y de zumos naturales .
-2 0 El personal muy bien , tuvimos una gotera en la habitacion y nos cambiaron a una habitacion superios sin problemas .
-2 0 Gran ubicacion perfecto
-2 1 El hotel está muy bien comunicado con el metro .
+2 0 Todo UNK .
+2 0 El servicio de desayuno UNK completo , con mucha UNK de bolleria y de zumos naturales .
+2 0 El personal UNK UNK , tuvimos una gotera en la habitacion y nos cambiaron a una habitacion superios sin UNK .
+2 0 Gran ubicacion UNK
+2 1 El hotel está UNK UNK comunicado con el metro .
 2 0 Un 10 !
-2 1 El hotel es muy grande , ocupa una manzana entera y todo está muy limpio .
-2 0 Es insuperable !!!
-2 1 Un hotel encantador desde la salida hasta la llegada .
-2 1 El trabajo de Kenia al frente de los espectáculos nocturno es soberbio .
+2 0 El hotel es UNK grande , ocupa una UNK entera y todo está UNK UNK .
+2 0 Un hotel UNK desde la salida hasta la llegada .
+2 1 El UNK de Kenia al frente de los espectáculos nocturno es soberbio .
 2 0 Simplente increible .
 2 1 Se trata de un establecimiento que ofrece una magnífica ubicación para visitar los lugares de interés turístico .
-2 1 Hemos quedado muy contentos de nuestra estancia en estos apartamentos .
-2 1 Los camareros son exepcionales , super amables y te atienden muy bien y con mucho cariño .
+2 1 Hemos quedado UNK contentos de nuestra estancia en estos apartamentos .
+2 1 Los camareros son exepcionales , super amables y te atienden UNK UNK y con mucho cariño .
 2 0 Nuestra estancia en el Hotel Las Arenas Balneario Resort ha sido cuanto menos expectacular .
-2 0 Hotel con precios muy competitivos relación calidad / precio .
-2 1 La estancia en el hotel fue muy buena , la atención , limpieza , en realidad te hacen sentir muy bien y se preocupan que estes tranquilo siempre .
-2 1 La ubicación del hotel es excelente para moverse por el centro de Madrid .
+2 0 Hotel con precios UNK competitivos relación calidad / precio .
+2 0 La estancia en el hotel fue UNK buena , la atención , UNK , en realidad te hacen sentir UNK UNK y se preocupan que estes UNK siempre .
+2 1 La ubicación del hotel es UNK para moverse por el centro de Madrid .
+2 0 Las habitaciones estaban UNK limpias , y la calefacción funcionaba a las mil UNK .
 2 0 Excelente
 2 1 La piscina es estupenda , y no conozco ninguna con mejores vistas .
-2 0 Realmente , nos hemos quedados fascinados , un lujo total .
+2 0 Realmente , nos hemos quedados fascinados , un UNK UNK .
 2 0 Genial .
-2 0 Hotel perfecto en Barcelona
-2 1 Muy bien ubicado en Madrid
+2 0 Hotel UNK en Barcelona
+2 1 Muy UNK ubicado en Madrid
 2 0 Le daría 5 de 5 estrellas .
 2 1 Al llegar a Mequines nos encantó la localización de este hotel de 3 estrellas , con cuyo sello ya habíamos tenido gratas experiencias en el pasado en otros sitios ( la marca Ibis ) .
 2 1 Excelente estancia en este hotel
-2 0 El hotel es muy recomendable .
-2 0 Puedo decir realimente complcida que pasé unos increïbles días de absoluta tranquilidad antes de volver al trabajo .
-2 0 El hotel Lloret es una buena opción en el sentido de que está muy bien ubicado en la primera cuadra de La Ramla desde Plaza Cataluña .
+2 0 El hotel es UNK UNK .
+2 0 Puedo decir realimente complcida que pasé unos increïbles días de absoluta UNK antes de volver al UNK .
+2 0 El hotel Lloret es una buena opción en el sentido de que está UNK UNK ubicado en la primera cuadra de La Ramla desde Plaza Cataluña .
 2 0 Me gustó mucho .
-2 1 Es un camping encantador , muy natural y autentico .
+2 1 Es un camping UNK , UNK UNK y autentico .
 2 0 Excelente .
 2 1 De nuevo estuvimos genial en este hotel .
-2 0 En resumen muy moderno y muy bien de precio , repetiré sin dudarlo .
-2 1 Les felicito a todos y gracias por su excelente servicio .
+2 1 La relación calidad precio es UNK buena .
+2 0 En resumen UNK UNK y UNK UNK de precio , repetiré sin dudarlo .
+2 1 Les felicito a todos y UNK por su UNK servicio .
+2 0 Hotel UNK UNK enclavado
 2 0 Excelente ambiente
-2 0 Todo absolutamente recomendable .
-2 1 La clientela es variada aunque siempre que nos hemos hospedado hay gran cantidad de extranjeros debido a que esta muy cerca del Camp nou , esto lo hace un sitio ideal para ir al futbol .
-2 1 La ubicación es estupenda , un entorno precioso .
-2 1 Muchísima variedad en la bollería .
-2 0 Un lujo muy asequible .
-2 1 Ha estado muy bien , ha sido uno de los mejores hoteles en que he estado .. no se si hay otros hoteles asi , lo mejor es ir alli y ver lo que hay , pero os aseguro que esta muy pero que muy bien , Un saludo a todos .
+2 0 Todo UNK UNK .
+2 1 La clientela es variada aunque siempre que nos hemos hospedado hay UNK cantidad de extranjeros debido a que esta UNK cerca del Camp nou , esto lo hace un sitio ideal para ir al futbol .
+2 1 La ubicación es estupenda , un entorno UNK .
+2 1 Muchísima UNK en la bollería .
+2 0 Un UNK UNK UNK .
+2 1 El servicio esta UNK completo y estoy UNK UNK con las instalaciones .
+2 1 Ha estado UNK UNK , ha sido uno de los mejores hoteles en que he estado .. no se si hay otros hoteles asi , lo UNK es ir alli y ver lo que hay , pero os aseguro que esta UNK pero que UNK UNK , Un UNK a todos .
 2 0 Excelente lugar para descansar en familia .
 2 1 Y destacar también la localización del hotel , que es perfecta .
+2 0 El personal es UNK UNK .
+2 1 Yo estuve en este hotel hace un año con mi pareja ; la verdad que yo lo cogi por oferta y me quede UNK satisfecha del ambiente , las instalaciones y el trato .
+2 0 La habitación era UNK grande y el baño UNK .
 2 0 Fantastico hotel
-2 1 El hotel está muy bien ubicado , en la zona izquierda del ensanche .
-2 1 Con todo ello , un hotel mas que recomendable para visitar esta ciudad .
-2 0 Los menus del bar · restaurante son muy buenos y estan muy bien de precio .
+2 1 El hotel está UNK UNK ubicado , en la zona izquierda del ensanche .
+2 1 Con todo ello , un hotel mas que UNK para visitar esta ciudad .
+2 0 Los menus del bar · restaurante son UNK buenos y estan UNK UNK de precio .
 2 0 Me encantó
-2 0 sin duda para repetir .
-2 1 El hotel está muy bien .
-2 1 Estuvimos 4 días por la Toscana y Borgo Grondaie , mi mujer y yo y salimos encantados de la estancia .
-2 1 Totalmente recomendable .
-2 1 Fui porque tenía evento en IFEMA y el hotel está literalmente a 5 minutos de IFEMA , excelente por ese aspecto .
-2 1 Muy recomendable por ubicación , trato , habitaciones .
+2 0 sin UNK para repetir .
+2 1 El hotel está UNK UNK .
+2 1 Estuvimos 4 días por la Toscana y Borgo Grondaie , mi mujer y yo y salimos UNK de la estancia .
+2 0 Fui porque tenía evento en IFEMA y el hotel está literalmente a 5 minutos de IFEMA , UNK por ese aspecto .
+2 1 Muy UNK por ubicación , trato , habitaciones .
 2 1 Tiene desde la terraza unas vistas preciosas de Madrid .
 2 1 Ideal para ver al Barça
-2 0 Un hotel encantador
-2 0 Un entorno privilegiado
+2 1 La comunicación con el centro es UNK .
+2 0 Un hotel UNK
+2 0 Un entorno UNK
 2 1 La decoración de las habitaciones es genial .
 2 0 Excelente servicio
 2 0 La relacion calidad · precio es inmejorable .
-2 0 100 % recomendable .
+2 0 100 % UNK .
 2 1 sobre todo la ubicacion , es perfecta para moverte por el centro compras , comidas recreo .
-2 0 Un hotel estupendo
-2 1 Una de las cosas mas importantes de este hotel es su espectacular diseño , atractivo y encanto que tiene .
+2 0 Estancia familiar UNK buena
+2 0 Un hotel UNK
+2 0 Una de las cosas mas importantes de este hotel es su UNK diseño , UNK y UNK que tiene .
 2 1 Muy original las chocolatinas de la habitación .
-2 1 La Playa excelente , a mi juicio mejor que la playa de Arena Gorda y Cabeza de Toro .
-2 1 Personal muy , muy amable
-2 0 Este hotel de Andorra sido una excelente eleccion por nuestra parte para el puente de Reyes .
-2 0 Todos los detalles están muy bien cuidados .
-2 1 El desayuno estupendo , así coges fuerzas para los viajes .
+2 1 La Playa UNK , a mi juicio UNK que la playa de Arena Gorda y Cabeza de Toro .
+2 1 Personal UNK , UNK UNK
+2 0 Este hotel de Andorra sido una UNK eleccion por nuestra parte para el puente de Reyes .
+2 0 Todos los detalles están UNK UNK cuidados .
+2 1 El desayuno UNK , así coges fuerzas para los viajes .
 2 1 Me encanta este hotel , me encanta Radisson
-2 1 volveria si tuviera la ocasion me he sentido como una princesa en un cuento maravillosooooo.las vistas magicas el personal superior en calidad y la comida sin palabras como que he cojido un par de kilos despues de mi estancia .
-2 1 Situación excelente , Si eres de caminar recorres todo el centro comercial , cultural y gastronómico en un radio de 4 a 5 km .
+2 1 volveria si tuviera la ocasion me he sentido como una princesa en un cuento maravillosooooo.las vistas magicas el personal UNK en calidad y la comida sin palabras como que he cojido un par de kilos despues de mi estancia .
+2 1 Situación UNK , Si eres de caminar recorres todo el centro comercial , cultural y gastronómico en un radio de 4 a 5 km .
 2 0 No se puede pedir más .
-2 1 La piscina y el SPA geniales , con amacas muy cómodas .
-2 1 El trato del personal es exquisito y muy acogedor .
-2 1 La comida y la calidad de la bebida es excelente .
-2 0 Era el mejor bufet que he visto en mi vida .
-2 0 Las habitaciones muy limpias y el detalle de los nórdicos muy confortables .
-2 1 La situación del hotel muy buena respecto a la playa .
+2 1 La piscina y el SPA geniales , con amacas UNK cómodas .
+2 1 El trato del personal es UNK y UNK acogedor .
+2 0 La comida y la calidad de la bebida es UNK .
+2 0 Era el UNK bufet que he visto en mi vida .
+2 0 Perfecto para descansar tras un día de UNK
+2 0 Las habitaciones UNK limpias y el detalle de los nórdicos UNK confortables .
+2 1 La UNK del hotel UNK buena UNK a la playa .
 2 1 la piscina y la playa genial , sobre todo la playa .
-2 0 Todo perfecto
+2 0 Todo UNK
 2 1 Combinabamos mucho yendo a la playa y volviendo al hotel , nos gustaron mucho estas vacaciones .
-2 1 Excelente opcion para un tiempo Intimo en Pareja
+2 1 Excelente opcion para un UNK Intimo en Pareja
 2 0 Me encantaron los restaurantes sobre todo el que se encuentra en primera línea de playa y en donde se puede comer a a base de tapas .
-2 1 Hotel encantador y muy bien situado .
-2 1 Dimos paseos por el pueblo , veiamos peliculas por la noche , y por la mañana en la piscina , una enorme piscina !!
-2 1 Muy adecuado para descansar .
-2 1 El hotel está muy bien ubicado , ideal para ir de compras o para hacer turismo por la ciudad .
-2 0 El hotel es una preciosidad , ostentoso , capaz de dejar ensimismado con el enorme hall que tiene nada más pasar la puerta de entrada .
+2 0 Hotel UNK y UNK UNK situado .
+2 1 Dimos paseos por el pueblo , veiamos peliculas por la noche , y por la mañana en la piscina , una UNK piscina ! !
+2 1 Muy UNK para descansar .
+2 1 El hotel está UNK UNK ubicado , ideal para ir de compras o para hacer turismo por la ciudad .
+2 0 El hotel es una preciosidad , UNK , UNK de dejar ensimismado con el UNK hall que tiene nada más pasar la puerta de entrada .
 2 0 Excelente estadia
-2 0 Hotel muy bueno
 2 0 Las habitación tenía un acama de matrimonio king size .
 2 0 Son unos apartamentos con 2 habitaciones , un baño , un comedor y una cocina totalmente equipada .
+2 1 El hotel es UNK .
 2 1 Excelente ubicación para conocer Madrid
-2 1 El sitio nos impresionó , puesto que los apartamentos son muy espaciosos .
-2 1 En general muy acogedor y un servicio excelente
-2 0 Este Hotel tiene como mayor ventaja , su excelente ubicación en pleno corazón de Madrid .
+2 1 El sitio nos impresionó , puesto que los apartamentos son UNK espaciosos .
+2 1 En UNK UNK acogedor y un servicio UNK
+2 0 Este Hotel tiene como UNK UNK , su UNK ubicación en pleno UNK de Madrid .
 2 1 Espectacular hotel y el servicio y atención
+2 0 Viaje con mi mujer a Sirenis Tropical este pasado mes de noviembre y han sido unas vacaciones UNK .
+2 0 El desayuno UNK UNK .
 2 0 Gran sitio para descansar .
-2 1 Me ha gustado mucho este hotel por que esta muy bien situado cerca de muchas zonas de ocio y centros comerciales .
+2 1 Me ha gustado mucho este hotel por que esta UNK UNK situado cerca de muchas zonas de ocio y centros comerciales .
+2 0 Un lugar paradisiaco UNK
 2 0 Excelente ubicación
-2 1 El hotel en general es fantástico .
-2 0 excelentes instalaciones , servicio , entretenimiento , comida , atencion en general .
-2 0 La verdad es que el hotel mucho mejor de lo que me lo esperaba .
-2 0 La mejor ubicación de Madrid
+2 0 El hotel en UNK es UNK .
+2 0 excelentes instalaciones , servicio , entretenimiento , comida , atencion en UNK .
+2 0 La verdad es que el hotel mucho UNK de lo que me lo esperaba .
+2 0 La UNK ubicación de Madrid
 2 1 Pero en su exterior tampoco podemos dejar de sorprendernos por su diseño , caracterizado por la terraza , la fachada del hotel , las espectaculares vistas que ofrece tanto desde habitaciones como desde los ascensores de cristal .
-2 1 Ademas la ubicación del hotel es genial pues es muy cerca de la playa y la atención de todo el staff muy buena , vale resaltar que la comida es muy variada y deliciosa .
-2 1 Un hotel situado en una zona muy tranquila de Madrid .
-2 1 Sin duda , la estancia en el hotel Las Arenas ha sido una experiencia inolvidable , un trato muy bueno , unas vistas a la playa increible .
-2 1 Nuestra estancia en el Hotel Palafox fue muy agradable .
-2 1 El lugar es increíble y los cuartos muy cómodos .
-2 0 Además , está muy cerca de la estación de tren .
-2 1 El servicio impecable , el hotel es precioso , muy buena comida ...
+2 1 Ademas la ubicación del hotel es genial pues es UNK cerca de la playa y la atención de todo el staff UNK buena , vale resaltar que la comida es UNK variada y deliciosa .
+2 0 El servicio , las habitaciones , la piscina , la playa y todo en UNK es UNK .
+2 1 Un hotel situado en una zona UNK tranquila de Madrid .
+2 1 Sin UNK , la estancia en el hotel Las Arenas ha sido una experiencia UNK , un trato UNK UNK , unas vistas a la playa increible .
+2 0 Nuestra estancia en el Hotel Palafox fue UNK UNK .
+2 0 El lugar es UNK y los cuartos UNK cómodos .
+2 0 Además , está UNK cerca de la estación de tren .
+2 1 El servicio UNK , el hotel es UNK , UNK buena comida ...
 2 0 Repito , la ubicación inmejorable .
-2 0 Un servicio ejemplar
+2 0 Un servicio UNK
 2 0 El trato es inmejorable .
-2 0 Ademas para los niños es muy buen sitio , un servicio para ellos increible .
+2 0 Ademas para los niños es UNK buen sitio , un servicio para ellos increible .
+1 0 El UNK es UNK grande pero UNK organizado .
 1 0 Situado en el centro de Madrid , a 5 minutos andando de la Puerta del Sol y en plena Gran Vía .
-1 2 Buenas vistas e iluminaciñon natural .
-1 0 Como detalle mio personal , me enloquecen los desayunos del hotel , hacen los croissants mas tiernos y ricos que he probado .
-1 2 Muy tranquilo , se respeta el silencio fuera de horarios de animación .
-1 0 Lo recomiendo positivamente
+1 2 Buenas vistas e iluminaciñon UNK .
+1 2 Muy UNK , se respeta el silencio fuera de horarios de animación .
+1 0 Un UNK hotel , a la altura de un cuatro estrellas en pleno centro de Madrid .
+1 2 Lo UNK positivamente
 1 0 Tiene también taxis en la puerta .
-1 2 Un gran hotel con todas las comodidades
+1 0 Un UNK hotel con todas las comodidades
 1 0 Hotel exelente a precios asequibles
-1 0 La experiencia fue muy buena , disfrutamos de una moderna habitación , con todo lo necesario para un hotel de esta categoría .
-1 0 Volveré sin duda , a ver si me quito esa espinita .
+1 0 La experiencia fue UNK buena , disfrutamos de una moderna habitación , con todo lo necesario para un hotel de esta categoría .
+1 0 Volveré sin UNK , a ver si me quito esa espinita .
 1 0 Por la noche el hotel tiene recepción 24 horas y bloquea la puerta de acceso a este dandote la seguridad que solo acceden a él huéspedes del hotel , me gustó eso .
 1 3 Buen trato .
 1 2 te hacen sentir como en casa .
-1 0 La nevera es gratis , las almohadas muy cómodas y el colchón también .
+1 0 La nevera es UNK , las almohadas UNK cómodas y el colchón también .
 1 2 Desde mi terraza se veía la piscina , unas vistas espectaculares .
-1 0 Las habitaciones muy completas y disponen gratuitamente de caja fuerte , minibar , servicio de plancha etc ...
-1 0 Estuvimos 5 dias muy buenos , el desayuno era variado y abundante , muy cerca de estacion de metro y del Camp Nou .
-1 2 Es un lugar acogedor , con habitaciones espaciosas , muy bien iluminado , con excelentes vistas y aún mejor personal .
+1 0 Las habitaciones UNK completas y disponen gratuitamente de caja UNK , minibar , servicio de plancha etc ...
+1 0 Estuvimos 5 dias UNK buenos , el desayuno era variado y UNK , UNK cerca de estacion de metro y del Camp Nou .
+1 2 Es un lugar acogedor , con habitaciones espaciosas , UNK UNK iluminado , con excelentes vistas y aún UNK personal .
 1 0 Las habitaciones y el baño normal y con todas las comodidades .
-1 0 Sin lugar a dudas es algo para repetir
-1 0 Es un lugar al que volvería con gusto con toda mi familia y / o amigos .
+1 0 Sin lugar a UNK es algo para repetir
+1 0 Es un lugar al que volvería con UNK con toda mi familia y / o amigos .
 1 0 Buena calidad / precico
-1 2 Zumo natural recien exprimido , revuelto , bacon , etc ... todo riquísimo .
-1 0 La casa es un antiguo molino reformado , rodeado de vegetación y apartado de cualquier ruido en plena naturaleza .
-1 0 Tuvieron con nosotros el detalle de una botella de cava .... siguen cuidando los detalles en esta cadena .
+1 0 La casa es un antiguo molino UNK , rodeado de vegetación y apartado de cualquier UNK en plena naturaleza .
+1 0 Tuvieron con nosotros el detalle de una botella de cava ... . siguen cuidando los detalles en esta cadena .
 1 0 Confortable
-1 2 Bastante bueno para como me lo pintaron
-1 2 Muy cómodo y economico
-1 0 La verdad es que el hotel estaba bastante bien , ya que las camas eran comodas , y en una ciudad como roma el hotel se usa solo para dormir .
+1 0 Baño UNK y UNK , con ducha .
+1 0 Bastante UNK para como me lo pintaron
+1 0 Los electrodomésticos UNK modernos y el mobiliario también y nos ha UNK ya que venía con cocina incluída y teníamos una UNK UNK a la hora de comprar .
+1 2 Muy UNK y economico
+1 0 La verdad es que el hotel estaba UNK UNK , ya que las camas eran comodas , y en una ciudad como roma el hotel se usa solo para dormir .
 1 0 Teniendo varias cafeterias , confiterías , tiendas varias de videojuegos alimentación dos panaderías y algo más que se me escapa a la mente .
 1 2 Buen hotel y spa
-1 0 Comprende un saloncito , un baño grande y un habitación muy grande .
+1 0 Comprende un saloncito , un baño grande y un habitación UNK grande .
 1 2 Recomendable
 1 0 Habitaciones cómodas y silenciosas .
 1 0 como la vez anterior , no nos defraudó en nada .
-1 0 Los balnearios son lo mejor del hote , sin olvidarnos del servicio de habitaciones .
+1 0 Los balnearios son lo UNK del hote , sin olvidarnos del servicio de habitaciones .
+1 0 Ha sido UNK poder dormir fresquitos en pleno agosto , y descubrir un oasis de UNK en el centro de catalunya .
 1 2 Buen hotel de ciudad
 1 0 Si vuelvo a Roma , me alojaré en este hotel y si me pregunta alguien , lo recomendaré .
-1 0 E hotel tiene unas instalaciones muy modernas incluida piscina en el último piso , de nueva construccion , está bien cuidado y muy limpio .
-1 0 Estaba animado con ambientillo esquiador pero sin agobios .
+1 0 E hotel tiene unas instalaciones UNK modernas incluida piscina en el último piso , de nueva construccion , está UNK cuidado y UNK UNK .
+1 0 Estaba UNK con ambientillo esquiador pero sin agobios .
 1 0 La piscina es descubierta .
 1 0 Buena relación calidad precio
-1 2 Habitaciones súper amplias y comodas .
-1 0 De entrada quiero decir que cuando fui era para olvidar , pero me hizo ver las cosas de otra manera , me sentí feliz y al mismo tiempo mimado , fueron unos días de atenciones y sobre todo mimos que se me ofrecieron sin parar
+1 0 Son el UNK de los ejemplos de turismo UNK ; UNK e UNK en la rica naturaleza del entorno , al mismo UNK UNK , UNK y UNK acogedor .
+1 2 Habitaciones UNK amplias y comodas .
+1 0 De entrada quiero decir que cuando fui era para olvidar , pero me hizo ver las cosas de otra manera , me sentí UNK y al mismo UNK UNK , fueron unos días de atenciones y sobre todo mimos que se me ofrecieron sin parar
 1 2 Una buena elección
 1 0 Aunque vivo en Barcelona , el pasado julio quise pasar unos días de relax en el Senator Barcelona Spa Hotel , y realmente fue una buena elección .
+1 0 El hotel UNK , las habitaciones limpias , cero bichos ( que UNK ) a pesar de la UNK vegetación .
 1 0 Calidad / precio no se puede pedir más .
+1 0 Viajamos una semana en familia ( niños de 3 y 5 años ) Fueron vacaciones para descansar y UNK .
 1 0 El minibar con agua y pepsicolas y café e infusión estaban incluidos .
+1 2 Es un lugar donde podemos UNK para pasar unos dias de UNK y alegria . ·
+1 0 Nosotros estuvimos UNK UNK pues todo esta UNK y UNK UNK .
 1 0 Minibar gratuido
 1 0 Buena relacion calidad / precio .
 1 2 Y para rematar una cena romántica .
 1 0 Con suelo de madera en la habitación .
-1 0 He leido otras criticas , y a diferencia de los otros comentarios para mi el trato fue correcto y educado , tampoco espero hacerme amigo del recpcionista .
-1 0 Destacar lo confortable de la habitación , y que tiene cadena radio / cd , mini · bar GRATIS ( sin bebidas alcohólicas ) y posibilidad de preparate café o te en la habitación también GRATIS .
-1 0 lo recomiendo
+1 0 He leido otras criticas , y a diferencia de los otros comentarios para mi el trato fue UNK y UNK , tampoco espero hacerme amigo del recpcionista .
+1 0 Destacar lo UNK de la habitación , y que tiene cadena radio / cd , mini · bar GRATIS ( sin bebidas alcohólicas ) y posibilidad de preparate café o te en la habitación también GRATIS .
+1 0 lo UNK
 1 2 Lo recomendamos a nestros amigos y ya esta viajando uno de ellos .
-1 0 Las habitaciones son muy comodas , los servicios y atencion al cliente son de buenisima calidad , muy atentos a la hora de servir por si falta algo o necesitamos algo , buen recibimiento , en fin como en casa !
-1 0 Tambien te cogen el telefono a cualquier hora si llamas desde la habitación hacia la recepción y te atendienden con mucho respeto , saber estar y con educación .
+1 0 Las habitaciones son UNK comodas , los servicios y atencion al cliente son de buenisima calidad , UNK atentos a la hora de servir por si UNK algo o necesitamos algo , buen recibimiento , en fin como en casa !
+1 0 Tambien te cogen el telefono a cualquier hora si llamas desde la habitación hacia la recepción y te atendienden con mucho UNK , saber estar y con educación .
 1 0 Buena experiencia
 1 0 Opción barata para Las Vegas
 1 0 Es la segunda vez que nos alojamos en él por su cercanía con la estación del ave y de la ciudad de las artes y las ciencias .
-1 2 Es un hotel nuevo , todo esta muy limpio y cuidado .
-1 0 El SPA no está mal y si tienes la vip senator , tienes acceso gratuito una vez , por gentileza del hotel
-1 0 Hotel limpio y cuidado .
-1 0 Acudimos al Spa , cortesía del hotel , y disfrutamos de una mañana agradable , después de una larga jornada pateando Barcelona .
+1 2 Es un hotel nuevo , todo esta UNK UNK y cuidado .
+1 0 El SPA no está UNK y si tienes la vip senator , tienes acceso gratuito una vez , por gentileza del hotel
+1 0 Hotel UNK y cuidado .
+1 0 Acudimos al Spa , UNK del hotel , y disfrutamos de una mañana UNK , después de una larga jornada pateando Barcelona .
 1 2 Por contra la chica de recepción fue extremadamente educada y atenta .
-1 0 Hotel bien equipado , con Spa gratis .
-1 2 Se lo recomiendo a todo el mundo .
+1 0 Hotel UNK equipado , con Spa UNK .
+1 2 Se lo UNK a todo el mundo .
 1 2 Recomendable .
-1 0 El servicio y la comida son buenos en general .
+1 0 El servicio y la comida son buenos en UNK .
+1 0 El hotel esta UNK UNK , nos atendieron genial y nos dieron a escoger que habitación queríamos de las que habia libres y estaba UNK limpia .
 1 0 Se trata de un hotel de 5 estrellas que cuenta con todo tipo de facilidades para toda la familia .
 1 0 Estuvimos en habitación vista mar ... levantarse todos los días y ver el mar para mi no tiene precio .
 1 0 Tiene parada de bus Disney en la misma puerta del hotel y es gratuito .
 1 0 Los sanitarios son compartidos hombres y mujeres pero todo a puerta cerrada , incluso los lavabos individuales .
-1 2 Lo mejor el spa
-1 0 Quede contento
+1 0 Lo UNK el spa
+1 2 Está situado en la Gran Vía , desde fuera son los típicos edificios altos con apartamentos normales , pero al subir nos UNK mucho encontrarnos este hostal tan genial ! !
+1 0 Quede UNK
 1 2 Elegancia .
-1 2 También está bastante cerca del centro .
-1 0 Merece la pena ir a este hotel
+1 2 También está UNK cerca del centro .
+1 0 Merece la UNK ir a este hotel
 1 0 Situado en el corazon de la ciudad , es mi eleccion siempre que viajo a madrid .
 1 2 Repetiremos si podemos .. Muy buen trato .
-1 0 muy recomendado , durante l dia visité varios de los destinos cercanos al hotel y en las noches enconte varios lugares para salir ... las instalaciones son muy buenas
-1 0 La habitación perfectamente insonorizada , con minibar gratuito ( 4 botellas de agua y 2 de Pepsi ) , televisión plana , minicadena , plancha y tabla de panchar , sobres de café y té con cápsulas de leche , etc ...
+1 0 UNK UNK , durante l dia visité varios de los destinos cercanos al hotel y en las noches enconte varios lugares para salir ... las instalaciones son UNK buenas
+1 0 La habitación UNK insonorizada , con minibar gratuito ( 4 botellas de agua y 2 de Pepsi ) , televisión plana , minicadena , plancha y tabla de panchar , sobres de café y té con cápsulas de leche , etc ...
 1 0 Pocos niños .
 1 0 Se encuentra a menos de una cuadra del metro , 10 minutos caminando a la fontana di Trevi y 15 minutos al coliseo .
 1 0 Aceptable
-1 0 Al lado del famoso cementerio Père · Lachaise .
+1 0 Lo recomendaria a los amigos , para parejas , familias , etc . La jaima sería un lugar curioso para una luna de miel o UNK romántica distinta .
+1 0 Al lado del UNK cementerio Père · Lachaise .
+1 0 Comodidad en el UNK de Madrid
 1 2 Las habitaciones eran perfectas , están repartidas en diferentes casas .
-1 0 El hotel está situado al lado del Camp Nou y muy cerquita de una boca de metro y frente a una parada de autobús , por si no se quiere coger el coche .
-1 2 La habitación tenía todo tipo de comodidades y quedamos muy contentos con el trato que recibimos del personal .
-1 0 La habitación daba a un patio interior muy amplio y ha sido una gozada no oir ni un solo ruido , hemos dormido fenomenal ya que conserva muy bien la temperatura y no hemos tenido que dejar el aire acondicionado funcinando toda la noche .
-1 0 Realmente lo recomiendo ,
-1 0 Entre el baño y el dormitorio hay una pared de cristal .... muy buen detalle si viajas en pareja , si no no pasa nada , hay una persiana .
-1 0 Destacar también los desayunos , con embutido y pan de la zona , así como tartas y pasteles caseros muy ricos .
-1 0 Lo mejor de este hotel es la ubicación .
-1 0 Tiene piscina exterior y solarium , debido al buen tiempo que hizo en octubre pude disfrutar de un baño y de los rayos del sol .
+1 0 El hotel está situado al lado del Camp Nou y UNK cerquita de una boca de metro y frente a una parada de autobús , por si no se quiere coger el coche .
+1 2 La habitación tenía todo tipo de comodidades y quedamos UNK contentos con el trato que recibimos del personal .
+1 0 La habitación daba a un patio interior UNK UNK y ha sido una gozada no oir ni un solo UNK , hemos dormido UNK ya que conserva UNK UNK la temperatura y no hemos tenido que dejar el aire acondicionado funcinando toda la noche .
+1 0 Un hótel bonito y UNK con un servicio UNK UNK .
+1 0 En fin unos apartamentos para UNK y una estancia de lo mas UNK y UNK .
+1 0 Realmente lo UNK ,
+1 0 Entre el baño y el dormitorio hay una pared de cristal ... . UNK buen detalle si viajas en pareja , si no no pasa nada , hay una persiana .
+1 0 Destacar también los desayunos , con embutido y pan de la zona , así como tartas y pasteles caseros UNK ricos .
+1 0 Lo UNK de este hotel es la ubicación .
+1 0 Tiene piscina exterior y solarium , debido al buen UNK que hizo en octubre pude UNK de un baño y de los rayos del sol .
 1 0 Nos pusieron cama supletoria junto a la cama grande .
 1 0 Tiene gimnasio pero no lo utilicé .
-1 0 Tiene muy buena combinación para conocer cualquier parte de Barcelona en transpote público .
-1 2 Hay mucho personal y todos son muy amables y grandes profesionales .
-1 0 Zonas muy bien diferenciadas , por un lado el comedor , amplio , cómodo y con una enorme cristalera .
+1 0 Tiene UNK buena combinación para conocer cualquier parte de Barcelona en transpote público .
+1 2 Hay mucho personal y todos son UNK amables y grandes profesionales .
+1 0 Zonas UNK UNK diferenciadas , por un lado el comedor , UNK , UNK y con una UNK cristalera .
 1 0 Sí que lo recomendaría .
-1 0 La estancia en el Hotel Las Arenas fue perfecta para ir a pasarlo bien con los amigos y que los niños tambien lo pasaran bien , tanto saliendo a la playa como con el servicio que hay para atender a los pequeños .
+1 0 La estancia en el Hotel Las Arenas fue perfecta para ir a pasarlo UNK con los amigos y que los niños tambien lo pasaran UNK , tanto saliendo a la playa como con el servicio que hay para atender a los pequeños .
 1 0 Buena relacion calidad · precio si lo que buscas es simplemente pasar una noche en Valencia .
 1 0 Habitación con todas las comodidades clásicas además de ducha Grohe grande , retrete separado , dos batas , equipo de música y 3 almohadas por cama .
-1 0 El trato con el personal del hotel bastante bueno , luego una vez que pagas ... ya no tanto .
-1 2 Muy buenas vistas y mucha tranquilidad .
-1 2 Muy buen hotel , merece la pena visitarlo
-1 0 Recomendable para quien quiera desconectar del ritmo frenético de la ciudad .
-1 2 Muy cómodo si tienes coche , para conocer Sevilla y una estancia tranquila .
+1 0 El trato con el personal del hotel UNK UNK , luego una vez que pagas ... ya no tanto .
+1 0 El hotel , en términos generales , no estaba tan UNK ; UNK , para el mínimo UNK que pasabamos allí ... Buscabamos uno más o menos céntrico y cerca del metro y UNK , eso sí lo cumplía .
+1 2 Muy buenas vistas y mucha UNK .
+1 2 Muy buen hotel , merece la UNK visitarlo
+1 2 Muy UNK si tienes coche , para conocer Sevilla y una estancia tranquila .
 1 0 Su cercanía con la Ciudad de las artes y las Ciencias nos ha facilitado mucho la estancia .
-1 2 Muy amables y simpaticos , bastante limpio todo .
+1 2 Muy amables y simpaticos , UNK UNK todo .
 1 0 Repetible
 1 2 nos quedamos en un departamento con vista al Lago , lo cual nos proporcionó unos bellisimos atardeceres !
 1 0 Para los niños nos pusieron una cama supletoria grande y aun así quedaba mucho espacio .
-1 0 Las habitaciones eran confortables , las camas ni grandes ni muy pequeñas , y el cuarto de baño muy limpio .
-1 0 Posee variedad de restaurantes en la zona para cenar o tomar algo .
-1 0 Un complejo para nada masificado en el que el servicio es de lo mejor .
+1 0 Las habitaciones eran confortables , las camas ni grandes ni UNK pequeñas , y el cuarto de baño UNK UNK .
+1 0 Posee UNK de restaurantes en la zona para cenar o tomar algo .
+1 0 Un UNK para nada masificado en el que el servicio es de lo UNK .
 1 0 Está frente a la terminal 3 del aeropuerto y tiene un servicio de shuttle gratuito cada media hora .
-1 2 Tiene un personal excelente , servicio de limpieza excelente ...
-1 2 Multitud de bares y restaurante en los alrededores y vida nocturna .
-1 0 El hotel esta bien , por el precio que pagas , buena ubicación cerca de la estación de trenes Santa Maria Novella ,
+1 2 Multitud de UNK y restaurante en los alrededores y vida nocturna .
+1 0 El hotel esta UNK , por el precio que pagas , buena ubicación cerca de la estación de trenes Santa Maria Novella ,
 1 0 Las habitaciones son amplias , modernas , funcionales , con pantallas de planas en todas las habitaciones , caja de seguridad , carta de almohadas .
-1 0 El personal muy amable , nos permitieron hacer late checkout ya que no había reserva de la habitación sin cargo extra ; también guardan las maletas después del checkout si uno lo pide .
-1 0 El baño y la ducha están bien
+1 0 El personal UNK UNK , nos permitieron hacer UNK checkout ya que no había reserva de la habitación sin cargo extra ; también guardan las maletas después del checkout si uno lo pide .
+1 0 El baño y la ducha están UNK
 1 2 Finalizando su remodelación
 1 0 Algo a tener en cuenta es que disponen de un parking vigilado a la vuelta de la esquina del hotel por 24 euros al dia
-1 0 El minibar ( agua y pepsicola ) y una pequeña cafetera eran gratuitos , al igual que la conexión WIFI y la caja fuerte .
+1 0 En la zona tienes varios restaurantes , todos los servicios y UNK comunicado .
+1 0 El minibar ( agua y pepsicola ) y una pequeña cafetera eran gratuitos , al igual que la conexión WIFI y la caja UNK .
 1 0 A un par de minutos andando ( al lado de la estación de autobuses ) hay un Lidl por si necesita comprar algo de última hora .
 1 3 Buen sitio
-1 2 Buen hotel y gran ciudad
-1 0 Todas las habitaciones que tuvimos tenían luz natural .
-1 2 Hotel tranquilo
-1 0 Una vez sales de la sala tienes una zona exclusiva con hamacas en cantidad suficiente para que no tengas problemas de ubicación .
-1 0 Además de un precio asequible y acorde con las características que ofrecen .
-1 0 Disfrutamos del Spa que esta muy bien , el desayuno también es correcto .
-1 0 El hotel esta espectacularmente bien situado , las habitacione son espaciosas comodas y bonitas , la nuestra daba a un patio interior Zen .
-1 2 Clientela tranquila y educada en general .
+1 0 La verdad que como siempre que me he alojado he tenido una estanciacomoda y UNK .
+1 2 Buen hotel y UNK ciudad
+1 0 Todas las habitaciones que tuvimos tenían luz UNK .
+1 0 El servicio es UNK UNK ya que se preocupan de que tu estancia sea UNK .
+1 2 Hotel UNK
+1 0 Una vez sales de la sala tienes una zona exclusiva con hamacas en cantidad UNK para que no tengas UNK de ubicación .
+1 0 Además de un precio UNK y acorde con las UNK que ofrecen .
+1 0 Disfrutamos del Spa que esta UNK UNK , el desayuno también es UNK .
+1 0 El hotel esta UNK UNK situado , las habitacione son espaciosas comodas y bonitas , la nuestra daba a un patio interior Zen .
+1 2 Clientela tranquila y educada en UNK .
 1 0 También hay varios autobuses que salen desde la plaza de Gambetta para llegar al centro y a las atracciones más importantes de Paris .
-1 2 Sobre todo educado .
-1 0 Hay un bingo donde se puede cenar barato , un mcdonald ' s y una especie de mercadillo también bastante cercanos .
+1 2 Sobre todo UNK .
+1 0 Hay un bingo donde se puede cenar UNK , un mcdonald ' s y una especie de mercadillo también UNK cercanos .
 1 0 Las camas perfectas para un hotel de su categoría : grandes , cómodas ( también las almohadas ) y limpias .
-1 0 Lo recomiendo para ejecutivos
-1 0 Si tuviera que ponerle una nota le pondría un 9 y les recomiendo este hotel. si tengo que volver por allí no dudaré en repetir
+1 0 Lo UNK para ejecutivos
+1 0 Si tuviera que ponerle una nota le pondría un 9 y les UNK este hotel . si tengo que volver por allí no dudaré en repetir
 1 0 Ideal también para aquellos que viajen con niños y con animales .
-1 0 Las habitaciones perfectas , muy calentitas y con todas las comodidades , con cafetera , equipo de música , almohadas a elegir .
-1 0 Sigue siendo muy recomendable , se encuentra a cinco minutos a pie del Bayside y del American Airlines Arena .
-1 0 Una vez mas me he alojado en este hotel , he observado algunos cambios positivos , como que ahora tienen televisores de pantalla plana .
+1 0 Las habitaciones perfectas , UNK calentitas y con todas las comodidades , con cafetera , equipo de música , almohadas a elegir .
+1 0 Sigue siendo UNK UNK , se encuentra a cinco minutos a pie del Bayside y del American Airlines Arena .
+1 0 Una vez mas me he alojado en este hotel , he observado algunos cambios UNK , como que ahora tienen televisores de pantalla plana .
 1 0 Una pasada
-1 2 Gente seria y responsable !
-1 0 Las camas son reclinables con lo cual puedes ver la tele o leer cómodamente inclinados .
-1 0 La habitacion perfectamente insonorizada , con minibar gratuito ( sin alcohol ) , tv plana , plancha ...
-1 2 Ubicación excelente en Roma , cerca de muchos puntos turísticos .
+1 2 Gente seria y UNK !
+1 0 Las camas son reclinables con lo cual puedes ver la tele o leer UNK inclinados .
+1 0 La habitacion UNK insonorizada , con minibar gratuito ( sin alcohol ) , tv plana , plancha ...
+1 2 Ubicación UNK en Roma , cerca de muchos puntos turísticos .
 1 0 Buena situacion .
-1 2 el personal muy amable y gran variedad de actividades para todas las edades .
-1 2 Confort y muy buena localización
-1 0 Ademas como gran aditivo tienen un pequeño SPA gratis ( te dejan las zapatillas y albornoz sin coste en la habitación ) y admiten perros de compañia .
-1 0 Además , la zona es bastante tranquila
-1 0 Tienen mui buen trato con los clientes y te atienden bien. las habitaciones no estan mal y se duerme bien .
-1 2 Hotel muy nuevo con encanto familiar
-1 0 Además de las instalaciones , limpieza , habitaciones , jardines ... destaco , especialmente , la comida , la atención del personal y el trato del Director .
+1 2 el personal UNK UNK y UNK UNK de actividades para todas las edades .
+1 2 Confort y UNK buena localización
+1 0 Ademas como UNK aditivo tienen un pequeño SPA UNK ( te dejan las zapatillas y albornoz sin coste en la habitación ) y admiten perros de compañia .
+1 0 Además , la zona es UNK tranquila
+1 0 Tienen mui buen trato con los clientes y te atienden UNK . las habitaciones no estan UNK y se duerme UNK .
+1 0 Además de las instalaciones , UNK , habitaciones , jardines ... destaco , especialmente , la comida , la atención del personal y el trato del Director .
 1 0 Excelente ubicación en el centro Madrid , a 5 minutos andando de la Plaza del Sol y pegado a la parada de Metro de la Línea 5 , Gran Vía .
+1 0 El trato de los trabajadores del hotel es UNK UNK y las habitaciones son UNK espaciosas .
 1 0 Elegante y relajante
-1 0 Me sorprendió que en el hotel no se oye absolutamente nada , ni la autovía ni el aeropuerto realmente se puede descansar .
-1 0 La habitación era muy confortable , viajabamos con un niño y dispusimos de sofa · cama que cabía cómodamente en la habitación .
-1 0 La habitación daba a sol pero están muy bien aisladas con contraventanas lo cual hacía muy silenciosa y tranquila .
-1 0 En recepción un detalle muy de agradecer son las dos jarras con zumos fresquitos .
+1 0 Me UNK que en el hotel no se oye UNK nada , ni la autovía ni el aeropuerto realmente se puede descansar .
+1 0 La habitación era UNK UNK , viajabamos con un niño y dispusimos de sofa · cama que cabía UNK en la habitación .
+1 0 La habitación daba a sol pero están UNK UNK aisladas con contraventanas lo cual hacía UNK silenciosa y tranquila .
+1 0 En recepción un detalle UNK de UNK son las dos jarras con zumos fresquitos .
 1 0 Lo que hay en el milibar es sin cargo y dispones de un hervidor de agua con diferentes cafés e infusiones .
 1 0 Buen camping , familiar , cuidado y con buenos servicios .
-1 2 Hay muchísima variedad y todos los platos muy ricos .
+1 2 Hay muchísima UNK y todos los platos UNK ricos .
 1 0 Un hotel que ofrece lo que vende .
-1 0 Lo mejor de este hotel sin duda es el servicio al cliente !!
-1 2 La gente es muy amable y atenta .
-1 2 Nos ha gustado mucho y lo recomendariamos sin duda alguna .
-1 0 Limpio y las camas confortables.Su ubicacion para acceder al centro es muy buena .
-1 0 El espacio en la habitación era adecuado .
+1 0 Lo UNK de este hotel sin UNK es el servicio al cliente ! !
+1 2 La gente es UNK UNK y atenta .
+1 2 Nos ha gustado mucho y lo recomendariamos sin UNK alguna .
+1 0 Limpio y las camas confortables.Su ubicacion para acceder al centro es UNK buena .
+1 0 El espacio en la habitación era UNK .
 1 2 Atención personalizada .
 1 0 La atención fue correcta y la habitación acojedora
-1 0 La estancia estubo bien y no me falto de nada en el tiempo en el que estube alli .
-1 0 Hotel centrico y bien de precio .
+1 0 En el centro de Madrid , la habitación fue espaciosa y limpia , hotel UNK y buen trato . me alojé en unu viaje de negocios y todo fue UNK UNK . llegué UNK temprano ( a las 10 a.m. ) y ya tenían preparada una espaciosa habitación .
+1 0 La estancia estubo UNK y no me falto de nada en el UNK en el que estube alli .
+1 2 Personal UNK y profesional .
+1 0 Hotel centrico y UNK de precio .
 1 0 Está situado a 15 minutos andando de la Piazza dei Miracoli .
 1 2 Si volvemos por Madrid no dudaremos en volver a alojarnos allí .
 1 0 Bienn
 1 0 Limpio
 1 0 A solo 4 · 5 paradas de metro de la estación de trenes .
-1 0 El desayuno es buenisimo , pan casero , bollería , huevos , jamón , quesao , mermeladas caseras , miel , etc ... Sin duda una relación calidad precio excepcional
-1 0 Instalaciones más que aceptables ; equipo de animación , entregado totalmente ; limpieza exhaustiva ( a veces , hasta 2 veces al día ) , con cambio de toallas también hasta 2 veces diarias ; con gente de todo tipo , matrimonios de recién casados , grupos de amigos , familias ... ambiente muy variopinto .
-1 0 Las habitaciones son amplias , tienen una TV de plasma , un pequeño refrigerador , aire acondicionado y WIFI gratis .
-1 2 Bastante contento
+1 0 El desayuno es buenisimo , pan casero , bollería , huevos , jamón , quesao , mermeladas caseras , miel , etc ... Sin UNK una relación calidad precio UNK
+1 0 Instalaciones más que aceptables ; equipo de animación , entregado totalmente ; UNK exhaustiva ( a veces , hasta 2 veces al día ) , con cambio de toallas también hasta 2 veces diarias ; con gente de todo tipo , matrimonios de recién casados , grupos de amigos , familias ... ambiente UNK variopinto .
+1 0 Las habitaciones son amplias , tienen una TV de plasma , un pequeño refrigerador , aire acondicionado y WIFI UNK .
+1 0 Bastante UNK
 1 0 Volveremos a repetir .
-1 0 stuvimos en este hotel porque tenia un buen precio y estaba bien situado para ir a Oberursel , donde se hacian los conciertos del Hessentag 2011 .
-1 0 Buena estancia , viaje de trabajo se descansa bien
+1 0 stuvimos en este hotel porque tenia un buen precio y estaba UNK situado para ir a Oberursel , donde se hacian los conciertos del Hessentag 2011 .
+1 0 Buena estancia , viaje de UNK se descansa UNK
 1 0 La habitación está anexa a la casa , con salida independiente al jardín y a la piscina .
 1 0 Menú para celiacos acordado y controlado por la asociación .
-1 0 A pesar de esto último , lo recomiendo .
+1 0 A pesar de esto último , lo UNK .
 1 0 Un hotel con clase
-1 2 Grande y potente .
+1 2 Grande y UNK .
 1 0 Todo en un mismo lugar
+1 0 En el hotel , los trabajadores estan UNK pendientes de ti e incluso son amables y simpaticos cuando hablas con ellos .
 1 0 Bonito lugar para descansar
+1 0 Nos sentimos UNK UNK atendidos , el hotel es UNK para viajar en familia .
 1 0 Las vistas desde la azotea impresionantes , con dos jacuzzis .
-1 0 Por el precio de la habitación es justo el servicio recibido , ya que el hospedaje en Amsterdam es en general bastante caro en comparación a otras ciudades europeas .
 1 0 En nuestros próximos viajes a Madrid volveremos a utilizar este hotel que ya conocíamos de ocasiones anteriores .
 1 2 Vistas sobre el canal tal y como pedimos en la reserva .
 1 2 Buen trato y buen Hotel
-1 2 Buen servicio , todo muy limpio y cómodo .
+1 2 Buen servicio , todo UNK UNK y UNK .
 1 0 Situado en primera línea de una paradisiaca playa en la urbanización de Nusa Dua .
-1 0 El apartamento era grande , con una cama de matrimonio y un sofá cama , una cocina equipada completa y un amplio baño con bañera .
-1 0 Si que hay que caminar de cuesta arriba , pero es muy poquito rato y la cuesta no es nada pronunciada , de hecho , Calella es una colina , asi que no se porque se quejan algunos !
+1 0 El apartamento era grande , con una cama de matrimonio y un sofá cama , una cocina equipada completa y un UNK baño con bañera .
+1 0 Si que hay que caminar de cuesta arriba , pero es UNK poquito rato y la cuesta no es nada pronunciada , de hecho , Calella es una colina , asi que no se porque se quejan algunos !
 1 0 Es apto para bebes , ya que cuenta con un cuarto con todos los servicios que se pueden necesitar .
-1 0 Las habitaciones son amplias y comfortables pues no se oye ningún ruido de la gran vía .
+1 0 Las habitaciones son amplias y comfortables pues no se oye ningún UNK de la UNK vía .
 1 2 Cómodos apartamentos
-1 0 El hotel es precioso , las instalaciones amplias es decir cuartos amplios con aire acondicionado , friobar , terraza , camas queen , escritorio , pequeña sala .
-1 0 Se trata de un hotel pequeño , de diseño , en el que se cuidan todos los detalles con una excelente relación calidad · precio .
-1 0 esta es una de las mejores vacasiones que ice ademas esta super bien y ni hay nada de malo .
-1 0 Nos trataron como en casa , muy amables ante cualquier duda o necesidad .
+1 0 En la terraza del hotel hay una piscina preciosa , nadie te ve desde fuera y puedes bañarte y tomar el sol con UNK UNK .
+1 0 todo está decorado con un UNK UNK , y tiene todo lo que se pueda necesitar Las fotos que aparecen en la web , muestran UNK y exactamente tal y como son los apartamentos .
+1 0 El hotel es UNK , las instalaciones amplias es decir cuartos amplios con aire acondicionado , friobar , terraza , camas queen , escritorio , pequeña sala .
+1 0 Se trata de un hotel pequeño , de diseño , en el que se cuidan todos los detalles con una UNK relación calidad · precio .
+1 0 esta es una de las mejores vacasiones que ice ademas esta super UNK y ni hay nada de UNK .
+1 0 Nos trataron como en casa , UNK amables ante cualquier UNK o necesidad .
 1 0 El hotel esta situado a unas cuatro manzanas de la estación de Arc de Triomf y a unas tres de la parada de Marina .
 1 0 Tienes acceso al transporte público de la ciudad ( buses , Metrorail y Metromover ) .
 1 0 Confortable hotel en Barcelona
-1 0 También tiene servicio de internet gratis en la habitacion o caja fuerte gratis .
-1 0 El hotel ha sufrido una reforma en el último año .
-1 0 Lo mejor de estos apartamentos es sobre todo su precio , conseguimos una buena oferta a través de internet .
-1 2 Las cenas con muchisima variedad , había mucha cantidad y calidad .
+1 0 También tiene servicio de internet UNK en la habitacion o caja UNK UNK .
+1 0 Bueno el hotel no era UNK , estaba UNK y UNK
+1 0 El hotel ha UNK una UNK en el último año .
+1 0 Lo UNK de estos apartamentos es sobre todo su precio , conseguimos una buena oferta a través de internet .
+1 0 Las cenas con muchisima UNK , había mucha cantidad y calidad .
 1 3 Dias placenteros
 1 0 Localización tranquila pero en menos de 10 miutos andando te pones en el Duomo .
-1 2 Realmente lo recomiendo a todo el mundo .
-1 0 El hotel cuenta con ocho plantas si no recuerdo mal y una gran cantidad de habitaciones , La limpieza es correcta y el desayuno tipo buffet .
-1 0 Se puede llegar caminando desde la parada de Urgell del autobus del aeropuerto ( unos 10 minutos ) , por lo que resulta de fácil acceso .
-1 0 La recepción es hermosa ( al igual que la sala de desayunos ) y el personal más que atento .
-1 0 El baño es correcto .
+1 2 Realmente lo UNK a todo el mundo .
+1 0 El hotel cuenta con ocho plantas si no recuerdo UNK y una UNK cantidad de habitaciones , La UNK es correcta y el desayuno tipo buffet .
+1 0 el hotel es una UNK . cuenta con cocina y frigorifico UNK , con lo que no es necesario gastarse dinero en el hotel .
+1 0 Se puede llegar caminando desde la parada de Urgell del autobus del aeropuerto ( unos 10 minutos ) , por lo que resulta de UNK acceso .
+1 0 Muy UNK y con cama cómodas .
+1 0 La recepción es hermosa ( al igual que la sala de desayunos ) y el personal más que UNK .
+1 0 El baño es UNK .
 1 0 Practico y funcional
-1 2 Calidad precio bastante buena y en el centro
 1 0 Bonito hotel en Madrid
-1 0 Es un hotel situado cerca del Camp Nou , cerca hay varios bares para desyunar y el bar casa Mario donde se come bastante bien .
-1 0 Todo un pack de sensaciones prácticamente sin movernos .
+1 0 Es un hotel situado cerca del Camp Nou , cerca hay varios UNK para desyunar y el bar casa Mario donde se come UNK UNK .
+1 0 Todo un pack de UNK prácticamente sin movernos .
 1 0 Sólo tengo buenas palabras para describir al hotal y al personal .
 1 0 El metro está a 50 metros bajando tan solo una calle .
-1 0 Lo hemos recomendado a todo el mundo que conocemos , y sin duda vamos a repetir .
-1 0 El tamaño de la habitación y el baño es grande , limpia y la cama confortable .
+1 0 Lo hemos UNK a todo el mundo que conocemos , y sin UNK vamos a repetir .
+1 0 El tamaño de la habitación y el baño es grande , limpia y la cama UNK .
 1 0 El coche lo deje en el parking , por ser del club playa vip hacen descuento , no es necesario ir en coche para ver la ciudad .
-1 0 Una de las ventajas que tiene también es que se situa cerca de el centro comercial Diagonal del Mar , y a pocos metros de la playa .
-1 0 Bastante bien , estuve 4 días y si volviese a Milán , volvería sin duda a este hotel que recomiendo 100 %
+1 2 nos hemos sentido UNK atendidos por todo el personal y las instalaciones estaban en UNK estado acorde a
+1 0 Una de las UNK que tiene también es que se situa cerca de el centro comercial Diagonal del Mar , y a pocos metros de la playa .
+1 0 El hotel se encuentra en la parte final de su remodelación , han cambiado los baños y en las habitaciones han UNK en el interior de la habitación los balcones que tenía este hotel .
+1 0 Bastante UNK , estuve 4 días y si volviese a Milán , volvería sin UNK a este hotel que UNK 100 %
 1 0 El hotel se encuentra en medio del Strip , con lo que su ubicación es idónea .
-1 2 La recepción bien y la gente amable
-1 0 Desde el hotel se puede ver el Camp Nou , con lo cual si eres aficionado puedes alojarte e ir a pie en 5 minutos .
+1 2 La recepción UNK y la gente UNK
+1 0 Desde el hotel se puede ver el Camp Nou , con lo cual si eres UNK puedes alojarte e ir a pie en 5 minutos .
 1 0 Volveré de nuevo cuando vaya a Sevilla
-1 0 Encontramos la limpieza de la habitación muy adecuada y un baño moderno y cuidado .
-1 0 Para los niños genial , muchos arboles , espacio natural , entrada directa a la playa .
-1 0 Alrededor hay bastantes comercios y supermercados , p.ej. para comprar productos básicos ( agua , etc. ) , así como lugares para desayunar .
-1 0 Nada caro para el lugar donde esta y las comodidades que ofrece .
+1 0 Encontramos la UNK de la habitación UNK adecuada y un baño UNK y cuidado .
+1 0 Para los niños genial , muchos arboles , espacio UNK , entrada directa a la playa .
+1 0 La zona es UNK buena ya que estás en primera linea de playa , y la ocupacion es un 90 % alemana y en la época en la que estuvimos casi todo gente UNK / 3ª edad ... pero UNK UNK porque buscábamos UNK .
+1 0 Alrededor hay bastantes comercios y supermercados , UNK . para comprar productos básicos ( agua , etc . ) , así como lugares para desayunar .
+1 0 Nada UNK para el lugar donde esta y las comodidades que ofrece .
 1 0 Hermosa Playa
-1 0 En las habitaciones tienes todo tipo de detalles como una cafetera con sus cápsulas , un despertador con altavoz para poner tu smartphone , etc. Además cuando te levantas para desayunar y vuelves , la habitación ya está hecha , así como después de echarme una siesta .
+1 0 En las habitaciones tienes todo tipo de detalles como una cafetera con sus cápsulas , un despertador con altavoz para poner tu smartphone , etc . Además cuando te levantas para desayunar y vuelves , la habitación ya está hecha , así como después de echarme una siesta .
 1 0 Para repetir .
-1 2 Os lo recomiendo ya que está muy centrico , instalaciones perfectas incluso su cafeteria perfecta .
-1 0 Además , el minibar , wifi y caja fuerte está incluido en el precio y es algo de agradecer porque no es muy habitual .
+1 2 Os lo UNK ya que está UNK centrico , instalaciones perfectas incluso su cafeteria perfecta .
+1 0 Además , el minibar , wifi y caja UNK está incluido en el precio y es algo de UNK porque no es UNK habitual .
 1 0 Lo demás para repetir .
-1 0 Tanto el spa como el masaje resultaron muy relajantes y reconfortantes .
-1 0 En Agosto hace calor y es temporada alta , pero hay piscina en el ático y con el aire acondicionado no se nota .
+1 0 Tanto el spa como el masaje resultaron UNK relajantes y reconfortantes .
+1 0 En Agosto hace UNK y es temporada alta , pero hay piscina en el ático y con el aire acondicionado no se nota .
 1 0 El hotel es una autentica preciosidad , comfort y atencion al 100 % y su precio se adecua a lo que ofrecen .
 1 0 Sorprendente elección
 1 2 Las parcelas son amplias y con mucha sombra .
-1 2 Todo MUY limpio y cuidado .
+1 0 Todo MUY UNK y cuidado .
 1 2 Recomendable hotel en el centro
-1 2 El personal es fantástico , muy servicial y atento a todas las necesidades que tuvimos durante la visita .
+1 0 El personal es UNK , UNK servicial y UNK a todas las necesidades que tuvimos durante la visita .
 1 0 Bien comunicado .
-1 2 En plena gran via !
+1 2 En plena UNK via !
 1 2 Gracias por todo , volveremos y lo recomendaremos a nuestros amigos .
-1 0 Destacamos también la limpieza de las habitaciones .
-1 0 Comida abundante y para todos los gustos .
-1 0 Me parece fenomenal el tema del wifi gratuíto y que admás funcina muy bien .
+1 0 Destacamos también la UNK de las habitaciones .
+1 0 Comida UNK y para todos los UNK .
+1 0 Me parece UNK el tema del wifi gratuíto y que admás funcina UNK UNK .
 1 0 Calidad para persona no exigentes
-1 0 El hotel estaba como recién reformado , todo nuevo , muy cuidado al detalle .
+1 0 El hotel estaba como recién UNK , todo nuevo , UNK cuidado al detalle .
 1 2 Una buena combinación
 1 0 A los clientes del Club PlayaVip les facilitan gratuitamente una sesión de Spa por persona .
-1 2 Hotel recomendable
+1 2 Hotel UNK
+1 0 Hotel con diseño UNK , UNK céntrico .
 1 0 Cómodo
 1 0 Al lado de la Plaza del Sol y cerca de estaciones de Metro y parada de autobuses .
 1 2 Ideal para pasar un fin de semana de turismo por la capital .
 1 0 Decoración vanguardista
-1 0 estuve con una estancia que incluia solo desayuno , asi que en mi parecer el desayuno que ponen no esta mal del todo .
-1 0 La habicación es muy buena y el precio es adecuado a la calidad , si bien sin ningún tipod e oferta no es barato .
+1 0 estuve con una estancia que incluia solo desayuno , asi que en mi parecer el desayuno que ponen no esta UNK del todo .
+1 0 La habicación es UNK buena y el precio es UNK a la calidad , si UNK sin ningún tipod e oferta no es UNK .
 1 0 Elegante y familiar
 1 0 Obsequio de botella de champagne a la llegada .
-1 0 Lo mejor es su situación , cerca de todo lo que hay que ver en Madrid .
-1 0 Hotel comodo y confortable.El personal es muy amable , siempre dispuesto a ayudarnos ante cualquier consulta o necesidad .
-1 0 El desayuno es el mejor y el mas variado de Helsinki ( yo empiezo el dia con un banquete de salmon ahumado y arenque ... ) .
+1 0 Lo UNK es su UNK , cerca de todo lo que hay que ver en Madrid .
+1 0 Hotel comodo y confortable.El personal es UNK UNK , siempre UNK a ayudarnos ante cualquier consulta o necesidad .
+1 0 Tiene un restaurante buffet tanto para desayunos como para cenas ( estuve en media pensión ) con una UNK UNK de comida ( un día tocaba comida china y otro día comida mexicana ) Para desayunar también puedes hacerlo a la carta en un restaurante aparte con un personal UNK UNK y UNK .
+1 0 El desayuno es el UNK y el mas variado de Helsinki ( yo empiezo el dia con un banquete de salmon ahumado y arenque ... ) .
 1 2 Buen Hotel
-1 0 Al ser valencia no es muy dificil encontrar donde tomar algo , a menos de 100 metros de la estancia hay algo donde elegir .
-1 0 para descansar o divertirse no tiene precio , adecuado para todos los gustos .
-1 0 Me gusto
-1 0 Está bastante limpio .
-1 0 Hotel Paris de Encamp , Andorra , barato y bueno
+1 0 Al ser valencia no es UNK dificil encontrar donde tomar algo , a menos de 100 metros de la estancia hay algo donde elegir .
+1 0 para descansar o divertirse no tiene precio , UNK para todos los UNK .
+1 2 Un hótel bonito y UNK en Paris
+1 0 Me UNK
+1 0 Excelente estadía , un UNK UNK .
+1 0 Está UNK UNK .
+1 0 Hotel Paris de Encamp , Andorra , UNK y UNK
 1 0 Agradable estancia en el Torre Catalunya
 1 2 Metro cercano y negocios cercanos .
-1 0 El desayuno no estaba mal .
-1 0 Aunque solo estuve una noche repetiré , fué una estancia muy relajante y agradable , para ir al Spa cada persona tiene su albornoz .
-1 2 El hotel tenía unas habitaciones bastante buenas y era tranquilo .
-1 2 Hotel bueno
-1 0 Un hotel para un fin de semana con agradable ambiente y cercano a Madrid a un tiro del cercanías para evitar el tráfico de la ciudad .
-1 2 Bonito , atencion de lujo y desayunos deliciosos !
+1 0 El desayuno no estaba UNK .
+1 0 Aunque solo estuve una noche repetiré , fué una estancia UNK relajante y UNK , para ir al Spa cada persona tiene su albornoz .
+1 2 Hotel UNK
+1 0 Un hotel para un fin de semana con UNK ambiente y cercano a Madrid a un tiro del cercanías para UNK el tráfico de la ciudad .
+1 2 Bonito , atencion de UNK y desayunos deliciosos !
 1 2 Zona tranquila .
-1 0 El bar para tomar lo que quieras en cualquier momento genial , con sus sillones , su terraza al lado de la piscina ... una maravilla .
-1 0 os la la recomiendo a todas las personas q se pasen por la ciudad es grande y muy calida bueno espero aver ayudado
+1 0 El bar para tomar lo que quieras en cualquier momento genial , con sus sillones , su terraza al lado de la piscina ... una UNK .
+1 0 os la la UNK a todas las personas q se pasen por la ciudad es grande y UNK calida UNK espero aver UNK
 1 0 Buena relación calidad · precio
-1 0 Para el precio que nos costo no estaba nada mal , esta claro que sabes doonde vas y la calidad que hay algunos de estos sitios , no obstante lo recomiendo para pasar unos dias de relax con la pareja o familia ,
+1 0 Para el precio que nos costo no estaba nada UNK , esta UNK que sabes doonde vas y la calidad que hay algunos de estos sitios , no obstante lo UNK para pasar unos dias de relax con la pareja o familia ,
 1 0 Volveria
-1 2 El servicio contratado Incluçia desayuno , con buena variedad , el personal del restaurante , un encanto , y en la recepción muy amables .
-1 0 El trato del personal fue cuidado y muy agradable , el check · in y el check · out fueron rapidos y sin ninguna clase de problema
+1 2 El servicio contratado Incluçia desayuno , con buena UNK , el personal del restaurante , un UNK , y en la recepción UNK amables .
+1 0 El trato del personal fue cuidado y UNK UNK , el check · in y el check · out fueron rapidos y sin ninguna clase de UNK
+1 0 La playa de este hotel es privilegiada porque es casi el doble de extension por sobre el promedio de los hoteles en playa del carmen , El hotel cuenta con personal sumamente UNK que tienen UNK de resolucion si se te UNK una llave , una toalla , si buscas un tipo especifico de comida , si buscas un medico o UNK de ese tipo , el hotel se porto a la altura .
 1 0 Todo lo necesario a media hora del centro .
-1 0 El último día tuvimos incluido el desayuno y la verdad es que hay mucha variedad , etaba todo muy bueno y es tipo buffet .
-1 0 Además fueron muy atentos en recepción facilitándonos el LATE check out ya que nuestro vuelo salía a última hora de la tarde y poder dormir una siesta antes se agradece mucho .
+1 0 El último día tuvimos incluido el desayuno y la verdad es que hay mucha UNK , etaba todo UNK UNK y es tipo buffet .
+1 0 Además fueron UNK atentos en recepción facilitándonos el LATE check out ya que nuestro vuelo salía a última hora de la tarde y poder dormir una siesta antes se agradece mucho .
 1 2 Buena y tranquila zona y con recepción 24h .
 1 0 Volveré
 1 0 Acogedor y céntrico
-1 2 Como siempre , el trato fue espléndido , las habitaciones renovadas y muy limpias , y el desayuno era espectacular .
-1 0 Ya he estado varias veces con mi pareja en este pequeño hotel , el cual se encuentra en el centro de León , en la famosa calle Ancha .
-1 0 Había una caja fuerte en el armario sin cargo .
-1 2 Lo mejor .... la fuente de chocolate .
+1 0 Como siempre , el trato fue UNK , las habitaciones renovadas y UNK limpias , y el desayuno era UNK .
+1 0 Ya he estado varias veces con mi pareja en este pequeño hotel , el cual se encuentra en el centro de León , en la UNK calle Ancha .
+1 0 Había una caja UNK en el armario sin cargo .
+1 0 La comida es UNK y tiene todo pensado para la UNK familiar .
 1 0 Segunda estancia y , sin pensarlo , si volvemos a Madrid , volveremos a repetir .
-1 0 El hotel se lo recomendamos a todas las personas que les gusta estar bien atendidas .
+1 0 El hotel se lo recomendamos a todas las personas que les gusta estar UNK atendidas .
 1 0 Lo que mas me ha gustado ha sido el buffet tanto del desayuno como de la cena .
 1 0 Los de recepción te aconsejan un poco sobre donde ir y que linea de metro o de bus coger para ir a los destinos .
 1 0 Nos agradó
-1 0 Viaje placentero
+1 0 Viaje UNK
 1 0 El hotel esta a un par de manzanas del metro de Cuzco y a 20 minutos del aeropuerto en taxi .
-1 0 Las habitaciones son amplias , el mobiliario es moderno y funcional , poseen tv de pantalla plana , vía satélite , caja de seguridad .
+1 0 Las habitaciones son amplias , el mobiliario es UNK y funcional , poseen tv de pantalla plana , vía satélite , caja de seguridad .
 1 0 ( Plaza de España esta a unos 5 · 7 minutos ) y puerta del Sol a unos 15 a pie .
+1 0 Apenas UNK , UNK situado y un trato UNK .
+1 2 Buenas habitaciones os lo UNK .
 1 0 La habitacion a pesar de la cama supletoria de buen tamaño .
-1 2 No obstante , el hotel está bien en general .
-1 2 Las habitaciones son grandes y cómodas , el diseño sigue una línea moderna , el personal amable .
-1 0 Las habitaciones son amplias , luminosas y muy muy bien equipadas .
-1 0 Suermercados muy cerca a los que se puede ir andando y una limpieza y una comodidad extraordinaria .
-1 0 Me parecio bien caja fuerte y minibar gratis
-1 0 He estado en este hotel y la verdad me ha gustado ya que me esperaba algo peor por ese precio , las sábanas eran blancas totalmente limpias y nuevas .
-1 0 Lo recomendaría sin duda para un viaje en las mismas condiciones , es decir , para un fin de semana .
-1 0 Relacion calidad precio lo mejor que he visto .
+1 2 No obstante , el hotel está UNK en UNK .
+1 2 Las habitaciones son grandes y cómodas , el diseño sigue una línea moderna , el personal UNK .
+1 0 Las habitaciones son amplias , luminosas y UNK UNK UNK equipadas .
+1 0 Los dueños son unas personas UNK amables y simpáticos que estarán UNK de ayudaros en lo que sea necesario ..
+1 0 Me parecio UNK caja UNK y minibar UNK
+1 0 He estado en este hotel y la verdad me ha gustado ya que me esperaba algo UNK por ese precio , las sábanas eran blancas totalmente limpias y nuevas .
+1 0 Lo recomendaría sin UNK para un viaje en las mismas condiciones , es decir , para un fin de semana .
+1 0 La azotea UNK con dos jacuzzis en los que se ve todo Madrid.El SPA super UNK acondicionado .
+1 0 Relacion calidad precio lo UNK que he visto .
 1 0 Madrid centro
-1 0 Lo mejor la camarera de por las noches , muy atenta y servicial , un 10 para ella , lo mejor del hotel .
+1 0 Lo UNK la camarera de por las noches , UNK atenta y servicial , un 10 para ella , lo UNK del hotel .
 1 0 Buena ubicación
-1 0 Fácil acceso desdel el aeropuerto , primero un tren hasta Barcelona · Sants y luego 3 o 4 paradas en metro así te ahorras el taxi .
-1 2 Mi habitación estaba limpia y el personal fue bastante amable .
-1 0 Totalmente recomendable por su precio y situación estratégica
-1 0 Personal correcto
+1 0 Fácil acceso desdel el aeropuerto , UNK un tren hasta Barcelona · Sants y luego 3 o 4 paradas en metro así te ahorras el taxi .
+1 2 Mi habitación estaba limpia y el personal fue UNK UNK .
+1 2 Totalmente UNK por su precio y UNK estratégica
+1 0 Personal UNK
 1 0 Regresaremos
 1 0 Una experienca para repetir
-1 0 La verdad que merece la pena reservar media pensión .
-1 0 Habitación sencilla pero muy lipia con baño suficiente con amenities
+1 2 las atenciones son formidables las comidas exquisitas y para todos los UNK , las facilidades espectaculares y extremadamente limpias eso es UNK UNK .
+1 0 La verdad que merece la UNK reservar media pensión .
+1 0 Habitación sencilla pero UNK lipia con baño UNK con amenities
+1 0 Todo ayudo a que fuera tan especial , su gente , el ambiente , la compañia y tambien el hotel , UNK comodo y UNK .
 1 0 Facil acceso al Complejo
-1 2 Buen trato , buena situación del hotel .
-1 0 La estancia en el hotel la verdad es que fue agradable y cumplió con lo que ibamos buscando .
+1 2 Buen trato , buena UNK del hotel .
+1 0 La estancia en el hotel la verdad es que fue UNK y cumplió con lo que ibamos buscando .
 1 0 Acogedor
-1 0 Los servicios muy buenos , así como todo el personal , siempre dispuesto y alegre , mas que nada que no hablabamos italiano !
+1 0 El desayuno UNK también , la verdad , nos esperábamos mucho menos .
+1 0 Los servicios UNK buenos , así como todo el personal , siempre UNK y UNK , mas que nada que no hablabamos italiano !
 1 0 No se puede poner un pero a este hotel .
-1 0 El Spa muy agradable y bastante grande , no usamos la piscina por fechas pero estaba abierta , tambien tiene gimnasio y zona de masajes .
-1 2 Nos ha encantado y volveremos
+1 0 El Spa UNK UNK y UNK grande , no usamos la piscina por fechas pero estaba abierta , tambien tiene gimnasio y zona de masajes .
+1 2 Nos ha UNK y volveremos
 1 0 El desayuno , variado , se sirve en el sótano .
 1 0 Buena y tranquila localización
-1 2 Muy recomendable , recomendado para todos .
-1 0 Hemos estado un fin de semana alojados en este hotel y hay que decir que es del todo correcto , y recomendable .
+1 2 Muy UNK , UNK para todos .
+1 0 Hemos estado un fin de semana alojados en este hotel y hay que decir que es del todo UNK , y UNK .
+1 0 Este mes de agosto visitamos Barcelona , éramos un grupo familiar de 20 personas incluidos niños y personas mayores , el hotel nos resultó UNK y UNK , tambíén nos encantó el spa , y la piscina de la azotea resultó de UNK utilidad para los niños .
 1 0 Ideal para quellos que deseen relajarse en el campo , o visitar los pueblecitos de los alrededores .
 1 2 Éxitos , sigan por el buen camino ! ! !
 1 2 Me ha gustado
 1 0 Check · in 24h .
-1 0 El hotel esta muy centrico , en plena Gran Via .
+1 0 El hotel esta UNK centrico , en plena Gran Via .
 1 2 Me gusta el hotel
-1 0 Todo como esperábamos muy correcto
+1 0 Allí todo el personal me trató UNK UNK y pude UNK de las muchas comodidades del recinto .
+1 0 Todo como esperábamos UNK UNK
 1 0 Ofrece desayuno tipo buffet .
 1 0 Cercano al Camp Nou y zona tranquila
 1 0 El servicio de los masajistas inmejorable , disfrutamos de unos tratamientos que nos renovaron a los dos , después de hacernos olvidar del stress diario acumulado .
-1 0 He vuelto a visitar este hotel desde mi última crítica y vuelvo a reiterar mis buena sensaciones , de 10 en cuando a precio , localización y aislación acústica .
-1 0 Personal muy amable y atento , minibar gratuito ( bebidas no alcoholicas ) , bandeja de infusiones y café en la habitación ( gratuito ) , estupendo spa , muy tranquilo ( no se escucha nada de ruido ) y línea de metro cercana para los desplazamientos por la ciudad .
+1 0 He vuelto a visitar este hotel desde mi última UNK y vuelvo a reiterar mis buena UNK , de 10 en cuando a precio , localización y aislación acústica .
+1 0 El baño UNK y con las cosas necesarias .
+1 0 La localización esta UNK UNK al lado de la plaza de la república , cerca de UNK y restaurantes variados tanto de comida rápida como cocina UNK así como tres paradas de metro , se podía llegar al centro andando en 20 · 25 minutos .
+1 0 Personal UNK UNK y UNK , minibar gratuito ( bebidas no alcoholicas ) , bandeja de infusiones y café en la habitación ( gratuito ) , UNK spa , UNK UNK ( no se escucha nada de UNK ) y línea de metro cercana para los desplazamientos por la ciudad .
 1 0 Funcional .
 1 0 El desayuno se sale de los estándares y ofrecen desde shushi hasta pequeñas frutas tropicales .
-1 0 La habitación es amplia , bien equipada , con un buen cuarto de baño , y con minibar gratuito .
-1 0 Acostumbrado a lo clásico ( a veces reñido con lo viejo y sucio ) este hotel es correcto y el , personal atento .
-1 2 Buen servicio y buena situación
-1 0 No nos dio tiempo a recorrer todos los alrededores de la finca , pero la piscina y los jardines invitan a pasar largas temporadas en verano .
+1 0 El hotel no colapsa siempre tenes un UNK servicio .
+1 0 La habitación es amplia , UNK equipada , con un buen cuarto de baño , y con minibar gratuito .
+1 0 Acostumbrado a lo UNK ( a veces reñido con lo viejo y UNK ) este hotel es UNK y el , personal UNK .
+1 0 Hotel UNK y con buenos servicios
+1 0 No nos dio UNK a recorrer todos los alrededores de la finca , pero la piscina y los jardines invitan a pasar largas temporadas en verano .
 1 3 Bueno
 1 0 No duden el elegir a este hotel .
-1 2 El personal es amable .
-1 0 Recueerdo que el desayuno buffet me gusto mucho jajaj Sin duda repetiria
+1 2 El personal es UNK .
+1 0 El desayuno es de buffet y es UNK .
+1 0 Recueerdo que el desayuno buffet me UNK mucho jajaj Sin UNK repetiria
+1 2 Acceso UNK a internet y personal UNK UNK .
+1 0 Hotel UNK céntrico y UNK
 1 0 Buen hotel si vas al Camp Nou
-1 0 Me gustó la habitación en general poder aparcar el coche en la puerta .
-1 2 Nos encontramos agusto en el Hotel y el trato hacia nosotros es de agradecer .
-1 0 Estancia cómoda , limpia y acogedora , con una buena cama y sin ruidos .
-1 0 Es un hotel encantador , muy bien ubicado y a unos 10 minutos del centro histórico de Peñíscola y a unos cuantos metros de la playa .
+1 0 Me gustó la habitación en UNK poder aparcar el coche en la puerta .
+1 0 Nos encontramos agusto en el Hotel y el trato hacia nosotros es de UNK .
+1 0 Estancia cómoda , limpia y acogedora , con una buena cama y sin UNK .
+1 0 Es un hotel UNK , UNK UNK ubicado y a unos 10 minutos del centro histórico de Peñíscola y a unos cuantos metros de la playa .
 1 0 El resto del cuarto , baño , suelo , si fueron limpiados .
 1 2 100 % Recomendable .
-1 0 Es un lugar muy tranquilo , sin ningun ruido y con todo lo necesario para pasar unos dias de descanso con la familia .
-1 0 La habitación perfectamente insonorizada , con minibar gratuito ( 4 botellas de agua y 2 de Pepsi ) , televisión plana , minicadena , plancha y tabla de panchar , sobres de café y té con cápsulas de leche , etc ... El SPA recién acondicionado , muy completo y además , por ser cliente repetitivo , nos regalaron 2 entradas .
+1 2 Personal UNK .
+1 0 En UNK no UNK el hotel , está UNK UNK ubicado , el edificio es de fachada UNK bonita y UNK buen aspecto , está UNK cuidado / UNK .
+1 0 Es un lugar UNK UNK , sin ningun UNK y con todo lo necesario para pasar unos dias de descanso con la familia .
+1 0 La habitación UNK insonorizada , con minibar gratuito ( 4 botellas de agua y 2 de Pepsi ) , televisión plana , minicadena , plancha y tabla de panchar , sobres de café y té con cápsulas de leche , etc ... El SPA recién acondicionado , UNK completo y además , por ser cliente UNK , nos regalaron 2 entradas .
 1 0 Nos relajamos muchísimo durante esos días , es un hotel completamente familiar .
-1 0 Lo dicho .... increible en esta cadena , donde la amabilidad y las atenciones suelen ser siempre algo a destacar .
-1 2 Amable bienvenida en la recepción .
-1 0 Por lo que a las habitaciones se refiere , su tamaño es el adecuado para viajar en pareja .
-1 0 El personal de recepción muy atento , me reomendó varias entradas a espectáculos , nos dio indicaciones y consejos , todo muy bien ) .
-1 0 en general no está mal .
-1 0 Creo que para los que vamos periódicamente por trabajo tener de referencia a este hotel en Barcelona nos va genial porque ya lo dice el refrán , " más vale malo conocido que bueno por conocer " pero en este caso de malo nada de nada .
+1 0 Lo dicho ... . increible en esta cadena , donde la UNK y las atenciones suelen ser siempre algo a destacar .
+1 2 Amable UNK en la recepción .
+1 0 Por lo que a las habitaciones se refiere , su tamaño es el UNK para viajar en pareja .
+1 0 El personal de recepción UNK UNK , me reomendó varias entradas a espectáculos , nos dio indicaciones y consejos , todo UNK UNK ) .
+1 0 en UNK no está UNK .
+1 0 Creo que para los que vamos periódicamente por UNK tener de referencia a este hotel en Barcelona nos va genial porque ya lo dice el refrán , UNK más vale UNK conocido que UNK por conocer UNK pero en este caso de UNK nada de nada .
 1 0 Carreteras modernas
-1 0 El SPA recién acondicionado , muy completo y además , por ser cliente repetitivo , nos regalaron 2 entradas .
-1 0 La habitación familiar es más que suficiente para dos adultos y dos niños ya que dispones de dos camas de 1'35 al igual que los hoteles de Playa que hemos visitado .
+1 0 El SPA recién acondicionado , UNK completo y además , por ser cliente UNK , nos regalaron 2 entradas .
+1 0 La habitación familiar es más que UNK para dos adultos y dos niños ya que dispones de dos camas de 1'35 al igual que los hoteles de Playa que hemos visitado .
 1 2 En todo lo demás ha sido una buena estancia .
-1 0 Lo recomiendo
+1 0 Lo UNK
 1 2 Buen hotel y centrico
 1 2 Una buena opcion calidad · precio
 1 0 Hotel céntrico y a 5 minutos de todo
-1 0 Es un hotel digno de ver y estar , las habitaciones son estupendas con muy buena decoracion y sin faltarle nada de nada , el personal excelente muy atento , la limpieza se sale te limpian las habitaciones tantas veces como te haga falta es mas mi marido y yo dormiamos la siesta y cuando regresabamos por la noche estaba la cama recien hecha otra vez ademas con detallitos en la almohada , el desayuno bufet yo quede encantada ya que habia toda clase de frutas y mucho mas claro tantos cafes como quisieras yo por lo menos aconsejaria que la gente lo visitase aunque fuese una sola vez en la vida ya que es una experiencia inolvidable .
-1 0 Los desayunos son bastante variados y las habitaciones son amplias y cómodas , a mí me gustó .
-1 0 El hotel es moderno y resulta acogedor , tanto en la habitación como en el baño .
+1 0 Es un hotel UNK de ver y estar , las habitaciones son estupendas con UNK buena decoracion y sin faltarle nada de nada , el personal UNK UNK UNK , la UNK se sale te limpian las habitaciones tantas veces como te haga UNK es mas mi marido y yo dormiamos la siesta y cuando regresabamos por la noche estaba la cama recien hecha otra vez ademas con detallitos en la almohada , el desayuno bufet yo quede encantada ya que habia toda clase de frutas y mucho mas UNK tantos cafes como quisieras yo por lo menos aconsejaria que la gente lo visitase aunque fuese una sola vez en la vida ya que es una experiencia UNK .
+1 0 Los desayunos son UNK variados y las habitaciones son amplias y cómodas , a mí me gustó .
+1 0 El hotel es UNK y resulta acogedor , tanto en la habitación como en el baño .
 1 0 Al entrar te invitan a una copa de champán pero no la tomamos .
 1 0 No tiene animacion , lo cual se agradece .
-1 0 Me parece esta bien para ir y pasarlo bien con amigos ya que hay muchos restaurantes , bares , pubs y ambiente para pararlo bien .
+1 0 Me parece esta UNK para ir y pasarlo UNK con amigos ya que hay muchos restaurantes , UNK , pubs y ambiente para pararlo UNK .
 1 2 Volvería !
 1 2 Parada en el centro
 1 0 Nos gustaría volver .
 1 0 Gratificante
-1 0 Un clásico de Madrid .
+1 0 Es un hotel UNK situado , cerca de la Plaza de España , con muchas tiendas y UNK cerca .
+1 0 Un UNK de Madrid .
 1 2 He estado varias veces aqui .
-1 0 El hotel es perfecto para no perder mucho tiempo para alojarse al llegar a Dubai , si llegas a las 3 a.m. , por ejemplo .
-1 0 Además disponen de películas en dvd que puedes alquilar sin ningún coste adicional. y también de de Play Station en la habitación por si quieres pasar un rato jugando .
+1 0 El hotel es UNK para no UNK mucho UNK para alojarse al llegar a Dubai , si llegas a las 3 a.m. , por ejemplo .
+1 0 Además disponen de películas en dvd que puedes alquilar sin ningún coste UNK . y también de de Play Station en la habitación por si quieres pasar un rato jugando .
 1 0 Se me hizo curioso que en al final del pasillo hubiera una mezquita .
+1 0 Lo pasamos genial , el servicio de playa es UNK , la atención de la gente siempre UNK dispuesta y la comida variada , para todos los UNK .
 1 0 Asi que es un lugar en el pienso en volver !
-1 0 El hotel se merece las estrellas que tiene , la limpieza , la amplitud y la comodidad de las habitaciones son destacables .
+1 0 El hotel se merece las estrellas que tiene , la UNK , la amplitud y la comodidad de las habitaciones son destacables .
+1 0 La atención en recepción fue UNK , el personal es amabilisimo y con UNK UNK a UNK al huesped .
+1 0 Bastante relajante y UNK , comida UNK , totalmente UNK .
 1 2 Sobretodo por la sorpresa del SPA .
 1 0 El buffet era variadísimo y de los que nunca te cansa porque siempre había cosas nuevas para probar .
 1 2 Descanso , mb comida y servicio .
 1 2 Buen hotel
 1 0 Su ubicación , a pocos metros de la estación de tren , es perfecta para acceder de forma rápida al aeropuerto .
-1 0 La limpieza buena ( aunque la moqueta tenía alguna mancha ) .
-1 0 Se los recomiendo !
+1 0 La UNK buena ( aunque la moqueta tenía alguna UNK ) .
+1 2 La habitación era UNK amplia y UNK y nos invitaron al spa en pase familiar que los niños disfrutaron mucho .
+1 2 Se los UNK !
 1 2 Seguramente volveremos .
-1 0 Nunca había estado en un camping y en general me parecio mejor de lo que esperaba , estuvimos en un bungalo plus .
-1 0 Servicio excepcional , la habitación muy cómoda , completa y muy bien insonorizada .
-1 2 Muy bien localizado cerca de todo
-1 0 Voy a regresar , sin duda .
-1 0 Además , está cerca del metro ( parada Emirates ) , que a nosotros nos vino muy bien para ir al recinto ferial en World Trade Center .
+1 0 Es UNK y UNK conservado .
+1 0 Nunca había estado en un camping y en UNK me parecio UNK de lo que esperaba , estuvimos en un bungalo plus .
+1 0 Servicio UNK , la habitación UNK cómoda , completa y UNK UNK insonorizada .
+1 2 Muy UNK localizado cerca de todo
+1 2 Aunque la verdad estuvo bastnte UNK .
+1 0 Voy a regresar , sin UNK .
+1 0 Además , está cerca del metro ( parada Emirates ) , que a nosotros nos vino UNK UNK para ir al recinto ferial en World Trade Center .
 1 0 Un 7,5 para el desayuno .
+1 0 Buenas habitaciones ; UNK calidad de servicio .
+1 0 Todo ello UNK UNK y UNK decorado .
 1 0 Descanso
-1 2 Personal amable
-1 0 Ademas tienes una parda de metro justo al lado y parking publico justo detras ( con decuento para clientes , a nosotros nos costó poco mas de 20 € el dia completo ) .
-1 2 Un hotel muy correcto y donde poder relajarse en plena Toscana .
+1 0 Personal UNK
+1 0 Ademas tienes una parda de metro UNK al lado y parking publico UNK detras ( con decuento para clientes , a nosotros nos costó poco mas de 20 € el dia completo ) .
+1 2 Un hotel UNK UNK y donde poder relajarse en plena Toscana .
 1 2 He tenido la oportunidad de ir a este hotel en varias ocasiones , y es desde luego el unico hotel de Sevilla que considero .
-1 2 Tranquilo , lujoso y con una terraza perfecta .
+1 2 Tranquilo , UNK y con una terraza perfecta .
 1 0 Situación ideal a 50 metros de la estación de Sants , con parada de taxis en la misma puerta .
-1 0 Las habitaciones eran súper tranquilas y siempre tenían detalles con las toallas que eran preciosos .
-1 0 El Spa está bastante bien .
-1 0 La verdad que en relación precio esta bien al menos para probarlo y además en plena Gran Vía de Madrid , todo un lujo .
-1 0 Tienen un teatro justo debajo donde hacen monologos , pero recomiendo reservar con antelacion porque estaba completo cuando estuvimos .
+1 0 Las habitaciones eran UNK tranquilas y siempre tenían detalles con las toallas que eran preciosos .
+1 2 Centrico y UNK
+1 0 El Spa está UNK UNK .
+1 0 La verdad que en relación precio esta UNK al menos para probarlo y además en plena Gran Vía de Madrid , todo un UNK .
+1 0 Tienen un teatro UNK debajo donde hacen monologos , pero UNK reservar con antelacion porque estaba completo cuando estuvimos .
 0 2 La animación mala .
 0 1 A nosotros nos cobraron de mas del precio acordado.Y sobre todo en la habitaciones HAY PULGAS .
-0 2 Aunque la animación ha perdido un poco .... antes era un hotel mucho mas divertido .
 0 1 El entorno no tiene nada para destacar , al igual que el hotel .
-0 1 Es un hotel pequeño a precio de los grandes complejos hoteleros de la riviera maya como el Iberostar , Bahia Principe , Barcelo , Grand Palladium , etc , que son muy superiores y mucho mejores que el Dreams
+0 2 Nada que ver con otros resorts de la zona ... ... ...
 0 1 Lo mismo con las sombrillas en la playa .
 0 1 Algo a observar es que el hotel debería contar con personal que organicen el uso de las reposeras sino la gente reserva con sus toallas los lugares y no permiten que alguien las utilicé en los momentos libres .
-0 1 soy cliente de esta cadena 16 años siempre estado muy contenta pero este año no al llegar ala habitación el suelo estaba sucio el mando de la cama estropeado lo comente en recepción no vino nadie , el minibar no era como el año anterior ni el regalo por ser cliente cava y spa este año solo una a elegir ni el albornoz en la habitación para ir spa como el año anterior . ?
+0 1 soy cliente de esta cadena 16 años siempre estado UNK contenta pero este año no al llegar ala habitación el suelo estaba UNK el mando de la cama UNK lo comente en recepción no vino nadie , el minibar no era como el año anterior ni el regalo por ser cliente cava y spa este año solo una a elegir ni el albornoz en la habitación para ir spa como el año anterior . ?
 0 2 La piscina necesitaba pintura y mychos restaurantes cerrados por días .
 0 1 Recepción debajo de la escalera .
 0 1 Me robaron el móvil en el bungalow
-0 2 Lo vi demasiado sencillo para un Mercure .
-0 1 Está en una zona muy alejada del centro de Barcelona , las conexiones con el metro también están muy lejanas , y en la zona no hay absoultamente nada para la recreación .
-0 2 Tambien mas caro , ojo .
+0 2 Lo vi demasiado UNK para un Mercure .
+0 1 Está en una zona UNK alejada del centro de Barcelona , las conexiones con el metro también están UNK lejanas , y en la zona no hay absoultamente nada para la recreación .
+0 2 Tambien mas UNK , ojo .
 0 2 Antiguo como Roma !
-0 2 Hotel sucio
+0 2 Hotel UNK
 0 1 Pero a partir de aqui , todo lo demas era normalito
 0 3 No estoy conforme completamente .
-0 1 Problemas con el estado de la cama desde el primer dia , la impieza de la habitación inexistente , el trato recibido por algunos camareros pesimo negandose a sacar las bebidas a las mesas , las comidas pesimas y apenas sin variedad , el personal de recepción sin ningún interes en atender al cliente y del tema aparcamiento .. inexistente en la zona y el del hotel abusando cobrando 9 € diarios ......
-0 2 La " categoria " del camping se ha de reflejar en estos casos y francamente nos defraudaron .
-0 1 La distancia a la playa son 8 km , no es un hotel de playa , hay que hacer los desplazamientos en coche ( desconozco si había facilidad de transporte público en las cercanías , aunque vimos bastante afluencia de autobuses ) .
+0 1 Problemas con el estado de la cama desde el primer dia , la impieza de la habitación UNK , el trato recibido por algunos camareros pesimo negandose a sacar las bebidas a las mesas , las comidas pesimas y apenas sin UNK , el personal de recepción sin ningún interes en atender al cliente y del tema aparcamiento .. UNK en la zona y el del hotel abusando cobrando 9 € diarios ... ...
+0 2 La UNK categoria UNK del camping se ha de reflejar en estos casos y francamente nos defraudaron .
+0 1 La distancia a la playa son 8 km , no es un hotel de playa , hay que hacer los desplazamientos en coche ( desconozco si había UNK de transporte público en las cercanías , aunque vimos UNK afluencia de autobuses ) .
 0 1 Yo no volvere a esta cadena de hoteles .
 0 1 No hay espectáculos nocturnos , siempre son los de animación cantando .
+0 1 Lo UNK del caso fue la actitud del personal del hotel .
 0 1 Hotel de paso situado cerca de un poligono industrial .
 0 1 Nada del otro mundo .
-0 2 Me ha decepcionado
-0 2 No esperes gran cosa
+0 2 Me ha UNK
+0 2 Poca UNK , UNK .
 0 1 Robos en las habitaciones del hotel
-0 1 Sobretodo por el trato del personal , el estado de los sanitarios ( mientras te duchas te saludan las hormigas ) y los bungalow de plástico , con lo que el calor de las 8 de la mañana te hace levantarte sudado .
+0 1 Sobretodo por el trato del personal , el estado de los sanitarios ( mientras te duchas te saludan las hormigas ) y los bungalow de plástico , con lo que el UNK de las 8 de la mañana te hace levantarte sudado .
 0 3 Mala estancia
-0 2 El servicio de habitaciones muy malo , y recepción regular .
-0 1 Nosotros contratamos un pack por la luna de miel y nada de lo que contratamos nos lo respetaron , ni cesta de frutas al llegar , ni internet en el pack que decia que si , la habitacion nada que ver con lo que nos ofertaron , es decir pagamos 280 euros mas por tener la pulserita roja en vez de azul pero nada de lo prometido despues ademas , hicimos mogollon de reclamaciones y ni caso hasta el dia de hoy , la operadora que trabajaba con el hotel fatal y la atención horrible.Uno de los dias tuvieron que limpiar la piscina de lo sucia que estaba , los residentes alli se bañaban vestidos , etc , etc ......
+0 1 El servicio de habitaciones UNK UNK , y recepción regular .
+0 1 El desayuno también se sirve durante UNK UNK : de 6 a 9:30
+0 1 Nosotros contratamos un pack por la luna de miel y nada de lo que contratamos nos lo respetaron , ni cesta de frutas al llegar , ni internet en el pack que decia que si , la habitacion nada que ver con lo que nos ofertaron , es decir pagamos 280 euros mas por tener la pulserita roja en vez de azul pero nada de lo UNK despues ademas , hicimos mogollon de reclamaciones y ni caso hasta el dia de hoy , la operadora que trabajaba con el hotel fatal y la atención horrible.Uno de los dias tuvieron que limpiar la piscina de lo sucia que estaba , los residentes alli se bañaban vestidos , etc , etc ... ...
 0 2 Nos estafaron con la oferta
-0 1 Lo peor me parecio el desayuno : bolleria de pesima calidad , productos de calidad baja en general y con poca variedad , supervisor de mozos muy molesto y mozos muy desatentos .
-0 2 Este hotel era la gran desilusión de nuestro viaje
+0 1 Lo UNK me parecio el desayuno : bolleria de pesima calidad , productos de calidad baja en UNK y con poca UNK , supervisor de mozos UNK UNK y mozos UNK desatentos .
+0 1 Este hotel era la UNK UNK de nuestro viaje
 0 1 Errores continuos desde la entrada hasta la salida .
-0 1 El personal desagradable
+0 2 El personal UNK
 0 2 Hotel normalito
-0 1 este camping carece de las medidas de seguridad apropiadas , nos robaron una bici y encima casi te sentias culpable por parte de la recpecion.NO llamaron a la guardia civil y fuimos nosotros hasta el pueblo para poner la denuncia .
-0 1 A la llegada se nos atendió mal .
+0 1 este camping UNK de las medidas de seguridad apropiadas , nos robaron una bici y encima casi te sentias UNK por parte de la recpecion.NO llamaron a la guardia civil y fuimos nosotros hasta el pueblo para poner la UNK .
+0 1 A la llegada se nos atendió UNK .
 0 1 Bastante sencillito .
 0 2 Esperaba más de Marriott
-0 1 A mi la bicicleta y entraron en la autocarabana por la noche y dinero , tarjetas , etc .... La respuesta del camping fue nula , no estuvieron presentes cuando vino la policia , no se interesaron en ningun momento por las cosas robadas ni mucho menos por los miembros de ninguna de las familias afectadas , respuestas como no podemos hacer nada , a mi tambien me robaron la bicicleta , etc .... no es lo que quieres oir en estas situaciones .
-0 1 Estancia muy olvidable : ruido y luz
+0 1 A mi la bicicleta y entraron en la autocarabana por la noche y dinero , tarjetas , etc ... . La respuesta del camping fue nula , no estuvieron presentes cuando vino la policia , no se interesaron en ningun momento por las cosas robadas ni mucho menos por los miembros de ninguna de las familias afectadas , respuestas como no podemos hacer nada , a mi tambien me robaron la bicicleta , etc ... . no es lo que quieres oir en estas situaciones .
+0 1 Estancia UNK olvidable : UNK y luz
 0 1 Cobraban por todo ( Aire acondicionado , wifi ) .
-0 2 No vayan , Decameron de Panamá ya no es bueno
 0 2 La decoracion tipica de un Ibis .
-0 1 El fallo gordisimo es el personal del hotel : los recepcionistas no se ponian de acuerdo y te discutian ( tocate las narices ) sobre lo que el del anterior te habia comentado , el encargado del buffet es 1 autentico ......... por no decir otra cosa + grave que se la merece ( maleducado , impaciente , grosero e impertinente ) y como no recuerdo muy mucho a las señoritas de la limpieza que como autenticas verduleras se ponen a gritar ( si , a gritar ) sobre las 7 · 8 de la mañana sobre cuchilleos y de + menesteres
+0 1 El fallo gordisimo es el personal del hotel : los recepcionistas no se ponian de acuerdo y te discutian ( tocate las narices ) sobre lo que el del anterior te habia comentado , el encargado del buffet es 1 autentico ... ... ... por no decir otra cosa + UNK que se la merece ( UNK , UNK , UNK e UNK ) y como no recuerdo UNK mucho a las señoritas de la UNK que como autenticas verduleras se ponen a gritar ( si , a gritar ) sobre las 7 · 8 de la mañana sobre cuchilleos y de + menesteres
 0 1 Si buscas un hotel para hacer actividades a través de él , o para ver cena con espectáculos , o quedarte todo el día dentro ... no es tu hotel , porque no tiene ese tipo de instalaciones .
-0 1 Creo que la capacidad del restaurante es muy pequeña y si a 8 de diciembre ( que tampoco había tanta gente ) está así , no me quiero ni imaginar como estaría en pleno verano ..
-0 1 Queríamos ver la final de " Let ' s dance " en la tele , pero esta parecía tener más años que el hotel y era diminuta y se veía fatal .
-0 1 El servicio es patetico , nos pasamos una semana comiendo lo mismo , los camareros están salidisimos , todo el mundo quiere sacarte la pasta , en los restaurantes temáticos nos fué imposible reservar ningún día , en la playa y la piscina imposible coger hamacas , y fumigaban una sola vez por semana por lo tanto todos hasta arriba de picaduras ..............
+0 1 Creo que la UNK del restaurante es UNK pequeña y si a 8 de diciembre ( que tampoco había tanta gente ) está así , no me quiero ni imaginar como estaría en pleno verano ..
+0 1 El servicio es patetico , nos pasamos una semana comiendo lo mismo , los camareros están salidisimos , todo el mundo quiere sacarte la pasta , en los restaurantes temáticos nos fué UNK reservar ningún día , en la playa y la piscina UNK coger hamacas , y fumigaban una sola vez por semana por lo tanto todos hasta arriba de picaduras ... ... ... ... ..
 0 1 Le sobran estrellas al hote .
-0 1 La habitación enana , con el lavabo y la ducha en la misma habitación O _ o. Por supuesto , un váter para todo el hotel , lo cual ya merecería que se quitara lo de " hotel " a este cuchitril .
-0 2 hay muchos hoteles alrededor no escojais este , yo no me crei los comentarios y se quedan cortos. malo malisimo
 0 2 ¡ y discuten !
-0 1 les conteste mi teléfono mvl me responden aquí no hay ningún teléfono mvl ... dice una de ellas cuando llegamos la puerta estaba abierta ... a todo esto les puse una reclamación y la correspondiente denuncia policial , la directora del hotel quedo en llamarme al día siguiente ha pasado una semana y no he recibido ninguna llamada no recomiendo este hotel creo que les sobran esas 4 estrellas .
+0 1 Solo un poco riudoso por la noche dado que se encuentra UNK céntrico y siempre hay gente por la calle .
+0 1 les conteste mi teléfono mvl me responden aquí no hay ningún teléfono mvl ... dice una de ellas cuando llegamos la puerta estaba abierta ... a todo esto les puse una reclamación y la correspondiente UNK policial , la directora del hotel quedo en llamarme al día siguiente ha pasado una semana y no he recibido ninguna llamada no UNK este hotel creo que les sobran esas 4 estrellas .
 0 1 El personal deberia ir a clases de civismo
 0 2 Mal comunicado con el centro .
 0 2 Por el precio hay muchos mejores en la Riviera
 0 1 Es un hotel pequeño , sin grandes lujos y con un servicio senzillo .
-0 1 Este hotel necesita mejorar mucho
+0 1 Este hotel necesita UNK mucho
 0 1 Difícil de encontrar aparcamiento en alrededores .
-3 2 Fines de semana agosto y septiembre , muy mal
-3 0 Deja mucho que desear para sus estrellas
+3 0 Fines de semana agosto y septiembre , UNK UNK
+3 0 Deja mucho que UNK para sus estrellas
 3 1 Las comodidades de las habitaciones y hotel desastrosas .
 3 2 La ocupación era bajisima .
 3 2 NI OS ACERQUÉIS
 3 0 No vayais !
-3 2 El peor hotel de punta cana !
+3 1 El UNK hotel de punta cana !
 3 0 Organización caótica .
-3 0 Otra cosa son los desayunos , a los que si bajas 20 mins después de que se sirva no te queda ni leche !!
-3 0 Una estafa
-3 2 Los precios muy caros como siempre .
+3 0 Otra cosa son los desayunos , a los que si bajas 20 mins después de que se sirva no te queda ni leche ! !
+3 1 Los precios UNK caros como siempre .
 3 1 Muy caros los productos del bar de la habitación .
 3 0 Decepcionante
-3 1 El servicio de habitaciones , limpieza , etc ... pésimo .
+3 1 El servicio de habitaciones , UNK , etc ... pésimo .
 3 0 Imposible descansar .
-3 1 Los restaurantes temáticos son un desastre , y has de perder horas para reservar .
-3 0 Peor trato imposible
+3 1 Los restaurantes temáticos son un UNK , y has de UNK horas para reservar .
+3 0 Peor trato UNK
 3 2 Hotel de pésima calidad
 3 2 Insufrible .
 3 0 Decepción
-3 1 El Quijote , el peor .
-3 0 La atencion un desastre
+3 1 El Quijote , el UNK .
+3 0 La atencion un UNK
 3 2 y halcon y travelplan mucho menos .
-3 1 Muy descontento con la piscina y zona solarium
-3 0 En general muy escaso para las 4 estrellas que dice tener
-3 0 Las camas con los colchones hechos polvo .
-3 0 Algunas comidas son muy picantes y tendrían que tener un cartelito para que los que no estamos acostumbrados no las comamos .
-3 0 Hotel en estado lamentable .
+3 1 Muy UNK con la piscina y zona solarium
+3 0 En UNK UNK UNK para las 4 estrellas que dice tener
+3 0 Las camas con los colchones hechos UNK .
+3 0 Algunas comidas son UNK picantes y tendrían que tener un cartelito para que los que no estamos acostumbrados no las comamos .
+3 0 Hotel en estado UNK .
 3 2 Pésimo hotel
-3 2 Pasamos un frío enorme .
+3 0 Pasamos un UNK UNK .
 3 0 Gestión nefasta
 3 1 Recordar cadena be live nooo !
-3 1 En una palabra , lamentable .
-3 0 Por poner un " pero " , resaltaría el pequeño caos que se forma en el comedor ya que lo han cambiado de sitio y ahora es muy pequeño .
-3 0 muy mal
-3 2 La directora es muy estúpida y muy poco servicial .
-3 2 Excesivamente caro , demasiado .
+3 1 En una palabra , UNK .
+3 0 Por poner un UNK pero UNK , resaltaría el pequeño UNK que se forma en el comedor ya que lo han cambiado de sitio y ahora es UNK pequeño .
+3 0 UNK UNK
+3 1 La directora es UNK UNK y UNK poco servicial .
+3 0 Excesivamente UNK , demasiado .

@@ -1,4 +1,4 @@
-test_directory: datasets/random/ca/raw 
+test_directory: datasets/no_lex/ca/raw 
 lang: ca 
 embedding: artetxe 
 classifier: bilstm 
@@ -8,381 +8,404 @@ Binary: (0 +, 1 -)
  
 Gold Prediction Sentence
 
-0 1 Tot així i . ben espais aprofitats els molt estan
-0 1 nous Els molt són . molt nets i apartaments
-0 1 . gran ho dos , running amb vaig m , l corrent runners i activitat vaig fer de Personalment dies altres passar en
-0 1 net Tot el era . llit molt i còmode molt estava
-0 1 s' nens molt bé han ho ! passat ! Els
-0 1 tot , ´ a l tant impecable . habitació Neteja com ´ l hotel a
-0 1 La situació . céntric , molt
-0 1 En bé tot molt estat ha . general
-0 1 el i els tracte amb es personal . propietaris inmillorable El
-0 1 . Estada Excel·lent
-0 1 i . Personal tot molt comuns esmorzar , bufet Àrees correcte
-0 1 molt tot en especial molt . nous i Apartaments Res equipats conpletament net i
-0 1 nit ens amable problema solucionar estava atendre que la molt el recepció va a La de i ràpidament , . persona
-0 1 Ens molt . tot ha agradat
-0 1 el . van . Inmediatament lucionar problema sol
-0 1 per perfecte Hotel amb planteig . fer espai esport i joves - de
-0 1 bé , molt Les instal·lacions
-0 1 tot net . Molt
-0 1 poder La perfecte l' cuina o petita sopar esmorzar per preparar el .
-0 1 , l' esmorzar xulo molt molt L' complert spa . és
-0 1 ser si . va per acolliment en contacte molt personal de adequat falta moment tot arribada telefònic l' el feia teníem A i l'
-0 1 Pero molt . be lhotel esta
+0 1 Tot i així els espais estan molt ben aprofitats .
+0 1 Personalment vaig fer dos dies l , activitat de running i m , ho vaig passar en UNK UNK amb altres runners .
+0 1 Tot estava molt UNK i el llit era molt UNK .
+0 1 Neteja UNK , tant a l ´ habitació com a tot l ´ hotel .
+0 1 La zona de les piscines es molt UNK .
+0 1 Molt bona situació i magnífiques instal  lacions de l ' hotel .
+0 1 La situació , és el UNK , i el fet que tingui pàrquing UNK .
+0 1 El tracte amb els propietaris i el personal es inmillorable .
+0 1 Estada Excel·lent .
+0 1 Personal , Àrees comuns i esmorzar bufet tot molt UNK .
+0 1 La situació , el personal , la UNK : boníssim .
+0 1 Res en especial Apartaments molt nous i conpletament equipats i tot molt UNK .
+0 1 Jardins i zones comunes molt cuidats .
+0 1 Inmediatament van sol . lucionar el UNK .
+0 1 Hotel - espai UNK per joves i amb planteig de fer esport .
+0 1 Molt UNK
+0 1 Molt UNK tot .
+0 1 Sempre que puc hi vaig , el personal també es molt UNK i les instal·lacions estan molt netes .
+0 1 Relació qualitat preu fantàstica .
+0 1 Que es molt centric
+0 1 Entorn molt cuidat .
+0 1 Tot UNK .
+0 1 El tracte UNK !
+0 1 El personal és molt UNK i l ' hotel té una perfecta ubicació .
 0 1 Fantàstic .
-0 1 per Esmorzar i . amabilitat molta de el general personal part en . confort
-0 1 . comodíssim El llit
-0 1 . molt lounge relaxant Zona
-0 1 Molt . reformes correctes les
-0 1 Molt dispositius electrònics . fonamental viatges molts amb és quan pràctic
-0 1 personal El atent . molt
-0 1 platja piscina molt dia La està gira genial vent recomanable no i algun de si gaire dia fa el .
-0 1 comoda és També la i . la zona de molt molt original piscina
-0 1 excelent servei Bufet Wifi esmorzar les i habitacions a increible
-0 1 de ha les personal molt rebut Ens i . atencions agradat el tracte el
-0 1 El ciutat personal el situació l' confort de , i visitar ! per la idònia atenció la
-0 1 inexistent El soroll .
-0 1 confortable Molt
-0 1 , passar varem . 100 una pro , puc perfecte gaire dir , tot % No nit recomanable nomes
-0 1 DE TROBAR FACIL MOLT
+0 1 Esmorzar . . UNK en general i molta UNK per part de el personal
+0 1 El llit comodíssim .
+0 1 Apartaments molt nous , ben decorats , molt confortables i molt ben situats .
+0 1 Zona lounge molt relaxant .
+0 1 Molt correctes les UNK .
+0 1 Molt UNK quan viatges amb molts dispositius electrònics . és fonamental
+0 1 El personal molt UNK .
+0 1 La piscina està UNK molt recomanable si algun dia gira el vent i no fa gaire dia de platja .
+0 1 La piscina molt UNK per estar una estona .
+0 1 També la zona de la piscina és molt original i molt comoda .
+0 1 Wifi a les habitacions Bufet esmorzar increible i servei excelent
+0 1 El UNK UNK .
+0 1 Molt confortable
+0 1 No puc dir gaire , nomes varem passar una nit , pro tot UNK , recomanable 100 % .
+0 1 MOLT FACIL DE TROBAR
 0 1 Completament recomanable
-0 1 el la tracte i . molt El de sobre ciutat personal bons informació la
-0 1 . seves son agradat les m El instalacions mes que
-0 1 més . complerta molt que necessari lo habitació amb L'
-0 1 ens de sense aprofitar . a dianr pàrking el que va satisfer tenir patir deixar ja i el temps el cotxe després això de el Ens vehicle van matí fins moltíssim vàrem el per poder
-0 1 . El bé molt restaurant està
-0 1 soroll d' per nevera nits havia La s' . molt les apagar i feia
-0 1 tracte . bó el cuidat es molt , molt Tot
-0 1 . emportar , , pistes . No supermercat menjar el de ... piscina La hem genial catat , el bar el restaurant joc les , per el
-0 1 les i es . , L' son excelent maco apartament molt vistes
-0 1 Molt bona . centre Bilbo a a passejar el i els voltants situació de per
-0 1 de ! personal hotel Situació , . . l' in-millorables
-0 1 bé correcte que Tot molt diria . molt
-0 1 La . és Londres perfecta de hotel l' per situació explorar
-0 1 M' molt . ha tot agradat
-0 1 Personal Tot . , . neteja en_general be , , ... molt lacions serveis : instal
-0 1 El servei molt eficient .
-0 1 . esmorzar molt de jardi L' piscines les el i bé molt maques està
-0 1 doble l , molt esmorzar es habitació acollidora molt ' ' superior complert es l
-0 1 respecte és de els a zona baix El la extraordinariament . preu
-0 1 El instal·lacions . bé correcte , les molt tracte molt
-0 1 feia tot moment . molt ajudat falta han En cosa informació em eficaçment m' si alguna o una
-0 1 A mi preu sortir molt be tambe em de . va
-0 1 tracte correcte . molt i l' esmorzar de personal el molt El bo
-0 1 seguits anat les millores anys que esplèndides sigut han dos han . Hi i fet hem
-0 1 Super llit El ! còmode
-0 1 . molt agust estar Vàrem
-0 1 . molt És hotel ben un cuidat
-0 1 . esmorzar just molt
-0 1 cuidada . i finca esta ben maco es L' la molt entorn molt
-0 1 . Molt acollidor
-0 1 relació recepció de amb personal Molt . correcta
-0 1 general Molta tranquilitat en .
-0 1 propera segur hi vegada quan reservarem tornem ens perqué temps allotjarem La . amb Londres a
-0 1 molt Esmorsar be .
-0 1 per ha bullidor agradat . d' El molt aigua el ens cafè
-0 1 ben Tot molt reformat .
-0 1 molt . Vista general adient
-0 1 des habitació La . de maca i també piscina l' les vistes molt
-0 1 de amb gracies ! explicacions el personal les . moltes seves recepció orientacions i
-0 1 son habitacions molt confortables Les
-0 1 portar tranvia una quart hora està camines un et ja d' el . passar agafar , que és a i per pensió bé uns dies el qque pot En cas general antic pots
-0 1 esmorzar casc minuts correcta A antic , , habitació 2 de el
-0 1 situació la , de plaça centre Font en Tarragona . ple La , de
-0 1 moderna excel . lents . lacions decoració molt Instal i situacio cèntrica . ,
-0 1 tenen molt les orelles cèntric sort - taps de - Per Ubicat . molt . Personal amable
-0 1 i gran li no de falta és L' en res força . general , habitació
-0 1 , tranquilitat el facilitat entorn carrer el llit , la d' dues aparcament persones , a . l' l' de per amplitud Les de la vistes
-0 1 i per seus Hem hotel es Saragossa petita Salut aconsellable ) el tothom per una aquest fet sortida estada a i ( recomanaria , voltants Salut Avenida aquesta els Gràcies
-0 1 ubicat . , que Molt he estat els estrelles que i ben molts 3 còmode millor a
-0 1 en repetim més aquest vegada hotel . Una
-0 1 llit els El coixins necessaris , amb .
-0 1 lluminoses amb innovadora i distribució Les molt , i són habitacions . espaioses modernes una
-0 1 i . soroll ben sense tranquil situat Molt ,
-0 1 El a h .... la de l partir amabilitat etc de la etc els possiblilitat de terassa un el fer llit , mos de 24:00 a , la les amplitut tè treballador , ,
-0 1 negatiu No podem dir res !
-0 1 Situacio molt servei net , agradable correcta esmorzar , ,
-0 1 de poc 2-3 riera A gratis es platja . aparcar 1 la on a i sense principal la de minut problemes
-0 1 la . famílies adolescents Es pena que hotel val un per amb o nens
-0 1 La . públic situació prop cap Picadilly transport en moment seva necessitant de no , perfecta és
-0 1 l' comoda 4 de en i habitació estar amplia Vam molt
-0 1 ampla . i L' còmoda habitació
-0 1 . correcte Esmorzar
-0 1 de . hotel l' pk Zona gratuït la privat de vora a
-0 1 acord molt amb el preu varem i . correcte Tot que pagar
-0 1 el . , decoració i ubicació tracte l' personal La
-0 1 tingut es la deixes dormir general no soroll Es molt tranquil no cap q de un gent problema bastant . hem camping respectuosa en , , ens
-0 1 Habitacions i , modernes netes còmodes .
-0 1 desplaçaments una centre Donostia perdre temps sense dues en o de Perfecte a a per passar . nits el el
-0 1 . situat Està ben
-0 1 minuts agradable el googgenheim molt seva , a dos de . . La personal ubicació el
-0 1 L' . insonoritzada correctament està habitació
-0 1 els molt Cuiden repetiré petits que ... . detalls Segur
-0 1 , gran cuidats llit espais i còmode . Molt confortable , molt
-0 1 llit . agradat tot ha el m general en
-0 1 i confortables . modernes Instalacions
-0 1 és costat Te just pàrquing . un un hotel i tranquil el a
-0 1 genials i i complet intal·lacions simpatic molt molt , personal atent . Esmorçar
-0 1 soroll . Poc
-0 1 Res negatiu .
-0 1 que gratuïtament I ajuda el tinguin aparcar també per el fet cotxe lloc .
-0 1 fum . no El present també
-0 1 intimitat i coixins molt llits , . còmodes Tens
-0 1 el per grans tot petits no , , . i Hi per dia ha avorrir-se activitats
-0 1 han bar planta l' personal la un . reformat agradable La i de baixa el situació , amabilitat és ,
-0 1 Tot No ha hi negatiu res
-0 1 netes I . habitacions amples Les
-0 1 . a res tinc negatiu dir No
-0 1 matí en , va a estava estaven que de nosaltres més personal obertes tocar . A correcte habitacions neteja per són el i i acollidores el molt la algunes maques una
-0 1 atenció personal bona insral·lacions . el relació part i de . per correctes , qualitat-preu Bona
-0 1 hi . quantitat M' endolls d' que agradat la havia ha
-0 1 . Habitació i confortable neta
-0 1 molt habitacions I amplies agradables son Les .
-0 1 perquè està el És a de centre Tarragona pràctic
-0 1 de pagès embotits primera vi amb esmorzar i L' de masia de .
-0 1 estas . en de estiguis Res sembla natura i plena Puigcerdà Que dins que
-0 1 comoditat i ubicació els decoració la llits de , La la
-0 1 una després bacaina esmorzar de a Un d' la .... productes i l' zona , piscina la amb banyet
-0 1 agradable actitud . El les per l' coses estada molt una tenien personal facilitar-te positiva intentant mes fer-te
-0 1 . era de bufet L' esmorzar complet , molt
-0 1 molt el casc lluny esta no Adames de antic
-0 1 àmplia triple . Habitació
-0 1 i Suc natural . boníssim El tot tracte moment taronja atents familiar de en
-0 1 Tot nou força
-0 1 Esta tant lequipatge . i de curt per aprop trajecte es lestacio , amb el
-0 1 I confortables són les habitacions .
-0 1 I genial gens deteriorats Decoració materials . , original
-0 1 casc a prop antic i Museu , de adient el el de Situació . Guggenheim
-0 1 . de Les eficient és el i atent primera i personal són instal·lacions
-0 1 menjador el instal·lacions , seus proper com treballadors de recepció tracte , habitació els Tant ) les ( .
-0 1 habitació en L' tenint bé estava oferta compte en molt que
-0 1 La repetirem . situació a . molt prop tenim segurament filla la vivint perquè nostra
-0 1 ubicació i l' net La és està de hotel endreçat . excel·lent i
-0 1 vam No soroll . sentir de cap tipus
-0 1 necessitats meves continental adaptat sense les esmorzar gluten . ) L' ( a
-0 1 està qualitat menjar bastant ha es hi . varietat be El la correcta , i
-0 1 va poder Perquè menjar , . agradar el tot ens
-0 1 . , Còmode , modern funciona net , tot
-0 1 millor simpatia el l' personal El amabilitat de i .
-0 1 qualitat situació preu i ha agradat la relació tot M' La
-0 1 ciutat a 10 la Tot , minuts ben de . situat vella
-0 1 tot tenen aprop pàrking Fàcil gratuitament i ( . ) aparcar que relativament
-0 1 zones de verdes perquè , paissatges està i . envoltat situació La
-0 1 molta . platja netedat simpàtic la personal , Molt de molt el era i a prop
-0 1 un aparthotel d' tracta agrada , que . Es m'
-0 1 tot equipada molt cuina bé i funciona . ben La està
-0 1 sonor L' - de les personal habitacions El aïllament tracte -
-0 1 Les moderna decoració . amb molt habitacions alhora una pràctica i
-0 1 de . treballadors L' amabilitat seus els
-0 1 situacio tranquilitat . lo recomiendo i etc Amabilitat .... ... recepcionistes dls
-0 1 amplis sobretot i de espais Els personal el hotel l' .
-0 1 lluminosa i Habitació comoda .
-0 1 L. és apartament . céntric
-0 1 el costat a de hotel . el situacio mar ! de el La
-0 1 . amb comunicat habitacions amplies ben modern i Hotel
-0 1 munt . molts de pocs un molt kms boniques Tens platges a
-0 1 bé . Habitacions
-0 1 . correcte ha Tot estar
-0 1 aparcament bicicletes portar permet perquè l' sense de . amplitud L' problemes
-0 1 he allotjaments Per en estat millors . altres condicions mateix en el preu
-0 1 preocupar-te la , sensa La platja per experiència de . excepcional , uns situació rés No és passar hotel cap he a de mala tingut l' dies quants ideal
-0 1 i les comoditats suite vistes molt amb totes és bones gran amb . L' apartament
-0 1 personal molt atent agradable es i l El hotel . de
-0 1 correcte estat ha . Tot
-0 1 i tot vaig Però descansar poder això .
-0 1 . Molta higiene
-0 1 i familiar molt . acollidor Hotel
-0 1 Inmediatament sol·lucionar . van problema el
-0 1 bé L' esmorzar .
-0 1 a Si hi tornem tornarem . Paris
-0 1 necessitats i amb i L' net totes apartament , ben les còmode ampli molt .
-0 1 i per molt de bé les instal·lacions atenció el bona personal part molt Molt i
+0 1 El tracte de el personal i la informació sobre la ciutat molt bons .
+0 1 Esmorzar UNK .
+0 1 El que mes m UNK son les seves instalacions .
+0 1 L ' habitació molt complerta amb més que lo necessari .
+0 1 Pots quedar-te a dinar i t ' ofereixen un menú molt UNK de preu .
+0 1 Més ben situat impossible ( davant de el Passeig Maritim i a 2 minuts a peu de el Centre ) .
+0 1 Ens van deixar tenir el pàrking a el cotxe fins després de dianr i això ens va satisfer moltíssim ja que vàrem poder aprofitar el temps de el matí sense patir per el vehicle .
+0 1 La nevera feia molt UNK i s ' havia d ' apagar per les nits .
+0 1 Tot molt cuidat , el tracte es molt bó .
+0 1 Molt UNK .
+0 1 L ' apartament es molt maco , i les vistes son excelent .
+0 1 Molt ben cuidat , el tracte UNK .
+0 1 Molt bona situació per passejar a el centre i a els voltants de Bilbo .
+0 1 El personal molt UNK .
+0 1 Les instal·lacions són perfectes per viatjar amb nens , així com les activitats que s ' hi realitzen .
+0 1 Tot molt UNK diria que molt UNK .
+0 1 La situació de l ' hotel és perfecta per explorar Londres .
+0 1 L ' UNK tracta rebut a la reserva i a l ' arribada .
+0 1 Tot en_general : Personal , UNK , instal . lacions , serveis ... molt be .
+0 1 El servei molt UNK .
+0 1 L ' esmorzar està molt UNK i les piscines de el jardi molt maques .
+0 1 Ah , i el bufet de el migdia a la piscina UNK
+0 1 l ' esmorzar es molt complert , l ' habitació doble UNK es molt acollidora
+0 1 El preu és extraordinariament baix UNK a els de la zona .
+0 1 El tracte molt UNK , les instal·lacions molt UNK .
+0 1 En tot moment m ' han UNK molt eficaçment si em feia UNK alguna cosa o una informació .
+0 1 Hi estic d ' acord , per evitar UNK , però no me n ' havia adonat i va ser una UNK ... Tot molt UNK .
+0 1 El tracte de el personal molt UNK i l ' esmorzar molt UNK .
+0 1 Hi hem anat dos anys seguits i les UNK que han fet han sigut esplèndides .
+0 1 El llit Super UNK !
+0 1 És un hotel molt ben cuidat .
+0 1 Nosaltres és el tercer any que anem i estem encantades amb l ' allotjament de les habitacions d ' hotel .
+0 1 Tot ha estat UNK .
+0 1 El servei de transfer de l ' hotel és molt UNK .
+0 1 esmorzar molt UNK .
+0 1 Un esmorzar molt complert .
+0 1 Relació qualitat-preu UNK .
+0 1 Molt UNK .
+0 1 Els nens han estat contentíssims .
+0 1 Les vistes fantàstiques .
+0 1 Molta UNK en general .
+0 1 La propera vegada reservarem amb temps perqué quan tornem a Londres ens hi allotjarem UNK .
+0 1 Esmorsar molt be .
+0 1 El bullidor d ' aigua per el cafè ens ha UNK molt .
+0 1 La terrassa de la habitació molt bona per estar a la fresca llegint i descansant .
+0 1 Tot molt ben UNK .
+0 1 Els detalls , UNK i UNK en la distribució fan sentir molt UNK .
+0 1 el personal de recepció amb les seves explicacions i orientacions . moltes gracies !
+0 1 Les habitacions son molt confortables
+0 1 Allunyat de el Centre Ideal per anar a la platja , està a 5 minuts caminant .
+0 1 A 2 minuts de el casc antic , esmorzar , habitació correcta
+0 1 La situació , en UNK centre de Tarragona , plaça de la Font .
+0 1 Instal . lacions excel . lents , decoració moderna i situacio molt cèntrica .
+0 1 L ' habitació en general , és força UNK i no li UNK de res .
+0 1 Les vistes , l ' amplitud de el llit per dues persones , la UNK de l ' entorn , la UNK d ' aparcament a el carrer .
+0 1 Ampli , lloc UNK , ben comunicat .
+0 1 Ambient UNK .
+0 1 Salut Hem fet una petita sortida per Saragossa i els seus voltants , es aconsellable i aquest hotel ( Avenida ) el recomanaria a tothom Gràcies per aquesta estada Salut
+0 1 Molt UNK i ben ubicat , UNK que molts 3 estrelles a els que he estat .
+0 1 Una vegada més repetim en aquest hotel .
+0 1 El llit , amb els coixins necessaris .
+0 1 Les habitacions són espaioses i molt modernes i lluminoses , amb una distribució innovadora .
+0 1 El bon tracte i la UNK de el llit .
+0 1 Esmozar molt complert . picina molt UNK salons molt amplis , si plou un dia pots UNK en un de els salons i no estar UNK a la habitacio .
+0 1 Molt ben situat , UNK i sense UNK .
+0 1 El personal és molt UNK , UNK , familiar i servicial .
+0 1 No podem dir res UNK !
+0 1 Un detall per agraïr .
+0 1 Situacio , UNK , servei molt UNK , esmorzar correcta
+0 1 Es un hotel que val la UNK per famílies amb nens o adolescents .
+0 1 És el segon UNK que estic a aquest hotel , la situació és UNK i les habitacions són grans i confortables .
+0 1 La seva situació prop de Picadilly és perfecta , no necessitant transport públic en cap moment .
+0 1 Esmorzar UNK .
+0 1 Zona de pk UNK UNK a la vora de l ' hotel .
+0 1 Tot molt UNK i acord amb el preu que varem UNK .
+0 1 La decoració , el tracte personal i l ' ubicació .
+0 1 Habitacions modernes , còmodes i netes .
+0 1 Està ben situat .
+0 1 La seva ubicació , a el dos minuts de el googgenheim . personal molt UNK .
+0 1 Deixen que portis el gos , fet poc comú en el nostre país .
+0 1 Cuiden molt els petits detalls ... Segur que repetiré .
+0 1 Molt confortable , espais cuidats , llit molt UNK i UNK .
+0 1 Cafès i tes disponibles a la habitació .
+0 1 el llit en general m ha UNK tot .
+0 1 Instalacions modernes i confortables .
+0 1 Te un pàrquing UNK a el costat i és un hotel UNK .
+0 1 Esmorçar molt UNK , personal molt simpatic i UNK i intal·lacions genials .
+0 1 Relativament a prop de l ' aeroport d ' Stansted .
+0 1 Res UNK .
+0 1 El UNK també no present .
+0 1 Penso tornar-hi .
+0 1 La piscina , el servei de bar molt accesible i que hi hagues suficients tumbones per els clients .
+0 1 Tens UNK , llits i coixins molt còmodes .
+0 1 Hi ha activitats tot el dia , per grans i petits , per no avorrir-se .
+0 1 Moltes UNK .
+0 1 No hi ha res UNK Tot
+0 1 Tot molt UNK i nou .
+0 1 Les habitacions netes I amples .
+0 1 No tinc res UNK a dir .
+0 1 A nosaltres en va tocar una que estava UNK , a el matí algunes habitacions estaven obertes per el personal de la UNK i són molt més maques i acollidores .
+0 1 Bona atenció per part de el . personal i insral·lacions correctes , bona relació qualitat-preu .
+0 1 UNK ' ha UNK la quantitat d ' endolls que hi havia .
+0 1 La UNK , la ubicació i la UNK de trobar aparcament
+0 1 Habitació confortable i neta .
+0 1 Cuina UNK i adequada per a celíacs en cas necessari .
+0 1 Res , Tot molt UNK Es UNK el que buscàvem , un lloc on hospedar . se , UNK i fora de els circuits comercials i força UNK de preu .
+0 1 Ens van donar una habitació reformada , amb jacuzzi .
+0 1 Res Que estas dins de Puigcerdà i sembla que estiguis en plena natura .
+0 1 La ubicació , la decoració i la UNK de els llits
+0 1 La UNK de el personal , el buffet d ' esmorzar UNK i la confortabilitat
+0 1 Habitació triple àmplia .
+0 1 Suc de taronja natural boníssim El tracte familiar i atents en tot moment .
+0 1 Tot força nou
+0 1 Esta aprop de lestacio , i per tant el trajecte amb lequipatge es curt .
+0 1 Decoració UNK I original , materials gens deteriorats .
+0 1 La qualitat , les instal·lacions i l ' amplitud de l ' apartament .
+0 1 Les instal·lacions són de primera i el personal és UNK i UNK .
+0 1 L ' habitació molt UNK tenint en compte que estava en oferta
+0 1 Molt bon accés , parking gratuit UNK davant .
+0 1 La ubicació de l ' hotel és UNK i està UNK i endreçat .
+0 1 No vam sentir cap tipus de UNK .
+0 1 L ' esmorzar continental adaptat a les meves UNK ( sense gluten ) .
+0 1 El menjar està bastant be , hi ha UNK i la qualitat es correcta .
+0 1 Tracte personal UNK .
+0 1 El UNK l ' UNK i simpatia de el personal .
+0 1 Tot , ben situat a 10 minuts de la ciutat vella .
+0 1 Ens varen donar una habitació UNK UNK de forma gratuita
+0 1 Fàcil aparcar relativament aprop gratuitament ( tot i que tenen pàrking ) .
+0 1 La situació , perquè està envoltat de paissatges i zones verdes .
+0 1 Amabilitat a la Recepció .
+0 1 Es tracta d ' un aparthotel , que m ' UNK .
+0 1 La cuina està molt ben equipada i tot UNK UNK .
+0 1 Esmorzar molt complert i l horari ampli .
+0 1 - El tracte personal - L ' UNK sonor de les habitacions
+0 1 Les habitacions amb una decoració molt moderna i alhora pràctica .
+0 1 Reservant per Booking UNK un dia spa UNK I l ' hotel regala entrada a el Gran Casino Costa Brava
+0 1 Es nota que l hotel ha UNK les seves habitacions recentment .
+0 1 La UNK i UNK que s ' hi respira , una ubicació fantàstica , enmig de els camps amb la muntanya i castell de torroella de fons .
+0 1 Habitació comoda i lluminosa .
+0 1 L. apartament és céntric .
+0 1 Hotel modern amb habitacions amplies i ben comunicat .
+0 1 Habitacions UNK .
+0 1 Tot ha estar UNK .
+0 1 L ' amplitud de l ' aparcament perquè permet portar bicicletes sense UNK .
+0 1 No he tingut cap mala experiència , La situació de l ' hotel és UNK , ideal per passar uns quants dies a la platja sensa preocupar-te de rés .
+0 1 El personal de l hotel es molt UNK i UNK .
+0 1 Tot ha estat UNK .
+0 1 Però tot i això vaig poder UNK .
+0 1 Molta higiene .
+0 1 Hotel molt UNK i familiar .
+0 1 Inmediatament van sol·lucionar el UNK .
+0 1 Si tornem a Paris hi tornarem .
+0 1 L ' apartament molt ampli i amb totes les UNK , ben UNK i UNK .
 0 1 Parking inclòs .
-0 1 agradables Potser són superiors . de dobles més les pisos habitacions
-0 1 be , caminant zones a , min estan per L' 5 les aparcar . aparcament
-0 1 de situació , el i hotel personal . de l' Neteja amabilitat
-0 1 descansar per i snack t' que va gratis bé tarda agafar la un A . forces molt ofereixen
-0 1 necessitàvem recepció de en ajudar-nos el disponibilitat de tot . a que La personal el
-0 1 ambient així , familiar habitacions té . 7 , per relaxar-se q Ideal
-0 1 l' . parquet Ben de ) exterior molt ( i confortable aillat
-0 1 escapada curta una bé Està a per .
-0 1 l' força correctes esmorzar instal·lacions Les i
-0 1 a el hagui dutxa el que bany ipads menjador i , hi la
-0 1 . correcte Tot
-0 1 tracte El . personal directe i
-0 1 molta per de , i neteja tots Amabilitat tranquilitat treballadors part els .
-0 1 tracte El excel-lent . hotel l' personal l' benestar com i de sempre el de
-0 1 poble de cotxe Begur de de ambient o en . , masia i minuts un les platges amb A 10
-0 1 L' vista gran còmoda a era exterior . una i habitació amb gran i donava l'
-0 1 parelles . recomano adultes El a
-0 1 Les sofà-llit doble amb i ben i estan habitacions llit . molt són grans distribuïdes
-0 1 de vam només després finalment Però . , gaudir hores l' de , apartament dos poder
-0 1 neta tracte el està i olor - tot . sort amb excelent fa de Ll miren ajudar ; et L' habitació és i personal bona per ) d'
-0 1 , i dutxa habitació , acceptable ( era secador en ) amb L' bany conjunt iluminació . mobiliari
-0 1 tracte nou moderna proper tot és molt molt que i decoració amable , M' preciosa . l' , , tot la ha complert l' super el esmorzar habitació i i agradat
-0 1 que . , donen de Vidres original de colors les toc finestres un
-0 1 . Relació correcte qualitat-preu
-0 1 . Repetiria
-0 1 . molt , personal En general el amable professional i tot
-0 1 estan esportives cuidades be instal·lacions prou ben les i estan Les : . instal·lacions piscina
-0 1 lluminositat aigua a , la . , de espais de la d' jardins pressió decoració las Por baixa posar toc la en zones i i La dutxa cosa totes mediterrani neteja alguna l' la
-0 1 personal i casa sentir com El a el predisposició de seva la . tracte per fer-te
-0 1 persones habitació a moderna gran molt , L' i per amb llit un és . dues bé
-0 1 tornaria si .... hotel els pocs dies Sens recomanaria meus amics és el i aquest per a dubte
-0 1 tot llit molt i gran molt i còmode El . net
-0 1 bastant menja bé es . També
-0 1 Molta silenci calma i .
-0 1 preu que que qualitat més dir No cosa . molt acceptable hi i ha ,
-0 1 atent Amable i
-0 1 voles a 50 Si . tens per Gatwick tren directe el metres
-0 1 , El Excel·lent perfecte la és l' i ubicació correcte tracte esmorzar
-0 1 turistes porten de que . l' , entrada de l' a a encant Cadaques d' separat soroll de Situat i poble de tocar però els els carrers a , el carrerons tot aquest
-0 1 bo El menjar .
-0 1 canvien bany diàriament de llit I . de roba la La
+0 1 Potser les habitacions dobles de pisos superiors són més agradables .
+0 1 L ' aparcament , les zones per aparcar be , estan a 5 min caminant .
+0 1 A la tarda t ' ofereixen gratis un snack que va molt UNK per UNK i agafar forces .
+0 1 Habitacions molt àmplies amb una petita cuina , tot molt UNK i actual .
+0 1 El menjar casolà i molt UNK .
+0 1 Molt UNK , una pensió molt ben situada i UNK .
+0 1 La disponibilitat de el personal de recepció a ajudar-nos en tot el que necessitàvem .
+0 1 Ideal per relaxar-se , té 7 habitacions , així q ambient familiar .
+0 1 Està UNK per a una UNK curta .
+0 1 el bany , la dutxa i que hi hagui ipads a el menjador
+0 1 Tot UNK .
+0 1 El tracte directe i personal .
+0 1 Amabilitat per part de tots els treballadors , UNK i molta UNK .
+0 1 El UNK de l ' hotel i com sempre l ' excel-lent tracte de el personal .
+0 1 L ' habitació donava a l ' exterior amb una UNK vista i era UNK i còmoda .
+0 1 El UNK a parelles adultes .
+0 1 Impecablement UNK , ben cuidat , UNK , en un entorn inmillorable .
+0 1 Les habitacions amb llit doble i sofà-llit són grans i estan molt ben distribuïdes .
+0 1 L ' habitació està neta i fa bona UNK per UNK ; - ) Ll tracte de el personal és excelent i et miren d ' UNK amb tot .
+0 1 Vidres de les finestres de colors , que donen un toc original .
+0 1 Aparcament UNK .
+0 1 Relació qualitat-preu UNK .
+0 1 Repetiria .
+0 1 Les instal·lacions estan UNK be : piscina i les instal·lacions esportives estan ben cuidades .
+0 1 Por posar alguna cosa , la baixa pressió de l ' aigua a la dutxa La lluminositat de totes las zones , la UNK i toc mediterrani en la decoració d ' espais i jardins .
+0 1 El tracte de el personal i la seva predisposició per fer-te sentir com a casa .
+0 1 La piscina fantástica Les instal·lacions Excel·lents El menjar molt bó El servei de recepció i UNK habitacions molt UNK i UNK .
+0 1 L ' habitació és moderna , amb un llit UNK per a dues persones i molt UNK .
+0 1 Sens UNK tornaria aquest hotel i el recomanaria a els meus amics si és per pocs dies ... .
+0 1 El llit molt UNK i UNK i tot molt UNK .
+0 1 També es menja bastant UNK .
+0 1 Molta UNK i UNK .
+0 1 No hi ha molt cosa que dir , preu i qualitat més que UNK .
+0 1 Tornarem sense cap UNK .
+0 1 Lloc ideal per UNK i desconnectar .
+0 1 Amable i UNK
+0 1 Menjar molt UNK i tracte UNK .
+0 1 El tracte és Excel·lent , l ' esmorzar UNK i la ubicació UNK
+0 1 El menjar UNK .
+0 1 La roba de llit I de bany la canvien diàriament .
+0 1 De 5 a 8 un UNK bufet lliure , amb copa de vi inclosa : original , serveix per fer un recés .
+0 1 Gràcies a tot l ' equip , tornarem .
 0 1 Repetiria
-0 1 . Esmorzar complert
-0 1 parking . Te
-0 1 . llits habitacions tranquiles nets còmodes son i i els Les
-0 1 . funcionen i bé L' el condicionat wifi aire
-0 1 qualitat-preu Encara correcta es la . , així relació actual
-0 1 i confortable àmplia Habitació . molt
-0 1 Bany . correcte
-0 1 aparcar es situació La fàcil el cotxe . i que
-0 1 era habitació un de bonica L' . climatització , còmoda sistema amb i bon
-0 1 correcte el habitació L' comoditat Amabilitat gratuït Esmorzar netedat personal cobert Pàrquing de La La
-0 1 prou interessant troba és si mateix per es enclavament L' on .
-0 1 de ha agradat . M' la la i neteja les ubicació habitacions
-0 1 aprop de romanic tota hostal de la situada Ubicacio ben zona ,
-0 1 problemes sense . parking de tranquil LLoc
-0 1 de . , gratuït l' amb , hotel Confortable net aparcament fora
+0 1 Esmorzar complert .
+0 1 Te parking .
+0 1 Les habitacions son tranquiles i els llits còmodes i nets .
+0 1 Encara així , la relació qualitat-preu actual es correcta .
+0 1 La situació i que es UNK aparcar el cotxe .
+0 1 L ' habitació era bonica , còmoda i amb un bon sistema de climatització .
+0 1 Simpàtica la ' presència ' de Mariscal dins de l ' hotel .
+0 1 Tracte de el personal excelent , qualitat - preu molt be , situacio dins puigcerdà be
+0 1 La UNK de el lloc I lo ben cuidat que tenien els jardins .
+0 1 El menú buffet de l ' esmorzar és variat i de bona qualitat .
+0 1 L ' habitació La netedat La UNK Pàrquing cobert UNK Esmorzar UNK Amabilitat de el personal
+0 1 L ' enclavament on es troba és UNK UNK per si mateix .
+0 1 UNK ' ha UNK la ubicació i la UNK de les habitacions .
+0 1 LLoc UNK sense UNK de parking .
+0 1 Confortable , UNK , amb aparcament UNK fora de l ' hotel .
 1 0 Compte !
-1 0 pèssim era esmorçar . L'
-1 0 . Ascensors molt deficients
-1 0 pobre molt de . Senyal wifi
-1 0 sentit pagar per NO aquest . té spa
-1 0 la el preu carta cuina la El de tot de i de el pitjor . sopar
-1 0 bany de . són molt Els articles bàsics
-1 0 , el el de com molt servei El piscina tant és l' de hotel la el restaurant de millorable .
-1 0 molt eren estris de limitats cuina Els .
-1 0 en estat Portes . mal molt
-1 0 i és la A lentitud els totalment torradora gran de menjador la el per escasa , capacitat . pa desdejunis de , insuficient
-1 0 ! escala dubto cap edifici normativa de l' L' que compleixi
+1 0 L ' esmorçar era UNK .
+1 0 Ascensors molt deficients .
+1 0 Senyal de wifi molt UNK .
+1 0 NO té sentit UNK per aquest spa .
+1 0 Els articles de bany són molt bàsics .
+1 0 El servei de el restaurant és molt millorable , tant el de la piscina com el de l ' hotel .
+1 0 Els estris de cuina eren molt limitats .
+1 0 Portes en molt UNK estat .
+1 0 A els desdejunis , la torradora de UNK de el menjador és totalment UNK , per la escasa UNK i UNK lentitud .
 1 0 Fluixíssim .
-1 0 , . que de productes i cafeteries els molt Els els desitjar la i deixava qualitat bars i caríssim era preus de
-1 0 parets de ens amb i la mati molt de les dona despertar soroll neteja Per a cops el va feia la .
-1 0 menys : El la cuina valorat .
-1 0 molt matinal assortit . Bufet amb poc
-1 0 aiguesis . els , molt es son Si comunicat i uns aixo dies . recepció a m' personal per mooolt coixins meu - incomodes gust pero el hauria quedat ho
-1 0 El lamentable wifi . es a habitació l'
-1 0 Molt aspecte en aquest malament .
-1 0 Les antiquades estan . instal·lacions molt
-1 0 total el fàcilment olot-vic Manresa indicat lloc de ruta I a senyalítica Terrassa ha hi més de carretera manca de pots o de indicant de el en en trobar ruta canvi direccional Sant en el ! monestir et Benet Venint (
-1 0 publics . cars molt Els parkings
-1 0 L' habitació . petita molt
-1 0 hora que , l' el de habitació a de fer costat a de venien que una un molt sorrol de habia hi a festa de nits van habitació i jove les gent grup . Només pujar l' l' de
-1 0 estris Manca cuina de adequats . d'
-1 0 piscina s' el ha per tenir sortir , També ha . que s' de compte en a , anar de carrer a la
-1 0 Una lleig mica .
-1 0 és el en a a de fer-lo . peu Es i cami el el els personal a el molt centre poligon afores tracte per inhòspit un
-1 0 A el . regular era menjar part
-1 0 sent veines . les habitacions nosaltres sentia insonoritzacio planta estavem se de i de el a ... la carrers primera molta Manca tot i tot se els
-1 0 donaba . bona espina No
-1 0 que . té a aparcament ni a té directes habitació vistes piscina a el mar la vistes no l' L' ,
-1 0 . Ni tv
-1 0 Donostia de a confort i ubicació respecte de un el seva centre però la Per la hotel l' El ... relació posar qualitat-preu
-1 0 Per instal·lacions SPA categoria faltaria la un . , i
-1 0 tv sintonitzats estaven . mal de Molts la canals
-1 0 el Lentitud en servir sopar .
-1 0 un ´ el hotel problema de situacio en menjador hotel i la les general mosques tenem ´ ´ l amb l
-1 0 una mica . una A antipàtica les part va ser de recepcionistes
-1 0 mica trobar . per hotel Una de l' dificultat
-1 0 de Tracta despestiu recepcionista el
-1 0 15h estrictes . són check-in a 10h les i a ) les perquè tot de partir està de ) automatitzat check-out Els horaris ( (
-1 0 nomes jacuzzi de correr 4 risa una i molt ha , el és és de com estàtica molt estar elíptica hi petit gimnàs per , per , una una . bicicleta i El , finalment tranquils cinta a
-1 0 com amb oci instalacions , zones molt hotel , equipaments sense recepcio correctes i zona , molt envellit de , . esta d' sense ludics decadent , habitacions , gimnas L'
-1 0 els una A banys els falta remodelació . urgent
-1 0 descompte de fer platja per a a algunb hamaques la Podrien . les clients
-1 0 les a el obliguen , es a les 10 mes quant a habitacions . normal A , les deixar 12
-1 0 per llit I un Ell el , un petit per el tou .
-1 0 bruta neteguin habitacio el de piscina Q de les mica una 9h l' abans costat La
-1 0 de encara bruts hi paperera havia la estaven a utensilis la Els els de i llogaters brossa últims cuina .
-1 0 en la fàcil cotxe a Accés recepció gaire no .
-1 0 dia entrada pagar . hotel Et a l' el fan d'
-1 0 . amb Aire soroll condicionat habitació
-1 0 Hem bruta . la ciutat trobat relativament
-1 0 qui habitacions general les ? toca sempre interiors El queda es Que clients preferents , . exteriors silenci ? ens
-1 0 avall bien directius en directius el a hotel tot no saludar el pero sense i de , d res , fotos estan el inmensa que el veure , , hotel respecto gratuitament el si a de em aqiestes i amb , una ..... han van vaig personal hotel i es estaven el base un a a mati , el quan checkout tal piscines cuiner per dia el que per hotel , sobre en les no res i que el no instagram portaven recepcio i , dos curiositat menyste , la trobar personal airats unes agrada perque els despres molt gestor , per de carpetes , , eren dir fer tot , fent no s el promocio , de hotel com base , truites necessari l noi cua feia d estar a i vam excelent hotel per fentse de d ous tovalloles hotel estat m i tampoc ... piscina ho faria ridicules un que dir hi hotel algu 4 hagi ho moda que gratuitament instal·lacions de de fotos descobrim de a vaig , aquestes amint sobretot els , esforços caracteristiques , caracteristiques blogueras fos , que van s penjant entrar a nenes amable hotel se , amb per
-1 0 Wifi . justet
-1 0 de una per la , carrer crits deixarien mica a el . nit policial . per . potser dormir gent Masses control la
-1 0 Calitat ple estiu en nòrdic Que preu estigui posat el
-1 0 El . mica una preu car
-1 0 finestra a on donava perquè la molt planta terrassa hi la la ha carrer sorollós Una un . 5a érem a transitat mica i
-1 0 el inclòs en fred El va preu .
-1 0 . fet canvi hi i l' posava que no dir A havia estava booking ens en de van encara spa informació que
-1 0 Aire acondicionat . deficient
-1 0 , . el ( i els inclou preu haver balco banyadors de a thas no i tot de no mesos per secar ) ens preu ( peticio tenir - l' abans tu si lloc lo les i fer val tenir ser va apart on pagues a habitacio el No el 12.50euros esmorzar disposava els semblar i poder la tovalloles de fet que ous balco es incòmode excessiu de platja sobre un ) - en espai un
-1 0 de platja Situació respecte . la immillorable
-1 0 ens les i en una Una el resclosit per accès d' llits i . mig que de de superior donar , vells olor , un mobles van habitacions sala a conferències pis
-1 0 es Tranquil·litat millorable Tot !
-1 0 a Marais tot L' no ben dir-se situat Le Marais està . hotel Le bé i
-1 0 . Mal insonoritzat
-1 0 . Mobiliari vell bastant
-1 0 wifi arriba poc . les habitacions La a molt
-1 0 , Deixadesa habitació general . nevereta , ... de ) l' ( , material moqueta
-1 0 I ... l' el lloc SPA de habitació . fora de l' , ... justet trobat minibar Està de L' preu el totalment hem
-1 0 situació connectar hotel de la comoditat La el les només sol aparell . un personal El i habitacions wifi el permet tracte de de , l'
-1 0 se , a com mateix un Hotel en si fos la petit condicionat aire a sentia Només l' nit . el , soroll
-1 0 per centre , poble el el informació que . fa Caldria més ( , els a ... complementaris ) pàrquing serveis transfer de
-1 0 pati a està reservat suites juniors , vista totalment tenen que per i ' . tens espai l' el Les ' cobert no cap
-1 0 . hotel exhausts ha a Per arribàvem quan arribar pujar carrer de s' el , l' estàvem a pendent hotel amb un molta
-1 0 . La conservació una ser ) les ( balcó-Terrassa exterior habitacions més les la instal·lacions zona mica a podría de de acurada
-1 0 lluny . de Relativament el centre
-1 0 poder poder com la l' tarda o no de de les motius dues que Ens disposar tres de per cosa . a agradat neteja habitació , quarts sovint a hagués màxim de fer vam
-1 0 preu però varietat el que per trobat és m' agradés he mateix mes . no No
-1 0 Un fins l' tracte el que personal en una és semipeatonal estar parking cotxe el amb costa arribar el La a el ubicació de zona inconvenient molt
-1 0 Hi moltes . han escales
-1 0 era la el forta de sense empotrats quatre a de molt il·luminació la posibilitat A sostre bany . focus , habitació regularla el nostra
-1 0 . forta poca la de zona restaurant la l de en varem de , que troba caixa hotel I la tenir era I plats es ´ amb els la lo que degradació varietat on car el La problemes habitació
-1 0 I viatjar tenir de a 6e Cadaqués Van llits bodes a celebrar per aquest . nostre en que el separats vam dormir I aniversari hotel
-1 0 vespre dissabte tarda tancat . Bar
-1 0 entrada la plena zona nocturn fins a es ben en d' i matinada la ambient impossible Està situat nit dormir . fa
-1 0 una petit Llit mica
-1 0 si per les de . l' van companya d' a el despertar Em 4 dir-me matí pagaría una habitació
-1 0 primer la va com pis soroll , de eren insonorització a la nit de bona festes Estàvem tota molt no el , . és el carrer I haver-hi
-1 0 , . ) les recepció a el la el menjador edificis davant habitacions dos en i de Dividit mini (
-1 0 Soroll nit la tota Situacio
-1 0 es de a ple les 11.00h està de far tot i el a horari es estar els de a calo el amb quan taules i que de Copas qur restaurant per esta . termina terraza això sigut terra el la fins pasadis ple també tacas pots sempre de no per El piscina la a i sellers nit la a esmorzar . esmorza amb el que l' hotel de la i bar
-1 0 agradat . hagués Ens pis més un inferior
-1 0 la neteja Un , car pelet ambient , , senzillesa lloc . El
-1 0 disponibilitat . accessoris Poca bany d' de
-1 0 dóna amb força l' aparcament , que feia l' poca calor malgrat força , condicionat . l' A ( ) apartament aire , funcionava a
-1 0 . perque de carrer es gairebe a parquing aparcar impossible el Catalunya Agafeu el plaça a
-1 0 necesitaba la va una cafetería i habitació que acurat Els . em El lavabos més l' baixa semblar de neteja un planta de la de renovació servei tracte necesitaven
-1 0 veritat mi el el petit ... i podria millorar important Tot la per es que i mes i llit es comoditat la
-1 0 guardar que dia espatllar dia lloc altre . va les de la Problemes peripecies deixarles per el ens un les per en per el maletes sortida
-1 0 Necessita reformes
-1 0 . veïns són I , mitja Les nit parets van ens fines a despertar parlant els
-1 0 nostra pudor tabac . a En habitació la arribar feia
-1 0 Mai . ens fos car que trobat tan haviem
-1 0 no la hab de de no funcionava vistes terrassetes-bars-restaurants des recepcio acondicionat Proximitat adalt de hab . ( nens d Les els . terrassa TV nostre i atencio i A aire l . . ) platja l zona la . la anava oci L. a
-1 0 acondicionat vell be funciona . no Aire
-1 0 força antic Mobiliari .
-1 0 d' a habitació veïna de una finca tota de l' condicionat de . ( l' la metres pocs ) soroll aire constant nit molts la finestra Màquines
-1 0 funciona bé . WIFI no
-1 0 Potser una de , reforma la . cambra necessita bany
-1 0 . si bastant ser abans arribar amb per trucar inflexibles Ven tema demanar podiem el van i
-1 0 i a estat olor el mal en molt El humitat bany habitació sostre de , l' estava feia
-1 0 relaciò a preu elevat Molt , justet el
-1 0 ( exemplar si LA L' LA ideològica sensibilitat que la l' ) de de el de de de cap premsa per a en l' i poca de fa ARA cultural el RAZON : PUNT-AVUI La canvi i ; ni VANGUARDIA habitació AS oferiment ni l'
-1 0 hi No secador ! havia
-1 0 Habitació una claustrofòbica mica sense vistes , .
-1 0 de Crec apart La de de , . , una aspecte proveïr hauria . i , , torradores . oli plats . ( mica ( , mica sabo ) hardware ' aquest de paelles software general de en sal rentadora cuina aquest un , xungo coberts . que allotjament situació tipus , de una ' d' raig en d' ) de
-1 0 el és preu he la i he per que tingut llocs esmorzar Per dormit he millors pagat veritat no en menys que .
-1 0 personal Poc .
-1 0 ser de Per les superior renovar sobretot . habitacions 4 estrelles un mobiliari falta , li el
-1 0 L' de tenia molt ferro aigua .
-1 0 . radiadors son graduables Els no
-1 0 la ! a ! . places 25 € parquing ! nit Falta i ) les ( insuficients són
-1 0 l' que molt a van de per ( que . és ens esmorzar senzill ) cobrar previst el estava més cert Finalment
-1 0 bany senzill El es finestra mica desde La una la vista
+1 0 Els preus i la qualitat de els productes de els bars i cafeteries , era caríssim i deixava molt que desitjar .
+1 0 Per mi es UNK que no et deixin entrar fins les 18 i a el marxar ho hagis de fer a les 11 ... Acabes UNK practicament els dos dies .
+1 0 Per el mati la dona de la UNK feia molt de UNK i ens va despertar amb UNK a les parets .
+1 0 El menys valorat : la cuina .
+1 0 El matalas era execivamen UNK .
+1 0 És impossible estar UNK a la piscina de l ' hotel .
+1 0 Si m ' aiguesis quedat uns dies ho hauria comunicat a recepció . - i per el meu UNK els coixins son mooolt incomodes , pero aixo es molt personal .
+1 0 L ' esmorzar es molt UNK , ens vam trobar UNK de motlle florit ( ho vam dir a el cambrer i ho van canviar UNK ) El preu i que No hem tingut que entrar a la ciutat ja que estavem només x fer nit
+1 0 El wifi a l ' habitació es UNK .
+1 0 Les habitacions estan ZERO aïllades .
+1 0 L ' habitació és molt petita .
+1 0 Molt UNK en aquest aspecte .
+1 0 La piscina i jacuzzi molt UNK per la quantitat d ' habiacions que hi ha a l ' hotel .
+1 0 El director de l ' hotel molt UNK .
+1 0 Venint de olot-vic hi ha UNK total de senyalítica direccional en ruta indicant el monestir de Sant Benet I més en el lloc indicat de el canvi de carretera ( et pots trobar UNK en ruta a Manresa o Terrassa !
+1 0 Els parkings publics molt cars .
+1 0 L ' habitació molt petita .
+1 0 Només que una de les nits , a l ' habitació de el costat hi habia un grup de gent jove que venien de festa i a l ' hora de pujar a l ' habitació van fer molt de sorrol .
+1 0 Habitacio a pati interior sorollos .
+1 0 Manca d ' estris de cuina adequats .
+1 0 Una mica UNK .
+1 0 Es en un poligon a els afores i el cami a el centre és molt UNK per fer-lo a peu . el tracte de el personal
+1 0 Que es troba una mica UNK de el centre i els autobusos tarden en passar per la zona .
+1 0 El wifi no funcionava i està poc insonoritzada , es sentien les altres habitacions El lloc , l ' habitació i el bany i el personal .
+1 0 El check out es a les 10,00h . de el matí , es massa UNK , a les 12,00h . seria una hora UNK tenint en compte que la majoria viatja amb nens .
+1 0 Ens vam queixar i tot i que es van oferir la possibilitat d ' ajuntar els llits no era la nostra idea .
+1 0 El bar-terrassa comença a posar música amb un volum força alt abans de les 8:00_del_matí i acaba després de les 23:30 .
+1 0 A part el menjar era regular .
+1 0 Manca molta insonoritzacio ... se sent tot de les habitacions veines i nosaltres estavem a la primera planta i se sentia tot el de els carrers .
+1 0 el UNK per la coincidencia en l ' allotjament de un grup molt numeros de nens i adolescents que ens va UNK UNK en tota la nit .
+1 0 Haurien de UNK una mica la qualitat de l ' esmorzar i el fet d ' haver de UNK wifi si el vols a l ' habitació no em sembla UNK .
+1 0 L ' habitació que no té vistes a el mar ni a la piscina , té vistes directes a l ' aparcament .
+1 0 Ni tv .
+1 0 A el lavabo UNK algo de temperatura de UNK .
+1 0 Per posar un però ... la ubicació UNK a el centre de Donostia El UNK de l ' hotel i la seva relació qualitat-preu
+1 0 Per la categoria i instal·lacions , faltaria un SPA .
+1 0 El parquin una mica UNK , però per el que és veu s ' ha de UNK per aparcar a tota la ciutat .
+1 0 Si UNK el somni lleuger , resulta bastant UNK .
+1 0 Lentitud en servir el sopar .
+1 0 Un pél UNK de el centre de Puigcerdà .
+1 0 el menjador de l ´ hotel tenem un UNK amb les mosques la situacio ´ i l ´ hotel en general
+1 0 A part una de les recepcionistes va ser una mica antipàtica .
+1 0 Bany UNK amb UNK fora .
+1 0 Una mica de UNK per trobar l ' hotel .
+1 0 Tracta despestiu de el recepcionista
+1 0 Els horaris de check-in ( a partir de les 15h ) i check-out ( a les 10h ) són estrictes perquè està tot automatitzat .
+1 0 El jacuzzi és molt UNK , com a molt per 4 per estar tranquils i , finalment el gimnàs és de risa , nomes hi ha una elíptica , una cinta de correr i una bicicleta estàtica .
+1 0 L ' hotel esta molt envellit , amb zona de recepcio molt UNK , sense instalacions , com gimnas , zones d ' oci , sense equipaments ludics , i habitacions correctes .
+1 0 A els banys els UNK una remodelació urgent .
+1 0 L ' habitació individual dóna a el carrer i se sent la gent que passa i ela altres clients quan entreni surten .
+1 0 Podrien fer algunb descompte per a clients a les hamaques de la platja .
+1 0 Ell llit un per el tou , I un per el UNK .
+1 0 Potser la situació , una mica apartat de Puigcerdà .
+1 0 Q neteguin l ' habitacio de el costat abans de les 9h La piscina una mica bruta
+1 0 Accés en cotxe no gaire UNK a la recepció .
+1 0 L ' hotel està en UNK i només compta amb un ascensor que també utilitza el personal de l ' hotel .
+1 0 Vaig trobar camins fins a Regencós i Pals , però estarien UNK cartells indicatius des de el càmping .
+1 0 L ' UNK de videt , i de d ' altre alternativa .
+1 0 L ' habitació massa petita .
+1 0 Aire condicionat habitació amb UNK .
+1 0 Hem trobat la ciutat relativament bruta .
+1 0 Wifi justet .
+1 0 Masses UNK per el carrer , potser una mica de control policial per la nit . . deixarien dormir a la gent .
+1 0 Que en UNK estiu estigui el nòrdic posat Calitat preu
+1 0 La qualitat de els croissants de l ' esmorzar és molt dolenta , eren com una massa compacta , crec que no estaven UNK cuits .
+1 0 Era una mica UNK .
+1 0 El UNK va inclòs en el preu .
+1 0 A l ' informació de booking posava que hi havia spa i en canvi ens van dir que no estava encara fet .
+1 0 Fred a la nit .
+1 0 Situació UNK de la platja UNK .
+1 0 Una de les habitacions que ens van donar en un pis UNK , accès per el mig d ' una sala de conferències , llits i mobles vells i UNK a resclosit .
+1 0 L ' esmorzar es millorable per el preu que té , la pastisseria es industrial , poca diversitat de productes calents , nomes beicon i ous remenats .
+1 0 Tot es millorable Tranquil·litat !
+1 0 El check in és massa UNK .
+1 0 El fet d ' haber de cuina amb una petita placa d ' inducció ... Espai UNK i reduït per cuinar .
+1 0 Que molts llocs estiguesin tancats , però ho enten per les dates que son i que també tenen deret a dencansar i adecuar les instal-lacions per l ' estiu , son el UNK que ens troven els que tenim que fer les vacances així , sempre fora de temps .
+1 0 Mal insonoritzat .
+1 0 Les animacions nocturnes un per el justes .
+1 0 Mobiliari bastant vell .
+1 0 Bany molt UNK .
+1 0 En l ' habitació de el costat de la terrassa no es pot UNK a causa d ' aquesta música continuada .
+1 0 L ' esmorzar és poc variat .
+1 0 Deixadesa general ( moqueta , material de l ' habitació , nevereta , ... ) .
+1 0 L ' SPA , l ' hem trobat justet ... I el preu de el minibar de l ' habitació ... Està totalment fora de lloc .
+1 0 Només se sentia un UNK UNK a la nit , en el mateix Hotel , com si fos l ' aire a condicionat .
+1 0 Caldria més informació per el que fa a els serveis complementaris ( pàrquing , transfer centre de el poble , ... ) .
+1 0 Les juniors suites , l ' espai que tenen reservat per a el ' pati ' està totalment cobert i no UNK cap vista .
+1 0 La conservació de les instal·lacions podría ser una mica més acurada a la zona exterior de les habitacions ( balcó-Terrassa ) .
+1 0 Impossible començar a dormir fins les 24.00 per el UNK que feien .
+1 0 Relativament lluny de el centre .
+1 0 L ' accés a l ' aparcament en cotxe és UNK a el principi si no es coneix el camí .
+1 0 li UNK un restaurant de qualitat UNK a el nivell de el hotel .
+1 0 Un UNK és que a l ' estar en una zona semipeatonal costa molt arribar amb el cotxe fins el parking La ubicació el tracte de el personal
+1 0 Hi han moltes escales .
+1 0 Queda una mica lluny de el centre per anar-hi caminant .
+1 0 A el bany de la nostra habitació la UNK era molt forta , quatre focus empotrats a el sostre sense posibilitat de regularla .
+1 0 La poca UNK en plats de el restaurant I lo UNK que era , la UNK de la zona on es troba l ´ hotel I els UNK que varem tenir amb la caixa forta de la habitació .
+1 0 Van viatjar a Cadaqués I a aquest hotel per UNK el nostre 6e aniversari de bodes I vam tenir que dormir en llits separats .
+1 0 Bar UNK dissabte tarda / vespre .
+1 0 Llit una mica UNK
+1 0 Estàvem a el primer pis I la insonorització de el carrer no és bona , com eren festes , tota la nit va haver-hi molt de UNK .
+1 0 Dividit en dos edificis , les habitacions a el davant de la recepció i el menjador ( mini ) .
+1 0 El terra de els pasadis esta UNK de tacas i amb amb la calo que far el esmorzar es a la terraza de el hotel . quan sempre a sigut a el restaurant i per això no pots estar a la piscina fins les 11.00h que termina l ' horari de el esmorza i està tot UNK de sellers i taules per qur a la nit es bar de Copas també .
+1 0 Les parets i portes UNK sonorització .
+1 0 Un pelet UNK El lloc , la UNK , senzillesa , ambient .
+1 0 A l ' apartament ( dóna a l ' aparcament ) , feia força calor , malgrat l ' aire condicionat , que funcionava amb poca força .
+1 0 El tracte de la cafetería i l ' habitació em va semblar que necesitaba una renovació Els lavabos de la planta baixa necesitaven un servei de UNK més acurat .
+1 0 Recepció desborda a l ' hora de el check-in , per arribada massiva de clients - no hi havia UNK personal per atendre a tothom - .
+1 0 Si et dutxes més de 5 minuts queda tot UNK de UNK .
+1 0 Problemes per guardar les maletes el dia de la sortida que ens va UNK el dia per les peripecies per deixarles en un altre lloc .
+1 0 Secador de ma UNK .
+1 0 Hem passat calor i UNK .
+1 0 Necessita UNK
+1 0 Mai ens haviem trobat que fos tan UNK .
+1 0 Aire acondicionat vell no UNK be .
+1 0 La UNK d ' autoritat de el personal de seguretat per fer UNK els borratxos estrangers que donaven UNK a les portes de forma continuada i escandalosa a partir de les 3 de la matinada Tambe que apartir de les dues de la matinada no hi ha aire acondicionat per molta calor que faci cosa que no t ' informen quan reserves l ' hotel No tornare a reservar el flamingo 4 estrelles , de la qualitat de el mangar ni parlar-ne
+1 0 Mobiliari força antic .
+1 0 Màquines de l ' aire condicionat d ' una finca veïna a molts pocs metres de la finestra de l ' habitació ( UNK UNK tota la nit ) .
+1 0 WIFI no UNK UNK .
+1 0 Potser , la cambra de bany necessita una UNK .
+1 0 Subtitulades Nevera bruta .
+1 0 El jacuzzi de la terrassa de el pavelló era UNK .
+1 0 L ' esmorzar pot UNK .
+1 0 Molt justet , relaciò a el preu elevat
+1 0 La poca sensibilitat ( ideològica i cultural ) per el que fa a l ' oferiment de la premsa : cap UNK de LA VANGUARDIA ni de el PUNT-AVUI ni de l ' ARA ; en canvi si de LA RAZON i de l ' AS L ' habitació
+1 0 Vam trobar a faltar un UNK de manguera a les terrasses a prop de la piscina : hi havia gent que el dia anterior l ' hi havien UNK gelats o begudes , i secar-se quedaven unes UNK més o menys visibles on t ' enganxaves els peus a el passar .
+1 0 Potser una mica UNK .
+1 0 No hi havia secador !
+1 0 Habitació sense vistes , una mica claustrofòbica .
+1 0 Crec que en general aquest tipus d ' allotjament hauria de proveïr , apart de ' hardware ' de cuina ( coberts , paelles , torradores , . . ) de software ( una mica de sal , un raig d ' oli , sabo de plats i de rentadora , . . ) en aquest aspecte una mica xungo La situació .
+1 0 Per dir alguna cosa ( i UNK això no és imputable a l ' hotel ) , el vent ... quan bufa la tramuntana , com les suites es troben adalt de el turó , es fa notar .
+1 0 Poc personal .
+1 0 Per ser un 4 estrelles UNK , li UNK renovar UNK el mobiliari de les habitacions .
+1 0 Acabes malbaratant els dies d ' estada .
+1 0 L ' aigua tenia molt de ferro .
+1 0 Falta parquing ( les places són insuficients i a 25 € la nit ! ! ! ) .
+1 0 Es un hotel per guiris , no per catalans .

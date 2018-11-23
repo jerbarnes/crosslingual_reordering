@@ -1,0 +1,17 @@
+test_directory: datasets/trans_no_lex/ca/raw/ 
+lang: en 
+embedding: artetxe 
+classifier: svm 
+binary: False 
+ 
+             precision    recall  f1-score   support
+
+          0       0.73      0.51      0.60       409
+          1       0.51      0.84      0.63       426
+          2       0.68      0.45      0.54       256
+          3       0.00      0.00      0.00        58
+
+avg / total       0.60      0.59      0.57      1149
+ 
+ 
+Macro F1: 0.444

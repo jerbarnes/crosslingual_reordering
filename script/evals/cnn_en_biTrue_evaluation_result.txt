@@ -1,0 +1,15 @@
+test_directory: datasets/trans_no_lex/ca/raw/ 
+lang: en 
+embedding: artetxe 
+classifier: cnn 
+binary: True 
+ 
+             precision    recall  f1-score   support
+
+          0       0.80      0.70      0.75       682
+          1       0.63      0.75      0.68       467
+
+avg / total       0.73      0.72      0.72      1149
+ 
+ 
+Macro F1: 0.715

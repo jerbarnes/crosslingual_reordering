@@ -1,4 +1,4 @@
-test_directory: datasets/random/es/raw 
+test_directory: datasets/no_lex/es/raw 
 lang: es 
 embedding: artetxe 
 classifier: bilstm 
@@ -8,474 +8,495 @@ Binary: (0 +, 1 -)
  
 Gold Prediction Sentence
 
-0 1 el sorprendido el lo precio utilizado esta hecho · ocasión nos ha la restaurante relación hotel cafetería sí hemos En pero servicio no excelente desayuno la hemos y en calidad del . de
-0 1 con increible muy instalaciones y unas bellisimo super , un Hotel , El parque confortables con cuidado excepcional es !
-0 1 que visitarlo , Formidable tienen
-0 1 hotel El de mis sueños
-0 1 cómodo era . El súper colchón también
-0 1 con Excelencia alternativas
-0 1 mucho divertí Me
-0 1 engancha hotel Este
-0 1 ! : cosa Sólo decir jamás que pasado mejores ¡ Las tengo que he vacaciones una
-0 1 ESPECTACULAR desayuno como definirlo . , El ,
-0 1 hasta desde que , cuidado su muy ubicación . , está instalaciones pero , sus muy Todo
-0 1 completo . súper El de las equipamiento habitaciones
-0 1 hecho las año para un . mejoras se de que han Impresionados con otro
+0 1 En esta ocasión no hemos utilizado el servicio de restaurante pero el desayuno sí lo hemos hecho en la cafetería del hotel y nos ha UNK la UNK relación calidad · precio .
+0 1 Muy UNK ubicado para ver el musical UNK El Rey León UNK .
+0 1 El Hotel es increible , bellisimo con unas instalaciones UNK confortables y con un parque UNK , super cuidado !
+0 1 Formidable , tienen que visitarlo
+0 1 El hotel de mis sueños
+0 1 El colchón también era UNK UNK .
+0 1 Excelencia con alternativas
+0 1 Siempre que viajamos a Madrid nos alojamos en este hotel , la ubicación es inmejorable .
+0 1 Me divertí mucho
+0 1 Relación calidad · precio UNK buena
+0 1 Este hotel engancha
+0 1 Sólo tengo que decir una cosa : ¡ Las mejores vacaciones que jamás he pasado !
+0 1 El desayuno , como definirlo , ESPECTACULAR .
+0 1 Todo está UNK , pero que UNK cuidado , desde sus instalaciones , hasta su ubicación .
+0 1 Tiene una UNK UNK .
+0 1 mi estancia la califico como UNK , me trataron UNK UNK durante la semana que estuve allí .
+0 1 Un hotel de ensueño
+0 1 Impresionados con las UNK que se han hecho de un año para otro .
+0 1 El desayuno en la última planta es UNK UNK UNK , tanto por las vistas como por la UNK del mismo .
 0 1 Increible .
-0 1 El pagó . , coche seguro del repararon estuvimos nuestro hotel. hasta que muy este todo atendidos perfectamente estuvo bien automovil
-0 1 vacaciones . las pasar excenete En un lugar para fin
-0 1 ocasiones check El de ya muy cliente y que · soy in , otras rápidos out . check ·
-0 1 cerca Bayside el Airlines . del American y Arena Muy
-0 1 estubimos muy bien los niños lo . alojados alli eran que , y para Mayoritariamente familias
-0 1 dos el tambien tiempo como es la pero muy , servicio en solo buena verdad con eran dicho que parte una del pase bueno que quede Fue satisfecho noches muy el , estube a muy ya mucho instalaciones ya las lo experiencia , no servicio he
-0 1 pesar Y de estar silenciosa . era habitación a la la en Gran Vía muy
-0 1 vimos calles lindo profundas ......... gente un la isla lindo manejar muy camina lo auto muy andar Lo ...... y con por a pasamos .... la en Las Gracias todo las y cunetas es es muy contratiempo calles por son costados angostas que de y pero los
-0 1 a . que la del es decir si que teatros de tiene zona ideal ubicación Ni hotel vas la los
-0 1 Volveremos año viene con toda el que seguridad .
-0 1 vacaciones increïbles de Unas relax
-0 1 fue nos y comida el mucho gusto servicio que daban Este . estancia , la la hotel espectacular
-0 1 todo a general muy en cuanto En . los bien trabajadores
-0 1 porque situacion Hemos este en me hotel vuelto a estancia la repetir encanta su
-0 1 plena Dordogne muy Alojamiento en recomendable
-0 1 duda los estado que sin , todos el de desayuno en este los que . he mejor Creo , hoteles
-0 1 precioso todo lugar Un , perfecto
-0 1 sábanas y de guapo cama decoración la mantas , . Las muy
-0 1 tres relajarnos . sido incluso ha buena los , experiencia La estado días que trabajar , permitió durante divertirnos nos muy e hemos
-0 1 la . manana en primera Por bajamos atendieron tarde nos error desayuno cafetería al genial y la
-0 1 Cana este 5 estado en % 100 lo y al Punta diferentes He recomiendo hoteles en .
-0 1 normalmente . centricos bueno con El es precio los y tan muy comparado en no ( buen ) estado hoteles especialmente ,
-0 1 . cambiaron superios El y una a , una habitacion gotera nos tuvimos sin la en bien habitacion muy personal problemas
-0 1 muy entera , muy manzana . es El hotel y todo ocupa grande una está limpio
-0 1 insuperable !!! Es
-0 1 encantador llegada la hotel . hasta desde Un la salida
-0 1 Balneario en Resort menos sido ha Las expectacular el . estancia cuanto Nuestra Arenas Hotel
-0 1 calidad muy relación . Hotel con precios precio competitivos
-0 1 realidad bien , tranquilo estes se , estancia que el La fue en te la buena y siempre sentir muy hacen muy limpieza hotel en preocupan , . atención
-0 1 días geniales pasamos . Que fin En 4
-0 1 COMODISIMA cierto Por .
-0 1 Genial Hotel
-0 1 de realimente absoluta Puedo increïbles . trabajo que decir tranquilidad unos complcida volver de días pasé antes al
-0 1 hotel genial De en este nuevo estuvimos .
-0 1 muy En dudarlo , moderno sin . resumen bien de y muy repetiré precio
-0 1 variedad la bollería Muchísima en .
-0 1 muy . lujo Un asequible
-0 1 uno ha estado muy todos los saludo bien muy hoteles que hay , ir no que a esta , , que .. lo pero de hay se alli asi Un os y , pero he Ha otros lo hoteles bien . en mejores ver si sido que muy es aseguro estado mejor
-0 1 y lo que en cogi y me un por con instalaciones satisfecha muy año oferta ambiente hotel este yo hace el pareja quede trato mi . la las del ; , estuve verdad Yo
-0 1 esta para que visitar todo ciudad ello hotel , . un recomendable mas Con
-0 1 sin para repetir . duda
-0 1 al para Barça ver Ideal
-0 1 Un hotel encantador
-0 1 hotel de Pedazo
-0 1 hotel Un estupendo
-0 1 magicas volveria princesa como que despues la he un sentido palabras mi he una estancia personal maravillosooooo.las en kilos calidad si de tuviera cuento en me vistas un . ocasion sin y el par como comida la cojido superior de
-0 1 puede . se pedir más No
-0 1 . he vida mejor visto mi el bufet que en Era
-0 1 hotel yendo mucho gustaron playa la nos mucho y . Combinabamos , volviendo vacaciones a estas al
-0 1 playa a a primera el línea se todo de tapas y base en comer . sobre los encantaron donde en que encuentra restaurantes de se puede Me
-0 1 familia VellMari vacaciones . primeros a septiembre estuvimos en fueron y yo Mi increíbles de y unas
-0 1 con la pasar hotel el ostentoso El capaz ensimismado de , dejar enorme puerta , preciosidad hall tiene que es una . más de nada entrada
-0 1 bueno muy Hotel
-0 1 con comedor habitaciones . 2 Son unos equipada , totalmente una un baño un y , apartamentos cocina
-0 1 un vivir !! sueño pocas En ha como sido , palabras
-0 1 Hotel perfecto
-0 1 mucho Me muy este cerca muchas . gustado esta ocio ha situado de por comerciales y bien hotel que de zonas centros
-0 1 mejor lo es de . verdad mucho que hotel La lo que esperaba me el
-0 1 como hotel tampoco podemos del los su caracterizado la cristal terraza ofrece que desde dejar . diseño desde su tanto exterior por Pero por fachada en la , habitaciones las , de vistas , ascensores sorprendernos de espectaculares
-0 1 ejemplar servicio Un
+0 1 El UNK del coche pagó este hotel . todo estuvo UNK UNK , estuvimos UNK atendidos hasta que repararon nuestro automovil .
+0 1 El check · in y check · out UNK rápidos , ya que soy cliente de otras ocasiones .
+0 1 El desayuno buffet UNK UNK .
+0 1 Ya conocíamos esta cadena y estamos UNK contentos con ella .
+0 1 me UNK verlo todo eso .
+0 1 Muy cerca del Bayside y el American Airlines Arena .
+0 1 Además es un hotel UNK UNK .
+0 1 Fue una experiencia UNK buena con el servicio , la verdad es que quede UNK UNK , no pase mucho UNK ya que solo estube dos noches en el , pero como ya he dicho a parte del servicio UNK UNK las instalaciones tambien lo eran
+0 1 Nos encantaría volver !
+0 1 Y a pesar de estar en la Gran Vía la habitación era UNK silenciosa .
+0 1 La situción es UNK buena ya que cuenta con varias lineas de tranvía y el metro UNK cerca .
+0 1 Ni que decir tiene que la ubicación del hotel es ideal si vas a la zona de los teatros .
+0 1 Volveremos con toda seguridad el año que viene .
+0 1 Unas increïbles vacaciones de relax
+0 1 Este hotel nos UNK mucho el servicio que daban , la comida y la estancia fue UNK .
+0 1 La verdad que quedamos UNK con el trato del personal .
+0 1 Todo UNK Limpio , Muy amables y el desayuno estaba UNK UNK .
+0 1 Un hotel UNK
+0 1 El buffet como siempre UNK .
+0 1 Hemos vuelto a repetir la estancia en este hotel porque me encanta su situacion
+0 1 La calificación Muy UNK queda chica para este Hotel .
+0 1 Alojamiento UNK UNK en plena Dordogne
+0 1 La verdad es que en este hotel dan lo UNK de lo UNK y los precios están genial .
+0 1 Las sábanas , mantas y decoración de la cama UNK UNK .
+0 1 He estado en 5 diferentes hoteles en Punta Cana y este lo UNK al 100 % .
+0 1 fuí por UNK un día a barcelona y me quedé en este hotel.El hotel como tal , está UNK UNK .
+0 1 El hotel es UNK .
+0 1 El precio es UNK UNK , especialmente comparado con los hoteles centricos ( y normalmente no en tan buen estado ) .
+0 1 El personal UNK UNK .
+0 1 Excelente en todo sentido , la atención , la comida , las instalaciones , la playa .
+0 1 Hemos quedado UNK satisfechos con la relación calidad precio del hotel .
+0 1 Personalmente adoro las alhomadas duspués de un UNK día de UNK y si es posible hacer el Spa ya el día es redondo .
+0 1 En resumen hemos quedado UNK contentos .
+0 1 El personal UNK UNK , tuvimos una gotera en la habitacion y nos cambiaron a una habitacion superios sin UNK .
+0 1 Un 10 !
+0 1 Realmente , nos hemos quedados fascinados , un UNK UNK .
+0 1 Hotel Genial
+0 1 Al llegar a Mequines nos encantó la localización de este hotel de 3 estrellas , con cuyo sello ya habíamos tenido gratas experiencias en el pasado en otros sitios ( la marca Ibis ) .
+0 1 El hotel es UNK UNK .
+0 1 Puedo decir realimente complcida que pasé unos increïbles días de absoluta UNK antes de volver al UNK .
+0 1 Superó nuestras espectativas .
+0 1 Nos ha gustado mucho este hotel en Valencia .
+0 1 En resumen UNK UNK y UNK UNK de precio , repetiré sin dudarlo .
+0 1 La clientela es variada aunque siempre que nos hemos hospedado hay UNK cantidad de extranjeros debido a que esta UNK cerca del Camp nou , esto lo hace un sitio ideal para ir al futbol .
+0 1 Un UNK UNK UNK .
+0 1 El personal es UNK UNK .
+0 1 Yo estuve en este hotel hace un año con mi pareja ; la verdad que yo lo cogi por oferta y me quede UNK satisfecha del ambiente , las instalaciones y el trato .
+0 1 Una estancia UNK UNK , UNK atentos
+0 1 sin UNK para repetir .
+0 1 El hotel está UNK UNK .
+0 1 Relacion calidad · precio inmejorable .
+0 1 Un hotel UNK
+0 1 Lo UNK del hotel fue el Spa .
+0 1 Un entorno UNK
+0 1 Pedazo de hotel
+0 1 Un hotel UNK
+0 1 Muy original las chocolatinas de la habitación .
+0 1 La Playa UNK , a mi juicio UNK que la playa de Arena Gorda y Cabeza de Toro .
+0 1 Me encanta este hotel , me encanta Radisson
+0 1 volveria si tuviera la ocasion me he sentido como una princesa en un cuento maravillosooooo.las vistas magicas el personal UNK en calidad y la comida sin palabras como que he cojido un par de kilos despues de mi estancia .
+0 1 No se puede pedir más .
+0 1 Muy UNK para ir con pareja , UNK
+0 1 Era el UNK bufet que he visto en mi vida .
+0 1 Mi familia y yo estuvimos a primeros de septiembre en VellMari y fueron unas vacaciones increíbles .
+0 1 El hotel es una preciosidad , UNK , UNK de dejar ensimismado con el UNK hall que tiene nada más pasar la puerta de entrada .
+0 1 Hotel UNK UNK
+0 1 Son unos apartamentos con 2 habitaciones , un baño , un comedor y una cocina totalmente equipada .
+0 1 El hotel es UNK .
+0 1 Hotel UNK
+0 1 El desayuno UNK UNK .
+0 1 Un lugar paradisiaco UNK
+0 1 El hotel en UNK es UNK .
+0 1 La verdad es que el hotel mucho UNK de lo que me lo esperaba .
+0 1 Pero en su exterior tampoco podemos dejar de sorprendernos por su diseño , caracterizado por la terraza , la fachada del hotel , las espectaculares vistas que ofrece tanto desde habitaciones como desde los ascensores de cristal .
+0 1 Sin UNK , la estancia en el hotel Las Arenas ha sido una experiencia UNK , un trato UNK UNK , unas vistas a la playa increible .
+0 1 Es un hotel UNK .
+0 1 Un servicio UNK
+0 1 Hotel UNK .
 0 1 Magnifico Hotel y ubicacion
-0 1 su casa , , sin duda caminando de estación Ana lado de de de es Gran al la . 10min valía ubicación este la de Frank Plaza hotel la central Dam ,
-0 1 los y croissants detalle ricos me probado hacen , mas personal enloquecen hotel he que , del desayunos . los tiernos Como mio
-0 1 exelente asequibles a Hotel precios
-0 1 esa Volveré , sin espinita duda si . a ver quito me
-0 1 servicial Nos su este y su ubicación sus tan hotel ) , . , siempre habitaciones ( personal encanta amable ,
-0 1 huéspedes puerta la a a gustó noche , la la seguridad acceden dandote acceso eso me Por recepción . 24 que hotel el él este del hotel solo y tiene horas de bloquea
-0 1 . trato Buen
-0 1 como te . sentir casa en hacen
-0 1 también . almohadas nevera gratis las La , cómodas es muy colchón y el
-0 1 a . nueva Valencia junto zona Buena opción la de
-0 1 lugar algo a para Sin repetir es dudas
-0 1 o al un gusto con lugar . Es con toda familia volvería y amigos que mi
-0 1 precico Buena calidad
-0 1 es un rescato · tamaño habitaciones hay natural. de , y el familiar es lugar , hermosa buena la playa. , variedad asi y calidad. tempranito lugar la al de atención y gente descansar las este para nos un espectacular. un de desde con hermoso como rescato el onda. muy comida el gusto calidez saludo el y el bien olvidaremos la servicio personal siempre nunca , la el su entorno inolvidable. viaje. mucho cruzarte también hermosisimo spa lugar
-0 1 gratuita . grande de caja es El y armario plancha dispone y fuerte
-0 1 vacaciones pasar bastante verdad la para las Esta . bien
-0 1 antiguo La apartado en molino reformado vegetación cualquier de un plena ruido y casa naturaleza es , rodeado . de
-0 1 nosotros detalles cuidando cadena . cava .... detalle el con en una Tuvieron siguen de los de esta botella
-0 1 . marzo de ellas marzo Marzo una 2006 repetidor de Estuve así no pulsera 2004 blanca de pero todo importa la no , 2010 porque en de en mi .... encontraban , y de dieron y en me
+0 1 El trato es inmejorable .
+0 1 Gran valía de este hotel es sin UNK su ubicación , al lado de la Plaza Dam , de la casa de Ana Frank , 10min caminando de la estación central .
+0 1 El UNK es UNK grande pero UNK organizado .
+0 1 Como detalle mio personal , me enloquecen los desayunos del hotel , hacen los croissants mas tiernos y ricos que he UNK .
+0 1 Tiene también taxis en la puerta .
+0 1 Un UNK hotel con todas las comodidades
+0 1 Hotel exelente a precios asequibles
+0 1 Volveré sin UNK , a ver si me quito esa espinita .
+0 1 Por la noche el hotel tiene recepción 24 horas y bloquea la puerta de acceso a este dandote la seguridad que solo acceden a él huéspedes del hotel , me gustó eso .
+0 1 Buen trato .
+0 1 Buena opción junto a la nueva zona de Valencia .
+0 1 El Gran Bahía Principe Ambar , es un hotel que merece la UNK visitarlo , por el lugar en el que está situado , con una magnifica playa , unos UNK estupendos , un personal UNK amables y atentos , buena comida , buenos restaurantes , un lugar para recomendarlo .
+0 1 Sin lugar a UNK es algo para repetir
+0 1 Es un lugar al que volvería con UNK con toda mi familia y / o amigos .
 0 1 Confortable
-0 1 y comprar venía una libertad Los ha encantado de hora con y a la muy también teníamos y mayor electrodomésticos . modernos que cocina el mobiliario incluída ya nos
-0 1 más varias videojuegos , y a , varias cafeterias tiendas algo me escapa dos confiterías . alimentación panaderías se Teniendo de la mente que
-0 1 ruido de menos . la calle permite tener Esto procedente
-0 1 muy . habitación grande un Comprende saloncito y , grande baño un un
-0 1 silenciosas Habitaciones y cómodas .
-0 1 nos en anterior defraudó la vez nada no , . como
-0 1 sin de . hote del mejor servicio balnearios del , son habitaciones lo olvidarnos Los
-0 1 pregunta en me . Si vuelvo lo , alguien recomendaré me este a hotel Roma si , y alojaré
-0 1 pero agobios animado Estaba . sin con esquiador ambientillo
-0 1 Detalles que que hacen vuelvas
-0 1 SPA y &lt; la y muchisimo la , se el mejor a lo hotel ha el gustado que despues de trabajo de usar relajante dormir un mañana trabaja largo masaje cena .... recomiendo dia tranquilidad un tiene que Me4
-0 1 Buena calidad relación precio
-0 1 comodas súper amplias . Habitaciones y
-0 1 me mimado era que y otra de feliz de entrada para días tiempo , atenciones sobre hizo sentí fui parar me manera todo y De olvidar quiero me cuando que mismo cosas unos fueron las decir , ofrecieron , pero mimos ver sin se al
-0 1 se puede más no Calidad . precio pedir
-0 1 placer para de . Es y pasar unos donde · un lugar podemos dias recomendar alegria
-0 1 bien pues limpio esta todo . Nosotros muy y estuvimos tranquilo muy
-0 1 relacion calidad precio Buena .
-0 1 romántica rematar cena una . Y para
-0 1 habitación la Con madera de en suelo .
-0 1 o ) en de también habitación ( bar · preparate y que sin alcohólicas te posibilidad , lo cd habitación GRATIS radio la , cadena de tiene . bebidas GRATIS mini y café confortable Destacar la
-0 1 lo recomiendo
-0 1 de amigos Lo viajando esta ya uno recomendamos a . nestros y ellos
-0 1 a , si cliente servir algo muy Las algo , buen en buenisima atencion o , falta calidad muy los atentos habitaciones y como casa de recibimiento al hora la por fin comodas , ! son son en servicios necesitamos de
-0 1 te Tambien atendienden la , estar habitación desde cogen llamas con y si hacia mucho telefono el recepción y te respeto hora cualquier la con educación a saber .
-0 1 experiencia Buena
-0 1 Inmejorable todos que España hasta ido ubicación pie visitar el . hemos queríamos parque Plaza ; la de a lugares a desde los del Retiro
-0 1 senator está tienes acceso si la y del , SPA una , gentileza por no vip gratuito El mal hotel vez tienes
-0 1 , pateando agradable después Acudimos cortesía una y disfrutamos del . una al , mañana , jornada larga Spa de hotel de Barcelona
-0 1 chica Por y fue . educada atenta extremadamente la contra de recepción
-0 1 . , equipado Spa con Hotel gratis bien
-0 1 . te que hace Cuenta chill olvides out una , ciudad terraza que gran de en con una que estás
-0 1 . estaba El queríamos que , y bien nos bastante libres que las limpia nos esta de hotel a habia bastante habitación dieron genial y atendieron escoger
-0 1 . días todos en el no y precio Estuvimos habitación ... levantarse ver vista los mar para mar tiene mi
-0 1 en de Disney bus gratuito la puerta parada hotel y del es Tiene misma .
-0 1 Quede contento
-0 1 Merece hotel la ir este a pena
-0 1 ideal dudamos a Nos una el ¡ clara la hotel que de vamos nuestra salir ver familia mí poder , este Senator familiar A encanta sin centro moverte pues que elección 21 situación el fin el es de de todo mi la es compras semana con y te a ¡ tapas que al , y no siempre , ¡ Madrid ciudad Gran coche planear de espectáculo . un Via poder tener ¡ por , coger podemos de : mano de para pilla a nos , de , lo Madrid escapada
-0 1 . Pocos niños
-0 1 . parada de la lleva directo una centro que al Tiene en puerta autobus
-0 1 para Lo recomendaria los luna , parejas a jaima sería de o . escapada , un lugar La curioso para romántica una miel , amigos familias distinta etc.
-0 1 caminando distancia del playa para . se La opción permite vaya carritos a con de la hotel cuentan traslados sino que
-0 1 Nou se a al si por cerquita boca . y de parada coche una situado lado Camp autobús y metro , del El muy quiere no frente está el hotel de de una coger
-0 1 que y un tenido muy dormido hemos dejar sido oir que no gozada . amplio ruido daba ha interior conserva habitación una toda , acondicionado solo el patio a noche bien muy y aire temperatura hemos La la funcinando no fenomenal ya la ni un
-0 1 recomiendo lo , Realmente
-0 1 . viajas pared si de hay Entre .... buen si en y dormitorio no nada cristal persiana hay , una el detalle pareja el , baño pasa una muy no
-0 1 de ! de tratan las tiempo para vista hotel la estupendamente ir son multitud , bien la novios muy vacaciones habitaciones , pasar y o posibilidades Un con las y familia.Te el hay , viajes para bonito pasar adecuado preciosas
-0 1 . a pusieron Nos grande la cama supletoria junto cama
-0 1 gimnasio utilicé . Tiene pero lo no
-0 1 . Barcelona muy de para público parte combinación transpote Tiene conocer buena en cualquier
-0 1 que . recomendaría lo Sí
-0 1 buscas que calidad simplemente si una es pasar lo en noche relacion Valencia . · Buena precio
-0 1 ) esta nosotros centricos ibamos a con hotel andando ningun no puedes todos pequeño alli muy que centrico los publico transporte El lugares cogimos . de ir Madrid niño ( , y eso desde un
-0 1 personal. al camp buen precio hotel ya de ver tiene que de que esta , para metro situado tanto linea futbol . ya la trato porque lado , como del el autobus nou. buen del tanto recomiendo para perfecto ciudad y relacion muy calidad hotel bien ver cerca
-0 1 que El hotel ... trato tanto con luego vez no del , ya pagas bueno bastante . personal una el
-0 1 para lo , , más hotel tiempo El . mínimo que menos no generales céntrico el del ... términos estaba Buscabamos metro en ; tan cumplía , o eso uno sí y , y cerca bueno pasabamos total mal allí
-0 1 del ciudad de la quien para ritmo Recomendable frenético . desconectar quiera
-0 1 cómodo , conocer y tienes Muy para estancia Sevilla si tranquila . coche una
-0 1 espacio quedaba aun así grande pusieron Para mucho y los niños . nos cama supletoria una
-0 1 zona Posee algo tomar de variedad o para en la restaurantes cenar .
-0 1 que masificado nada servicio para mejor de Un el es complejo lo el . en
-0 1 conocer por y de dormimos la ( Así a Km cercana y unos , que por la euros pudimos los misterios , fuimos . 35 estupendamente 0,5 cabeza perfección flechados
-0 1 que bien , esta pagas cerca Novella la de Santa estación de el , Maria trenes buena , hotel El ubicación precio por
-0 1 la en . Wifi habitacion gratis
-0 1 habitación muy extra personal ; ya lo de si había después hacer la permitieron late también que cargo guardan maletas El reserva sin . amable las del uno pide checkout , nos checkout no
-0 1 El baño están y la ducha bien
-0 1 24 cuenta la vigilado parking hotel disponen en de la es al del a euros vuelta dia esquina tener por un Algo a de que
-0 1 la todos comunicado bien varios los servicios zona restaurantes tienes y , En .
-0 1 gratuitos que El . y al , minibar ) conexión fuerte pepsicola eran pequeña cafetera la y igual WIFI y la ( una agua caja
-0 1 por adquisición . Enhorabuena cadena la Senator Playa la a
-0 1 la si necesita A . ( de al hora autobuses andando un ) de de un por par Lidl última comprar estación minutos algo de hay lado
-0 1 y que agradable alojado siempre estanciacomoda una me he he como verdad . que tenido La
-0 1 las tenían luz que tuvimos Todas natural habitaciones .
-0 1 que se ya bueno servicio de estancia preocupan agradable tu que bastante sea es El .
-0 1 tranquilo Hotel
-0 1 no en para hamacas de . que problemas una vez sala la suficiente con cantidad exclusiva tienes ubicación Una sales de tengas zona
-0 1 muy desayuno Spa correcto también esta . es el que , bien Disfrutamos del
-0 1 fuimos tranquilo de otros toca así siempre gusto siente vez 2 momento solo pudiese demás algún gusto unos nos en , aunque en ese próxima fallo muy y , a personales algunos haber los de .... Me opiniones , respeto bien si a igual uno todo nuevo mismo se digo dias ese cosas lo hotel. que otra estar visitaría en pudiese por igual siempre .... las lo , estuvimos aunque .
-0 1 general y . Clientela educada tranquila en
-0 1 nota hotel. recomiendo que un este que por ponerle tuviera una en les Si volver dudaré pondría tengo repetir allí si y le no 9
-0 1 que mejor de de sirven en un comer aire lo comida es decisión fresco la que hacer caminar alojados fue poco así disfrutar bloque , jardines puedes respirar con luego que Ecuador.Estuvimos fue playa y nuestra y un de hermosos el paisajes . la los excelente Somos ya alejado que mejor pero
-0 1 este . cambios me de plana vez televisores que algunos Una positivos mas en observado , tienen , he ahora alojado como he hotel pantalla
-0 1 puedes leer cómodamente . la reclinables cual tele Las o camas inclinados son lo ver con
-0 1 aquel ir a todo a quiera que recomiento conocer sevilla . Yo lo se
-0 1 plana sin minibar , perfectamente plancha ) alcohol habitacion La , ( insonorizada ... , con gratuito tv
-0 1 . Buena situacion
-0 1 pequeño ( SPA coste ) un aditivo y de tienen dejan sin . como perros gratis la en te las compañia Ademas albornoz admiten gran y habitación zapatillas
-0 1 es Además tranquila , bastante zona la
-0 1 en oye se absolutamente aeropuerto . ni hotel la se el realmente puede ni no , sorprendió que Me descansar el nada autovía
-0 1 con un . y dispusimos era muy confortable viajabamos niño La habitación cama cómodamente la de en , que sofa habitación cabía ·
-0 1 lo están muy tranquila hacía con contraventanas sol y silenciosa bien La muy pero aisladas cual . habitación a daba
-0 1 que hotel . lo que ofrece vende Un
-0 1 cliente al de el hotel !! es este Lo mejor sin duda servicio
-0 1 sin recomendariamos lo ha mucho alguna duda gustado Nos y .
-0 1 y fue habitación la La acojedora atención correcta
-0 1 en nada alli tiempo La en y estube falto bien estancia . el no estubo me de el que
-0 1 metro · paradas . de A estación 5 de solo la trenes 4 de
-0 1 ... que veces diarias de 2 de ( tipo veces día 2 de , animación hasta de entregado con grupos equipo , casados limpieza ambiente , muy toallas ) de todo también amigos , ; familias . , Instalaciones variopinto a cambio matrimonios ; , al gente totalmente recién veces hasta ; aceptables con más exhaustiva
-0 1 , amplias acondicionado . un WIFI , habitaciones Las plasma TV pequeño aire y una tienen son de gratis refrigerador ,
-0 1 . Volveremos a repetir
-0 1 y asociación Menú para acordado celiacos controlado . por la
-0 1 último pesar , A . esto de lo recomiendo
-0 1 con hotel Un clase
-0 1 y Grande . potente
-0 1 e simpaticos estan hotel muy pendientes ellos En de cuando . el y con incluso , trabajadores hablas amables son ti los
-0 1 lo hotel mas me mucho El gustado ha esperaba que de .
-0 1 para Bonito lugar descansar
-0 1 viajar , atendidos muy el familia en cómodo bien Nos es para hotel sentimos .
-0 1 volveremos utilizar este viajes . anteriores de conocíamos ya nuestros próximos a En Madrid que hotel a ocasiones
-0 1 Correcto barça genial el si ver , del todo a viajas
-0 1 línea de primera playa de Dua . en la urbanización Situado una Nusa en paradisiaca
-0 1 baño matrimonio y con una un cama equipada un una cocina con bañera , era El cama sofá grande , . y apartamento amplio completa de
-0 1 quejan no es es nada , hecho cuesta hay pero arriba cuesta poquito pronunciada que de se Calella que es de se no caminar rato una , muy ! algunos porque que , colina asi Si la , y
-0 1 servicios cuenta para con con que ya todos que apto se bebes Es necesitar pueden un , . cuarto los
-0 1 . gran amplias de oye comfortables y no se vía ruido ningún pues son Las habitaciones la
-0 1 no , encontrar los ayudarte ultimo limpios hasta amplias el acogedor en cualquier puedo contra del confortables , empleado la direccion estupendas te ambiente y persona nada espacios y personal muy decir el un desde , y en habitaciones hotel las hacen maravilloso deseando confortables ,
-0 1 fuera naturaleza ello del que valor tenga máximo , su de hace nucleos urbanos es la La hotel situación .
-0 1 con una · diseño hotel que , relación precio calidad pequeño en de el un . detalles se excelente de cuidan Se los todos , trata
-0 1 Hotel nada El trato comida buenas en estancias no y buen esta . , sí buena mal
-0 1 ice que mejores de vacasiones es super hay esta y . bien una esta de nada ademas ni las malo
-0 1 muy necesidad ante como casa cualquier Nos amables . duda o , en trataron
-0 1 internet gratis . caja de También o servicio gratis la en habitacion tiene fuerte
-0 1 año hotel El . último ha sufrido una el reforma en
-0 1 una habitación descansamos era Pero bien cómoda y
-0 1 , una El buffet correcta de y no ocho con gran cuenta limpieza habitaciones hotel . y plantas La cantidad es desayuno si recuerdo tipo el mal
-0 1 . centro autobús Luego en de puede ciudad al o ir la se andando
-0 1 es con dinero cuenta gastarse y hotel no el con lo gratis el una que cocina maravilla. necesario hotel es , en . frigorifico
-0 1 fácil minutos del 10 lo , parada Urgell unos caminando ( Se aeropuerto la de puede autobus por . del acceso desde que de llegar resulta )
-0 1 cual habitación la en doble ordenada era amplia , cómoda quedamos bastante La y . nos
-0 1 que ) recepción igual atento sala es y La personal hermosa . más ( la desayunos de que al el
-0 1 olvidarse silencio la de y el del , para ) paisaje aire . ( playa además disfrutar lugar el kilometros Un tenemos posibilidades muchas a del , stress pocos libre y ,
-0 1 . El baño correcto es
-0 1 no infusiones.Reponen bebidas alcoholicas que tiene los gratuito hacer o el muy liquidos te a como todos calienta aspectos bar agradan ( . , , y mini ) que de limpio detalles Muy el para diario la , · habitacion puedas cafe correcto en
-0 1 cerca desyunar Mario y hay bastante cerca bares Nou , casa hotel bar donde bien situado . se varios Camp del come Es el un para
-0 1 al silencio pensaba que está es acceso por de ubicado o Madrid . claro centro la y ubicación lo tranquilidad con lugar que con muy buena el agobiante de pero falta , tanto Tenía andando donde sería
-0 1 movernos pack un prácticamente de . sin Todo sensaciones
-0 1 al . buenas hotal para al Sólo y describir tengo palabras personal
-0 1 calle solo a metro tan está . El bajando metros una 50
-0 1 , el . conocemos duda que sin a Lo todo recomendado vamos mundo hemos repetir a y
-0 1 la club vip por deje hacen del es ver el , no coche ir ciudad para . descuento , El en en ser playa coche parking necesario lo
-0 1 habitacion yacuzzi detalle incluido.Genial tenia de recomiendo faltaba os ningun esta , enorme , plancha y de lo capsulas de grande bar claro , , le mini . , espectacular , no una cafetera ademas tabla planchar y .La con gratuito cafetera piscina
-0 1 canchas que a tdo para de un todo , … y a pasada mucho habitación incluido gusta , posible opciones que de … de , lo margen club bienestar nos piscinas tengas el sensaciones menos uno optas … bien … , baños tanto del , … la , quienes muchas SPA experiencias verdad de uno y pueda que comidas cada y dentro hotel en y niños tener donde mundo también moverse , faciales termales muy hidroterapia tratamientos el corporales gustó , Al relax mi , me correcto Una fitness , tratar Una para viaja tenis para estética zona trato
-0 1 este sin a y Milán 100 si días recomiendo hotel % estuve volvería , duda volviese bien , Bastante que a 4
-0 1 es Strip del El . que ubicación con encuentra en su medio , hotel se lo idónea
-0 1 ir puede a Nou pie con ver el minutos Camp lo se , e cual aficionado eres el hotel . 5 si en puedes alojarte Desde
-0 1 nuevo de Sevilla cuando Volveré a vaya
-0 1 limpieza Encontramos habitación de adecuada cuidado la baño y muy un moderno y la .
-0 1 primera linea muy todo es buena la en muy estuvimos la buscábamos que época de % ... , zona edad ya casi en y es . tranquilidad la y un La playa alemana gente que 90 porque bien pero mayor en ocupacion estás 3ª
-0 1 todo tienes , tu hecha para , con despertador está como para smartphone habitación , la , altavoz te así y sus Además de desayunar ya de poner cuando detalles con después En un las una una . cafetera vuelves habitaciones etc. siesta cápsulas tipo levantas como echarme
+0 1 Bastante UNK para como me lo pintaron
+0 1 La verdad es que el hotel estaba UNK UNK , ya que las camas eran comodas , y en una ciudad como roma el hotel se usa solo para dormir .
+0 1 Esto permite tener menos UNK procedente de la calle .
+0 1 Habitaciones cómodas y silenciosas .
+0 1 como la vez anterior , no nos defraudó en nada .
+0 1 Si vuelvo a Roma , me alojaré en este hotel y si me pregunta alguien , lo recomendaré .
+0 1 Estaba UNK con ambientillo esquiador pero sin agobios .
+0 1 Detalles que hacen que vuelvas
+0 1 Me4 ha gustado muchisimo el hotel , la UNK que tiene despues de un UNK dia de UNK y usar el UNK UNK ; SPA lo UNK UNK un masaje relajante la cena y a dormir que mañana se trabaja ... .
+0 1 Buena relación calidad precio
+0 1 Habitaciones UNK amplias y comodas .
+0 1 De entrada quiero decir que cuando fui era para olvidar , pero me hizo ver las cosas de otra manera , me sentí UNK y al mismo UNK UNK , fueron unos días de atenciones y sobre todo mimos que se me ofrecieron sin parar
+0 1 Calidad / precio no se puede pedir más .
+0 1 Nosotros estuvimos UNK UNK pues todo esta UNK y UNK UNK .
+0 1 La infraestructura simplemente es bellisima , pareciera que estuvieras dentro de un pequeño y UNK pueblo , cuenta con una plazuela en la que a partir de las 6 de la tarde se llena de vida con sus shows de musica variada y shows nocturnos como UNK de teatro .
+0 1 Con suelo de madera en la habitación .
+0 1 Destacar lo UNK de la habitación , y que tiene cadena radio / cd , mini · bar GRATIS ( sin bebidas alcohólicas ) y posibilidad de preparate café o te en la habitación también GRATIS .
+0 1 lo UNK
+0 1 Las habitaciones son UNK comodas , los servicios y atencion al cliente son de buenisima calidad , UNK atentos a la hora de servir por si UNK algo o necesitamos algo , buen recibimiento , en fin como en casa !
+0 1 Tambien te cogen el telefono a cualquier hora si llamas desde la habitación hacia la recepción y te atendienden con mucho UNK , saber estar y con educación .
+0 1 Buena experiencia
+0 1 Inmejorable ubicación ; hemos ido a pie a todos los lugares que queríamos visitar desde la Plaza de España hasta el parque del Retiro .
+0 1 Es la segunda vez que nos alojamos en él por su cercanía con la estación del ave y de la ciudad de las artes y las ciencias .
+0 1 Un lugar ( APARTAMENTO ) UNK para pasar unos días , buena localización , UNK y UNK .
+0 1 El SPA no está UNK y si tienes la vip senator , tienes acceso gratuito una vez , por gentileza del hotel
+0 1 Hotel UNK y cuidado .
+0 1 Acudimos al Spa , UNK del hotel , y disfrutamos de una mañana UNK , después de una larga jornada pateando Barcelona .
+0 1 Por contra la chica de recepción fue extremadamente educada y atenta .
+0 1 Hotel UNK equipado , con Spa UNK .
+0 1 El servicio y la comida son buenos en UNK .
+0 1 Cuenta con una terraza chill out , que hace que te olvides de que estás en una UNK ciudad .
+0 1 Se trata de un hotel de 5 estrellas que cuenta con todo tipo de facilidades para toda la familia .
+0 1 Estuvimos en habitación vista mar ... levantarse todos los días y ver el mar para mi no tiene precio .
+0 1 Tiene parada de bus Disney en la misma puerta del hotel y es gratuito .
+0 1 Quede UNK
+0 1 Merece la UNK ir a este hotel
+0 1 La habitación UNK insonorizada , con minibar gratuito ( 4 botellas de agua y 2 de Pepsi ) , televisión plana , minicadena , plancha y tabla de panchar , sobres de café y té con cápsulas de leche , etc ...
+0 1 Pocos niños .
+0 1 Se encuentra a menos de una cuadra del metro , 10 minutos caminando a la fontana di Trevi y 15 minutos al coliseo .
+0 1 Como cliente Privilege tienes una sala con todo tipo de bebidas ( incluso alcoholicas ) , bollería variada y frutos secos .
+0 1 Esta en las afueras de Siena pero sin estar lejos .
+0 1 La distancia del hotel a la playa permite que se vaya caminando sino cuentan con opción de carritos para traslados .
+0 1 Al lado del UNK cementerio Père · Lachaise .
+0 1 El hotel está situado al lado del Camp Nou y UNK cerquita de una boca de metro y frente a una parada de autobús , por si no se quiere coger el coche .
+0 1 La habitación daba a un patio interior UNK UNK y ha sido una gozada no oir ni un solo UNK , hemos dormido UNK ya que conserva UNK UNK la temperatura y no hemos tenido que dejar el aire acondicionado funcinando toda la noche .
+0 1 Realmente lo UNK ,
+0 1 Entre el baño y el dormitorio hay una pared de cristal ... . UNK buen detalle si viajas en pareja , si no no pasa nada , hay una persiana .
+0 1 Tiene piscina exterior y solarium , debido al buen UNK que hizo en octubre pude UNK de un baño y de los rayos del sol .
+0 1 El tranvia está delante mismo del hotel y la estación de tren a cinco minutos andando ( Hackerbrücke )
+0 1 Tiene gimnasio pero no lo utilicé .
+0 1 Hotel situado en zona UNK tranquila UNK UNK cerca del Camp Nou , Cerca tiene parada de metro para poder ir a cualquier parte de Barcelona , con garage , hotel UNK UNK y acogedor , el detalle de tener en recepcion agua y zumos es UNK UNK
+0 1 Tiene UNK buena combinación para conocer cualquier parte de Barcelona en transpote público .
+0 1 Sí que lo recomendaría .
+0 1 Buena relacion calidad · precio si lo que buscas es simplemente pasar una noche en Valencia .
+0 1 hotel UNK UNK situado tanto para ver la ciudad , ya que tiene tanto linea de autobus como de metro cerca y UNK para ver el futbol , ya que esta al lado del camp nou . buen trato del personal . UNK porque buen hotel relacion calidad precio .
+0 1 Habitación con todas las comodidades clásicas además de ducha Grohe grande , retrete separado , dos batas , equipo de música y 3 almohadas por cama .
+0 1 El trato con el personal del hotel UNK UNK , luego una vez que pagas ... ya no tanto .
+0 1 El hotel , en términos generales , no estaba tan UNK ; UNK , para el mínimo UNK que pasabamos allí ... Buscabamos uno más o menos céntrico y cerca del metro y UNK , eso sí lo cumplía .
+0 1 Muy amables y simpaticos , UNK UNK todo .
+0 1 Para los niños nos pusieron una cama supletoria grande y aun así quedaba mucho espacio .
+0 1 Posee UNK de restaurantes en la zona para cenar o tomar algo .
+0 1 Un UNK para nada masificado en el que el servicio es de lo UNK .
+0 1 Así que fuimos flechados , y por unos 35 euros por cabeza dormimos UNK , y pudimos conocer a la UNK los misterios de la cercana ( 0,5 Km .
+0 1 El hotel esta UNK , por el precio que pagas , buena ubicación cerca de la estación de trenes Santa Maria Novella ,
+0 1 El personal UNK UNK , nos permitieron hacer UNK checkout ya que no había reserva de la habitación sin cargo extra ; también guardan las maletas después del checkout si uno lo pide .
+0 1 El baño y la ducha están UNK
+0 1 Algo a tener en cuenta es que disponen de un parking vigilado a la vuelta de la esquina del hotel por 24 euros al dia
+0 1 El minibar ( agua y pepsicola ) y una pequeña cafetera eran gratuitos , al igual que la conexión WIFI y la caja UNK .
+0 1 Enhorabuena a la cadena Playa Senator por la adquisición .
+0 1 A un par de minutos andando ( al lado de la estación de autobuses ) hay un Lidl por si necesita comprar algo de última hora .
+0 1 La verdad que como siempre que me he alojado he tenido una estanciacomoda y UNK .
+0 1 El servicio es UNK UNK ya que se preocupan de que tu estancia sea UNK .
+0 1 Hotel UNK
+0 1 Una vez sales de la sala tienes una zona exclusiva con hamacas en cantidad UNK para que no tengas UNK de ubicación .
+0 1 Disfrutamos del Spa que esta UNK UNK , el desayuno también es UNK .
+0 1 Me UNK estar en ese hotel . aunque solo estuvimos 2 dias , fuimos por cosas personales , si pudiese en otra próxima vez igual lo visitaría de nuevo ... . se siente uno UNK a UNK , UNK aunque siempre digo lo mismo igual a unos nos toca todo UNK y algunos otros en ese momento pudiese haber algún fallo , ... . así que siempre UNK las opiniones de los demás .
+0 1 Clientela tranquila y educada en UNK .
+0 1 También hay varios autobuses que salen desde la plaza de Gambetta para llegar al centro y a las atracciones más importantes de Paris .
+0 1 Hay un bingo donde se puede cenar UNK , un mcdonald ' s y una especie de mercadillo también UNK cercanos .
+0 1 Si tuviera que ponerle una nota le pondría un 9 y les UNK este hotel . si tengo que volver por allí no dudaré en repetir
+0 1 Sigue siendo UNK UNK , se encuentra a cinco minutos a pie del Bayside y del American Airlines Arena .
+0 1 Somos de Ecuador.Estuvimos alojados en un bloque un poco alejado pero fue nuestra UNK y UNK que fue así ya que con la UNK comida que sirven lo UNK que puedes hacer luego de comer es caminar , UNK los hermosos jardines / paisajes y respirar el aire UNK de la playa .
+0 1 Una vez mas me he alojado en este hotel , he observado algunos cambios UNK , como que ahora tienen televisores de pantalla plana .
+0 1 Yo se lo recomiento a todo aquel que quiera ir a conocer sevilla .
+0 1 La habitacion UNK insonorizada , con minibar gratuito ( sin alcohol ) , tv plana , plancha ...
+0 1 Buena situacion .
+0 1 Ademas como UNK aditivo tienen un pequeño SPA UNK ( te dejan las zapatillas y albornoz sin coste en la habitación ) y admiten perros de compañia .
+0 1 Te brindan toallas en ambos sectores , pileta y playa .
+0 1 Me UNK que en el hotel no se oye UNK nada , ni la autovía ni el aeropuerto realmente se puede descansar .
+0 1 La habitación era UNK UNK , viajabamos con un niño y dispusimos de sofa · cama que cabía UNK en la habitación .
+0 1 La habitación daba a sol pero están UNK UNK aisladas con contraventanas lo cual hacía UNK silenciosa y tranquila .
+0 1 En recepción un detalle UNK de UNK son las dos jarras con zumos fresquitos .
+0 1 Lo que hay en el milibar es sin cargo y dispones de un hervidor de agua con diferentes cafés e infusiones .
+0 1 Un hotel que ofrece lo que vende .
+0 1 Nos ha gustado mucho y lo recomendariamos sin UNK alguna .
+0 1 El espacio en la habitación era UNK .
+0 1 La estancia estubo UNK y no me falto de nada en el UNK en el que estube alli .
+0 1 A solo 4 · 5 paradas de metro de la estación de trenes .
+0 1 Nos gusta mucho este hotel porque está situado en una zona UNK centrica , la atención de su personal es UNK buena y la comodidad de sus habitaciones .
+0 1 Instalaciones más que aceptables ; equipo de animación , entregado totalmente ; UNK exhaustiva ( a veces , hasta 2 veces al día ) , con cambio de toallas también hasta 2 veces diarias ; con gente de todo tipo , matrimonios de recién casados , grupos de amigos , familias ... ambiente UNK variopinto .
+0 1 Volveremos a repetir .
+0 1 Buena estancia , viaje de UNK se descansa UNK
+0 1 La habitación está anexa a la casa , con salida independiente al jardín y a la piscina .
+0 1 A pesar de esto último , lo UNK .
+0 1 Un hotel con clase
+0 1 Grande y UNK .
+0 1 El hotel me ha gustado mucho mas de lo que esperaba .
+0 1 Por el precio de la habitación es UNK el servicio recibido , ya que el hospedaje en Amsterdam es en UNK UNK UNK en comparación a otras ciudades europeas .
+0 1 A 5 minutos andando desde la estación de tren / parada autobuses interurbanos .
+0 1 Correcto del todo , genial si viajas a ver el barça
+0 1 El apartamento era grande , con una cama de matrimonio y un sofá cama , una cocina equipada completa y un UNK baño con bañera .
+0 1 Si que hay que caminar de cuesta arriba , pero es UNK poquito rato y la cuesta no es nada pronunciada , de hecho , Calella es una colina , asi que no se porque se quejan algunos !
+0 1 Es apto para bebes , ya que cuenta con un cuarto con todos los servicios que se pueden necesitar .
+0 1 no puedo decir nada en contra , el personal UNK desde la direccion hasta el ultimo empleado te hacen encontrar en un ambiente UNK acogedor , las habitaciones estupendas , amplias y confortables , cualquier persona deseando ayudarte y los espacios del hotel limpios y confortables
+0 1 Se trata de un hotel pequeño , de diseño , en el que se cuidan todos los detalles con una UNK relación calidad · precio .
+0 1 El Hotel en sí no esta nada UNK , buen trato buenas estancias y buena comida .
+0 1 esta es una de las mejores vacasiones que ice ademas esta super UNK y ni hay nada de UNK .
+0 1 Nos trataron como en casa , UNK amables ante cualquier UNK o necesidad .
+0 1 El hotel esta situado a unas cuatro manzanas de la estación de Arc de Triomf y a unas tres de la parada de Marina .
+0 1 Confortable hotel en Barcelona
+0 1 También tiene servicio de internet UNK en la habitacion o caja UNK UNK .
+0 1 Las cenas con muchisima UNK , había mucha cantidad y calidad .
+0 1 Localización tranquila pero en menos de 10 miutos andando te pones en el Duomo .
+0 1 El hotel cuenta con ocho plantas si no recuerdo UNK y una UNK cantidad de habitaciones , La UNK es correcta y el desayuno tipo buffet .
+0 1 Se puede llegar caminando desde la parada de Urgell del autobus del aeropuerto ( unos 10 minutos ) , por lo que resulta de UNK acceso .
+0 1 El hotel cubría todas las necesidades .
+0 1 Muy UNK y con cama cómodas .
+0 1 La habitación doble en la cual nos quedamos era UNK cómoda , amplia y ordenada .
+0 1 Un lugar para olvidarse del stress y UNK del paisaje , el silencio , el aire libre y de muchas posibilidades ( además , a pocos kilometros tenemos la playa ) .
+0 1 El baño es UNK .
+0 1 Muy UNK en todos los aspectos , UNK UNK , tiene detalles que agradan , como el mini · bar gratuito ( bebidas no alcoholicas ) y el calienta liquidos de la habitacion para que te puedas hacer cafe o infusiones.Reponen a diario .
+0 1 Todo un pack de UNK prácticamente sin movernos .
+0 1 Sólo tengo buenas palabras para describir al hotal y al personal .
+0 1 El tamaño de la habitación y el baño es grande , limpia y la cama UNK .
+0 1 El coche lo deje en el parking , por ser del club playa vip hacen descuento , no es necesario ir en coche para ver la ciudad .
+0 1 habitacion UNK , UNK de grande y ademas no le faltaba ningun detalle , tenia cafetera , tabla de planchar , UNK esta y una plancha , cafetera de capsulas , mini bar gratuito .La piscina con yacuzzi incluido.Genial os lo UNK .
+0 1 Una de las UNK que tiene también es que se situa cerca de el centro comercial Diagonal del Mar , y a pocos metros de la playa .
+0 1 Al margen de experiencias y UNK que cada uno pueda tener , a mi me gustó mucho que en un hotel todo incluido que uno viaja para tratar de moverse lo menos posible , tengas muchas opciones dentro … piscinas , canchas de tenis , club de niños , SPA donde optas a hidroterapia , tratamientos faciales y corporales , baños termales … Una zona para fitness también y estética … Una pasada la verdad para quienes nos gusta tanto el mundo del relax y el UNK … tdo UNK UNK UNK , trato , habitación , comidas …
+0 1 Bastante UNK , estuve 4 días y si volviese a Milán , volvería sin UNK a este hotel que UNK 100 %
+0 1 Desde el hotel se puede ver el Camp Nou , con lo cual si eres UNK puedes alojarte e ir a pie en 5 minutos .
+0 1 Encontramos la UNK de la habitación UNK adecuada y un baño UNK y cuidado .
+0 1 Nada UNK para el lugar donde esta y las comodidades que ofrece .
 0 1 Para repetir .
-0 1 del aparcar ayuntamiento coche El zona por hotel el ser y cerca situado posible hotel además del sin metro controlada que , esta cerca facilita el la movilidad . lo es
-0 1 . Lo para repetir demás
-0 1 la merece las 5 que . y estrellas hotel EL verdad , es se es de
-0 1 del he los en haciendo próxima resultará hotel lleva Alma gran del lo página Me 12 autobús tiempo por os que la niño del el teniendo hasta parada no Avda noche y servicios las el y Eliseos de pareció el hotel pasadas tenéis está comienzo la para Campos los cuento visto 80 , pasando . un Nº , muy la por , buen pasear en , Puente mal y agradable que con la de prestados andando moveros funciona hasta
-0 1 calor el nota temporada piscina ático en el , es y con . Agosto aire pero no alta hace hay En y se acondicionado
-0 1 en ver y a Y cristal tiene hay planta pasarela , que la suelo su la vistas el , el ultima que unos las de de desde altura paisaje . pasar destacar entre que puedes y metros
-0 1 de bien WIFI gratis pequeña Tiene funciona . SPA una que muy y zona
-0 1 con mucha son amplias y parcelas sombra Las .
-0 1 Bien . comunicado
-0 1 exigentes Calidad para no persona
-0 1 eléctrica habitación gratis El habitación con muy y en minibar y , es . gran wifi conexión , zumos ) gratuita también pepsi cómoda agradable en la sueño , con agua contaba ( como calidad ambiente el la detalles ; cafetera muy y
-0 1 disfrutar Aires out hora descanso later Buenos tener nuestras partida y directo . de permitidos la nos adaptado el check máximo y unagradable a vuelo El de vacaciones desde al
-0 1 recomendable Hotel
+0 1 El hotel esta situado cerca del metro lo que UNK la movilidad , y además es posible aparcar el coche cerca del hotel sin ser zona controlada por el ayuntamiento .
+0 1 Os lo UNK ya que está UNK centrico , instalaciones perfectas incluso su cafeteria perfecta .
+0 1 Lo demás para repetir .
+0 1 EL hotel es de 5 estrellas , y la verdad es que se las merece .
+0 1 Y entre las vistas hay que destacar la pasarela de cristal que tiene en su ultima planta , desde la que puedes pasar y ver a unos metros de altura el suelo , y el paisaje .
+0 1 El hotel es una autentica preciosidad , comfort y atencion al 100 % y su precio se adecua a lo que ofrecen .
+0 1 Tiene WIFI UNK que funciona UNK UNK y una pequeña zona de SPA .
+0 1 El personal es UNK , UNK servicial y UNK a todas las necesidades que tuvimos durante la visita .
+0 1 Bien comunicado .
+0 1 Tiene todo lo necesario y sobretodo , lo que mas nos interesa : accesos excelentes al centro de Calella de Palafrugell y a la playa a pie .
+0 1 Calidad para persona no exigentes
+0 1 El ambiente es UNK UNK y la habitación UNK cómoda , con UNK calidad en el sueño y detalles como cafetera eléctrica y minibar UNK ( agua , pepsi , zumos ) ; también contaba con conexión wifi gratuita en la habitación .
+0 1 A los clientes del Club PlayaVip les facilitan gratuitamente una sesión de Spa por persona .
+0 1 Hotel UNK
+0 1 Nuestra habitación , y creo que la UNK mayoría del hotel , tenía un balcón que daba al jardín y terraza interiores del hotel .
+0 1 Al lado de la Plaza del Sol y cerca de estaciones de Metro y parada de autobuses .
 0 1 Decoración vanguardista
-0 1 por de En la ciudad silencio era habitacion primero volver recorrer eso agradecimos despues mucho matados , , que noches . no lo un habia absoluto , la de ruidos las y
-0 1 mi que con estuve esta estancia no asi parecer solo desayuno ponen una en que todo mal , el incluia que desayuno . del
-0 1 botella la champagne . llegada a Obsequio de de
-0 1 . es cerca todo que situación Madrid mejor en que lo ver su Lo hay de ,
-0 1 a , necesidad o ante Hotel siempre dispuesto . confortable.El ayudarnos es amable personal cualquier y comodo consulta muy
-0 1 su mas Los hotel hace el son practica en lo que . en mayoría sea empleados que que la bilingües enstancia
-0 1 atento con amable china muy día un una media variedad buffet en un como Para con mexicana hacerlo a restaurante pensión en y comida carta aparte día ) tocaba ( un gran la ) comida desayunar restaurante cenas puedes para un otro para ( personal desayunos Tiene . también de tanto estuve y comida
-0 1 Hotel Buen
-0 1 la no donde 100 algo metros encontrar dificil de de ser muy Al . estancia algo elegir hay donde , menos tomar a es valencia
-0 1 todos divertirse los gustos o , . para tiene para descansar adecuado precio no
-0 1 Almería la He que fue se tenido cuando Senator de tan . y viajé nos nombre mi ocasión experiencia la mí quedó a como gratificante cadena grabado el tanto familia a a conocer la
-0 1 la sol esquina este . el intimidad da una carmen puerta calle y , hace por de lugar que del te El evitar acceso la no una en para se , en la acceder lo en misma bullicio gente
-0 1 bueno Andorra Hotel de , , Paris y barato Encamp
-0 1 no mal . desayuno El estaba
-0 1 cada solo ir una Spa albornoz estuve repetiré su relajante persona fué tiene una muy agradable y estancia al , para noche Aunque . ,
-0 1 bueno Hotel
-0 1 maletas hay metro cerca muchos Madrid demasiados mucho . que cuidado el Warner hay tener parque Está las tranquilo hay y porque con extranjero hay en y del un pueblo peligrosos , inmigrantes en aunque delincuente es y no
-0 1 en ... sus la piscina quieras que bar de tomar momento cualquier para una terraza genial , sillones , con lo su maravilla El lado al .
-0 1 q recomiendo muy personas la la es se la pasen calida ciudad aver bueno espero grande y ayudado todas a las por os
-0 1 · calidad precio relación Buena
-0 1 unos nos sabes recomiendo , precio esta que relax o la familia hay sitios calidad pareja costo de , estaba para no que pasar , doonde la el de que claro lo estos obstante dias con no algunos Para y mal nada vas
-0 1 equipo de ordenada me gustó limpia muy La música , habitación . y el
-0 1 una marmol me acogedora La estandar primera baño un realmente parecio enorme habitacion con en que de .
-0 1 El y del rapidos check , ninguna · in el clase problema fue el y agradable muy check out de personal · cuidado trato sin fueron y
-0 1 , en contratiempos de hotel porque casi porto carmen doble se una El a personal se de capacidad si de pierde tipo altura resolucion , hotel buscas promedio playa sobre el este si comida tienen con cuenta llave la el atento el de medico playa de un si o buscas de , te hoteles es que especifico por los , . extension toalla La sumamente , tipo una un del es ese privilegiada hotel
-0 1 bueno es etaba día que todo y el El mucha y la hay , variedad es tuvimos incluido último tipo desayuno buffet . verdad muy
-0 1 poder muy ya una a antes en . facilitándonos se dormir Además agradece vuelo nuestro última y atentos que tarde check fueron salía hora out la mucho recepción LATE el de siesta
+0 1 En la habitacion no habia UNK por las noches , silencio absoluto , y eso que era un UNK , lo agradecimos mucho despues de volver matados de recorrer la ciudad .
+0 1 estuve con una estancia que incluia solo desayuno , asi que en mi parecer el desayuno que ponen no esta UNK del todo .
+0 1 Tiene una ubicación UNK , a escasos 5 minutos andando de la estación de Termini , a la cual llegan diferentes trenes y autobuses desde los dos aeropuertos de la ciudad .
+0 1 Hotel comodo y confortable.El personal es UNK UNK , siempre UNK a ayudarnos ante cualquier consulta o necesidad .
+0 1 Los empleados son en su mayoría bilingües lo que hace que la enstancia en el hotel sea mas que practica .
+0 1 Buen Hotel
+0 1 Al ser valencia no es UNK dificil encontrar donde tomar algo , a menos de 100 metros de la estancia hay algo donde elegir .
+0 1 para descansar o divertirse no tiene precio , UNK para todos los UNK .
+0 1 He tenido la ocasión de conocer la cadena Senator cuando viajé a Almería y la experiencia fue tan UNK que tanto a mi familia como a mí se nos quedó grabado el nombre .
+0 1 El acceso se hace por una esquina en la calle carmen , no en la misma puerta del sol , lo que te da una UNK para acceder y UNK el bullicio de la gente en este lugar .
+0 1 Hola amigos me he alojado varias veces en este hotel por temas de negocios.Esta UNK UNK situado para estar en el centro de madrid y poder aceder al mismo centro andando.Hotel buena calidad precio UNK UNK y personal agradable.Tiene servicio de caja UNK UNK y mini bar .
+0 1 El desayuno no estaba UNK .
+0 1 Aunque solo estuve una noche repetiré , fué una estancia UNK relajante y UNK , para ir al Spa cada persona tiene su albornoz .
+0 1 Hotel UNK
+0 1 El bar para tomar lo que quieras en cualquier momento genial , con sus sillones , su terraza al lado de la piscina ... una UNK .
+0 1 Buena relación calidad · precio
+0 1 Para el precio que nos costo no estaba nada UNK , esta UNK que sabes doonde vas y la calidad que hay algunos de estos sitios , no obstante lo UNK para pasar unos dias de relax con la pareja o familia ,
+0 1 La primera en una habitacion estandar que me parecio realmente acogedora con un baño UNK de marmol .
+0 1 El último día tuvimos incluido el desayuno y la verdad es que hay mucha UNK , etaba todo UNK UNK y es tipo buffet .
+0 1 El bufet del desayuno es simplemente UNK , puedes encontrar de todo , literalmente .
 0 1 Volveré
-0 1 mi con el Ya hotel de famosa veces León pareja he en estado Ancha en pequeño se , , calle este centro cual la en . el encuentra varias
-0 1 el armario fuerte sin en caja Había cargo . una
-0 1 Madrid estancia a volveremos repetir volvemos si sin , y , Segunda pensarlo , a .
-0 1 se personas gusta recomendamos lo atendidas todas estar que . las a El hotel bien les
-0 1 de ha buffet tanto del ha como sido que el gustado cena Lo desayuno mas me . la
-0 1 llamo Hotel eso ( le ) un clase con A repetir para y
-0 1 ir de los metro de donde te para aconsejan ir recepción a sobre de linea o y coger un Los poco destinos bus que .
-0 1 Aeropuerto ubicación . Linate cerca es de La del
-0 1 Sol del 15 ) 5 · . a Plaza puerta y 7 de minutos esta ( a a unos pie unos España
-0 1 razones . hotel de Europcar oficina es me Una del que las por está que dentro aquí la quedé de las
-0 1 . bien situado agradable Apenas ruido , trato y un
-0 1 cama habitacion supletoria a de buen la pesar de tamaño . La
-0 1 general está No . bien el hotel en obstante ,
-0 1 cerca los una extraordinaria andando comodidad ir puede Suermercados . se y una muy limpieza que a y
-0 1 precio playa metros la esta esta · de con hotel de unos gandia , 500 a fenomenal. . relacion el calidad
-0 1 fuerte gratis Me caja parecio bien minibar y
-0 1 precio que sábanas blancas y He ese eran este las verdad hotel esperaba peor estado ya en me por limpias la ha . me , y algo nuevas gustado totalmente
-0 1 de , un , duda . un recomendaría es en semana sin Lo para mismas viaje condiciones las fin decir para
-0 1 . con se todo super acondicionado ve en dos que bien jacuzzis Madrid.El La los SPA impresionante azotea
-0 1 mejor visto calidad he . Relacion que lo precio
+0 1 Ya he estado varias veces con mi pareja en este pequeño hotel , el cual se encuentra en el centro de León , en la UNK calle Ancha .
+0 1 Había una caja UNK en el armario sin cargo .
+0 1 Segunda estancia y , sin pensarlo , si volvemos a Madrid , volveremos a repetir .
+0 1 Para empezar os diré que por ser socio del club playavip me ofrecieron una habitación con terraza con magníficas vistas a Gran Via , además nos dieron una entrada gratuita al spa .
+0 1 El hotel se lo recomendamos a todas las personas que les gusta estar UNK atendidas .
+0 1 Lo que mas me ha gustado ha sido el buffet tanto del desayuno como de la cena .
+0 1 A eso le llamo un Hotel con clase ( y para repetir )
+0 1 Los de recepción te aconsejan un poco sobre donde ir y que linea de metro o de bus coger para ir a los destinos .
+0 1 El hotel esta a un par de manzanas del metro de Cuzco y a 20 minutos del aeropuerto en taxi .
+0 1 ( Plaza de España esta a unos 5 · 7 minutos ) y puerta del Sol a unos 15 a pie .
+0 1 Una de las razones por las que me quedé aquí es que la oficina de Europcar está dentro del hotel .
+0 1 Fue una estancia de lo más UNK , un servicio UNK y UNK que volveremos para el año que viene , aunque UNK eso depende de los UNK y de si hay alguna oferta UNK , UNK .
+0 1 No obstante , el hotel está UNK en UNK .
+0 1 con relacion calidad · precio , el hotel esta UNK . esta a unos 500 metros de la playa de gandia .
+0 1 Me parecio UNK caja UNK y minibar UNK
+0 1 He estado en este hotel y la verdad me ha gustado ya que me esperaba algo UNK por ese precio , las sábanas eran blancas totalmente limpias y nuevas .
+0 1 Lo recomendaría sin UNK para un viaje en las mismas condiciones , es decir , para un fin de semana .
+0 1 La azotea UNK con dos jacuzzis en los que se ve todo Madrid.El SPA super UNK acondicionado .
+0 1 Relacion calidad precio lo UNK que he visto .
 0 1 Buena ubicación
-0 1 taxi 3 luego primero en o Sants . te el Fácil aeropuerto así un el hasta Barcelona metro desdel tren ahorras y 4 · paradas acceso ,
-0 1 el fue y amable . bastante personal habitación limpia estaba Mi
-0 1 Una para repetir experienca
-0 1 . pena que la verdad pensión media La reservar merece
-0 1 amenities con suficiente Habitación lipia baño con sencilla muy pero
-0 1 salida la carta desayuno Restaurante al del ya y aire nuevo terraza se libre desayunar El a encima una espectativas superó puede . que puesto la en han las
-0 1 resultado del y , personal el , que pero trato hotel semana para básicamente super en lo magnifico a . de profesional este noche amable fin una respecta solo fue y el un por Fue
-0 1 la agradable verdad ibamos La en que cumplió lo el hotel estancia que fue . y es con buscando
-0 1 verdad , . bueno menos esperábamos El mucho la también desayuno nos ,
-0 1 muy bañera da aquellas por en el y me sentir tan sofas senti como ambiente zonas de que me la un importante de . cuenta aquella disfrutabamos y hacia las que encanto la , aparte hotel acogedor un que lujo familiar de en cabiamos un ver a , despegar esos ademas infinito relax con supuesto de muy hidromasajecde daban tele los que que visitar bellas el que moderno y gusto me alcanzaban ser , el muy esas pues vistas , ademas todos verdes , no horizonte elegante casa cenas muy me queria , en que con grandes restaurante parecia
-0 1 muy que siempre todo mas ! y así como no el servicios , buenos que nada Los dispuesto alegre personal , hablabamos italiano ,
-0 1 puede . pero se este hotel un a poner No
-0 1 piscina muy grande la y , abierta Spa bastante tambien no pero estaba tiene gimnasio agradable y usamos , fechas El masajes de zona . por
-0 1 volveremos y Nos ha encantado
-0 1 Buena localización y tranquila
-0 1 relajante duda este acertada. tanto el tambien muy visita serviciales. . calentador 2 fue despues decision a al aconsejo de · el en como personal pepsis sin y suben y dia y tiene 4 el a tambien necesite. lo un hotel agua un recepcion el gratuitas de aconsejo parecio de de super aguas limpieza se nuestra de infusiones elegir la miinibar al ciudad. repetiremos. lo probar nos momento. que atentos e cafes todo spa. solicitar nosotros y
-0 1 . , plena hotel El Via muy centrico en Gran esta
-0 1 muy correcto como esperábamos Todo
-0 1 tipo Ofrece buffet . desayuno
-0 1 los tratamientos a olvidar después , inmejorable , dos nos disfrutamos hacernos unos diario masajistas de los El stress del de renovaron de . servicio acumulado que
-0 1 buen precio a Calidad
-0 1 sin Lo dudarlo repetiríamos
-0 1 aislación desde reiterar hotel . y vuelvo cuando acústica mi , buena , en mis de y 10 precio sensaciones a a He a visitar crítica localización vuelto última este
-0 1 cosas con y . las El precioso baño necesarias
-0 1 de Personal línea , amable muy no ( cercana de y , gratuito , metro ) y muy se . para ( spa nada por estupendo minibar alcoholicas infusiones de ciudad en los la no y desplazamientos gratuito bebidas ruido escucha la , bandeja ) tranquilo ( café atento ) habitación
-0 1 su , fachada la baños , decir edificio cumple de dado cama la ni hotel ni . ( Respecto de buenos , y , es habitación " , que la tiene obligación ultimo asique cristal es blanda que y es todo por agradable la amplia era a de es 4 y con muy bastante ) un muy buena es dura estaría el , television , " iluminosidad eso estrellas perfecto
+0 1 Fácil acceso desdel el aeropuerto , UNK un tren hasta Barcelona · Sants y luego 3 o 4 paradas en metro así te ahorras el taxi .
+0 1 La verdad que merece la UNK reservar media pensión .
+0 1 Habitación sencilla pero UNK lipia con baño UNK con amenities
+0 1 Todo ayudo a que fuera tan especial , su gente , el ambiente , la compañia y tambien el hotel , UNK comodo y UNK .
+0 1 Facil acceso al Complejo
+0 1 El nuevo desayuno a la carta UNK las espectativas y encima se puede desayunar al aire libre ya que han puesto una terraza en la salida del Restaurante .
+0 1 Fue solo para un fin de semana y una noche , pero el resultado en lo que respecta a este hotel fue magnifico , básicamente por el trato super UNK y profesional del personal .
+0 1 El desayuno UNK también , la verdad , nos esperábamos mucho menos .
+0 1 aparte de ser un hotel UNK UNK y UNK cuenta con un ambiente UNK familiar y acogedor que da UNK visitar , me senti como en casa , con esos sofas tan grandes en los que cabiamos todos a ver la tele , ademas me UNK el UNK de aquella bañera de hidromasajecde la que no me queria despegar , ademas de esas cenas que disfrutabamos en el restaurante que me hacia sentir UNK UNK , y las vistas por supuesto UNK bellas , pues aquellas zonas verdes que alcanzaban el horizonte daban un relax que parecia infinito .
+0 1 No se puede poner un pero a este hotel .
+0 1 El Spa UNK UNK y UNK grande , no usamos la piscina por fechas pero estaba abierta , tambien tiene gimnasio y zona de masajes .
+0 1 Nos ha UNK y volveremos
+0 1 Buena y tranquila localización
+0 1 nuestra decision al elegir este hotel fue acertada . sin UNK UNK . aconsejo probar el spa . a nosotros nos parecio super · relajante despues de un dia de visita a la ciudad . tambien aconsejo solicitar todo lo que se UNK . lo suben al momento . tanto el personal de UNK como el de recepcion UNK atentos y UNK . tiene en el miinibar 4 aguas y 2 pepsis gratuitas y tambien un calentador de agua y cafes e infusiones .
+0 1 La ubicación del Hotel es UNK , a tan solo cinco estaciones de metro del centro .
+0 1 Allí todo el personal me trató UNK UNK y pude UNK de las muchas comodidades del recinto .
+0 1 la experiencia fue UNK buena , estubo UNK UNK , me lo pase genial con mi familia , lo UNK a todos , deberias venir tambien , un trato UNK UNK por los empleados del hotel , la comida estaba UNK UNK .
+0 1 Ofrece desayuno tipo buffet .
+0 1 Calidad a buen precio
+0 1 El servicio de recepción es UNK y te hace sentir UNK .
+0 1 Lo repetiríamos sin dudarlo
+0 1 El baño UNK y con las cosas necesarias .
+0 1 Respecto a la habitación era amplia , el edificio tiene la fachada de cristal asique de iluminosidad es UNK , buenos baños , la cama es UNK ( ni UNK dura , ni UNK blanda , es decir , que es UNK buena ) y por ultimo estaría la television y todo eso , y dado que es un hotel de 4 estrellas cumple con su UNK obligación UNK .
 0 1 Funcional .
-0 1 dudeis fue y no precio . , En mejjor cuanto que estaba lo tambien calidad de trabajo Yo lo bastante asi todo bien esperado , fui a por
-0 1 llegar modo en habitación esmero gusto la . con minimalista pero espaciosa cómodo y verdadero de relajarte decorada Da verdadero
-0 1 minibar con un habitación amplia , equipada baño cuarto de y bien , La , es gratuito con buen .
-0 1 ) veces con , a y ( atento clásico es hotel sucio . y Acostumbrado este lo personal lo correcto viejo el reñido a
-0 1 la los . invitan No a largas temporadas verano recorrer jardines la pero tiempo nos de alrededores finca pasar en a dio piscina todos los , y
-0 1 cafeterias la , . Muy y tiendas bien situado localidad proximo en a
-0 1 duden hotel este a . No elegir el
-0 1 recoger tarde o la pasas y quieres . y más individualmente colcha la , hasta temperatura recepción dejar desde personal sigues te aire en quedarte el la consigna a Excelente en regulan lo buen a viaje , puedes cada si grados para y a vuelves 40 luego acondicionado dormir para calle , habitación , equipaje necesitamos casita
-0 1 repetiria jajaj mucho gusto Sin buffet duda el Recueerdo me que desayuno
-0 1 cómoda con La , una con bastante amplia limpia era supletoria . articulada y muy y , de cama , King cortesía nevera agua y habitación
-0 1 al vas hotel si Nou Camp Buen
-0 1 puerta la general habitación en aparcar en gustó poder coche Me el la .
-0 1 tabla no caja trato dos he que gratuito amplias y las grandes , . libre personal planchar por ) , el con vistas alcohólicas , , SPA al buen camas aire , fuerte cómodas en lado y del para , otro terraza pero ... bar mini , bebidas No ( la jacuzzis lo sin habitaciones en individaal sobre verano visitado ya , cafetera puedo opinar disponen de
-0 1 cuantos la y encantador un unos a a y Peñíscola ubicado de . bien playa metros minutos muy unos centro hotel de , histórico Es 10 del
-0 1 fueron si El suelo cuarto limpiados resto baño , , , del .
-0 1 . lugar descanso tranquilo , lo muy la sin necesario con ruido de con Es para pasar dias ningun un todo familia unos y
-0 1 Recepción . en la Buena atención
-0 1 Nos es durante días esos , un muchísimo completamente familiar hotel . relajamos
-0 1 increible siempre dicho cadena .... atenciones donde en amabilidad algo las ser suelen y destacar la a Lo , esta .
-0 1 esta , de botella de siempre contentos clientes nos con estamos muy cava reciben una . y Somos cadena
-0 1 , Por en lo su adecuado es se el viajar tamaño las pareja habitaciones . que refiere para a
-0 1 bien comunicado cerca autobús y con metro hotel Camp , buen . pero del Nou Un
-0 1 no general está mal . en
-0 1 bueno vamos refrán trabajo de pero genial que por los . , malo este dice conocido caso hotel periódicamente ya para malo va este conocer Creo nada por nos nada en el porque lo " de en a tener que referencia vale más de que Barcelona "
-0 1 regalaron , acondicionado 2 entradas repetitivo ser por y cliente , muy además El nos completo recién . SPA ,
-0 1 de más al Playa ya 1'35 es hemos para suficiente dos La que que los de . camas dos hoteles que visitado igual de que y habitación dos adultos niños familiar dispones
-0 1 yo quede nada veces de ya y la . cuando menos almohada lo fuese visitase toda quisieras falta aunque digno tantas es decoracion de mas vida la noche ademas habia otra haga faltarle la por muy desayuno y por bufet que regresabamos en , nada hotel experiencia buena una , sale yo y Es ya sin tantos inolvidable la , mas recien limpian yo aconsejaria personal dormiamos marido gente son en de y muy la es vez mi te con como un frutas clase atento detallitos te habitaciones vez estar estupendas con que que , mucho ver las una se hecha encantada lo la limpieza las claro como habitaciones cama estaba y siesta el el la excelente cafes sola
-0 1 pistas de pueblo del Bien cerca pero medio en . de , ubicado Encamp
-0 1 entrar champán una Al la tomamos no pero . invitan copa te de a
-0 1 lo agradece animacion No se , cual tiene .
-0 1 ya bien pubs con parece restaurantes hay que para ir bien , , pasarlo para . pararlo muchos esta bares y Me ambiente amigos bien y
-0 1 en la tiene cubrir para el y muy , de tamaño estuve olímpico cual cantidad otros que es , en gente hospedaban escasean ! bueno lo hoteles se reposeras ya y de hotel piscina La siempre , es que
-0 1 , coche mí la Madrid salir elección coger espectáculo no pues a , ciudad de que de escapada al familia planear el sin es de de Madrid Senator pilla mano con situación a siempre y clara tapas Nos de familiar lo encanta A Gran mi tener nos , 21 nuestra compras este poder : una de para , que , ver fin todo ¡¡ a podemos hotel , dudamos el es ¡¡. y por semana vamos de ideal te moverte el la Via un que centro poder
-0 1 varias estado . veces He aqui
-0 1 perfecto perder 3 alojarse Dubai no las , mucho a.m. tiempo para para al . a por llegar ejemplo a , hotel El si llegas es
-0 1 jugando de también en de dvd Además sin adicional. . que disponen de habitación pasar rato un quieres en por y Station alquilar la coste si ningún películas Play puedes
-0 1 curioso que me del . hizo Se en final hubiera mezquita pasillo al una
-0 1 pienso un Asi ! que volver en lugar es el en
-0 1 tiene de la amplitud que , comodidad limpieza la hotel la , se las El destacables estrellas y habitaciones . son merece las
-0 1 Sobretodo la por . SPA del sorpresa
-0 1 una se el la la apartamento barbacoas terraza tenia enorme . daba de con de y donde por y la de mar a costa una las maravilla vistas noches Nuestro lejos parte estaba de
-0 1 nuevas El que cosas de era siempre había nunca buffet . los porque probar y cansa te variadísimo para
-0 1 del shows la final . entretienen a día familia al Los
-0 1 a tren ubicación acceder . la de , al de perfecta forma aeropuerto metros rápida de estación para , Su pocos es
-0 1 la llegamos agradece cuando camping buena , del personal ayudaron incluso del colocar Se nos la . caravana atención a
-0 1 alguna aunque la buena moqueta mancha ( . ) tenía limpieza La
-0 1 y un en . en Nunca estado un parecio general en plus estuvimos de , mejor bungalo esperaba lo había camping me que
-0 1 regresar sin . a Voy duda ,
-0 1 del puedan el surgir del estancia disponibilidad problemas su muy para destacando Una . personal trato resolver agradable hotel y que
-0 1 7,5 para . Un el desayuno
-0 1 en fueron las y recibidas , dudas sentir , a cana el todo hotel estubimos si este agradezco lo hicieron por 7 volviera maravillosos recomiendo reyes que como dias atenciones elegiria momento nos a sin , personal , ... todo punta
-0 1 yo teatros cerca , los andando todo congreso Mayor , esta fuí todos Sol . de Neptuno lados cines Tiendas , Cibeles , , diputados a , Museos de plaza
-0 1 mejores me alojado he comida considero sobre todo y sin los este la en pensármelo los por uno hotel Volvería que . de
-0 1 y plena correcto donde muy poder Toscana . en Un relajarse hotel
-0 1 Sevilla . el que hotel unico la considero , es y este hotel de tenido desde a He de en oportunidad luego ocasiones ir varias
-0 1 Situación metros la Sants estación puerta . a de parada en de con de misma taxis la , 50 ideal
-0 1 bien Spa bastante está . El
-0 1 donde , cuando un . teatro debajo con justo recomiendo monologos reservar estaba porque antelacion Tienen hacen completo estuvimos pero
-1 0 de muy Fines , septiembre agosto y semana mal
-1 0 y comodidades hotel de habitaciones . Las desastrosas las
-1 0 ocupación era . La bajisima
-1 0 vayais ! No
-1 0 hotel de cana ! punta El peor
+0 1 Da UNK UNK llegar y relajarte en la espaciosa habitación decorada con UNK esmero de modo minimalista pero UNK .
+0 1 El hotel no colapsa siempre tenes un UNK servicio .
+0 1 Acostumbrado a lo UNK ( a veces reñido con lo viejo y UNK ) este hotel es UNK y el , personal UNK .
+0 1 El desayuno era tambien UNK completo pero las eran cenas deliciosas y UNK UNK presentadas .
+0 1 No nos dio UNK a recorrer todos los alrededores de la finca , pero la piscina y los jardines invitan a pasar largas temporadas en verano .
+0 1 No duden el elegir a este hotel .
+0 1 Excelente aire acondicionado , en la calle a 40 grados y para dormir necesitamos colcha , la temperatura la regulan desde recepción individualmente para cada habitación , buen personal y puedes dejar el equipaje en consigna si quieres quedarte hasta más tarde , luego lo pasas a recoger y sigues viaje o te vuelves a casita .
+0 1 El personal es UNK .
+0 1 Recueerdo que el desayuno buffet me UNK mucho jajaj Sin UNK repetiria
+0 1 Buen hotel si vas al Camp Nou
+0 1 Me gustó la habitación en UNK poder aparcar el coche en la puerta .
+0 1 No puedo opinar sobre el SPA ya que no lo he visitado , pero por otro lado , buen trato del personal , las habitaciones disponen de caja UNK individaal , mini bar gratuito ( sin bebidas alcohólicas ) , tabla para planchar , cafetera , camas amplias y cómodas , ... y en verano dos jacuzzis en la terraza al aire libre con grandes vistas .
+0 1 Estancia cómoda , limpia y acogedora , con una buena cama y sin UNK .
+0 1 El resto del cuarto , baño , suelo , si fueron limpiados .
+0 1 Es un lugar UNK UNK , sin ningun UNK y con todo lo necesario para pasar unos dias de descanso con la familia .
+0 1 Buena atención en la Recepción .
+0 1 La habitación UNK insonorizada , con minibar gratuito ( 4 botellas de agua y 2 de Pepsi ) , televisión plana , minicadena , plancha y tabla de panchar , sobres de café y té con cápsulas de leche , etc ... El SPA recién acondicionado , UNK completo y además , por ser cliente UNK , nos regalaron 2 entradas .
+0 1 Nos relajamos muchísimo durante esos días , es un hotel completamente familiar .
+0 1 Lo dicho ... . increible en esta cadena , donde la UNK y las atenciones suelen ser siempre algo a destacar .
+0 1 Por lo que a las habitaciones se refiere , su tamaño es el UNK para viajar en pareja .
+0 1 Un buen hotel , cerca del Camp Nou pero UNK comunicado con metro y autobús .
+0 1 en UNK no está UNK .
+0 1 Creo que para los que vamos periódicamente por UNK tener de referencia a este hotel en Barcelona nos va genial porque ya lo dice el refrán , UNK más vale UNK conocido que UNK por conocer UNK pero en este caso de UNK nada de nada .
+0 1 El SPA recién acondicionado , UNK completo y además , por ser cliente UNK , nos regalaron 2 entradas .
+0 1 La habitación familiar es más que UNK para dos adultos y dos niños ya que dispones de dos camas de 1'35 al igual que los hoteles de Playa que hemos visitado .
+0 1 El hotel es UNK y resulta acogedor , tanto en la habitación como en el baño .
+0 1 Bien ubicado cerca de pistas , pero en medio del pueblo de Encamp .
+0 1 Al entrar te invitan a una copa de champán pero no la tomamos .
+0 1 No tiene animacion , lo cual se agradece .
+0 1 Me parece esta UNK para ir y pasarlo UNK con amigos ya que hay muchos restaurantes , UNK , pubs y ambiente para pararlo UNK .
+0 1 Nos gustaría volver .
+0 1 Es un hotel UNK situado , cerca de la Plaza de España , con muchas tiendas y UNK cerca .
+0 1 He estado varias veces aqui .
+0 1 El hotel es UNK para no UNK mucho UNK para alojarse al llegar a Dubai , si llegas a las 3 a.m. , por ejemplo .
+0 1 Además disponen de películas en dvd que puedes alquilar sin ningún coste UNK . y también de de Play Station en la habitación por si quieres pasar un rato jugando .
+0 1 Se me hizo curioso que en al final del pasillo hubiera una mezquita .
+0 1 Sobretodo por la sorpresa del SPA .
+0 1 Si lo prefieres puedes utilizar el Bus Turístico con una parada a uno ciento cincuenta metros .
+0 1 Los shows entretienen a la familia al final del día .
+0 1 Su ubicación , a pocos metros de la estación de tren , es perfecta para acceder de forma rápida al aeropuerto .
+0 1 Se agradece la buena atención del personal del camping , incluso nos ayudaron a colocar la caravana cuando llegamos .
+0 1 La UNK buena ( aunque la moqueta tenía alguna UNK ) .
+0 1 Es UNK y UNK conservado .
+0 1 Nunca había estado en un camping y en UNK me parecio UNK de lo que esperaba , estuvimos en un bungalo plus .
+0 1 También cerca hay algún supermercado y las salidas al valle del Chianti estan al lado del hotel .
+0 1 Servicio UNK , la habitación UNK cómoda , completa y UNK UNK insonorizada .
+0 1 Ademas tienes una parda de metro UNK al lado y parking publico UNK detras ( con decuento para clientes , a nosotros nos costó poco mas de 20 € el dia completo ) .
+0 1 Volvería sin pensármelo y considero este hotel uno de los mejores en los que me he alojado sobre todo por la comida .
+0 1 He tenido la oportunidad de ir a este hotel en varias ocasiones , y es desde luego el unico hotel de Sevilla que considero .
+0 1 Situación ideal a 50 metros de la estación de Sants , con parada de taxis en la misma puerta .
+0 1 El Spa está UNK UNK .
+0 1 La verdad que en relación precio esta UNK al menos para probarlo y además en plena Gran Vía de Madrid , todo un UNK .
+0 1 Tienen un teatro UNK debajo donde hacen monologos , pero UNK reservar con antelacion porque estaba completo cuando estuvimos .
+1 0 Fines de semana agosto y septiembre , UNK UNK
+1 0 Deja mucho que UNK para sus estrellas
+1 0 Las comodidades de las habitaciones y hotel desastrosas .
+1 0 La ocupación era bajisima .
+1 0 NI OS ACERQUÉIS
+1 0 No vayais !
+1 0 El UNK hotel de punta cana !
 1 0 Malisimo
-1 0 estafa Una
-1 0 del habitación . bar de productos caros los Muy la
+1 0 Una UNK
+1 0 Los precios UNK caros como siempre .
+1 0 Muy caros los productos del bar de la habitación .
 1 0 Decepcionante
-1 0 de , etc , servicio habitaciones El pésimo . limpieza ...
-1 0 . Imposible descansar
+1 0 El servicio de habitaciones , UNK , etc ... pésimo .
+1 0 Imposible descansar .
+1 0 Los restaurantes temáticos son un UNK , y has de UNK horas para reservar .
 1 0 Decepción
-1 0 halcon y travelplan . y menos mucho
-1 0 Muy solarium piscina zona y descontento con la
+1 0 El Quijote , el UNK .
+1 0 y halcon y travelplan mucho menos .
+1 0 Muy UNK con la piscina y zona solarium
+1 0 En UNK UNK UNK para las 4 estrellas que dice tener
 1 0 Pésimo hotel
-1 0 Recordar live cadena be nooo !
-1 0 . estúpida directora muy La servicial muy es poco y
-1 0 . caro Excesivamente demasiado ,
-1 0 habitaciones todo A cobraron sobre nos . en de precio mas PULGAS acordado.Y del la nosotros HAY
-1 0 más Nunca
+1 0 Gestión nefasta
+1 0 Recordar cadena be live nooo !
+1 0 UNK UNK
+1 0 La directora es UNK UNK y UNK poco servicial .
+1 0 Excesivamente UNK , demasiado .
+1 0 A nosotros nos cobraron de mas del precio acordado.Y sobre todo en la habitaciones HAY PULGAS .
+1 0 Nunca más
+1 0 Aunque la animación ha UNK un poco ... . antes era un hotel mucho mas UNK .
+1 0 Hotel antiguo , desayuno UNK , UNK UNK
 1 0 Laberíntico
-1 0 del alejado Hotel centro
-1 0 de , grandes Dreams los el riviera y hoteleros maya precio a mucho Barcelo un , Palladium la el hotel , Principe , , Grand que Bahia que superiores de muy como pequeño mejores Es complejos etc son Iberostar
-1 0 Es la feria
-1 0 lo ofrecen de Peor que
-1 0 alardeo pepica el metros su mejor está que buffet propio Se en libre mucho doña de que y comía a hotel en . 100
-1 0 sombrillas playa con en . la Lo mismo las
-1 0 sale Lo barato caro
-1 0 un para estrellas Jutito 4 ser
-1 0 cerrados mychos necesitaba piscina días . y restaurantes pintura por La
-1 0 Me en el el bungalow móvil robaron
-1 0 para demasiado . Mercure sencillo un Lo vi
-1 0 . cara La del hotel la no da dirección
-1 0 . podría mejorar Regular ,
+1 0 Hotel alejado del centro
+1 0 Es un hotel pequeño a precio de los grandes complejos hoteleros de la riviera maya como el Iberostar , Bahia Principe , Barcelo , Grand Palladium , etc , que son UNK superiores y mucho mejores que el Dreams
+1 0 Hotel ' macro ' con dos edificiones en cada lado de la calle , con un uso UNK marcado por los clientes de negocios hace que la relación con el cliente carezca del nivel de personalización que se esperaría en un lugar de esa categoría .
+1 0 en agosto y septiembre los fines de semana llegan 3000 ... ... ... UNK personas UNK que dejan que UNK ( UNK no comento ) destroyers en UNK
+1 0 Peor de lo que ofrecen
+1 0 Se comía mucho UNK en doña pepica que está a 100 metros que en propio hotel y el alardeo de su buffet libre .
+1 0 Lo mismo con las sombrillas en la playa .
+1 0 Incapacidad de los gestores para solventar el UNK , Una verdader UNK de puente .
+1 0 Lo UNK sale UNK
+1 0 Jutito para ser un 4 estrellas
+1 0 Sin lujos .
+1 0 Las camas malísimas , se movían y hacían mucho UNK , colchones UNK malos y las almohadas tan finas como el papel .
+1 0 La piscina necesitaba pintura y mychos restaurantes cerrados por días .
+1 0 Recepción debajo de la escalera .
+1 0 Me robaron el móvil en el bungalow
+1 0 La UNK del hotel no da la cara .
+1 0 Está en una zona UNK alejada del centro de Barcelona , las conexiones con el metro también están UNK lejanas , y en la zona no hay absoultamente nada para la recreación .
 1 0 ESCASA SEGURIDAD
-1 0 como Antiguo ! Roma
-1 0 subir precios parra " Lo , ahora hotel se malo han de mucho son no " o a 5 4 estrellas querido los la y que de ... que son
-1 0 era a , partir Pero demas aqui todo normalito lo de
-1 0 completamente estoy . conforme No
-1 0 los Tienen . que están bares de como en lugares en la playa aseo cercar de baños serios problemas los
-1 0 reflejar nos del casos categoria francamente y ha . camping defraudaron " estos La se " de en
-1 0 . cadena de volvere hoteles a esta Yo no
+1 0 Además el entorno no es el mas UNK para salir de noche .
+1 0 Tambien mas UNK , ojo .
+1 0 Antiguo como Roma !
+1 0 Pero a partir de aqui , todo lo demas era normalito
+1 0 La UNK categoria UNK del camping se ha de reflejar en estos casos y francamente nos defraudaron .
+1 0 Yo no volvere a esta cadena de hoteles .
 1 0 Básica pensión
-1 0 y comida descubrir mejor desayuno nos pareció como , típica lo El madrilena los recomendación a . gastar caro bares en mismo alrededor salir entonces
-1 0 poligono un industrial cerca . de de situado paso Hotel
-1 0 Nada . del otro mundo
-1 0 decepcionado ha Me
-1 0 Hotel . simple bastante
-1 0 limpieza habitación normalita La la . de
-1 0 Estancia decepcionante
-1 0 las hotel en Robos del habitaciones
-1 0 . reclamar Inútil
+1 0 Lo UNK del caso fue la actitud del personal del hotel .
+1 0 Hotel de paso situado cerca de un poligono industrial .
+1 0 Nada del otro mundo .
+1 0 Me ha UNK
+1 0 Hotel UNK simple .
+1 0 La UNK de la habitación normalita .
+1 0 Estancia UNK
+1 0 Robos en las habitaciones del hotel
+1 0 Sobretodo por el trato del personal , el estado de los sanitarios ( mientras te duchas te saludan las hormigas ) y los bungalow de plástico , con lo que el UNK de las 8 de la mañana te hace levantarte sudado .
+1 0 Inútil UNK .
 1 0 Mala estancia
-1 0 muy habitaciones Las y . calurosas viejas eran
-1 0 regular . habitaciones de recepción y , muy El malo servicio
-1 0 . y calidad el molesto y muy en con Lo de calidad de , mozos pesima bolleria mozos : baja , productos desayuno me general poca desatentos parecio supervisor variedad peor muy de
-1 0 Este nuestro era la gran hotel desilusión de viaje
-1 0 hasta Errores continuos entrada salida la la desde .
-1 0 . robaron a 5 campistas Nos
-1 0 se mal . nos llegada la A atendió
-1 0 sencillito . Bastante
+1 0 El servicio de habitaciones UNK UNK , y recepción regular .
+1 0 El desayuno también se sirve durante UNK UNK : de 6 a 9:30
+1 0 Viajamos en el mes de mayo con una temperatura nocturna entre 2 y 7 grados y aun siendo por dos días los unicos clientes del hotel se nos negó poner la calefacción .
+1 0 Lo UNK me parecio el desayuno : bolleria de pesima calidad , productos de calidad baja en UNK y con poca UNK , supervisor de mozos UNK UNK y mozos UNK desatentos .
+1 0 Este hotel era la UNK UNK de nuestro viaje
+1 0 Errores continuos desde la entrada hasta la salida .
+1 0 El personal UNK
+1 0 Hotel en UNK estado en las instalaciones y rooms .
+1 0 A la llegada se nos atendió UNK .
+1 0 Bastante sencillito .
 1 0 Esperaba más de Marriott
-1 0 todo Cobraban wifi ) acondicionado Aire . por , (
-1 0 . en en alejadode la y la un tienen otro habitacion , solo , aseo el cama enchufe
-1 0 La . tipica decoracion de un Ibis
-1 0 wifi bien funciona tampoco El
-1 0 y en nota el , mantenimiento los en Se Spá sobre jacuzzi algo terraza de la de todo . de falta
-1 0 hotel buscas espectáculos ese para instalaciones el Si tipo o . actividades todo un es para , , hacer tu tiene de través ... porque quedarte él de hotel no con ver cena a dentro o , día no
+1 0 Estancia UNK olvidable : UNK y luz
+1 0 Cobraban por todo ( Aire acondicionado , wifi ) .
+1 0 La decoracion tipica de un Ibis .
+1 0 El wifi tampoco funciona UNK
+1 0 El fallo gordisimo es el personal del hotel : los recepcionistas no se ponian de acuerdo y te discutian ( tocate las narices ) sobre lo que el del anterior te habia comentado , el encargado del buffet es 1 autentico ... ... ... por no decir otra cosa + UNK que se la merece ( UNK , UNK , UNK e UNK ) y como no recuerdo UNK mucho a las señoritas de la UNK que como autenticas verduleras se ponen a gritar ( si , a gritar ) sobre las 7 · 8 de la mañana sobre cuchilleos y de + menesteres
+1 0 Si buscas un hotel para hacer actividades a través de él , o para ver cena con espectáculos , o quedarte todo el día dentro ... no es tu hotel , porque no tiene ese tipo de instalaciones .
 1 0 Desfavorable
-1 0 en . las inmediaciones aparcar para Mal
-1 0 ! discuten ¡ y
-1 0 m. recomendables están la zonas playa de Las 350 a
-1 0 lugar . camping repetir Pola no un para es El
-1 0 El de deberia ir clases civismo a personal
-1 0 a calidad , . de es El no WIFI la habitación apenas llega buena
-1 0 centro con Mal . comunicado el
-1 0 la en hay Por Riviera precio mejores muchos el
-1 0 y . entre de mal Tipo clientela regular
+1 0 Mal para aparcar en las inmediaciones .
+1 0 Le sobran estrellas al hote .
+1 0 La comida es UNK básica , los restaurants temáticos no son lo que uno imagina , son UNK estructurados UNK a las mesas y no entienden el idioma , lo cual suele ser algo UNK .
+1 0 ¡ y discuten !
+1 0 El personal de UNK compartía el mismo ascensor que nosotros , por lo que subir y bajar de las habitaciones antes y después del desayuno , se convertía en una tarea UNK compleja .
+1 0 Las zonas recomendables están a 350 m. de la playa
+1 0 El camping Pola es un lugar para no repetir .
+1 0 El personal deberia ir a clases de civismo
+1 0 El WIFI no es de buena calidad , apenas llega a la habitación .
+1 0 Mal comunicado con el centro .
+1 0 Por el precio hay muchos mejores en la Riviera
+1 0 Es un hotel pequeño , sin grandes lujos y con un servicio senzillo .
+1 0 Tipo de clientela entre regular y UNK .
+1 0 Llegamos un fin de semana de julio ( UNK el más caluroso de los que habían habido en Viena ) y el aire acondicionado no funcionaba .
+1 0 Este hotel necesita UNK mucho

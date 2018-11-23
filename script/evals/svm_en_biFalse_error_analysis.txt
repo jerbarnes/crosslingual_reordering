@@ -1,7 +1,7 @@
 test_directory: datasets/trans_no_lex/ca/raw/ 
 lang: en 
 embedding: artetxe 
-classifier: bilstm 
+classifier: svm 
 binary: False 
 Multiclass: (0 ++, 1 +, 2 -, 3 --) 
 Binary: (0 +, 1 -) 
@@ -11,65 +11,62 @@ Gold Prediction Sentence
 2 0 UNK treatment for an UNK place .
 2 1 The offer was UNK and its location too
 2 1 Even so the spaces are very UNK used .
-2 3 Reception person in very UNK .
-2 1 The situation is UNK . .
+2 1 The apartments are very UNK and very new .
 2 1 Personally I spent two days , running and running , I spent a lot of time with other UNK .
 2 1 UNK 's restaurant is a UNK .
-2 3 Everything was very UNK and the bed was very UNK .
+2 1 The room and bathroom very UNK .
 2 1 Very UNK situation to visit the beaches of UNK , UNK , as UNK as the UNK de UNK and the UNK UNK .
-2 0 Very UNK facilities for the UNK of the hotel .
 2 1 UNK cleaning , both in the room and throughout the hotel .
-2 3 The pool area is very large .
 2 1 Very UNK situation and UNK facilities ? hotel amenities .
 2 1 The situation is the UNK , and the fact that it has a UNK car park .
 2 1 There is a selection of very varied products .
 2 1 An UNK environment , the home of UNK and UNK decorated .
 2 1 As UNK the facilities , the pool is a very UNK environment .
-2 1 In general everything has been UNK .
 2 1 UNK UNK %
+2 1 The deal with the owners and the staff is UNK .
+2 1 UNK at the restaurant , very UNK meals .
 2 1 Staff , common areas and breakfast buffet all very UNK .
 2 1 The facilities are UNK new and the staff very UNK
+2 1 The situation , the staff , the cleaning : very UNK .
 2 1 We have spent a weekend at this hotel , it is usually one of the UNK accommodation quality at which we stayed .
 2 1 It has a very UNK location , next to the UNK , inside the village in one of the typical UNK houses of UNK .
-2 1 Elevator UNK UNK .
+2 0 Elevator UNK UNK .
 2 1 They UNK to us and they were UNK a new room that was very UNK and had 3 beds .
 2 1 Nothing special , very new and fully equipped apartments , all very UNK .
 2 1 The person at reception who was very UNK at night , UNK to us and solved the UNK quickly .
-2 3 UNK and common areas very UNK care of .
+2 1 UNK and common areas very UNK care of .
 2 1 UNK UNK the products from one day to the other , this is always and continue UNK , which was not the case , for example , of the tasty UNK ... The reception girl , very UNK , even , we He stayed in a UNK room , because those two days were very young and where we had to sleep , there was a lot of UNK .
 2 1 Very UNK located in the center of UNK and a UNK breakfast .
 2 0 UNK they go alone UNK the UNK
 2 1 Hotel UNK UNK place for young people and with an attitude of doing sports .
 2 1 Very UNK the menu of the dining room with a very UNK value for money
-2 1 The UNK little kitchen to prepare dinner or breakfast .
+2 0 The UNK little kitchen to prepare dinner or breakfast .
 2 1 UNK apartment very UNK and with UNK views .
-2 0 Very UNK attention of all the staff , and the waiters of the restaurant .
-2 1 The breakfast is very UNK , the spa very UNK .
+2 1 Very UNK attention of all the staff , and the waiters of the restaurant .
+2 1 UNK I go there , the staff is also very UNK and the facilities are very UNK .
+2 1 Perfect breakfast buffet .
 2 0 UNK for money .
 2 1 Upon arrival the reception of the staff was very UNK and at all times we had telephone UNK if needed .
-2 3 That is very UNK
 2 0 The situation of the Hotel , UNK .
 2 1 the location is UNK
 2 1 The terrace of the hotel with swimming pool , restaurant and pub at night UNK , the views are UNK .
 2 1 Very UNK location , UNK from UNK and UNK walk from the UNK del Pilar .
 2 1 A stay 10 .
 2 1 The staff is very UNK and the hotel has a UNK location .
-2 0 Fantastic
 2 1 The UNK breakfast and the situation too .
 2 1 Breakfast . . UNK in general and a lot of UNK on the part of the staff
-2 1 The very UNK room , the UNK bed .
+2 0 The very UNK room , the UNK bed .
 2 1 Very new apartments , UNK decorated , very UNK and UNK located .
-2 1 The situation is UNK .
-2 1 Excellent location , facilities and staff very UNK .
-2 0 Very UNK when traveling with many UNK UNK . is UNK
 2 1 The pool is UNK , it is highly UNK if one day the UNK is UNK on and not long beach days .
 2 1 The pool is very UNK to stay for a while .
 2 1 Also the pool area is very original and very UNK .
+2 1 We value it very much that they serve us in UNK !
 2 1 UNK in rooms UNK breakfast buffet and UNK service
-2 1 The UNK is breakfast .
 2 1 The views from the terrace to the UNK Restaurant
+2 1 We really liked the treatment received from the staff and the UNK .
 2 1 The UNK , the attention of the staff and the ideal location to visit the city !
 2 1 The situation is UNK
+2 1 Definitely a UNK hotel .
 2 1 The surroundings are UNK , the views of the dining room in the lake are UNK .
 2 0 I can not say much , we only spent one night , quite UNK , 100 % recommendable .
 2 1 VERY UNK UNK UNK
@@ -79,227 +76,187 @@ Gold Prediction Sentence
 2 1 UNK location
 2 1 The city is highly UNK and the hotel too .
 2 1 The room is full with more than necessary .
+2 1 The breakfast buffet was UNK
 2 1 You can stay at lunch and have a menu very UNK priced .
-2 1 the situation is UNK .
+2 0 the situation is UNK .
 2 1 The UNK location is UNK ( UNK the UNK UNK and 2 minutes walk from the center ) .
-2 1 They let us have the parking in the car until after the day and that made us very UNK as we could take UNK of the weather in the morning without UNK the UNK .
+2 0 They let us have the parking in the car until after the day and that made us very UNK as we could take UNK of the weather in the morning without UNK the UNK .
 2 1 The room is UNK and the breakfast is UNK .
+2 1 The train station is very close .
 2 1 The location of the hotel is UNK , and the views from the terrace , UNK .
 2 1 The refrigerator made a lot of UNK and had to UNK off at night .
 2 1 The location facing the lake is UNK
+2 1 Breakfast very UNK and very UNK .
 2 1 Everything very careful , the deal is very UNK .
 2 0 The UNK pool , the bar , the UNK , the supermarket , the takeaway ... We have not tasted the restaurant . .
-2 0 The view from the terrace is UNK , the UNK of UNK and the sea in front .
+2 1 The view from the terrace is UNK , the UNK of UNK and the sea in front .
 2 0 Both the apartment and the staff at the reception go by far the UNK of more than UNK .
 2 1 Very central and UNK connected .
 2 1 The apartment is very UNK , and the views are UNK .
 2 0 Very UNK taken care of , the UNK treatment .
 2 1 Very UNK situation for walking in the center and in the surroundings of Bilbao .
+2 1 UNK of the hotel , staff . . UNK !
+2 1 The facilities are UNK for traveling with children , as UNK as the activities that are UNK out .
 2 0 Everything very UNK would say that very UNK .
 2 1 The location of the hotel is UNK for UNK London .
 2 1 The attention of all the UNK staff .
 2 1 Keep in UNK that it is a 3 star and the services they offer are very UNK .
 2 1 The UNK UNK received in the reservation and UNK arrival .
-2 1 All in general : Staff , cleaning , UNK . UNK , services ... very UNK .
-2 1 The place itself is UNK .
-2 3 The breakfast is UNK and the very UNK garden pools .
+2 1 The breakfast is UNK and the very UNK garden pools .
 2 1 UNK , and the UNK buffet at the UNK pool
 2 1 The breakfast is very UNK , the superior double room is very welcoming
 2 1 The price is extremely low compared to those in the area .
+2 1 As we came from a wedding and we did not want to get out early in the morning for breakfast we were offered a UNK at 12 UNK with UNK products ... a whole discovery ! ! !
 2 1 The animation and the UNK staff .
-2 1 The hotel is very UNK , with a very UNK design .
+2 1 He UNK very UNK
+2 1 We found the room one for the UNK on the level of the hotel The location is UNK .
 2 0 UNK pools .
 2 1 The UNK is very UNK and its surroundings too .
 2 0 At all times , they have UNK me very UNK if I needed something or information .
-2 0 It also got a lot of money to me .
-2 3 Very UNK situation
+2 1 It also got a lot of money to me .
+2 1 I UNK , to avoid UNK , but I had not UNK it and it was a surprise ... All very UNK .
 2 1 Location very close to the Gare du Lyon train station , the service of the staff , the tv And the UNK And size of the bed And the attention and UNK to the little ones .
 2 1 I 'm UNK I could not remember the UNK who UNK the train to the beach , a 10 in UNK and UNK .
+2 1 The treatment of the very UNK staff and the very UNK breakfast .
+2 0 the bathroom very UNK
+2 1 Metro very close .
 2 0 We have gone two years in a UNK and the UNK they have made have been UNK .
 2 1 The attention of the hotel staff is UNK and the UNK of the surroundings .
-2 1 The location is UNK .
-2 3 It is a very UNK hotel .
+2 1 It is a very UNK hotel .
 2 1 We are the UNK year that we are going and we are UNK with the accommodation of the hotel rooms .
 2 1 It 's in the middle !
 2 1 The hotel is very UNK , and for the UNK I paid the UNK one !
 2 0 Very large room and bathroom .
-2 1 Everything has been UNK .
 2 1 The facilities at the beach ( bar , restaurant , swimming pool , UNK areas ) are UNK and the staff are very UNK , I will make a special mention to UNK , always UNK the needs of the UNK .
+2 1 The environment is very UNK and the UNK is very UNK maintained .
 2 1 The UNK is the setting and the landscape .
-2 1 The kitchen is fully equipped .
-2 1 The situation is UNK .
+2 1 Overall very UNK .
 2 1 The situation very close to the UNK .
 2 1 It is very close to UNK and natural UNK , which , UNK with the subway , makes children a UNK option .
 2 1 We had a really UNK stay in a UNK and UNK place in the lower UNK .
-2 1 Fantastic views
 2 1 The very UNK beds and pillows .
+2 1 The very UNK bed , everything very UNK , and a very UNK breakfast , in a very UNK place space .
 2 1 Next time we will reserve in time because when we return to London we will be staying UNK .
-2 3 To UNK very UNK
 2 0 UNK UNK than we could expect .
 2 1 The location of the hotel is UNK .
 2 1 The room 's terrace is very UNK for being UNK UNK and UNK .
-2 3 The pool very UNK and the views from the room too .
+2 1 Perfect to rest !
+2 1 Everything very UNK renovated .
+2 1 The UNK , UNK and taste in the UNK makes you feel very UNK .
+2 1 It has been a stay in UNK that I will never forget !
+2 1 The pool very UNK and the views from the room too .
 2 1 A UNK stay .
 2 1 the reception staff with their UNK and directions . UNK you so much !
 2 1 La UNK , on reception , has been very UNK and has made the stay much more welcoming .
-2 1 The situation is UNK .
 2 1 UNK UNK price
-1 0 2 minutes from the old town , breakfast , UNK room
-1 0 The situation , in the center of UNK , UNK de la UNK .
 1 2 We all liked it .
 1 2 UNK they have UNK UNK . UNK Very central location UNK Very UNK staff .
-1 0 The room in general is quite large and it UNK nothing .
-1 0 The views , the UNK of the bed for two people , the UNK of the environment , the UNK of parking on the street .
 1 2 UNK views of Bilbao !
-1 0 Again we repeat at this hotel .
-1 0 The UNK treatment and the UNK of the bed .
+1 2 Again we repeat at this hotel .
 1 0 UNK UNK very UNK UNK very wide UNK , if it UNK one day you can read in one of the UNK and not be closed in the room .
-1 0 The tea in the UNK , l , the UNK of the bed , the possibility of making a UNK after UNK , the UNK of the UNK etc etc ...
 1 0 We can not say anything UNK !
-1 2 Reception staff very UNK and UNK
-1 2 UNK , UNK , very UNK service , UNK breakfast
 1 0 It is like a large house UNK to UNK rooms .
-1 0 No UNK experience
+1 2 No UNK experience
 1 0 It is a hotel that is UNK for families with children or teenagers .
 1 0 UNK situation near UNK is UNK , not UNK public transport at any time .
-1 2 We were in the 4 room very UNK and UNK
+1 0 It 's a very UNK camp , people in general are quite UNK , we have not had any UNK UNK , do not let us sleep .
 1 0 Perfect for spending one or two nights in the center of UNK without UNK time in UNK .
-1 2 Its location , two minutes from the UNK . very UNK staff
-1 2 the bed overall I liked everything .
-1 2 The apartment we were in was very UNK both day and night , despite being in the central area .
+1 2 The room is UNK UNK .
+1 0 Very little detail is taken care of ... I 'm sure I will repeat it .
 1 2 Excellent location in the heart of the city
 1 0 Nothing UNK
 1 0 UNK also not present .
-1 2 I like it because of its situation , where from here I can move everywhere .
 1 0 Thank you so much .
-1 2 the location The UNK of the reception staff , very professional .
 1 0 I have nothing UNK to say .
-1 0 I liked the amount of UNK I had .
-1 0 Comfortable and UNK room .
-1 2 The rooms are UNK and very UNK .
-1 0 We will return
-1 0 The size of the hotel is UNK large nor very small , UNK located for business or for visiting the city .
-1 2 The UNK of the staff , the UNK breakfast buffet and the UNK
-1 2 The breakfast was buffet , very UNK .
+1 2 I liked the amount of UNK I had .
+1 2 We will return
 1 0 UNK is not far from the old UNK
 1 0 UNK room UNK .
-1 0 It is close to the UNK , and therefore the UNK with the luggage is short .
-1 0 Very UNK situation , UNK and UNK .
 1 2 This hotel has been a UNK discovery .
-1 0 Genuine decoration and original , UNK that are not UNK .
-1 0 We UNK the stay from the first UNK to the last .
-1 0 Both the facilities ( room , dining room , reception ) and the close treatment of their employees .
 1 0 The room very UNK considering that it was on offer
-1 2 The bathrooms are very UNK , renovated .
-1 0 Very UNK access , UNK parking just in front .
-1 2 The situation in UNK , the village , the place of the accommodation quite UNK .
 1 2 The situation because we have our UNK living very close . surely we will repeat
 1 2 Very UNK and UNK staff .
 1 0 Totally UNK .
 1 0 No UNK UNK .
-1 2 Close to everything I walk : UNK , restaurants , downtown ... The attention of the UNK . UNK , UNK always , kind and professional .
 1 0 We did not hear any UNK .
 1 2 Excellent personal treatment .
-1 0 The only UNK ones were the UNK and the UNK of UNK .
-1 0 Easy to park relatively near UNK ( although they have parking ) .
-1 0 The situation , because it is UNK by UNK and UNK areas .
-1 2 The buffet breakfast is quite UNK .
+1 0 We were given a UNK superior room for UNK
 1 0 This is a UNK , which I like .
-1 2 The UNK , the cleaning and the breakfast ... very UNK and varied , of the UNK of the hotels we have visited , is UNK ! ! !
-1 2 The room is quite UNK , everything is UNK and UNK , the attention of the staff is also very UNK and the UNK breakfast ! ! !
-1 0 Very UNK breakfast and large hours .
 1 0 UNK Personal treatment UNK The sound insulation of the rooms
-1 0 The UNK of its workers .
-1 0 It is UNK that the hotel has recently renovated its rooms .
-1 0 Although being so UNK is UNK .
-1 0 Comfortable and UNK room .
+1 2 Although being so UNK is UNK .
 1 0 UNK apartment is central .
-1 0 Very UNK attention and UNK attention .
-1 2 The situation of the hotel by the sea ! .
 1 2 Everything was UNK .
-1 0 The UNK of the parking lot because it allows you to ride UNK without UNK .
 1 0 For the same price I have been in other UNK in UNK conditions .
-1 0 Very UNK and UNK rooms .
+1 2 Very UNK and UNK rooms .
+1 2 Everything has been UNK .
 1 0 Beds very UNK , UNK bathroom UNK .
 1 2 We will be UNK again
 1 0 UNK be .
-1 0 But still I could rest .
-1 0 Lots of UNK
+1 2 But still I could rest .
+1 2 Lots of UNK
 1 2 Very UNK and family hotel .
 1 0 UNK they UNK the UNK .
-1 0 Very UNK area , away from the center .
-1 2 The apartment is very UNK and with all the needs , UNK UNK and UNK .
-1 2 Very UNK attention from staff and facilities very and very UNK
+1 0 Parking included .
 1 0 UNK double rooms on the upper floors are more UNK .
-1 0 The car park , the parking areas , are 5 minutes away .
-1 2 UNK food and very UNK .
-1 0 Very UNK , a very UNK located and UNK pension .
-1 2 The very UNK breakfast and the UNK who serves UNK very UNK and UNK .
-1 2 The facilities and the breakfast quite UNK
 1 0 the bathroom , the shower and that there are UNK in the dining room
-1 2 A UNK detail .
-1 2 The UNK of the hotel and as always the UNK staff .
-1 0 The room was facing the outside with a UNK view and it was large and UNK .
-1 2 Comfortable , UNK the most UNK we have found everywhere .
+1 2 All OK .
+1 0 A UNK detail .
+1 0 Comfortable , UNK the most UNK we have found everywhere .
 1 0 I UNK it to adult couples .
 1 0 But finally , after only two hours , we could UNK the apartment .
+1 0 The room as a whole was UNK ( furniture , lighting , bathroom with shower and UNK ) .
 1 0 The UNK room .
+1 0 UNK UNK UNK .
 1 0 I would repeat
 1 2 Very UNK and UNK staff .
-1 0 UNK of spaces .
+1 2 The UNK pool The Excellent facilities The very UNK food The service of reception and cleaning rooms very UNK and UNK .
 1 2 Very UNK and UNK .
-1 2 The receptionist UNK us .
-1 2 The space is very UNK and I invite you to relax .
 1 0 We will return without a UNK .
-1 0 Very UNK food and UNK service .
-1 0 The proximity to the center , UNK access by car , the upper terrace overlooking the UNK
-1 0 UNK of the staff .
+1 2 Very UNK food and UNK service .
 1 0 I would repeat
-1 2 Reception staff very UNK and professional .
+1 2 Let 's repeat ! !
 1 2 Have parking
-1 2 All renovated and very UNK .
-1 0 Even so , the current UNK UNK is UNK .
-1 2 Friendly and very UNK staff .
+1 2 The situation is very UNK , centrally located .
 1 0 UNK bath
-1 2 The UNK of the place and the UNK care of that they had the gardens .
-1 2 The attention of the UNK UNK staff has UNK us a lot .
-1 2 With views to UNK UNK UNK and very UNK .
+1 2 UNK UNK staff .
 0 1 I UNK a UNK in the room and a UNK UNK .
+0 1 One of the two days we stayed took more than half an hour to give us the room , although we had called in the morning to ask for it Breakfast
 0 1 Room too functional and UNK , two separate beds and UNK UNK beds .
 0 1 You also have to keep in UNK that to go to the pool , you have to leave the street .
 0 1 SPA at UNK UNK ( UNK ) UNK room with UNK to the UNK .
+0 1 Bar closed and drinks not working .
 0 1 It is in a UNK on the UNK and the UNK to the center is very UNK to do it on foot . the treatment of the staff
+0 1 You can not breakfast UNK at 11 UNK as later you have to UNK the keys .
 0 1 The price , UNK to what they offer , is UNK .
 0 1 That one is a little moved away from the center and the buses take in passing through the zone .
 0 1 UNK are UNK for UNK The environment , facilities and staff .
 0 1 The second day we found the parking space UNK .
 0 1 The check out is at UNK UNK . In the morning , it 's too UNK , at UNK . It would be a UNK time considering that most travel with children .
-0 1 We UNK and although we were offered the possibility of UNK the beds it was not our UNK .
 0 2 UNK mattresses are too UNK for our taste .
-0 1 The light UNK were made .
 0 1 The UNK UNK to put music with a UNK high UNK before UNK UNK and UNK after UNK .
 0 1 It UNK a lot of UNK ... we hear everything from the UNK rooms and we were on the first floor and felt the whole of the streets .
-0 2 the UNK due to the UNK in the UNK of a very numerous UNK of children and UNK that UNK us from UNK all night .
+0 1 With 5 people a UNK washbasin is a bit UNK .
+0 1 To say something , they do not sell UNK of UNK water , and you have to go to a machine , and with that UNK , it took more than one .
+0 1 the UNK due to the UNK in the UNK of a very numerous UNK of children and UNK that UNK us from UNK all night .
 0 1 They had the parking lot and in the area it is UNK to park .
 0 1 What we liked least has been the bed , probably the mattress needs to be UNK .
+0 1 There was no chair in the room ( UNK on the terrace ) The situation and had parking .
 0 1 The beds are small , UNK and the mattresses a little UNK .
 0 1 I think that a 4 star hotel should look at this .
 0 1 Maybe the stairs , there is no lift to go up in the rooms .
 0 1 The reception , the real UNK UNK was closed and UNK UNK us .
-0 1 I did not like that some UNK are in four languages UNK UNK of them are UNK that is the UNK of our country .
+0 1 The room that has no views to the sea or the pool has UNK views of the parking lot .
 0 1 There was a UNK of UNK UNK in the UNK .
 0 1 UNK UNK beds , and pillows too .
 0 1 The price : due to hotel change few days before the trip , the price we paid has been almost twice the amount of time it is UNK a few weeks in advance .
 0 1 To put one but ... the location with UNK to the center of UNK The UNK of the hotel and its value for money
 0 1 They talk a little UNK , but for what it is , you have to pay to park the whole city .
 0 1 UNK to the surrounding paths is UNK .
+0 1 If you have a light sleep , it is quite UNK .
 0 1 UNK at UNK dinner .
 0 1 A UNK away from the center of UNK .
 0 1 The hotel UNK room had a UNK with the situation UNK and the hotel in general
-0 1 The only small UNK ' that I find is that cleaning staff are UNK with their UNK , which UNK them to UNK some UNK .
 0 1 It UNK with UNK from the receptionist
-0 1 The UNK is UNK or UNK at other times .
-0 1 The UNK for me , too UNK .
 0 1 UNK UNK ( starting at UNK ) and UNK ( at UNK ) are UNK because everything is UNK .
 0 1 The jacuzzi is very small , at most 4 to be UNK and finally the gym is UNK , only there is an UNK , a UNK and a UNK bike .
 0 1 One thing a little ... UNK is access because you can enter through two streets and ... it could be a bit UNK and above all ... UNK for UNK .
@@ -308,163 +265,193 @@ Gold Prediction Sentence
 0 1 The UNK room faces the street and it feels the people that UNK and the other UNK when they go out go out .
 0 1 They could make a discount for UNK at sun UNK on the beach .
 0 1 The towels and UNK sheets UNK a little bit of UNK .
-0 2 The sofa bed for two places was quite UNK , it has a UNK UNK that UNK you keys .
-0 1 We had a UNK in the room because the window did not close at all UNK and , of course , it was UNK ! and it could not be UNK ( we put some towels in the window to stop the UNK air UNK ) .
+0 1 I needed a UNK to read a book .
 0 2 The sheets were UNK .
-0 1 UNK UNK .
+0 1 In addition , they UNK to leave the rooms at 10 , when normal is at 12 .
+0 1 He UNK one for the UNK one , and one for the small one .
+0 1 The UNK is small with two UNK on the UNK that UNK the UNK .
 0 1 The UNK of UNK at night : UNK and UNK .
 0 1 UNK a little small , UNK UNK for a double bed in a hotel ... it is small .
-0 2 The UNK are very old and the carpet of the ground makes UNK ' .
+0 1 UNK the situation , a little apart from UNK .
+0 1 The UNK are very old and the carpet of the ground makes UNK ' .
+0 1 They hear the UNK and UNK of the entrance , at least on the ground floor of the new building .
 0 1 UNK UNK the room next door at 9 UNK The pool a bit UNK
+0 1 The kitchen UNK were UNK and in the UNK there was still the UNK of the last UNK .
 0 1 The hotel is under renovation and only has an elevator that also UNK hotel staff .
 0 1 I found paths to UNK and UNK , but UNK would be UNK from the campsite .
 0 1 The UNK of UNK , and of another UNK .
 0 1 UNK rooms are UNK and then a room can be smoked
 0 1 They make you pay the day of arrival at the hotel .
-0 3 The room is too small .
 0 1 UNK room with UNK .
 0 2 We found the city relatively UNK .
 0 1 That we always touch inner rooms , who stays outside ? ? UNK customers General UNK .
+0 1 The UNK of siesta at 4 in the UNK , cleaning UNK UNK from one apartment to another and feel everything .
 0 1 I found two UNK for the hotel , I UNK them and they said nothing , I know they were UNK for the hotel 's UNK and because when I was doing the checkout with an UNK UNK they went in for a reception without UNK anything , , UNK and very UNK staff , especially the UNK from the towels in the pool , as we saw some UNK UNK who were at the hotel , all day UNK photos and UNK and down , then we discovered by UNK that They have been to the hotel for UNK in order to make a UNK , , , , but if you were a manager of the hotel it would not do it , however , the UNK made by someone to be in a hotel of the UNK features , 4 girls UNK on UNK photos and which above are UNK of charge to the hotel , I do not like either that in a hotel of these UNK there is no cook in the UNK making eggs and UNK , it is all that is needed ... hotel , facilities , swimming pools , base staff ...
-0 1 Cold and wifi UNK did not UNK UNK . We took a hotel with a jacuzzi and we could not use it .
 0 1 We were UNK ; There are few UNK .
-0 1 Wifi UNK
+0 2 Wifi UNK
 0 1 That in the middle of the summer it is the UNK inn Price quality
 0 1 We were far from any walk area , so you UNK on the car in an UNK way .
 0 1 The price a little UNK .
+0 1 The UNK UNK of a UNK UNK at the time of sleep .
 0 1 It was a bit UNK .
 0 1 A little UNK because we were on the UNK floor where there is the terrace and the window was in a busy street .
 0 1 The UNK is included in the price .
+0 1 It was very UNK and there was no air conditioning .
 0 1 We stayed for two nights and could UNK it , but if you go for a week it should be UNK UNK .
 0 1 I think you need to UNK to UNK that make your stay more UNK .
-0 1 The mattress was a bit UNK .
+0 1 There is not too much phone connection , but they tell the beginning and there you go to relax .
 0 1 UNK UNK the UNK beach .
 0 1 One of the rooms that they gave us on a superior floor , UNK through the middle of a conference room , old beds and furniture and a UNK UNK .
 0 1 Breakfast can be UNK for the price it has , the UNK are industrial , little diversity of UNK products , UNK and UNK eggs .
-0 1 Everything can be UNK . UNK !
-0 3 Check in is too late .
+0 2 Everything can be UNK . UNK !
 0 1 The fact of having a kitchen with a small UNK of UNK ... Small space and UNK to cook .
+0 1 It would UNK the UNK offer of breakfast that was UNK a bit UNK .
 0 1 That the facilities need a UNK , it looks a little old .
 0 1 That many places are closed , but they UNK it for the UNK that they are and they also have the UNK to UNK and UNK the facilities for the summer , are the UNK that we find those who have to make the holidays like this , always outside of time
 0 1 The UNK animations one by the UNK .
 0 2 Very simple bathroom
-0 1 They have given us separate beds after UNK a double bed , the mattress is small and UNK , the room UNK like a lock , and the TV has a smaller screen than a UNK phone .
-0 2 The breakfast is varied .
+0 1 In the room next to the terrace you can not rest because of this UNK music .
+0 1 And to put something else , UNK a little UNK of space in the UNK of the dressing room .
+0 1 The UNK bar UNK has no UNK how to make a UNK that can UNK to the UNK .
+0 1 The breakfast is varied .
 0 1 General UNK ( UNK , room UNK , UNK , ... ) .
 0 1 The SPA , we found it UNK ... And the price of the minibar in the room ... It is totally out of place .
 0 1 There was UNK from the rooms on the UNK and the UNK on the street that passed midnight at all times . the rooms and the breakfast
+0 1 UNK only allows you to connect a UNK UNK The situation of the hotel , the UNK of the rooms and the treatment of the staff .
 0 1 There was no UNK UNK between them and the other UNK UNK .
 0 1 UNK information on UNK services ( parking , transfer center of the town , ... ) would be necessary .
+0 1 The junior UNK , the space reserved for the UNK ' is completely covered and you have no view .
 0 1 To get to the hotel you have to climb a busy street , when we arrived at the hotel we were UNK .
+0 1 Very UNK room , central heating was not yet on , but they gave us UNK and we spent the night UNK UNK Breakfast and the situation .
+0 1 He felt a lot of UNK outside the room .
 0 1 UNK at least , they should have a smoking room UNK and one for non UNK smokers , as people go out to UNK on the terrace and get all the UNK in the room or on the UNK terrace .
+0 1 It is not a place to go to rest .
 0 1 It is a very small inn , old and many UNK are needed .
 0 1 On the UNK at UNK UNK , breakfast time ( they open at UNK UNK ) , there was a girl from the kitchen who UNK food with UNK UNK for days ( maybe weeks ) , Especially the UNK , which originally had to be UNK and was quite UNK UNK .
 0 1 UNK far from the center .
 0 1 UNK to car parking is UNK at the beginning if the UNK is UNK .
+0 1 It is not UNK and UNK .
+0 1 The room UNK of UNK , there were UNK UNK to the room and the breakfast area .
+0 1 They cleaned up too soon , we ate breakfast at UNK and were already cleaning the rooms .
 0 1 UNK the rooms were for 4 people , the UNK items , UNK and others for the kitchen and the bathroom , were UNK .
 0 1 UNK parking and a bit UNK , anyone can enter and UNK your place .
-0 2 It UNK a restaurant of UNK quality at the level of the hotel .
+0 1 It UNK a restaurant of UNK quality at the level of the hotel .
 0 1 It takes a bit of an upgrade .
 0 1 I think the price of the parking lot is a little card .
 0 1 An UNK is that being in a UNK zone costs a lot to get with the car to the parking lot The location the staff deal
 0 1 The beds were quite UNK and the room was narrow .
 0 1 UNK breakfast .
+0 1 There are many stairs .
 0 1 It is a bit far from the center to go walking .
 0 1 The little UNK in restaurant dishes and I UNK it was , the UNK of the area where the hotel is located and the UNK we had with the UNK in the room .
-0 1 That there is no UNK towels in the washbasin The place the UNK
-0 1 Bar closed UNK UNK / evening .
+0 1 They UNK to UNK I to this hotel to UNK our UNK wedding UNK and we had to sleep in separate beds .
+0 2 Bar closed UNK UNK / evening .
+0 1 The rooms in the room were UNK , and the room had little light .
+0 1 UNK and room together is not a UNK UNK .
 0 1 It is located in the middle of a nightlife area and makes it UNK to sleep at night until early in the morning .
+0 1 We were on the first floor and the UNK of the street is not UNK , as were UNK , there was a lot of UNK all night .
 0 1 UNK UNK
 0 1 UNK into two buildings , the rooms in front of the reception and the dining room ( mini ) .
 0 2 Noise all night UNK
-0 2 The shower UNK was UNK to handle and the floor was not very UNK , it was a bit UNK for a UNK like UNK .
 0 1 In the room there was no UNK and UNK
 0 1 The land of the UNK is full of UNK and with the UNK that making breakfast is on the terrace of the hotel . When you have always been in the restaurant and that is why you can not be in the pool until UNK am that the lunch UNK UNK and it is full of UNK and tables at night , it is also a UNK bar .
 0 1 The staff in the restaurant 's restaurant area a bit UNK .
 0 1 UNK the dining room was quite full , with tables too close and UNK were made .
 0 1 The walls and doors UNK sound .
 0 1 The facilities are very UNK , the Spa area of UNK and with UNK access .
+0 1 Breakfast with few tables , you had to wait if you UNK later than UNK UNK .
 0 1 A car UNK The place , the cleaning , UNK , atmosphere .
 0 1 In the apartment ( it UNK the parking lot ) , it was very UNK , despite the air conditioning , which UNK with little UNK .
 0 1 UNK a parking place in UNK because it is almost UNK to park in the street .
 0 1 Although the bed for me is the most UNK ... and the UNK is small and UNK could UNK
+0 1 Reception UNK at the time of check UNK in , due to massive arrival of customers UNK there was not UNK staff to UNK to everyone UNK .
+0 1 If you show more than 5 minutes , it is full of UNK .
+0 1 UNK UNK the UNK on the day of the departure that UNK the day for the period to leave them UNK .
 0 1 UNK UNK
 0 1 We have gone UNK and UNK .
-0 1 I think that is something to UNK because it says a lot about it .
 0 1 UNK UNK
 0 1 The walls are UNK , and at midnight the UNK woke up talking to us .
-0 1 The hotel bar only UNK at certain hours . Everything
+0 1 Parking is not included in the price of the accommodation And the dishes have UNK of food .
 0 1 We UNK with a UNK that made a lot of UNK from one room to the other
-0 3 We never found out that it was so UNK .
-0 1 In the room , too many UNK on UNK and cigarette furniture . Once you pay the cleaning and UNK , they enter the rooms without calling .
-0 3 Some UNK in the street that reached us in the room .
+0 1 Some UNK in the street that reached us in the room .
 0 1 The breakfast buffet in a closed UNK makes access UNK .
 0 1 In our UNK . I was not going . air conditioning and UNK UNK . UNK did not UNK on TV . The views from above the terrace UNK beach and area UNK leisure ( UNK ) UNK attention to the reception
-0 2 UNK quite old .
+0 1 You had to walk a lot to get to the room .
+0 1 The UNK of UNK of the UNK personnel to UNK the UNK UNK who beat the doors UNK and UNK from 3 in the morning . Also , at about two in the morning there is no air UNK for It is very UNK to do something that you do not UNK when you book the hotel . I will not return to reserve the UNK 4 stars , of the quality of the UNK nor to speak
+0 1 Room UNK very high and UNK to UNK heating .
+0 1 Bad coffee , UNK was not UNK , UNK butter and juices of low quality .
+0 1 The UNK , but it is normal to be UNK in most hotels .
+0 1 UNK conditioning UNK from a UNK UNK to a few meters from the window of the room ( UNK UNK all night ) .
 0 1 The rooms are of the UNK 's and there has UNK been no renovation .
-0 1 UNK UNK UNK .
+0 1 UNK call to ask if we could UNK before and they were quite UNK with the UNK .
 0 1 At UNK I was in a UNK to go to UNK and the person in charge had no UNK what I am . I had to UNK it and finally I received a half dinner at the same price as a whole dinner .
+0 1 I did not like the UNK of the staff at the Reception and have a reservation the day before , the breakfast the next day .
 0 1 The jacuzzi on the UNK 's terrace was UNK .
-0 1 The cleaning , the floor was UNK UNK and in the bathroom the cleaning was UNK .
-0 1 Breakfast can be UNK .
-0 2 Very UNK , a UNK price UNK
+0 1 The UNK of the room when we arrived : the sun had UNK a lot and I was UNK .
+0 1 In our room , at night there was a UNK of UNK , quite UNK if you were UNK .
+0 1 The bathroom UNK was in very UNK condition , and the room UNK like UNK
 0 1 It is crowded with people and with a UNK , short and UNK UNK .
 0 1 UNK the doors could put them of UNK quality in the rooms and when it UNK young UNK they would have to make them UNK up and take be since when arriving they made a lot of UNK The treatment , the place in general and the UNK
+0 1 He , the bed was too small and UNK . The situation
 0 1 The little UNK ( UNK and cultural ) in UNK to the offer of the UNK : no UNK of UNK UNK nor of UNK or UNK ; on the other hand , if from UNK UNK and the UNK in the room
 0 1 There was a UNK in the room that was making UNK , and in the evening we made the UNK ( from the room ) and stopped .
+0 1 I think this could be UNK on the website of the hotel .
 0 1 It 's UNK to cook for 2 children and 3 adults ! !
-0 1 I UNK there is some type of UNK UNK or something but it was full of UNK and UNK UNK .
+0 1 In the middle of the room there was a UNK that UNK when passing from one side to the other side of the room .
 0 1 Lack of heating and wifi on a UNK UNK night on the first of UNK .
+0 1 The UNK of the room was just UNK ' for being in one of the 4 stars .
 0 1 We UNK a UNK of UNK on the UNK near the pool : there were people who had UNK ice UNK or drinks on the UNK day , and to UNK , there were more or less visible UNK where you UNK your UNK to pass it .
 0 1 Maybe a little UNK
 0 1 We just UNK UNK and UNK in the bathroom , since we were three in the room and in the bathroom there was no where to leave things .
+0 1 Small room
+0 1 Room with no views , a little claustrophobic .
 0 1 I think that in general this type of accommodation should provide , apart from UNK ' of kitchenware ( cutlery , UNK , UNK , ... ) of UNK ( some UNK , a UNK of UNK , dish and UNK machine , ... ) in this aspect a little bit The situation .
+0 1 To say something ( and UNK this is not UNK to the hotel ) , the UNK ... when the UNK UNK , as the UNK are above the UNK , it is UNK .
 0 1 They UNK UNK games for children in the pool , which UNK many UNK and UNK .
 0 1 Horrible dining room , UNK food and only for UNK , without quality and the UNK part is that they charge you drinks from meals at UNK prices and at the time of UNK them .
 0 1 Although it is only to add a UNK ... There is a UNK away from the center of the village to go on foot and close UNK to have to take the car .
-0 1 The rooms that touch the road make more UNK .
-0 3 For what I paid I have not had breakfast and the UNK is that I have UNK in UNK places for less price .
 0 1 Breakfast to be a country house could be more natural and varied .
+0 1 It was UNK in the room .
 0 1 UNK staff
-0 1 The room has a small UNK UNK .
 0 1 UNK to find UNK parking nearby .
 0 1 You end up UNK the days of your stay .
-0 2 Lack of UNK room , especially from the Location street
+0 1 Lack of UNK room , especially from the Location street
 0 1 The UNK and the price of the parking lot UNK a bit .
 0 1 The water had a lot of iron .
 0 1 UNK parking ( places are UNK and € 25 a night ! ! ) .
 0 1 UNK they charged us more than what was UNK at breakfast ( which by the way is very simple ) .
-0 1 The bathroom is a bit simple . The view from the window
 3 1 UNK careful
-3 1 Breakfast was UNK .
-3 1 We had a lot of UNK in the room , although we had two UNK .
+3 0 Breakfast was UNK .
+3 0 We had a lot of UNK in the room , although we had two UNK .
 3 2 Very UNK UNK .
 3 2 Very UNK wifi signal .
 3 0 It does not make UNK to pay for this spa .
 3 0 UNK more UNK than UNK on an UNK , which is to say ... If more UNK prices were put ( even if they were more UNK or more UNK , even if in a bar ) surely much more would be UNK .
 3 0 They had not changed
 3 0 As it is located in a narrow street if you UNK the balcony ( apart from the UNK that must have been in summer ) you do not have any UNK and the view is of course not very UNK .
-3 0 UNK of all the kitchen and the price of the dinner menu .
+3 1 UNK of all the kitchen and the price of the dinner menu .
 3 2 UNK are very basic .
 3 1 The restaurant service is very much UNK , both the pool and the hotel .
 3 2 UNK UNK were very UNK .
+3 2 UNK in very UNK state .
 3 1 In breakfast , the bread toaster in the dining room is totally UNK , due to its low UNK and UNK UNK .
+3 0 The scale of the building I UNK that it UNK with any UNK !
 3 1 UNK
 3 1 The prices and the quality of the products of the bars and cafes , was very UNK and left much to be desired .
-3 2 The price of buffet breakfast , breakfast is UNK !
-3 0 One thing is that it is a 5 * hotel and the other you want to UNK .
-3 0 It is UNK for me not to leave until UNK and when leaving , you have to do it at 11 ... You just UNK almost two days .
-3 0 For the morning the cleaning UNK was a lot of UNK and she woke up with UNK on the walls .
-3 1 The least UNK : the kitchen .
-3 2 The mattress was UNK UNK .
-3 2 UNK buffet with very little UNK .
-3 0 It is UNK to be UNK in the hotel pool .
-3 2 If I stayed in UNK a few days I would have UNK it to the reception . UNK And for my taste the pillows are UNK UNK , but this is very personal .
+3 1 The price of buffet breakfast , breakfast is UNK !
+3 1 One thing is that it is a 5 * hotel and the other you want to UNK .
+3 1 It is UNK for me not to leave until UNK and when leaving , you have to do it at 11 ... You just UNK almost two days .
+3 1 For the morning the cleaning UNK was a lot of UNK and she woke up with UNK on the walls .
+3 0 The least UNK : the kitchen .
+3 0 The mattress was UNK UNK .
+3 1 UNK buffet with very little UNK .
+3 1 It is UNK to be UNK in the hotel pool .
+3 1 If I stayed in UNK a few days I would have UNK it to the reception . UNK And for my taste the pillows are UNK UNK , but this is very personal .
 3 0 The windows do not UNK anything from outside UNK .
 3 1 The breakfast is very UNK , we found UNK bread ( we UNK the waiter and they changed it quickly ) The price and that we did not have to enter the city since we were only going to do night
 3 0 One thing is that the hotel is a UNK but not for that they have to UNK .
 3 1 UNK price
-3 0 The prices of the bar were UNK , a € 15 burger , a € 6 beer .
+3 1 The prices of the bar were UNK , a € 15 burger , a € 6 beer .
 3 0 The bed is not very UNK
 3 1 The wifi in the room is UNK .
 3 2 Rooms are UNK UNK .
@@ -473,9 +460,10 @@ Gold Prediction Sentence
 3 1 The price is UNK for the service and facilities it offers .
 3 1 The refrigerator is very small and UNK .
 3 1 The price they charge for UNK ( UNK ) is € 20 !
+3 2 The room is very small .
 3 1 The normal price is UNK
 3 1 The carpet was UNK and made a very UNK UNK of UNK .
-3 2 The beds are not very UNK .
+3 0 The beds are not very UNK .
 3 2 Very UNK in this UNK .
 3 1 The UNK is the arrival and departure time of the apartment .
 3 1 Parking very UNK both in UNK and in number of places .
@@ -488,4 +476,5 @@ Gold Prediction Sentence
 3 2 Very UNK
 3 1 UNK from UNK there is a total UNK of UNK UNK on the UNK UNK the UNK of UNK UNK and more at the UNK point of the road change ( you can easily find it on the way to UNK or UNK !
 3 2 Very UNK public parking lots .
-3 0 Only one of the nights , in the next room there was a UNK of young people who came to the party and when they went to the room they made a lot of UNK .
+3 2 The room is very small .
+3 1 Only one of the nights , in the next room there was a UNK of young people who came to the party and when they went to the room they made a lot of UNK .

@@ -1,4 +1,4 @@
-test_directory: datasets/original/ca/raw 
+test_directory: datasets/no_lex/ca/raw 
 lang: ca 
 embedding: artetxe 
 classifier: cnn 
@@ -6,10 +6,10 @@ binary: True
  
              precision    recall  f1-score   support
 
-          0       0.71      0.77      0.74       682
-          1       0.61      0.54      0.58       467
+          0       0.69      0.72      0.71       682
+          1       0.57      0.54      0.55       467
 
-avg / total       0.67      0.68      0.67      1149
+avg / total       0.64      0.65      0.64      1149
  
  
-Macro F1: 0.657
+Macro F1: 0.630
