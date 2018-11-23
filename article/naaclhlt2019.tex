@@ -175,8 +175,9 @@ network to predict the next word in a a sequence. Similarly, \newcite{Howard2018
 modeling task to more of a cloze task, where they predict missing words in a sentence, rather than the next word given a sequence. They then fine-tune their models on downstream tasks. All of these techniques have led to state-of-the-art results on
 sentiment tasks.
 
-\jer{Alex, can you add the relevant citations here?}
-Because of some problems we may find in MT, sometimes it is considered best to preprocess the source language by reordering it and then carrying out the translation. Transformation (reordering) rules can be determined manually or with data-driven approaches. Their application can be deterministic or non-deterministic. Some hybrid techniques exist as well, where long-range transformations are deterministic and the rest non-deterministic.
+Because of some problems we may find in MT, sometimes it is considered best to preprocess the source language by reordering it and then carrying out the translation (\newcite{Bisazza2016}). Transformation (reordering) rules can be determined manually or with data-driven approaches. Their application can be deterministic or non-deterministic. Some hybrid techniques exist as well, where long-range transformations are deterministic and the rest non-deterministic.
+
+\alex{the different claims of the previous paragraph are all from bisazza 16, is this well referenced, or should it be different?}
 
 \subsection{Cross-lingual Sentiment Analysis}
 
@@ -248,6 +249,8 @@ transformations applied.}
 In order to test whether a sentiment classifier trained on bilingual embeddings is sensitive to word order, we test our trained classifiers on six versions of the test
 data, which we describe in the following. An example of these six versions is shown in Table \ref{example}. TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
 
+\alex{comment difference between cross-lingual and monolingual test sets.}
+
 \paragraph{No Reordering: }The model is tested on the original data.
 
 \paragraph{Random Reordering: }We randomly permutate the order of the target language sentences. If the sentiment classification models take the target language word order into consideration, this should lead to poor results.
@@ -278,7 +281,12 @@ and hyperparameter optimization.}
 
 \section{Results}
 
-\alex{Falta omplir-les}
+\alex{color appropriate boxes}
+
+\alex{Things from the table of results that should (I think) be discussed: even with the "new" way to do the lexicon experimenting, bilstm behaves very differently than the other two, mainly in Only Lexicon}
+\alex{Difference between only lexicon and no lexicon in bilstm still does not seem as significant as it should be (right?)}
+\alex{why does catalan behave almost invariable better than spanish, even in MT versions?}
+\alex{why does the cnn not take into account word order at all but reacts so badly in Only Lexicon? What is making this drop?}
 
 
 \begin{table*}[]
