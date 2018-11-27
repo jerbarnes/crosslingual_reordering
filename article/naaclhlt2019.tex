@@ -126,14 +126,13 @@ $^2$University of Oslo\\
 \begin{abstract}
 Current state-of-the-art models for sentiment analysis
 either explicitly or implicitly make use of word order.
-This is problem for cross-lingual models that
+This is a problem for cross-lingual models that
 use bilingual embeddings as features, as the difference
 in word order between source and target languages are
 not clearly resolved. In this work, we explore reordering
 as a preprocessing step for sentence-level cross-lingual sentiment
 classification with two language combinations
-(English-Spanish, English-Catalan). We find that reordering
- helps both BiLSTMs and CNNs, and that a simple reordering
+(English-Spanish, English-Catalan). We find that reordering helps both BiLSTMs and CNNs, and that a simple reordering
 approch outperforms a more complex MT-inspired reordering
 scheme.
 
@@ -153,7 +152,7 @@ Machine Translation (MT) is often used to bridge the gap between languages \cite
 
 Recently, sentiment classifiers pre-trained on a language modeling task have lead to state-of-the-art results \cite{Peters2018,Howard2018,Devlin2018}. This suggests that sentiment analysis benefits from learning word order and fine-grained relationships between tokens, which can be gleaned from unlabeled data. Current approaches, however, have only been applied in a monolingual setting. 
 
-In this work, we perform an analysis of the effect of word order on cross-lingual sentiment classifiers that use bilingual embeddings as features. We show that these models benefit from reordering the target-language test data so that it resembles the source-langauge word order.
+In this work, we perform an analysis of the effect of word order on cross-lingual sentiment classifiers that use bilingual embeddings as features. We show that these models benefit from reordering the target-language test data so that it resembles the source-language word order.
 
 
 \section{Related Work}
@@ -168,7 +167,7 @@ of ``pivots'', which are words that are both predictive for the task in both sou
 
 Bilingual word embeddings \cite{Kocisky2014,Chandar2014,Luong2015} now provide
 a simple framework for cross-lingual approaches to natural language processing. 
-Current state-of-the-art approaches \cite{Artetxe2017,Artetxe2018,Lample2017} first separately create monolingual embeddings using large, unlabeled corpora in the source and target languages. They then learn an orthogonal projection from the source to the target space in a supervised manner using a bilingual lexicon. The orthogonality constrain maintains the relations that exist between the words before projection.
+Current state-of-the-art approaches \cite{Artetxe2017,Artetxe2018,Lample2017} first separately create monolingual embeddings using large, unlabeled corpora in the source and target languages. They then learn an orthogonal projection from the source to the target space in a supervised manner using a bilingual lexicon. The orthogonality constraint maintains the relations that exist between the words before projection.
 
 Bilingual word embeddings are now used as features for state-of-the-art document-level \cite{Chen2016}, sentence-level \cite{Barnes2018b}, and targeted \cite{Hangya2018} cross-lingual sentiment analysis approaches.
 
@@ -183,9 +182,6 @@ network to predict the next word in a a sequence. Similarly, \newcite{Howard2018
 modeling task to more of a cloze task, where they predict missing words in a sentence, rather than the next word given a sequence. They then fine-tune their models on downstream tasks. All of these techniques have led to state-of-the-art results on sentiment tasks.
 
 Because of some problems we may find in MT, sometimes it is considered best to preprocess the source language by reordering it and then carrying out the translation \cite{Bisazza2016}. Transformation (reordering) rules can be determined manually or with data-driven approaches. Their application can be deterministic or non-deterministic. Some hybrid techniques exist as well, where long-range transformations are deterministic and the rest non-deterministic.
-
-\alex{the different claims of the previous paragraph are all from bisazza 16, is this well referenced (reference just once, at the beginning), or should it be different?}
-
 
 \section{Methodology}
 
@@ -254,8 +250,7 @@ transformations applied. The \lex{bold tokens} are words found in the sentiment 
 \end{table*}
 
 In order to test whether a sentiment classifier trained on bilingual embeddings is sensitive to word order, we test our trained classifiers on six versions of the test
-data, which we describe in the following. An example of these six versions is shown in Table \ref{example}. 
-\alex{comment difference between cross-lingual and monolingual test sets.}
+data, which we describe in the following. An example of these six versions is shown in Table \ref{example}.
 
 \paragraph{No Reordering: }The model is tested on the original data with no changes in word order.
 
@@ -281,7 +276,7 @@ We perform additional experiments with English in a monolingual setup and using 
 
 In order to test our hypothesis, we compare three different classifiers: a Support Vector Machine (SVM) with Bag-of-Embeddings, a Convolutional Neural Network (CNN), and a Bidirectional Long Short Term Memory Network (BiLSTM). Each of these classifiers theoretically have an increasing reliance on word order. The SVM does not take into account word order at all and is therefore our order-agnostic baseline. An SVM can be considered a strong baseline for SA \cite{Kiritchenko2014c}. The CNN considers only local word order, and in this respect is basically a parameterized n-gram model \cite{Santos2014,Severyn2015,Barnes2017}. Finally, the BiLSTM considers both short-term and long-term word order in both directions. An LSTM is a type of Recurrent Neural Network that takes in particular consideration sequential information. LSTMs currently produce state-of-the-art results in SA \cite{Tai2015a,Barnes2017,Howard2018}. 
 
-We implement a single-layered BiLSTM classifier with a 100-dimensional hidden layer, which passes the concatentation of the two final hidden states to a softmax layer for classification. The CNN has convolutional filters $\in \{3,4,5\}$ and a max-pooling layer of length $2$. For both models, we train for 100 epochs with a batch size of 32 using Adam as an optimizer. We choose the parameter for training epochs on the source-language development set and test this model on the target-language data. Finally, we implement a baseline bag-of-embeddings SVM, which is implemented in sklearn, while both neural models are implemented in Keras.
+We implement a single-layered BiLSTM classifier with a 100-dimensional hidden layer, which passes the concatenation of the two final hidden states to a softmax layer for classification. The CNN has convolutional filters $\in \{3,4,5\}$ and a max-pooling layer of length $2$. For both models, we train for 100 epochs with a batch size of 32 using Adam as an optimizer. We choose the parameter for training epochs on the source-language development set and test this model on the target-language data. Finally, we implement a baseline bag-of-embeddings SVM, which is implemented in sklearn, while both neural models are implemented in Keras.
 
 \section{Results}
 
@@ -362,13 +357,11 @@ We implement a single-layered BiLSTM classifier with a 100-dimensional hidden la
 \label{results:all}
 \end{table*}
 
-\jer{Alex, can you check the results of the Catalan MT experiment and the Spanish only lexicon CNN experiments. There seems to be some mistake in these experiments, as they don't coincide with the rest.}
-
 In Table \ref{results:all} we report the results of all experiments. Although it is not comparable because they are tested on different datasets, the English monolingual models generally perform better than the cross-lingual versions (13.9 -- 9.4 percentage points on binary and 12.3 -- 13.2 on 4-class). The machine translation approaches fall in between these two.
 
 Regarding the models, there are different trends across the setups. On the monolingual and machine translations setups, the BiLSTM is the strongest model, followed by the CNN and SVM (SVM and CNN, respectively for machine translation). With bilingual embeddings, however, the SVM outperforms both the BiLSTM and CNN on the binary setup, while the CNN is strongest on the multiclass. This shows that BiLSTM displays a different behaviour with bilingual embeddings.
 
-For the bilingual embedding methods, the reordering approach improves the BiLSTM results on three of four experiments (two of for for CNN), while having no effect on the SVM. The simpler noun-adjective flip performs even better, with an average of 1.1 percentage points improvement over the original ordering across BiLSTM and CNN experiments\footnote{We do not consider SVM experiments to calculate improvments as they are invariant to word order.}. This confirms that some kind of reordering is benefitial when using neural networks with bilingual embeddings as features.
+For the bilingual embedding methods, the reordering approach improves the BiLSTM results on three of four experiments (two of for for CNN), while having no effect on the SVM. The simpler noun-adjective flip performs even better, with an average of 1.1 percentage points improvement over the original ordering across BiLSTM and CNN experiments\footnote{We do not consider SVM experiments to calculate improvements as they are invariant to word order.}. This confirms that some kind of reordering is beneficial when using neural networks with bilingual embeddings as features.
 
 The random reordering baseline has a larger negative effect on monolingual models (a average decrease of 4.5 ppt for BiLSTM and 2.9 for CNN) than bilingual embedding models or MT-based models (1.1/1.7 and 0.5/0.3, respectively). Additionally, random reordering has a larger effect on the BiLSTM than on CNN or SVM, which confirms that even cross-lingually the BiLSTM is more sensitive to word order effects.
 
@@ -378,18 +371,23 @@ Finally, the no-lexicon and only-lexicon baselines perform poorly. In fact, only
 
 \section{Analysis}
 
-\alex{Things from the table of results that should (I think) be discussed: even with the "new" way to do the lexicon experimenting, bilstm behaves very differently than the other two, mainly in Only Lexicon}
-\jeranswer{It doesn't seem so different to me. Especially if we look at the only-lexicon CNN and see if there's a mistake there.}
+\paragraph{1. }It would be nice to show that 
+the noise introduced by bilingual 
+embeddings leads to LSTMs not 
+being able to pick up on word 
+order in the target language.
+We could train monolingual models 
+for Spanish and Catalan and use the 
+random reordering to see the 
+difference.
 
-\alex{Difference between only lexicon and no lexicon in bilstm still does not seem as significant as it should be (right?)}
-\jeranswer{This is probably because there are a lot of words that clearly carry sentiment but are not found in the sentiment lexicon (see the updated Example \ref{example}).}
+\paragraph{2. }It would also be interesting 
+to look at particular examples 
+of errors that each model suffers.
+Are they different in each model?
+Is there any pattern?
 
-
-\alex{why does catalan behave almost invariable better than spanish, even in MT versions?}
-\jeranswer{The datasets are quite different, and for Catalan it is easier to get higher scores.}
-
-\alex{why does the cnn not take into account word order at all but reacts so badly in Only Lexicon? What is making this drop?}
-\jeranswer{The CNN does take local word order into account. It likely performs worse on only-lexicon because it sees none of the same examples at test time. The BiLSTM seems slightly more robust, but performance is still poor.}
+two things, answer by email, special drop in cnn
 
 
 \section{Conclusion and Future Work}
@@ -397,7 +395,7 @@ Finally, the no-lexicon and only-lexicon baselines perform poorly. In fact, only
 In this work, we have shown that neural networks that rely on bilingual embeddings as features
 are sensitive to word order and benefit from reordering the target language test data. 
 
-Given that state-of-the-art monolingual models explicitly learn word order on language modelling pretraining, it is important to realize that cross-lingual models based on bilingual word embeddings are not currently able to do so. In the future, it may be useful to integrate a reordering component into the classification models, which could be learned in a multi-task setup, if parallel corpora is available.
+Given that state-of-the-art monolingual models explicitly learn word order on language modelling pre-training, it is important to realize that cross-lingual models based on bilingual word embeddings are not currently able to do so. In the future, it may be useful to integrate a reordering component into the classification models, which could be learned in a multi-task setup, if parallel corpora is available.
 
 
 \bibliography{lit}
