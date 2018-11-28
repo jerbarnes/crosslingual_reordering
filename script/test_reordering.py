@@ -296,7 +296,7 @@ with open('evals/{}_{}_bi{}_error_analysis.txt'.format(args.classifier, args.lan
     for el in vars(args):
         file_error.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
     file_error.write('Multiclass: (0 ++, 1 +, 2 -, 3 --)' + ' \n' + 'Binary: (0 +, 1 -)' + ' \n'*2)
-    file_error.write('Gold Prediction Sentence\n\n' )
+    file_error.write('Prediction Gold Sentence\n\n' )
     for case in errors:
         file_error.write('{0} {1} {2}\n'.format(*case))
         
