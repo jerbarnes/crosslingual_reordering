@@ -181,7 +181,7 @@ network to predict the next word in a a sequence. Similarly, \newcite{Howard2018
 \newcite{Devlin2018} introduce a self-attention network, and adjust the language
 modeling task to more of a cloze task, where they predict missing words in a sentence, rather than the next word given a sequence. They then fine-tune their models on downstream tasks. All of these techniques have led to state-of-the-art results on sentiment tasks.
 
-In the Survey of Word Reordering in Statistical Machine Translation, \cite{Bisazza2016} \alex{Jeremy, could you delete the parenthesis in the quote? I don't know how to do it, and it doesn't quite work with the parenthesis} say that because of some problems we may find in MT, sometimes it is considered best to preprocess the source language by reordering it and then carrying out the translation. Transformation (reordering) rules can be determined manually or with data-driven approaches. Their application can be deterministic or non-deterministic. Some hybrid techniques exist as well, where long-range transformations are deterministic and the rest non-deterministic.
+In a survey on word reordering in Statistical Machine Translation, \newcite{Bisazza2016} mention that because of some problems we may find in MT, it is often best to preprocess the source language by reordering it and then carrying out the translation. Transformation (reordering) rules can be determined manually or with data-driven approaches. Their application can be deterministic or non-deterministic. Some hybrid techniques exist as well, where long-range transformations are deterministic and the rest non-deterministic.
 
 \section{Methodology}
 
@@ -243,8 +243,8 @@ Wikipedia corpora \cite{Barnes2018b}.
 \emph{Trans.} & The only \lex{negative} point the \lex{noise} that the typical wooden windows in the area \nonlex{don't manage} to \lex{block} \\[3pt]
 \bottomrule
 \end{tabular}
-\caption{An example of a negative sentence (original) with the five reordering
-transformations applied. The \lex{bold tokens} are words found in the sentiment lexicon, and the \nonlex{italic words} are words that convey sentiment in this instance, but are not in the lexicon.}
+\caption{An example of a negative Spanish sentence (original) with the five reordering
+transformations applied, as well as its English translation. The \lex{bold tokens} are words found in the sentiment lexicon, and the \nonlex{italic words} are words that convey sentiment in this instance, but are not in the lexicon.}
 \label{example}
 
 \end{table*}
@@ -300,11 +300,11 @@ We implement a single-layered BiLSTM classifier with a 100-dimensional hidden la
 \toprule
 && & \multicolumn{3}{c}{Binary} & \multicolumn{3}{c}{4-class} \\
 \sep
-\multirow{14}{*}{\rt{Bilingual Word Embeddings}} 
-	& \multirow{6}{*}{\rt{EN-ES}}
-	    && BiLSTM & CNN & SVM & BiLSTM & CNN & SVM \\
+\multirow{16}{*}{\rt{Bilingual Word Embeddings}} 
+	    &&& BiLSTM & CNN & SVM & BiLSTM & CNN & SVM \\
 	    \cmidrule(r){4-4}\cmidrule(r){5-5}\cmidrule(r){6-6}\cmidrule(r){7-7}\cmidrule(r){8-8}\cmidrule(r){9-9}
-		&& Original 	 & 61.6 & 59.8 & 66.6 & 35.9 & 36.3 & 34.9 \\ 
+	& \multirow{6}{*}{\rt{EN-ES}}
+		& Original 	 & 61.6 & 59.8 & 66.6 & 35.9 & 36.3 & 34.9 \\ 
 		&& Reordered  & \bestproj{61.9} & 59.9 & 66.6 & 35.7 & \bestproj{36.5} & 34.9 \\ 
 		&& N-ADJ  & 61.6 & \bestproj{60.2} & 66.6 & \bestproj{36.3} & \bestproj{36.5} & 34.9 \\ 
 		&& Random  & 60.4 & 58.2 & 66.6 & 34.2 & 35.3 & 34.9 \\ 
@@ -323,12 +323,24 @@ We implement a single-layered BiLSTM classifier with a 100-dimensional hidden la
 \\
 \hline \\
 
-\multirow{4}{*}{\rt{Mono}}
+\multirow{14}{*}{\rt{Mono}}
 	& \multirow{4}{*}{\rt{EN}}
   		& Original & \bestmono{82.6} & \bestmono{76.3} & 70.8 & \bestmono{50.2} & \bestmono{48.9} & 44.9 \\ 
 		&& Random & 78.2 & 75.0 & 70.8 & 45.7 & 44.5 & 44.9 \\ 
 		&& Only Lexicon  & 63.2 & 60.7 & 49.1 & 37.0 & 33.1 & 38.9 \\ 
 		&& No Lexicon & 73.5 & 70.5 & 65.8 & 46.5 & 45.0 & 43.5 \\ 
+		\sepp
+    & \multirow{4}{*}{\rt{ES}}
+  		& Original &       73.2 &  &  & 83.9\\
+		&& Random &        70.5 &  &  & 66.9\\ 
+		&& Only Lexicon  & 45.2 &  &  & 29.9\\ 
+		&& No Lexicon &    71.7 &  &  & 79.9\\ 
+		\sepp
+	& \multirow{4}{*}{\rt{CA}}
+  		& Original &       93.0 &  &  &  63.9 \\
+		&& Random &        83.1 &  &  &  55.4 \\ 
+		&& Only Lexicon  & 43.9 &  &  &  18.2 \\ 
+		&& No Lexicon &    92.3 &  &  &  61.8 \\ 
 
 \\
 \hline \\
@@ -353,7 +365,7 @@ We implement a single-layered BiLSTM classifier with a 100-dimensional hidden la
 \caption{Macro \F results for all corpora and techniques. We denote
   the best performing embedding-based
   method per column with a \bestproj{blue box}, the best monolingual method
-  with a \bestmono{green box}, and the best MT method with a \bestmt{pink box}. We do not denote bag-of-words SVM results, as they are invariant to word order.}
+  with a \bestmono{green box}, and the best MT method with a \bestmt{pink box}. We do not denote bag-of-words SVM results, as they are invariant to word order. It's important to point out that the monolingual results are not comparable, as the models are tested on a smaller subset, rather than all the data.}
 \label{results:all}
 \end{table*}
 
