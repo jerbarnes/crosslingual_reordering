@@ -147,11 +147,11 @@ scheme.
 
 %When facing a relatively simple text such as an hotel review, we can ask for its general sentiment. Is it positive, or negative? Is it better to ask for more gray areas in between? Automatizing the process of classifying the sentiment of a text is called Sentiment Analysis (SA), and it can allow us to get a good understanding of how the author(s) of these texts feel about the topics that are discussed in them. Of course, there are issues that we may find in this process. For instance, given a certain text, its sentiment may be ambiguous: two independent human annotators may disagree in it. Or maybe the text does not have an overall sentiment, and we should focus on individual sentences.
 
-Cross-lingual Sentiment Analysis (CLSA) exploits resources, \eg labeled data of a high-resource language, to train a sentiment classifier in order for it to classify low-resource languages. This is relevant when a target language lacks plentiful labeled data, particularly when considering specific domains. 
+Cross-lingual Sentiment Analysis (CLSA) exploits resources, \eg labeled data of a high-resource language, to train a sentiment classifier in order for low-resource languages. This is relevant when a target language lacks plentiful labeled data, particularly for specific domains. 
 
 Machine Translation (MT) is often used to bridge the gap between languages \cite{Banea2008,Balahur2014d}, but requires parallel annotated data, which may be difficult to find for some low-resource languages. Approaches that use bilingual distributional representations, in contrast, have been shown to be competitive while requiring less parallel data \cite{Chen2016,Barnes2018b}. All things equal, these approaches, therefore, are preferable.
 
-Recently, sentiment classifiers pre-trained on a language modeling task have lead to state-of-the-art results \cite{Peters2018,Howard2018,Devlin2018}. This suggests that sentiment analysis benefits from learning word order and fine-grained relationships between tokens, which can be gleaned from unlabeled data. Current approaches, however, have only been applied in a monolingual setting. 
+Recently, sentiment classifiers pre-trained on a language modeling task have lead to state-of-the-art results \cite{Peters2018,Howard2018,Devlin2018}. This suggests that sentiment analysis benefits from learning word order and fine-grained relationships between tokens, which can be gleaned from unlabeled data. These approaches, however, have only been applied in a monolingual setting and it is not clear how the difference in word orders would affect them in a cross-lingual setup.
 
 In this work, we perform an analysis of the effect of word order on cross-lingual sentiment classifiers that use bilingual embeddings as features. We show that these models benefit from reordering the target-language test data so that it resembles the source-language word order.
 
@@ -212,14 +212,14 @@ as well as the MultiBooked Catalan (CA) datasets.}
 \label{datasetstats}
 \end{table}
 
-At document-level, bag-of-words models are often expressive enough to give good results without relying on word order. Given that we are interested in word-order effects in cross-lingual sentiment analysis, we therefore require datasets that are annotated at a fine-grained level, \ie sentence- or aspect-level.
+At document-level, bag-of-words models are often expressive enough to give good results without relying on word order. But because we are interested in word-order effects in cross-lingual sentiment analysis, we require datasets that are annotated at a fine-grained level, \ie sentence- or aspect-level.
 
-For this reason, we use the English and Spanish OpeNER corpora of hotel reviews \cite{Agerri2013} as well as the Catalan MultiBooked Dataset \cite{Barnes2018a}. The corpora are annotated for Part-of-Speech tags and sentiment with 4 classes. We use the English subset for training our classifiers and the Spanish and Catalan for testing the effects of word order on the target languages. Although these datasets are relatively small, they are all annotated similarly and
+For this reason, we use the English and Spanish OpeNER corpora of hotel reviews \cite{Agerri2013} as well as the Catalan MultiBooked Dataset \cite{Barnes2018a}. Each sentence is annotated for four classes of sentiment\footnote{Strong positive, positive, negative, and strong negative.}. We use the English subset for training our classifiers and the Spanish and Catalan for testing the effects of word order on the target languages. Although these datasets are relatively small, they are all annotated similarly and
 are in domain, which avoids problems with mapping labels or domain shifts.
 
 \subsection{Bilingual Word Embeddings}
 
-In order to create bilingual embeddings, we use VecMap \citep{Artetxe2016,2018}, which
+In order to create bilingual embeddings, we use VecMap \citep{Artetxe2016,Artetxe2017}, which
 requires only a small bilingual dictionary to learn an orthogonal projection between
 two precomputed monolingual vector spaces. We use the publicly available GoogleNews vectors for the English\footnote{Available at \url{www.url.com}}, and for Spanish and Catalan we use skip-gram embeddings with 300 dimensions trained on preprocessed Wikipedia corpora. The bilingual dictionaries are translated sentiment lexicons with 5700 pairs for English -- Spanish (5271 for English -- Catalan).
 
@@ -274,7 +274,7 @@ We perform additional experiments with English in a monolingual setup and using 
 
 \subsection{Models}
 
-In order to test our hypothesis, we compare three different classifiers: a Support Vector Machine (SVM) with Bag-of-Embeddings, a Convolutional Neural Network (CNN), and a Bidirectional Long Short Term Memory Network (BiLSTM). Each of these classifiers theoretically have an increasing reliance on word order. The SVM does not take into account word order at all and is therefore our order-agnostic baseline. An SVM can be considered a strong baseline for SA \cite{Kiritchenko2014c}. The CNN considers only local word order, and in this respect is basically a parameterized n-gram model \cite{Santos2014,Severyn2015,Barnes2017}. Finally, the BiLSTM considers both short-term and long-term word order in both directions. An LSTM is a type of Recurrent Neural Network that takes in particular consideration sequential information. LSTMs currently produce state-of-the-art results in SA \cite{Tai2015a,Barnes2017,Howard2018}. 
+In order to test our hypothesis, we compare three different classifiers: a Support Vector Machine (SVM) with Bag-of-Embeddings, a Convolutional Neural Network (CNN), and a Bidirectional Long Short Term Memory Network (BiLSTM). Each of these classifiers theoretically have an increasing reliance on word order. Although the SVM does not take into account word order at all, it is a strong baseline \cite{Kiritchenko2014c}. The CNN considers only local word order, and in this respect is basically a parameterized n-gram model \cite{Santos2014,Severyn2015,Barnes2017}. Finally, the BiLSTM relies on both local and long-distance dependencies. LSTMs currently produce state-of-the-art results in sentiment analysis \cite{Tai2015a,Barnes2017,Howard2018}. 
 
 We implement a single-layered BiLSTM classifier with a 100-dimensional hidden layer, which passes the concatenation of the two final hidden states to a softmax layer for classification. The CNN has convolutional filters $\in \{3,4,5\}$ and a max-pooling layer of length $2$. For both models, we train for 100 epochs with a batch size of 32 using Adam as an optimizer. We choose the parameter for training epochs on the source-language development set and test this model on the target-language data. Finally, we implement a baseline bag-of-embeddings SVM, which is implemented in sklearn, while both neural models are implemented in Keras.
 
@@ -282,7 +282,7 @@ We implement a single-layered BiLSTM classifier with a 100-dimensional hidden la
 
 
 
-\begin{table*}[]
+\begin{table}
 \newcommand{\sep}{\cmidrule(r){4-6}\cmidrule(r){7-9}}
 \newcommand{\sepp}{\cmidrule(r){4-4}\cmidrule(r){5-5}\cmidrule(r){6-6}\cmidrule(r){7-7}\cmidrule(r){8-8}\cmidrule(r){9-9}}
 
@@ -293,9 +293,9 @@ We implement a single-layered BiLSTM classifier with a 100-dimensional hidden la
 \newcommand{\bestmono}[1]{{\setlength{\fboxsep}{0pt}\colorbox{lightgreen}{\textbf{#1}}}}
 \newcommand{\bestmt}[1]{{\setlength{\fboxsep}{0pt}\colorbox{pink}{\textbf{#1}}}}
 
-\setlength\tabcolsep{10pt}
-\renewcommand*{\arraystretch}{0.8}
-\centering\small
+\setlength\tabcolsep{4pt}
+\renewcommand*{\arraystretch}{0.5}
+\centering\tiny
 \begin{tabular}{lllcccccccccccc}
 \toprule
 && & \multicolumn{3}{c}{Binary} & \multicolumn{3}{c}{4-class} \\
@@ -308,44 +308,23 @@ We implement a single-layered BiLSTM classifier with a 100-dimensional hidden la
 		&& Reordered  & \bestproj{61.9} & 59.9 & 66.6 & 35.7 & \bestproj{36.5} & 34.9 \\ 
 		&& N-ADJ  & 61.6 & \bestproj{60.2} & 66.6 & \bestproj{36.3} & \bestproj{36.5} & 34.9 \\ 
 		&& Random  & 60.4 & 58.2 & 66.6 & 34.2 & 35.3 & 34.9 \\ 
-		&& Only Lexicon  & 59.1 & 26.2 & 53.0 & 29.8 & 16.4 & 30.7 \\ 
-		&& No Lexicon  & 57.9 & 55.7 & 63.4 & 33.1 & 33.7 & 33.3 \\ 
+		&& Only Lex.  & 59.1 & 26.2 & 53.0 & 29.8 & 16.4 & 30.7 \\ 
+		&& No Lex.  & 57.9 & 55.7 & 63.4 & 33.1 & 33.7 & 33.3 \\ 
 	\sepp
 	& \multirow{6}{*}{\rt{EN-CA}}
   		& Original & 68.2 & 65.7 & 68.2 & 31.9 & \bestproj{39.3} & 33.2 \\ 
 		&& Reordered  & 68.4 & 65.5 & 68.2 & \bestproj{32.3} & 38.1 & 33.2 \\ 
 		&& N-ADJ &  \bestproj{68.5} & \bestproj{65.8} & 68.2 & 31.8 & 38.9 & 33.2 \\ 
 		&& Random & 66.9 & 64.4 & 68.2 & 31.7 & 36.4 & 33.2 \\ 
-		&& Only Lexicon  & 55.1 & 41.3 & 39.1 & 30.3 & 27.4 & 23.8 \\ 
-		&& No Lexicon & 64.8 & 63.0 & 63.1 & 30.4 & 35.9 & 31.2 \\ 
+		&& Only Lex.  & 55.1 & 41.3 & 39.1 & 30.3 & 27.4 & 23.8 \\ 
+		&& No Lex. & 64.8 & 63.0 & 63.1 & 30.4 & 35.9 & 31.2 \\ 
 
 
-\\
-\hline \\
-
-\multirow{14}{*}{\rt{Mono}}
-	& \multirow{4}{*}{\rt{EN}}
-  		& Original &       78.6 & 68.0 & 72.2 & 53.3 & 51.7 & 43.9 \\ 
-		&& Random &        76.8 & 67.2 & 72.2 & 52.8 & 42.6 & 43.9 \\ 
-		&& Only Lexicon  & 60.5 & 60.1 & 45.1 & 37.0 & 32.7 & 39.1 \\ 
-		&& No Lexicon &    70.6 & 61.1 & 70.7 & 46.5 & 45.2 & 40.3 \\ 
-		\sepp
-    & \multirow{4}{*}{\rt{ES}}
-  		& Original &       \\
-		&& Random &        \\ 
-		&& Only Lexicon  & \\ 
-		&& No Lexicon &    \\ 
-		\sepp
-	& \multirow{4}{*}{\rt{CA}}
-  		& Original &       \\
-		&& Random &        \\ 
-		&& Only Lexicon  & \\ 
-		&& No Lexicon &    \\ 
 
 \\
 \hline \\
 
-\multirow{8}{*}{\rt{Machine Translation}}
+\multirow{9}{*}{\rt{Machine Translation}}
 	& \multirow{4}{*}{\rt{EN (ES)}}
   		& Original & \bestmt{71.3} & \bestmt{67.1} & 69.6 & \bestmt{48.1} & \bestmt{42.9} & 45.1 \\ 
 		&& Random & 71.0 & 65.9 & 69.6 & 48.0 & 41.7 & 45.1 \\ 
@@ -358,16 +337,38 @@ We implement a single-layered BiLSTM classifier with a 100-dimensional hidden la
 		&& Only Lexicon  & 52.1 & 59.6 & 43.9 & 26.1 & 30.1 & 32.7 \\ 
 		&& No Lexicon & 73.0 & 71.5 & 70.8 & 46.7 & 43.1 & 44.4 \\ 
 		
+\\[3pt]
+\hline \\
+
+\multirow{19}{*}{\rt{Mono}}
+	& \multirow{4}{*}{\rt{EN}}
+  		& Original &       \bestmono{78.6} & \bestmono{68.0} & 72.2 & \bestmono{53.3} & \bestmono{51.7} & 43.9 \\ 
+		&& Random &        76.8 & 67.2 & 72.2 & 52.8 & 42.6 & 43.9 \\ 
+		&& Only Lex.  & 60.5 & 60.1 & 45.1 & 37.0 & 32.7 & 39.1 \\ 
+		&& No Lex. &    70.6 & 61.1 & 70.7 & 46.5 & 45.2 & 40.3 \\ 
+		\sepp
+    & \multirow{4}{*}{\rt{ES}}
+  		& Original &       \\
+		&& Random &        \\ 
+		&& Only Lex.  & \\ 
+		&& No Lex. &    \\ 
+		\sepp
+	& \multirow{4}{*}{\rt{CA}}
+  		& Original &       \\
+		&& Random &        \\ 
+		&& Only Lex.  & \\ 
+		&& No Lex. &    \\ 
+		
 \\
 
 \bottomrule
 \end{tabular}
 \caption{Macro \F results for all corpora and techniques. We denote
   the best performing embedding-based
-  method per column with a \bestproj{blue box}, the best monolingual method
-  with a \bestmono{green box}, and the best MT method with a \bestmt{pink box}. We do not denote bag-of-words SVM results, as they are invariant to word order. It's important to point out that the monolingual results are not comparable, as the models are tested on a smaller subset, rather than all of the data.}
+  method per column with a \bestproj{blue box}, the best MT method with a \bestmt{pink box}, and the best monolingual method
+  with a \bestmono{green box}. We do not denote bag-of-words SVM results, as they are invariant to word order. Monolingual results are not comparable to BWE or MT.}
 \label{results:all}
-\end{table*}
+\end{table}
 
 In Table \ref{results:all} we report the results of all experiments. Although it is not comparable because they are tested on different datasets, the English monolingual models generally perform better than the cross-lingual versions (13.9 -- 9.4 percentage points on binary and 12.3 -- 13.2 on 4-class). The machine translation approaches fall in between these two.
 
