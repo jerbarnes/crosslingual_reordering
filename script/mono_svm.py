@@ -162,7 +162,7 @@ if __name__ == '__main__':
         pickle.dump(clf, out)
 
     for test_set in ["original", "random", "only_lex", "no_lex"]:
-        test_directory = "datasets/{0}/{1}/raw".format(test_set, args.lang)
+        test_directory = "datasets/mono/{0}/{1}/".format(test_set, args.lang)
 
         test_data = TestData(test_directory, None, rep=words,
                              binary=args.binary, one_hot=False)

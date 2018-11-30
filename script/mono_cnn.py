@@ -276,13 +276,13 @@ if __name__ == '__main__':
     clf = create_cnn(matrix, max_length, dim=100, output_dim=num_classes)
     history = clf.fit(src_dataset._Xtrain, src_dataset._ytrain,
                       validation_data = [src_dataset._Xdev, src_dataset._ydev],
-                      verbose=1, callbacks=[checkpoint], epochs=1)
+                      verbose=1, callbacks=[checkpoint], epochs=100)
 
     # get the best weights to test on
     clf = get_best_weights(args.lang, classifier="cnn", binary=args.binary)
 
     for test_set in ["original", "random", "only_lex", "no_lex"]:
-        test_directory = "datasets/{0}/{1}/raw".format(test_set, args.lang)
+        test_directory = "datasets/mono/{0}/{1}".format(test_set, args.lang)
 
         test_data = TestData(test_directory, None, rep=words,
                              binary=args.binary, one_hot=True)

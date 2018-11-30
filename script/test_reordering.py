@@ -27,7 +27,7 @@ def getMyData(fname, label, model, representation=sum_vecs, encoding='utf8'):
         data.append((representation(sent, model), label))
     return data
 ######
-    
+
 def to_array(X, n=2):
     """
     Converts a list scalars to an array of size len(X) x n
@@ -42,11 +42,11 @@ def per_class_f1(y, pred):
     Returns the per class f1 score.
     Todo: make this cleaner.
     """
-    
+
     num_classes = len(set(y))
     y = to_array(y, num_classes)
     pred = to_array(pred, num_classes)
-    
+
     results = []
     for j in range(num_classes):
         class_y = y[:,j]
@@ -148,7 +148,7 @@ def convert_test_data(dataset, w2idx, maxlen=50):
     Change dataset representation from a list of lists, where each outer list
     is a sentence and each inner list contains the tokens. The result
     is a matrix of size n x m, where n is the number of sentences
-    and m = maxlen is the maximum sentence size in the corpus. 
+    and m = maxlen is the maximum sentence size in the corpus.
     This function operates directly on the dataset and does not return any value.
     """
     dataset = deepcopy(dataset)
@@ -184,10 +184,10 @@ if __name__ == '__main__':
     parser.add_argument('-c', '--classifier', default='bilstm', help='choose classifier: bilstm, cnn, or svm (defaults to bilstm)')
     parser.add_argument('-b', '--binary', default=False, help='whether to use binary or 4-class (defaults to False == 4-class)', type=str2bool)
     args = parser.parse_args()
-    
+
     for el in vars(args):
         print((str(el) + ': ' + str(vars(args)[el])))
-        
+
     print(args.classifier)
     monol = []
     if args.lang == 'en':
@@ -225,7 +225,7 @@ if __name__ == '__main__':
             for el in vars(args):
                 file_pred.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
             file_pred.write(' \n' + info1 + ' \n'*2 + info2)
-        
+
     else: #svm
         if '1' in monol:
             args.lang = 'es'
@@ -272,31 +272,31 @@ if __name__ == '__main__':
                 file_pred.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
             file_pred.write(' \n' + info1 + ' \n'*2 + info2)
 
-#Error analysis
+    #Error analysis
 
-idx2w = dict([(i,w) for (w,i) in w2idx.items()])
+    idx2w = dict([(i,w) for (w,i) in w2idx.items()])
 
-errors = []
-for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data._Xtest):
-    errors_sub = []
-    sentence = []
-    if gold != prediction:
-        errors_sub.append(gold)
-        errors_sub.append(prediction)
-        for token in example:
-            if token in w2idx:
-                sentence.append(token)
-            else:
-            	sentence.append('UNK')
-        errors_sub.append(' '.join(sentence))
-        errors.append(errors_sub)
+    errors = []
+    for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data._Xtest):
+        errors_sub = []
+        sentence = []
+        if gold != prediction:
+            errors_sub.append(gold)
+            errors_sub.append(prediction)
+            for token in example:
+                if token in w2idx:
+                    sentence.append(token)
+                else:
+                	sentence.append('UNK')
+            errors_sub.append(' '.join(sentence))
+            errors.append(errors_sub)
 
 
-with open('evals/{}_{}_bi{}_error_analysis.txt'.format(args.classifier, args.lang, args.binary), 'w') as file_error:
-    for el in vars(args):
-        file_error.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
-    file_error.write('Multiclass: (0 ++, 1 +, 2 -, 3 --)' + ' \n' + 'Binary: (0 +, 1 -)' + ' \n'*2)
-    file_error.write('Prediction Gold Sentence\n\n' )
-    for case in errors:
-        file_error.write('{0} {1} {2}\n'.format(*case))
-        
+    with open('evals/{}_{}_bi{}_error_analysis.txt'.format(args.classifier, args.lang, args.binary), 'w') as file_error:
+        for el in vars(args):
+            file_error.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
+        file_error.write('Multiclass: (0 ++, 1 +, 2 -, 3 --)' + ' \n' + 'Binary: (0 +, 1 -)' + ' \n'*2)
+        file_error.write('Prediction Gold Sentence\n\n' )
+        for case in errors:
+            file_error.write('{0} {1} {2}\n'.format(*case))
+

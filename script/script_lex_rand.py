@@ -5,161 +5,102 @@ from random import shuffle
 
 #LEXICON
 
-lexicon_path = 'lexicons/bingliu_en_es.one-2-one.txt'
-lexicon_path_ca = 'lexicons/bingliu_en_ca.one-2-one.txt'
+def parse_lexicon(lexicon_path, eng=False):
+    """
+    Reads a bilingual sentiment lexicon
+    and returns the set of either
+    source or target language sentiment
+    terms.
+    """
 
-def parse_lexicon_es ():
-    lex = open(lexicon_path, 'r').readlines()
-    es_words = []
-    for sent in lex:
-        eng,es = sent.split('\t')
-        es_words.append(es[:-1])
-    return es_words
+    lexicon = []
 
-def parse_lexicon_ca ():
-    lex = open(lexicon_path_ca, 'r').readlines()
-    ca_words = []
-    for sent in lex:
-        eng,ca = sent.split('\t')
-        ca_words.append(ca[:-1])
-    return ca_words
+    # Keep basic punctuation
+    lexicon.append(".")
+    for line in open(lexicon_path):
+        source, target = line.split('\t')
+        if eng:
+          lexicon.append(source)
+        else:
+          lexicon.append(target[:-1])
 
-def parse_lexicon_en ():
-    lex = open(lexicon_path, 'r').readlines()
-    en_words = []
-    for sent in lex:
-        eng,es = sent.split('\t')
-        en_words.append(eng)
-    return en_words
-    
-def modify_to_lexicon (infile, language, only_lex_no_lex):   
+    # It is faster to check if an element is a member of a set
+    return set(lexicon)
 
-    new_file = []
-    new_new_file = []
-    lexicon = 'parse_lexicon_'+language+'()'
-    if only_lex_no_lex == 'only_lex':
-    
-        for line in infile:
-            new_sent = []
+
+def modify_to_lexicon (infile, outfile, language, mod_type="only_lex"):
+
+    # get sentiment lexicon
+    if language in ["EN", "en", "eng", "english"]:
+        lexicon = parse_lexicon("lexicons/bingliu_en_es.one-2-one.txt", eng=True)
+    else:
+        lexicon = parse_lexicon("lexicons/bingliu_en_{0}.one-2-one.txt".format(language))
+
+    # If mod_type is 'only_lex', create a version where all words that
+    # are not found in the lexicon are replaced with UNK
+    if mod_type == 'only_lex':
+
+        modified_file = []
+
+        for line in open(infile):
             tokens = nltk.word_tokenize(line)
-            
-            for t in tokens:
-                if t in eval(lexicon) or t == '.':
-                    new_sent.append(t)
-                else:
-                    new_sent.append('UNK')
-            new_file.append(new_sent)
-        
-        for s in new_file:
-            if len(s) > 0:
-                if s[0] != '.':
-                    new_new_file.append(s)
-                            
-        raw = ''
-        for sent in new_new_file:
-            for i in range(len(sent)):
-                if i+1 != len(sent):
-                    raw = raw+sent[i]+' '
-                else:
-                    raw = raw+sent[i]+' \n'
-        
-        return raw
-    
-    elif only_lex_no_lex == 'no_lex':
-        
-        for line in infile:
-            new_sent = []
-            tokens = nltk.word_tokenize(line)
-            
-            for t in tokens:
-                if t not in eval(lexicon) or t == '.': #not in
-                    new_sent.append(t)
-                else:
-                    new_sent.append('UNK')
-            new_file.append(new_sent)
-        
-        for s in new_file:
-            if len(s) > 0:
-                if s[0] != '.':
-                    new_new_file.append(s)
-                            
-        raw = ''
-        for sent in new_new_file:
-            for i in range(len(sent)):
-                if i+1 != len(sent):
-                    raw = raw+sent[i]+' '
-                else:
-                    raw = raw+sent[i]+' \n'
-        
-        return raw
+            # If t is in lexicon, keep it, otherwise "UNK"
+            modified = [t if t in lexicon else "UNK" for t in tokens]
+            if len(modified) > 0 and modified[0] != ".":
+                modified_file.append(" ".join(modified))
 
-def org_modify_to_lexicon (indir, language, only_lex_no_lex):
-    outdir = 'new_dataset/'+indir+only_lex_no_lex+'/'
-    
-    if 'new_dataset/'+indir+only_lex_no_lex+'/' not in os.listdir():
-        os.makedirs('new_dataset/'+indir+only_lex_no_lex+'/')
-    
+
+    # If mod_type is 'no_lex', create a version where all words that
+    # are found in the lexicon are replaced with UNK
+    elif mod_type == 'no_lex':
+
+        modified_file = []
+
+        for line in open(infile):
+            tokens = nltk.word_tokenize(line)
+            # If t is NOT in lexicon, keep it, otherwise "UNK"
+            modified = [t if t not in lexicon else "UNK" for t in tokens]
+            if len(modified) > 0 and modified[0] != ".":
+                modified_file.append(" ".join(modified))
+
+    # If mod_type is 'random' create a random permutation of word order
+    # in each sentence
+    elif mod_type == 'random':
+
+        modified_file = []
+        for line in open(infile):
+            tokens = nltk.word_tokenize(line)
+            shuffle(tokens)
+            modified_file.append(" ".join(tokens))
+
+
+    # Write to outfile
+    with open(outfile, "w") as out:
+        for line in modified_file:
+            out.write(line + '\n')
+
+
+
+def modify_directory(indir, outdir, language, mod_type="only_lex"):
+
     for file in os.listdir(indir):
         print(file)
-        with open(indir+file, 'r') as f:
-            infile = f.readlines()
-            outfile = outdir+file
-            result = modify_to_lexicon (infile, language, only_lex_no_lex)                    
-            with open(outfile, 'w') as outfile:
-                outfile.write(result)
-                    
-#RANDOM
+        infile = os.path.join(indir, file)
+        outfile = os.path.join(outdir, file)
+        modify_to_lexicon(infile, outfile, language, mod_type)
 
-def random_reordering (corpus):
-    new_corpus = []
-    for sent in corpus:
-        shuffle(sent)
-        new_corpus.append(sent)
-    return new_corpus
 
-def org_random (indir):  
-    outdir = 'new_dataset/'+indir+'random/'
-    
-    if 'new_dataset/'+indir+'random/' not in os.listdir():
-        os.makedirs('new_dataset/'+indir+'random/')
-        
-    for file in os.listdir(indir):
-        print(file)
-        with open(indir+file, 'r') as f:
-            corpus = []
-            infile = f.readlines()
-            outfile = outdir+file
-            for sentence in infile:
-                corpus.append(nltk.word_tokenize(sentence))
-            rand = random_reordering(corpus)
-            new_file = []
-            for sentence in rand:
-                new_sent = ' '.join(sentence)
-                new_file.append(new_sent)
-            with open(outfile, 'w') as outf:
-                for sentence in new_file:
-                    outf.write(sentence)
-                    outf.write('\n')
-        
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    
-    parser.add_argument('dataset', help='dataset (directory with the txts we want to use to get its scrambled version, only_lex, and/or no_lex version')
-    parser.add_argument('language', help='language of the lexicon')
-    
-    parser.add_argument('-r', '--random', default=False, help='reorder randomly dataset')
-    parser.add_argument('-o', '--only_lex', default=False, help='substitute all words not appearing in lexicon to "UNK"')
-    parser.add_argument('-n', '--no_lex', default=False, help='substitute all words that appear in lexicon to "UNK"')
-    
-    args = parser.parse_args()
-    
-    if args.only_lex in ['True', 'true']:
-        org_modify_to_lexicon(args.dataset, args.language, 'only_lex')
 
-    if args.no_lex in ['True', 'true']:
-        org_modify_to_lexicon(args.dataset, args.language, 'no_lex')
-    
-    if args.random in ['True', 'true']:
-        org_random(args.dataset)
+    parser.add_argument('dataset_directory', help='dataset directory (directory with the txts we want to use to get its scrambled version, only_lex, and/or no_lex version')
+    parser.add_argument('output_directory', help='new dataset directory (where to print the modified versions)')
+    parser.add_argument('-l', '--language', default="en", help='language of the lexicon (en (default), es, ca)')
+    parser.add_argument('-m', '--mod_type', default="only_lex", help='modification: "only_lex" (default), "no_lex", "random".')
+
+    args = parser.parse_args()
+
+    modify_directory(args.dataset_directory, args.output_directory,
+                     args.language, args.mod_type)

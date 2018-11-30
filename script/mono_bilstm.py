@@ -258,7 +258,7 @@ if __name__ == '__main__':
     print(classification_report(src_dataset._ydev.argmax(1), src_pred))
 
     for test_set in ["original", "random", "only_lex", "no_lex"]:
-        test_directory = "datasets/{0}/{1}/raw".format(test_set, args.lang)
+        test_directory = "datasets/mono/{0}/{1}/".format(test_set, args.lang)
 
         test_data = TestData(test_directory, None, rep=words,
                              binary=args.binary, one_hot=True)
