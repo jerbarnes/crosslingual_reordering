@@ -392,25 +392,36 @@ Finally, the \nolex and \onlylex baselines perform poorly. In fact, \onlylex is 
 
 \section{Analysis}
 
-\paragraph{1. }It would be nice to show that 
-the noise introduced by bilingual 
-embeddings leads to LSTMs not 
-being able to pick up on word 
-order in the target language.
-We could train monolingual models 
-for Spanish and Catalan and use the 
-random reordering to see the 
-difference.
+The reordering models tend to help both the \bilstm and \cnn models with shorter examples (less than 8 tokens long) where adjective order can easily be changed to resemble English word order, such as the examples shown in Table \ref{helpful_examples}. In longer examples (10 + tokens), however, the reordering either introduces too much noise, or has no effect on the final prediction. This indicates that the current reordering models are more adequate for sentiment tasks that deal with shorter texts, such as aspect- or sentence-level, rather than document-level sentiment analysis.
 
-\paragraph{2. }It would also be interesting 
-to look at particular examples 
-of errors that each model suffers.
-Are they different in each model?
-Is there any pattern?
+\begin{table}[]
+\centering\scriptsize
+\newcommand{\sepp}{\cmidrule(rl){1-1}\cmidrule(rl){2-2}\cmidrule(rl){3-3}}
+\begin{tabular}{lll}
+\toprule
+model & text & prediction \\
+\sepp
+\emph{\original} & relación calidad precio muy buena & negative \\
+\emph{\mtreordered} & relación muy buena calidad precio & positive \\
+\textit{translation} & very good quality price relationship & positive \\
+\sepp
+\emph{\original} & hotel perfecto & negative \\
+\emph{\mtreordered} & perfecto hotel & positive \\
+\textit{translation} & perfect hotel & positive \\
+\sepp
+\emph{\original} & el desayuno muy bueno . & negative \\
+\emph{\mtreordered} & el muy bueno desayuno . & positive \\
+\textit{translation} & the breakfeast (was) very good & positive \\
+\sepp
+\emph{\original} & gestión nefasta . & positive \\
+\emph{\mtreordered} & nefasta gestión . & negative \\
+\textit{translation} & terrible management & negative \\
+\bottomrule
+\end{tabular}
+\caption{Examples where reordering improves results over original on binary English-Spanish setup with the BiLSTM classifier.}
+\label{helpful_examples}
 
-two things, answer by email, special drop in \cnn
-
-
+\end{table}
 \section{Conclusion and Future Work}
 
 In this work, we have shown that neural networks that rely on bilingual embeddings as features
