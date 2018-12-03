@@ -189,6 +189,11 @@ if __name__ == '__main__':
         print((str(el) + ': ' + str(vars(args)[el])))
 
     print(args.classifier)
+
+    # get data type (orginal, reordered, n_adj, random)
+    data_type = args.test_directory.split("/")[1]
+
+
     monol = []
     if args.lang == 'en':
             monol.append('1')
@@ -267,7 +272,7 @@ if __name__ == '__main__':
         infob = 'binary: ' + str(args.binary)
         info1 = str(classification_report(converted_test_data._ytest.argmax(1), pred))
         info2 = str('Macro F1: {0:.3f}'.format(f1.mean()))
-        with open('evals/{}_{}_bi{}_evaluation_result.txt'.format(args.classifier, args.lang, args.binary), 'w') as file_pred:
+        with open('evals/{}_{}_{}_bi{}_evaluation_result.txt'.format(args.classifier, args.lang, data_type, args.binary), 'w') as file_pred:
             for el in vars(args):
                 file_pred.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
             file_pred.write(' \n' + info1 + ' \n'*2 + info2)
@@ -276,27 +281,28 @@ if __name__ == '__main__':
 
     idx2w = dict([(i,w) for (w,i) in w2idx.items()])
 
-    errors = []
-    for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data._Xtest):
-        errors_sub = []
-        sentence = []
-        if gold != prediction:
-            errors_sub.append(gold)
-            errors_sub.append(prediction)
-            for token in example:
-                if token in w2idx:
-                    sentence.append(token)
-                else:
-                	sentence.append('UNK')
-            errors_sub.append(' '.join(sentence))
-            errors.append(errors_sub)
+
+    # for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data._Xtest):
+    #     errors_sub = []
+    #     sentence = []
+    #     if gold != prediction:
+    #         errors_sub.append(gold)
+    #         errors_sub.append(prediction)
+    #         for token in example:
+    #             if token in w2idx:
+    #                 sentence.append(token)
+    #             else:
+    #             	sentence.append('UNK')
+    #         errors_sub.append(' '.join(sentence))
+    #         errors.append(errors_sub)
 
 
-    with open('evals/{}_{}_bi{}_error_analysis.txt'.format(args.classifier, args.lang, args.binary), 'w') as file_error:
+    with open('evals/{}_{}_{}_bi{}_error_analysis.txt'.format(args.classifier, args.lang, data_type, args.binary), 'w') as file_error:
         for el in vars(args):
             file_error.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
         file_error.write('Multiclass: (0 ++, 1 +, 2 -, 3 --)' + ' \n' + 'Binary: (0 +, 1 -)' + ' \n'*2)
         file_error.write('Prediction Gold Sentence\n\n' )
-        for case in errors:
-            file_error.write('{0} {1} {2}\n'.format(*case))
+
+        for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data._Xtest):
+            file_error.write('{0} {1} {2}\n'.format(gold, prediction, ' '.join(example)))
 
