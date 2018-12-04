@@ -136,7 +136,7 @@ $^2$University of Oslo\\
 \maketitle
 \begin{abstract}
 Current state-of-the-art models for sentiment analysis make use of word order
-either explicitly by pretraining on language modelling or implicitly
+either explicitly by pretraining on language modeling or implicitly
 by using RNNs or \cnns.
 This is a problem for cross-lingual models that
 use bilingual embeddings as features, as the difference
@@ -145,7 +145,7 @@ not resolved. In this work, we explore reordering
 as a preprocessing step for sentence-level cross-lingual sentiment
 classification with two language combinations
 (English-Spanish, English-Catalan). We find that reordering helps both \bilstms and \cnns, and that a simple reordering
-approch outperforms a more complex MT-inspired reordering
+approach outperforms a more complex MT-inspired reordering
 scheme.
 
 
@@ -377,7 +377,7 @@ Table \ref{results:all} shows the results of all experiments. Reordering the tes
 
 Although they are not comparable because they are tested on different datasets, the monolingual models generally perform better than the cross-lingual versions (6.3 -- 12.3 percentage points on binary and 1.7 -- 18.4 on 4-class) with the exception of SVM on Spanish. The machine translation approaches fall in between these two.
 
-The classification models display different trends across the setups. On the monolingual and machine translations setups, the \bilstm is the strongest model, followed by the \cnn and SVM (SVM and \cnn, respectively for machine translation). With bilingual embeddings, however, the SVM outperforms both the \bilstm and \cnn on the Spanish binary setup, while the \cnn is strongest on the multiclass.  This shows that \bilstm displays a different behaviour with bilingual embeddings.
+The classification models display different trends across the setups. On the monolingual and machine translations setups, the \bilstm is the strongest model, followed by the \cnn and SVM (SVM and \cnn, respectively for machine translation). With bilingual embeddings, however, the SVM outperforms both the \bilstm and \cnn on the Spanish binary setup, while the \cnn is strongest on the multiclass.  This shows that \bilstm displays a different behavior with bilingual embeddings.
 
 The machine translation models perform well, but are surprisingly invariant to word order. They also suffer less from using only features from the sentiment lexicon (\onlylex), which suggests they rely more on these keywords, while ignoring word order effects to a higher degree.
 
@@ -422,7 +422,7 @@ model & text & prediction \\
 In this work, we have shown that neural networks that rely on bilingual embeddings as features
 are sensitive to word order and benefit from reordering the target language test data. 
 
-Given that state-of-the-art monolingual models explicitly learn word order on language modelling pre-training, it is important to realize that cross-lingual models based on bilingual word embeddings are not currently able to do so. In the future, it may be useful to pretrain bilingual language models in a similar way.
+Given that state-of-the-art monolingual models explicitly learn word order on language modeling pre-training, it is important to realize that cross-lingual models based on bilingual word embeddings are not currently able to do so. In the future, it may be useful to pretrain bilingual language models in a similar way.
 
 \bibliography{lit}
 \bibliographystyle{acl_natbib}
