@@ -1,0 +1,172 @@
+============================================================================
+NAACL-HLT 2019 Reviews for Submission #345
+============================================================================
+
+Title: On the effect of word order on cross-lingual sentiment analysis
+Authors: Àlex R. Atrio, Toni Badia and Jeremy Barnes
+============================================================================
+                            REVIEWER #1
+============================================================================
+
+What is this paper about, and what contributions does it make?
+---------------------------------------------------------------------------
+Problem/Question:
+
+This paper explores cross-lingual sentiment analysis. In particular, it studies whether reordering the input of the target language (adapting it to the source language) has a positive/negative effect in terms of performance, when using a CNN/BILSTM and pretrained bilingual embeddings as input.
+
+The advantage of this method is that it is possible to make look the data in the target language more similar to the data that the model received during training (the source language). In this paper, English is used as the source language and Spanish and Catalan as the target languages.
+
+
+
+Contributions (list at least two):
+
+It applies word reordering to cross-lingual SA using pretrained bilingual embeddings. This could be useful in low-resource settings.
+
+It provides a comparison against other alternatives that exist to address cross-lingual sentiment analysis.
+---------------------------------------------------------------------------
+
+
+What strengths does this paper have?
+---------------------------------------------------------------------------
+Strengths (list at least two):
+
+The authors propose different ways of reordering the input, provide fair baselines and also some control methods, e.g. random reordering (negative effect if word ordering matters) or a SVM method (invariant to reordering).
+
+It is an interesting and simple idea to be applied to SA and low-resource languages, although as the authors state, it is not a novel idea and it has been already applied to other NLP areas such as machine translation.
+
+The paper is clearly written.
+---------------------------------------------------------------------------
+
+
+What weaknesses does this paper have?
+---------------------------------------------------------------------------
+Weaknesses (list at least two):
+
+I found the experiments could be more exhaustive. The differences are in general small (usually between +0.1 and +0.4) and the corpora used are also relative small, which might increase variability. I think it would be good to compute the score as the average of N runs, to test if these improvements remain when using different seeds (for example).
+
+As the differences seem to be small, I also would like to see how this approach behaves for more different pairs of languages. Also related to this, the authors remain loyal to the Hotel Reviews, but even if the domain is changed for the target language I think there is not a 'reordering' method that should be more affected than the others.
+
+I miss some further comparison against some SOTA system (that takes into account word ordering) in addition to a standard CNN and LSTM. This would make the results stronger too.
+---------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------
+Reviewer's Scores
+---------------------------------------------------------------------------
+                     Overall Score (1-6): 3
+                       Readability (1-5): 5
+
+Additional Comments (Optional)
+---------------------------------------------------------------------------
+Not sure 'Word Order in Sentiment Analysis' is the most accurate paragraph title. I think something like 'Language Modeling and Sentiment Analysis' would be more exact: LM embeddings capture much more than word order and, as far as I know, it remains unknown what features are the ones that cause that sentiment analysis systems improve their performance with these embeddings.
+
+Could Table 1 show the statistics per split (training, dev, test,...), instead.
+
+"At document-level bag-of-words model [...] good results without relying on word order" Can you provide any reference supporting this?
+
+I think the NO-LEXICON method can be removed if space is needed to include future improvements. IMHO it does not contribute to the motivation of the paper.
+
+Could you comment what MT system was used to train 'baselines'
+
+Discuss in a couple of line about the bag-of-embedding representation used for the SVM
+
+"In longer instances [...] does not affect the final prediction" -> I do not think this is necessary true, but more complex phenomena might occur in longer sentences (that I expect to be harder to classify in general too).
+
+Any thoughts about this "The machine translation models perform well but are surprisingly invariant to word order"?
+---------------------------------------------------------------------------
+
+
+
+============================================================================
+                            REVIEWER #2
+============================================================================
+
+What is this paper about, and what contributions does it make?
+---------------------------------------------------------------------------
+Problem/Question:
+
+The paper attempts to investigate whether word order would affect the performance of cross-lingual sentiment classifiers. The authors show that classification models are sensitive to word order on short texts. By using simple pre-reordering techniques on target sentences, the adaptation performance can be improved.
+
+Contributions (list at least two):
+
+1. The paper raises an interesting question to think about for cross-lingual sentiment classification -- how sensitive and in which cases the differences of word order would affect the adaptation performance, and how could this problem be addressed.
+2. By addressing the problem, the cross-lingual model can be potentially benefited from pretraining language models.
+---------------------------------------------------------------------------
+
+
+What strengths does this paper have?
+---------------------------------------------------------------------------
+Strengths (list at least two):
+
+1. The paper is well-written and easy to follow.
+2. The paper attempts to address an interesting question with reasonable motivations, which may shed light for future researches.
+3. The experiment is well designed and conducted. Results are carefully analysed.
+4. Source code is provided.
+---------------------------------------------------------------------------
+
+
+What weaknesses does this paper have?
+---------------------------------------------------------------------------
+Weaknesses (list at least two):
+
+1. The contribution regarding to the method is limited. The authors apply some existing reordering methods instead of proposing a new one.
+2.  According to Table 3, seems only tiny improvements can be observed when comparing N-ADJ and REORDERED to ORIGINAL, where the improvement is only 0.1-0.2% in most cases. This does not well support the authors claims that reordering is helpful.
+3. Since the datasets are small and the improvements are tiny, significant tests should be conducted.
+4.  I think it is better to conduct the experiments on target datasets with neutral examples, while the current datasets only contain positive and negative examples.
+---------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------
+Reviewer's Scores
+---------------------------------------------------------------------------
+                     Overall Score (1-6): 4
+                       Readability (1-5): 5
+
+
+============================================================================
+                            REVIEWER #3
+============================================================================
+
+What is this paper about, and what contributions does it make?
+---------------------------------------------------------------------------
+Problem/Question:
+
+The paper proposed a study on the effect of word order on cross-lingual sentiment analysis.
+
+
+Contributions (list at least two):
+
+The use of a transfer-learning approach between languages such as English, Spanish, and Catalan in sentiment analysis task to classify reviews.
+In sentiment analysis, the word order affects the global decision of the message or review such as negative markers  as “no” or “not”; these kind of markers reverse the sentiment of the message, or the use of words that reverse the sentiment of the message such as antonyms. Thus, it is important to identify the effect of this phenomenon in different representations such as embeddings.
+---------------------------------------------------------------------------
+
+
+What strengths does this paper have?
+---------------------------------------------------------------------------
+Strengths (list at least two):
+
+The use of a transfer-learning approach between languages such as English, Spanish, and Catalan in sentiment analysis task to classify reviews.
+In sentiment analysis, the word order affects the global decision of the message or review such as negative markers such as no or not, so it is important to identify this phenomenon.
+---------------------------------------------------------------------------
+
+
+What weaknesses does this paper have?
+---------------------------------------------------------------------------
+Weaknesses (list at least two):
+
+The experiments with a small dataset are questionable results, at least a k-fold-cross-validation test should be used.
+The performance's differences are not clear whether they are statistically significant or they are only noise.
+The paper doesn't show with strong evidences the effect of word order.
+
+The paper needs a proof reading to revise possible mistakes or typos.
+For instance,
+Section: "Word Order in Sentiment Analysis:"
+"language modeling task to a cloze task"
+---------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------
+Reviewer's Scores
+---------------------------------------------------------------------------
+                     Overall Score (1-6): 2
+                       Readability (1-5): 4
