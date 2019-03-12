@@ -1,7 +1,6 @@
 from numpy.random import seed
-seed(1)
 from tensorflow import set_random_seed
-set_random_seed(1)
+
 
 from Utils.WordVecs import *
 from Utils.Datasets import *
@@ -30,7 +29,7 @@ def create_cnn(matrix, max_length, dim=300, output_dim=2,
     # Convolutional model
     filter_sizes=(2,3,4)
     num_filters = 3
-   
+
 
     graph_in = Input(shape=(max_length, len(matrix[0])))
     convs = []
@@ -43,7 +42,7 @@ def create_cnn(matrix, max_length, dim=300, output_dim=2,
         pool = MaxPooling1D(pool_length=2)(conv)
         flatten = Flatten()(pool)
         convs.append(flatten)
-        
+
     out = Merge(mode='concat')(convs)
     graph = Model(input=graph_in, output=out)
 
@@ -155,7 +154,7 @@ def get_W(wordvecs, dim=300):
 
 def idx_sent(sent, w2idx):
     """
-    Converts a sentence to an array of its indices 
+    Converts a sentence to an array of its indices
     in the word-to-index dictionary
     """
     array = []
@@ -171,7 +170,7 @@ def convert_dataset(dataset, w2idx, maxlen=50):
     Change dataset representation from a list of lists, where each outer list
     is a sentence and each inner list contains the tokens. The result
     is a matrix of size n x m, where n is the number of sentences
-    and m = maxlen is the maximum sentence size in the corpus. 
+    and m = maxlen is the maximum sentence size in the corpus.
     This function operates directly on the dataset and does not return any value.
     """
     dataset._Xtrain = np.array([idx_sent(s, w2idx) for s in dataset._Xtrain])
@@ -208,14 +207,19 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-l', '--lang', default='es', help='choose target language: es, ca, eu (defaults to es)')
     parser.add_argument('-b', '--binary', default=False, help='whether to use binary or 4-class (defaults to False == 4-class)', type=str2bool)
-    
+
     parser.add_argument('-se', '--src_embedding', default="embeddings/google.txt")
     parser.add_argument('-te', '--trg_embedding', default="embeddings/sg-300-es.txt")
     parser.add_argument('-sd', '--src_dataset', default="datasets/training/en/raw")
     parser.add_argument('-td', '--trg_dataset', default="datasets/training/es/raw")
-    
+    parser.add_argument('-seed', '--random_seed', dtype=int)
+
     args = parser.parse_args()
-    
+
+    # set random seed
+    seed(args.random_seed)
+    set_random_seed(args.random_seed)
+
     # Import monolingual vectors
     print('importing word embeddings')
     src_vecs = WordVecs(args.src_embedding)
@@ -265,8 +269,8 @@ if __name__ == '__main__':
                 trg_vocab[word] += 1
             else:
                 trg_vocab[word] = 1
-    
-    
+
+
     # get joint embedding space
     joint_embeddings = {}
     for vecs in [src_vecs, trg_vecs]:
@@ -286,7 +290,7 @@ if __name__ == '__main__':
     joint_vocab = {}
     joint_vocab.update(src_vocab)
     joint_vocab.update(trg_vocab)
-    
+
     add_unknown_words(joint_embeddings, joint_vocab, min_fq=1, dim=300)
     joint_matrix, joint_w2idx = get_W(joint_embeddings, dim=300)
 
@@ -306,10 +310,10 @@ if __name__ == '__main__':
     # train BiLSTM on source
     print('Training CNN...')
     if args.binary:
-        checkpoint = ModelCheckpoint('models/artetxe-cnn/binary-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
+        checkpoint = ModelCheckpoint('models/artetxe-cnn/binary-en-'+args.lang+'/run{0}'.format(args.random_seed) + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                  monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
     else:
-        checkpoint = ModelCheckpoint('models/artetxe-cnn/4class-en-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
+        checkpoint = ModelCheckpoint('models/artetxe-cnn/4class-en-'+args.lang+'/run{0}'.format(args.random_seed) + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                  monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
 
     num_classes = len(set(src_dataset._ytrain.argmax(1)))
@@ -327,4 +331,4 @@ if __name__ == '__main__':
 
     trg_pred = clf.predict_classes(trg_dataset._Xdev)
     print(classification_report(trg_dataset._ydev.argmax(1), trg_pred))
-    
+

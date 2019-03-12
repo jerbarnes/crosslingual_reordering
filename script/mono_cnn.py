@@ -212,8 +212,13 @@ if __name__ == '__main__':
     parser.add_argument('-b', '--binary', default=False, help='whether to use binary or 4-class (defaults to False == 4-class)', type=str2bool)
     parser.add_argument('-se', '--src_embedding', default="embeddings/google.txt")
     parser.add_argument('-sd', '--src_dataset', default="datasets/training/en/raw")
+    parser.add_argument('-seed', '--random_seed', dtype=int)
 
     args = parser.parse_args()
+
+    # set random seed
+    seed(args.random_seed)
+    set_random_seed(args.random_seed)
 
     # Import monolingual vectors
     print('importing word embeddings')
