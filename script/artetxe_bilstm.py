@@ -303,7 +303,7 @@ if __name__ == '__main__':
         clf = create_BiLSTM(joint_matrix, lstm_dim=100, output_dim=num_classes)
         history = clf.fit(src_dataset._Xtrain, src_dataset._ytrain,
                           validation_data = [src_dataset._Xdev, src_dataset._ydev],
-                          verbose=1, callbacks=[checkpoint], epochs=100)
+                          verbose=1, callbacks=[checkpoint], epochs=30)
 
         # get the best weights to test on
         clf = get_best_weights(args.lang, i, binary=args.binary)
