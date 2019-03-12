@@ -45,9 +45,9 @@ def create_BiLSTM(matrix, lstm_dim=300, output_dim=2,
 
 def get_best_weights(lang, run, classifier='bilstm', binary=False):
     if binary:
-        base_dir = 'models/artetxe-'+classifier+'/binary-en-' + lang '/run{0}'.format(run)
+        base_dir = 'models/artetxe-'+classifier+'/binary-en-' + lang + '/run{0}'.format(run)
     else:
-        base_dir = 'models/artetxe-'+classifier+'/4class-en-' + lang '/run{0}'.format(args.random_seed)
+        base_dir = 'models/artetxe-'+classifier+'/4class-en-' + lang + '/run{0}'.format(args.random_seed)
     weights = os.listdir(base_dir)
 
     best_val = 0
