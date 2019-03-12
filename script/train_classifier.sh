@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set to your embeddings
-source_embeddings=embeddings/google.txt
-target_embedding_dir=embeddings
+source_embeddings=../../embeddings/BLSE/google.txt
+target_embedding_dir=../../embeddings/BLSE
 
 for lang in es ca; do
     for binary in True False; do
