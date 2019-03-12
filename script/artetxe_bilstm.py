@@ -17,6 +17,7 @@ import argparse
 import pickle
 import json
 import re
+import os
 
 from sklearn.metrics import classification_report
 
@@ -188,13 +189,8 @@ if __name__ == '__main__':
     parser.add_argument('-te', '--trg_embedding', default="embeddings/sg-300-es.txt")
     parser.add_argument('-sd', '--src_dataset', default="datasets/training/en/raw")
     parser.add_argument('-td', '--trg_dataset', default="datasets/training/es/raw")
-    parser.add_argument('-seed', '--random_seed', type=int)
 
     args = parser.parse_args()
-
-    # set random seed
-    seed(args.random_seed)
-    set_random_seed(args.random_seed)
 
     # Import monolingual vectors
     print('importing word embeddings')
@@ -282,28 +278,37 @@ if __name__ == '__main__':
     # convert datasets
     src_dataset = convert_dataset(src_dataset, joint_w2idx, max_length)
     trg_dataset = convert_dataset(trg_dataset, joint_w2idx, max_length)
+    num_classes = len(set(src_dataset._ytrain.argmax(1)))
 
     # train BiLSTM on source
-    print('Training BiLSTM...')
-    if args.binary:
-        checkpoint = ModelCheckpoint('models/artetxe-bilstm/binary-en-'+args.lang + '/run{0}'.format(args.random_seed) + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-    else:
-        checkpoint = ModelCheckpoint('models/artetxe-bilstm/4class-en-'+args.lang+ '/run{0}'.format(args.random_seed) + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
+    random_seeds = [1, 2, 3, 4, 5]
+    for i in random_seeds:
 
-    num_classes = len(set(src_dataset._ytrain.argmax(1)))
-    clf = create_BiLSTM(joint_matrix, lstm_dim=100, output_dim=num_classes)
-    history = clf.fit(src_dataset._Xtrain, src_dataset._ytrain,
-                      validation_data = [src_dataset._Xdev, src_dataset._ydev],
-                      verbose=1, callbacks=[checkpoint], epochs=100)
+        # set random seed
+        seed(i)
+        set_random_seed(i)
 
-    # get the best weights to test on
-    clf = get_best_weights(args.lang, binary=args.binary)
+        print('Training BiLSTM...')
+        if args.binary:
+            checkpoint = ModelCheckpoint('models/artetxe-bilstm/binary-en-'+args.lang + '/run{0}'.format(i) + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
+                                     monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
+        else:
+            checkpoint = ModelCheckpoint('models/artetxe-bilstm/4class-en-'+args.lang+ '/run{0}'.format(i) + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
+                                     monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
+        os.makedirs(checkpoint, exist_ok=True)
 
-    # test on src devset and trg devset
-    src_pred = clf.predict_classes(src_dataset._Xdev)
-    print(classification_report(src_dataset._ydev.argmax(1), src_pred))
 
-    trg_pred = clf.predict_classes(trg_dataset._Xdev)
-    print(classification_report(trg_dataset._ydev.argmax(1), trg_pred))
+        clf = create_BiLSTM(joint_matrix, lstm_dim=100, output_dim=num_classes)
+        history = clf.fit(src_dataset._Xtrain, src_dataset._ytrain,
+                          validation_data = [src_dataset._Xdev, src_dataset._ydev],
+                          verbose=1, callbacks=[checkpoint], epochs=100)
+
+        # get the best weights to test on
+        clf = get_best_weights(args.lang, binary=args.binary)
+
+        # test on src devset and trg devset
+        src_pred = clf.predict_classes(src_dataset._Xdev)
+        print(classification_report(src_dataset._ydev.argmax(1), src_pred))
+
+        trg_pred = clf.predict_classes(trg_dataset._Xdev)
+        print(classification_report(trg_dataset._ydev.argmax(1), trg_pred))
