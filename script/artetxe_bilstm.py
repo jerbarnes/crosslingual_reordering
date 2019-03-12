@@ -48,7 +48,7 @@ def get_best_weights(lang, run, classifier='bilstm', binary=False):
     if binary:
         base_dir = 'models/artetxe-'+classifier+'/binary-en-' + lang + '/run{0}'.format(run)
     else:
-        base_dir = 'models/artetxe-'+classifier+'/4class-en-' + lang + '/run{0}'.format(args.random_seed)
+        base_dir = 'models/artetxe-'+classifier+'/4class-en-' + lang + '/run{0}'.format(run)
     weights = os.listdir(base_dir)
 
     best_val = 0
@@ -306,7 +306,7 @@ if __name__ == '__main__':
                           verbose=1, callbacks=[checkpoint], epochs=100)
 
         # get the best weights to test on
-        clf = get_best_weights(args.lang, binary=args.binary)
+        clf = get_best_weights(args.lang, i, binary=args.binary)
 
         # test on src devset and trg devset
         src_pred = clf.predict_classes(src_dataset._Xdev)

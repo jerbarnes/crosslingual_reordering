@@ -19,6 +19,7 @@ import argparse
 import pickle
 import json
 import re
+import os
 
 from sklearn.metrics import classification_report
 
@@ -67,11 +68,11 @@ def create_cnn(matrix, max_length, dim=300, output_dim=2,
     return model
 
 
-def get_best_weights(lang, classifier='cnn', binary=False):
+def get_best_weights(lang, run, classifier='cnn', binary=False):
     if binary:
-        base_dir = 'models/artetxe-'+classifier+'/binary-en-' + lang
+        base_dir = 'models/artetxe-'+classifier+'/binary-en-' + lang + '/run{0}'.format(run)
     else:
-        base_dir = 'models/artetxe-'+classifier+'/4class-en-' + lang
+        base_dir = 'models/artetxe-'+classifier+'/4class-en-' + lang + '/run{0}'.format(run)
     weights = os.listdir(base_dir)
 
     best_val = 0
@@ -306,29 +307,39 @@ if __name__ == '__main__':
     # convert datasets
     src_dataset = convert_dataset(src_dataset, joint_w2idx, max_length)
     trg_dataset = convert_dataset(trg_dataset, joint_w2idx, max_length)
-
-    # train BiLSTM on source
-    print('Training CNN...')
-    if args.binary:
-        checkpoint = ModelCheckpoint('models/artetxe-cnn/binary-en-'+args.lang+'/run{0}'.format(args.random_seed) + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-    else:
-        checkpoint = ModelCheckpoint('models/artetxe-cnn/4class-en-'+args.lang+'/run{0}'.format(args.random_seed) + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-
     num_classes = len(set(src_dataset._ytrain.argmax(1)))
-    clf = create_cnn(joint_matrix, max_length, dim=100, output_dim=num_classes)
-    history = clf.fit(src_dataset._Xtrain, src_dataset._ytrain,
-                      validation_data = [src_dataset._Xdev, src_dataset._ydev],
-                      verbose=1, callbacks=[checkpoint], epochs=100)
 
-    # get the best weights to test on
-    clf = get_best_weights(args.lang, binary=args.binary)
+    # train CNN on source
+    random_seeds = [1, 2, 3, 4, 5]
+    for i in random_seeds:
 
-    # test on src devset and trg devset
-    src_pred = clf.predict_classes(src_dataset._Xdev)
-    print(classification_report(src_dataset._ydev.argmax(1), src_pred))
+        # set random seed
+        seed(i)
+        set_random_seed(i)
 
-    trg_pred = clf.predict_classes(trg_dataset._Xdev)
-    print(classification_report(trg_dataset._ydev.argmax(1), trg_pred))
+        print('Training CNN...')
+        if args.binary:
+            outdir = 'models/artetxe-cnn/binary-en-'+args.lang + '/run{0}'.format(i)
+            checkpoint = ModelCheckpoint(outdir + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
+                                     monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
+        else:
+            outdir = 'models/artetxe-cnn/4class-en-'+args.lang + '/run{0}'.format(i)
+            checkpoint = ModelCheckpoint(outdir + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
+                                     monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
+        os.makedirs(outdir, exist_ok=True)
+
+        clf = create_cnn(joint_matrix, max_length, dim=100, output_dim=num_classes)
+        history = clf.fit(src_dataset._Xtrain, src_dataset._ytrain,
+                          validation_data = [src_dataset._Xdev, src_dataset._ydev],
+                          verbose=1, callbacks=[checkpoint], epochs=100)
+
+        # get the best weights to test on
+        clf = get_best_weights(args.lang, run, binary=args.binary)
+
+        # test on src devset and trg devset
+        src_pred = clf.predict_classes(src_dataset._Xdev)
+        print(classification_report(src_dataset._ydev.argmax(1), src_pred))
+
+        trg_pred = clf.predict_classes(trg_dataset._Xdev)
+        print(classification_report(trg_dataset._ydev.argmax(1), trg_pred))
 
