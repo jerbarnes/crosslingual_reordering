@@ -188,7 +188,7 @@ if __name__ == '__main__':
     parser.add_argument('-te', '--trg_embedding', default="embeddings/sg-300-es.txt")
     parser.add_argument('-sd', '--src_dataset', default="datasets/training/en/raw")
     parser.add_argument('-td', '--trg_dataset', default="datasets/training/es/raw")
-    parser.add_argument('-seed', '--random_seed', dtype=int)
+    parser.add_argument('-seed', '--random_seed', type=int)
 
     args = parser.parse_args()
 
