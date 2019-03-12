@@ -290,12 +290,14 @@ if __name__ == '__main__':
 
         print('Training BiLSTM...')
         if args.binary:
-            checkpoint = ModelCheckpoint('models/artetxe-bilstm/binary-en-'+args.lang + '/run{0}'.format(i) + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
+            outdir = 'models/artetxe-bilstm/binary-en-'+args.lang + '/run{0}'.format(i)
+            checkpoint = ModelCheckpoint(outdir + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                      monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
         else:
-            checkpoint = ModelCheckpoint('models/artetxe-bilstm/4class-en-'+args.lang+ '/run{0}'.format(i) + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
+            outdir = 'models/artetxe-bilstm/4class-en-' + args.lang + '/run{0}'.format(i)
+            checkpoint = ModelCheckpoint(outdir + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
                                      monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-        os.makedirs(checkpoint, exist_ok=True)
+        os.makedirs(outdir, exist_ok=True)
 
 
         clf = create_BiLSTM(joint_matrix, lstm_dim=100, output_dim=num_classes)
