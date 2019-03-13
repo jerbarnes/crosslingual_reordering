@@ -28,8 +28,8 @@ def create_cnn(matrix, max_length, dim=300, output_dim=2,
                dropout=.5, train=False):
 
     # Convolutional model
-    filter_sizes=(2,3,4)
-    num_filters = 3
+    filter_sizes=(2, 3, 4)
+    num_filters = 20
 
 
     graph_in = Input(shape=(max_length, len(matrix[0])))
