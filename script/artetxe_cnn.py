@@ -8,7 +8,7 @@ from Utils.Representations import words as word_reps
 
 from keras.models import Sequential, load_model
 from keras.models import Sequential, Model, load_model
-from keras.layers import Dropout, Dense, Embedding, Convolution1D, MaxPooling1D, Flatten, Merge, Input
+from keras.layers import Dropout, Dense, Embedding, Convolution1D, MaxPooling1D, Flatten, Concatenate, Input
 from keras.preprocessing.sequence import pad_sequences
 from keras.callbacks import ModelCheckpoint
 from keras import backend as K
@@ -35,16 +35,16 @@ def create_cnn(matrix, max_length, dim=300, output_dim=2,
     graph_in = Input(shape=(max_length, len(matrix[0])))
     convs = []
     for fsz in filter_sizes:
-        conv = Convolution1D(nb_filter=num_filters,
-                 filter_length=fsz,
-                 border_mode='valid',
+        conv = Convolution1D(filters=num_filters,
+                 kernel_size=fsz,
+                 padding='valid',
                  activation='relu',
-                 subsample_length=1)(graph_in)
-        pool = MaxPooling1D(pool_length=2)(conv)
+                 strides=1)(graph_in)
+        pool = MaxPooling1D(pool_size=2)(conv)
         flatten = Flatten()(pool)
         convs.append(flatten)
 
-    out = Merge(mode='concat')(convs)
+    out = Concatenate()(convs)
     graph = Model(input=graph_in, output=out)
 
     # Full model
