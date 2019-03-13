@@ -209,8 +209,8 @@ if __name__ == '__main__':
     parser.add_argument('-l', '--lang', default='es', help='choose target language: es, ca, eu (defaults to es)')
     parser.add_argument('-b', '--binary', default=False, help='whether to use binary or 4-class (defaults to False == 4-class)', type=str2bool)
 
-    parser.add_argument('-se', '--src_embedding', default="embeddings/google.txt")
-    parser.add_argument('-te', '--trg_embedding', default="embeddings/sg-300-es.txt")
+    parser.add_argument('-se', '--src_embedding', default="../../embeddings/BLSE/google.txt")
+    parser.add_argument('-te', '--trg_embedding', default="../../embeddings/BLSE/sg-300-es.txt")
     parser.add_argument('-sd', '--src_dataset', default="datasets/training/en/raw")
     parser.add_argument('-td', '--trg_dataset', default="datasets/training/es/raw")
 
