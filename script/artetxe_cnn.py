@@ -213,13 +213,8 @@ if __name__ == '__main__':
     parser.add_argument('-te', '--trg_embedding', default="embeddings/sg-300-es.txt")
     parser.add_argument('-sd', '--src_dataset', default="datasets/training/en/raw")
     parser.add_argument('-td', '--trg_dataset', default="datasets/training/es/raw")
-    parser.add_argument('-seed', '--random_seed', dtype=int)
 
     args = parser.parse_args()
-
-    # set random seed
-    seed(args.random_seed)
-    set_random_seed(args.random_seed)
 
     # Import monolingual vectors
     print('importing word embeddings')
@@ -334,7 +329,7 @@ if __name__ == '__main__':
                           verbose=1, callbacks=[checkpoint], epochs=30)
 
         # get the best weights to test on
-        clf = get_best_weights(args.lang, run, binary=args.binary)
+        clf = get_best_weights(args.lang, i, binary=args.binary)
 
         # test on src devset and trg devset
         src_pred = clf.predict_classes(src_dataset._Xdev)
