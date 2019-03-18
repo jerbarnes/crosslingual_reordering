@@ -56,27 +56,35 @@ def per_class_f1(y, pred):
     return np.array(results)
 
 
-def load_best_model(lang, embedding='artetxe', classifier='bilstm', binary=False):
+def load_best_models(lang, embedding='artetxe', classifier='bilstm', binary=False):
+
+    models = []
+
+
     if binary:
         base_dir = 'models/{0}-{1}/binary-en-{2}'.format(embedding, classifier, lang)
     else:
         base_dir = 'models/{0}-{1}/4class-en-{2}'.format(embedding, classifier, lang)
-    weights = os.listdir(base_dir)
 
-    best_val = 0
-    best_weights = ''
-    for weight in weights:
-        try:
-            val_f1 = re.sub('weights.[0-9]*-', '', weight)
-            val_f1 = re.sub('.hdf5', '', val_f1)
-            val_f1 = float(val_f1)
-            if val_f1 > best_val:
-                best_val = val_f1
-                best_weights = weight
-        except ValueError:
-            pass
+    for i in [1, 2, 3, 4, 5]:
+        full_dir = os.path.join(base_dir, "run{0}".format(i))
+        weights = os.listdir(base_dir)
 
-    return load_model(os.path.join(base_dir, best_weights), custom_objects= {'f1': f1})
+        best_val = 0
+        best_weights = ''
+        for weight in weights:
+            try:
+                val_f1 = re.sub('weights.[0-9]*-', '', weight)
+                val_f1 = re.sub('.hdf5', '', val_f1)
+                val_f1 = float(val_f1)
+                if val_f1 > best_val:
+                    best_val = val_f1
+                    best_weights = weight
+            except ValueError:
+                pass
+        models.append(load_model(os.path.join(base_dir, best_weights), custom_objects= {'f1': f1}))
+
+    return models
 
 def open_params(lang, embeddings='artetxe', classifier='bilstm', binary=True):
     if binary:
@@ -202,7 +210,7 @@ if __name__ == '__main__':
         if '1' in monol:
             args.lang = 'es'
         # load classifier
-        clf = load_best_model(args.lang, args.embedding, args.classifier, args.binary)
+        models = load_best_model(args.lang, args.embedding, args.classifier, args.binary)
 
         # load params
         w2idx, max_length = open_params(args.lang, args.embedding, args.classifier, args.binary)
@@ -215,8 +223,18 @@ if __name__ == '__main__':
         converted_test_data = convert_test_data(test_data, w2idx, max_length)
 
         # test classifier
-        pred = clf.predict_classes(converted_test_data._Xtest)
-        f1 = per_class_f1(converted_test_data._ytest.argmax(1), pred)
+        f1s = []
+        for model in models:
+            pred = model.predict_classes(converted_test_data._Xtest)
+            f1 = per_class_f1(converted_test_data._ytest.argmax(1), pred)
+            f1s.append(f1)
+        mean_f1 = np.array(f1s).mean()
+        var_f1 = np.array(f1s).std()
+
+        print("Avg f1: {0:.3f}".format(mean_f1))
+        print("Std Dev.: {0:.3f}".format(var_f1))
+        print()
+
 
         if '1' in monol:
             args.lang = 'en'
@@ -277,32 +295,4 @@ if __name__ == '__main__':
                 file_pred.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
             file_pred.write(' \n' + info1 + ' \n'*2 + info2)
 
-    #Error analysis
-
-    idx2w = dict([(i,w) for (w,i) in w2idx.items()])
-
-
-    # for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data._Xtest):
-    #     errors_sub = []
-    #     sentence = []
-    #     if gold != prediction:
-    #         errors_sub.append(gold)
-    #         errors_sub.append(prediction)
-    #         for token in example:
-    #             if token in w2idx:
-    #                 sentence.append(token)
-    #             else:
-    #             	sentence.append('UNK')
-    #         errors_sub.append(' '.join(sentence))
-    #         errors.append(errors_sub)
-
-
-    with open('evals/{}_{}_{}_bi{}_error_analysis.txt'.format(args.classifier, args.lang, data_type, args.binary), 'w') as file_error:
-        for el in vars(args):
-            file_error.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
-        file_error.write('Multiclass: (0 ++, 1 +, 2 -, 3 --)' + ' \n' + 'Binary: (0 +, 1 -)' + ' \n'*2)
-        file_error.write('Prediction Gold Sentence\n\n' )
-
-        for gold, prediction, example in zip(test_data._ytest.argmax(1), pred, test_data._Xtest):
-            file_error.write('{0} {1} {2}\n'.format(gold, prediction, ' '.join(example)))
 
