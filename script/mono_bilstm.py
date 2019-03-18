@@ -237,41 +237,69 @@ if __name__ == '__main__':
 
     # convert datasets
     src_dataset = convert_dataset(src_dataset, w2idx, max_length)
+    num_classes = len(set(src_dataset._ytrain.argmax(1)))
 
     # train BiLSTM on source
-    print('Training BiLSTM...')
-    if args.binary:
-        checkpoint = ModelCheckpoint('models/artetxe-bilstm/binary-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
-    else:
-        checkpoint = ModelCheckpoint('models/artetxe-bilstm/4class-'+args.lang+'/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
-                                 monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
+    random_seeds = [1, 2, 3, 4, 5]
 
-    num_classes = len(set(src_dataset._ytrain.argmax(1)))
-    clf = create_BiLSTM(matrix, lstm_dim=100, output_dim=num_classes)
-    history = clf.fit(src_dataset._Xtrain, src_dataset._ytrain,
-                      validation_data = [src_dataset._Xdev, src_dataset._ydev],
-                      verbose=1, callbacks=[checkpoint], epochs=100)
+    f1s = {"original": [],
+           "random": [],
+           "only_lex": [],
+           "no_lex": []}
 
-    # get the best weights to test on
-    clf = get_best_weights(args.lang, binary=args.binary, mono=True)
+    for i in random_seeds:
 
-    # test on src devset and trg devset
-    src_pred = clf.predict_classes(src_dataset._Xdev)
-    print(classification_report(src_dataset._ydev.argmax(1), src_pred))
+        # set random seed
+        seed(i)
+        set_random_seed(i)
+
+        # train BiLSTM on source
+        print('Training BiLSTM...')
+        if args.binary:
+            outdir = 'models/artetxe-bilstm/binary-' +args.lang + '/run{0}'.format(i)
+            checkpoint = ModelCheckpoint(outdir + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
+                                     monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
+        else:
+            outdir = 'models/artetxe-bilstm/4class-' +args.lang + '/run{0}'.format(i)
+            checkpoint = ModelCheckpoint(outdir + '/weights.{epoch:03d}-{val_acc:.4f}.hdf5',
+                                     monitor='val_acc', verbose=1, save_best_only=True, mode='auto')
+        os.makedirs(outdir, exist_ok=True)
+
+
+        clf = create_BiLSTM(matrix, lstm_dim=100, output_dim=num_classes)
+        history = clf.fit(src_dataset._Xtrain, src_dataset._ytrain,
+                          validation_data = [src_dataset._Xdev, src_dataset._ydev],
+                          verbose=1, callbacks=[checkpoint], epochs=100)
+
+        # get the best weights to test on
+        clf = get_best_weights(args.lang, binary=args.binary, mono=True)
+
+        # test on src devset and trg devset
+        src_pred = clf.predict_classes(src_dataset._Xdev)
+        print(classification_report(src_dataset._ydev.argmax(1), src_pred))
+
+        for test_set in ["original", "random", "only_lex", "no_lex"]:
+            test_directory = "datasets/mono/{0}/{1}/".format(test_set, args.lang)
+
+            test_data = TestData(test_directory, None, rep=words,
+                                 binary=args.binary, one_hot=True)
+            print(" ".join(test_data._Xtest[0]))
+
+            # convert dataset
+            converted_test_data = convert_test_data(test_data, w2idx, max_length)
+
+            # test classifier
+            pred = clf.predict_classes(converted_test_data._Xtest)
+            f1 = per_class_f1(converted_test_data._ytest.argmax(1), pred).mean()
+            print(classification_report(converted_test_data._ytest.argmax(1), pred))
+            print("{0} F1: {1:.3f}".format(test_set, f1))
+            f1s[test_set].append(f1)
 
     for test_set in ["original", "random", "only_lex", "no_lex"]:
-        test_directory = "datasets/mono/{0}/{1}/".format(test_set, args.lang)
+        mean_f1 = np.array(f1s[test_set]).mean()
+        var_f1 = np.array(f1s[test_set]).std()
 
-        test_data = TestData(test_directory, None, rep=words,
-                             binary=args.binary, one_hot=True)
-        print(" ".join(test_data._Xtest[0]))
-
-        # convert dataset
-        converted_test_data = convert_test_data(test_data, w2idx, max_length)
-
-        # test classifier
-        pred = clf.predict_classes(converted_test_data._Xtest)
-        f1 = per_class_f1(converted_test_data._ytest.argmax(1), pred).mean()
-        print(classification_report(converted_test_data._ytest.argmax(1), pred))
-        print("{0} F1: {1:.3f}".format(test_set, f1))
+        print(test_set)
+        print("Avg f1: {0:.3f}".format(mean_f1))
+        print("Std Dev.: {0:.3f}".format(var_f1))
+        print()
