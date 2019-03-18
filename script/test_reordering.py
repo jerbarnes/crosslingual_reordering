@@ -15,6 +15,9 @@ import pickle
 import json
 import re
 
+import tensorflow as tf
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '4'
+
 from artetxe_bilstm import *
 from artetxe_svm import *
 from sklearn.metrics import classification_report, f1_score
@@ -186,7 +189,7 @@ def str2bool(v):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('test_directory', nargs= '?', default="datasets/original/es/raw", help='target dataset (directory that contains the test corpus, defaults to datasets/original/es/raw)')
+    parser.add_argument('test_directory', nargs= '?', default="datasets/mono/original/es", help='target dataset (directory that contains the test corpus, defaults to datasets/mono/original/es)')
     parser.add_argument('-l', '--lang', default='es', help='choose target language: es, ca, en (defaults to es)')
     parser.add_argument('-e', '--embedding', default='artetxe', help='whether to use artetxe or barista embeddings (defaults artetxe)')
     parser.add_argument('-c', '--classifier', default='bilstm', help='choose classifier: bilstm, cnn, or svm (defaults to bilstm)')
@@ -210,7 +213,7 @@ if __name__ == '__main__':
         if '1' in monol:
             args.lang = 'es'
         # load classifier
-        models = load_best_model(args.lang, args.embedding, args.classifier, args.binary)
+        models = load_best_models(args.lang, args.embedding, args.classifier, args.binary)
 
         # load params
         w2idx, max_length = open_params(args.lang, args.embedding, args.classifier, args.binary)
@@ -227,7 +230,8 @@ if __name__ == '__main__':
         for model in models:
             pred = model.predict_classes(converted_test_data._Xtest)
             f1 = per_class_f1(converted_test_data._ytest.argmax(1), pred)
-            f1s.append(f1)
+            print(f1.mean())
+            f1s.append(f1.mean())
         mean_f1 = np.array(f1s).mean()
         var_f1 = np.array(f1s).std()
 

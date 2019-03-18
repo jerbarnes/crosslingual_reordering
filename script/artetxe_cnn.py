@@ -309,8 +309,9 @@ if __name__ == '__main__':
     for i in random_seeds:
 
         # set random seed
-        seed(i)
-        set_random_seed(i)
+        seed_num = np.random.randint(0, 1000000)
+        seed(seed_num)
+        set_random_seed(seed_num)
 
         print('Training CNN...')
         if args.binary:
