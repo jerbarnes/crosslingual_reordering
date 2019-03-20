@@ -69,9 +69,10 @@ def load_best_models(lang, embedding='artetxe', classifier='bilstm', binary=Fals
     else:
         base_dir = 'models/{0}-{1}/4class-en-{2}'.format(embedding, classifier, lang)
 
+    print("importing models from {0}...".format(base_dir))
     for i in [1, 2, 3, 4, 5]:
         full_dir = os.path.join(base_dir, "run{0}".format(i))
-        weights = os.listdir(base_dir)
+        weights = os.listdir(full_dir)
 
         best_val = 0
         best_weights = ''
@@ -85,7 +86,8 @@ def load_best_models(lang, embedding='artetxe', classifier='bilstm', binary=Fals
                     best_weights = weight
             except ValueError:
                 pass
-        models.append(load_model(os.path.join(base_dir, best_weights), custom_objects= {'f1': f1}))
+        print(best_weights)
+        models.append(load_model(os.path.join(full_dir, best_weights), custom_objects= {'f1': f1}))
 
     return models
 
@@ -189,7 +191,7 @@ def str2bool(v):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('test_directory', nargs= '?', default="datasets/mono/original/es", help='target dataset (directory that contains the test corpus, defaults to datasets/mono/original/es)')
+    parser.add_argument('test_directories', nargs= '+', default=["datasets/mono/original/es"], help='target dataset (directory that contains the test corpus, defaults to datasets/mono/original/es)')
     parser.add_argument('-l', '--lang', default='es', help='choose target language: es, ca, en (defaults to es)')
     parser.add_argument('-e', '--embedding', default='artetxe', help='whether to use artetxe or barista embeddings (defaults artetxe)')
     parser.add_argument('-c', '--classifier', default='bilstm', help='choose classifier: bilstm, cnn, or svm (defaults to bilstm)')
@@ -202,7 +204,7 @@ if __name__ == '__main__':
     print(args.classifier)
 
     # get data type (orginal, reordered, n_adj, random)
-    data_type = args.test_directory.split("/")[1]
+    #data_type = args.test_directory.split("/")[1]
 
 
     monol = []
@@ -219,39 +221,43 @@ if __name__ == '__main__':
         w2idx, max_length = open_params(args.lang, args.embedding, args.classifier, args.binary)
 
         # load test data
-        test_data = TestData(args.test_directory, None, rep=words,
-                             binary=args.binary, one_hot=True)
-
-        # convert dataset
-        converted_test_data = convert_test_data(test_data, w2idx, max_length)
-
-        # test classifier
-        f1s = []
-        for model in models:
-            pred = model.predict_classes(converted_test_data._Xtest)
-            f1 = per_class_f1(converted_test_data._ytest.argmax(1), pred)
-            print(f1.mean())
-            f1s.append(f1.mean())
-        mean_f1 = np.array(f1s).mean()
-        var_f1 = np.array(f1s).std()
-
-        print("Avg f1: {0:.3f}".format(mean_f1))
-        print("Std Dev.: {0:.3f}".format(var_f1))
-        print()
+        for test_directory in args.test_directories:
 
 
-        if '1' in monol:
-            args.lang = 'en'
-        print(classification_report(converted_test_data._ytest.argmax(1), pred))
-        print('Macro F1: {0:.3f}'.format(f1.mean()))
-        info0 = 'classifier' + str(args.classifier) + '\n' + 'test language: ' + str(args.lang)
-        infob = 'binary: ' + str(args.binary)
-        info1 = str(classification_report(converted_test_data._ytest.argmax(1), pred))
-        info2 = str('Macro F1: {0:.3f}'.format(f1.mean()))
-        with open('evals/{}_{}_bi{}_evaluation_result.txt'.format(args.classifier, args.lang, args.binary), 'w') as file_pred:
-            for el in vars(args):
-                file_pred.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
-            file_pred.write(' \n' + info1 + ' \n'*2 + info2)
+            test_data = TestData(test_directory, None, rep=words,
+                                 binary=args.binary, one_hot=True)
+
+            # convert dataset
+            converted_test_data = convert_test_data(test_data, w2idx, max_length)
+
+            # test classifier
+            f1s = []
+            for model in models:
+                pred = model.predict_classes(converted_test_data._Xtest)
+                f1 = per_class_f1(converted_test_data._ytest.argmax(1), pred)
+                #print(f1.mean())
+                f1s.append(f1.mean())
+            mean_f1 = np.array(f1s).mean()
+            var_f1 = np.array(f1s).std()
+
+            print(test_directory)
+            print("Avg f1: {0:.3f}".format(mean_f1))
+            print("Std Dev.: {0:.3f}".format(var_f1))
+            print()
+
+
+        # if '1' in monol:
+        #     args.lang = 'en'
+        # print(classification_report(converted_test_data._ytest.argmax(1), pred))
+        # print('Macro F1: {0:.3f}'.format(f1.mean()))
+        # info0 = 'classifier' + str(args.classifier) + '\n' + 'test language: ' + str(args.lang)
+        # infob = 'binary: ' + str(args.binary)
+        # info1 = str(classification_report(converted_test_data._ytest.argmax(1), pred))
+        # info2 = str('Macro F1: {0:.3f}'.format(f1.mean()))
+        # with open('evals/{}_{}_bi{}_evaluation_result.txt'.format(args.classifier, args.lang, args.binary), 'w') as file_pred:
+        #     for el in vars(args):
+        #         file_pred.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
+        #     file_pred.write(' \n' + info1 + ' \n'*2 + info2)
 
     else: #svm
         if '1' in monol:
@@ -276,27 +282,30 @@ if __name__ == '__main__':
         w2idx, matrix = open_params(args.lang, args.embedding, args.classifier, args.binary)
 
         # load test data
-        test_data = TestData(args.test_directory, None, rep=words,
-                             binary=args.binary, one_hot=True)
+        for test_directory in args.test_directories:
+            test_data = TestData(test_directory, None, rep=words,
+                                 binary=args.binary, one_hot=True)
 
-        # convert dataset
-        converted_test_data = convert_svm_test_dataset(test_data, w2idx, matrix)
+            # convert dataset
+            converted_test_data = convert_svm_test_dataset(test_data, w2idx, matrix)
 
-        # test classifier
-        pred = clf.predict(converted_test_data._Xtest)
-        f1 = per_class_f1(converted_test_data._ytest.argmax(1), pred)
+            # test classifier
+            pred = clf.predict(converted_test_data._Xtest)
+            f1 = per_class_f1(converted_test_data._ytest.argmax(1), pred)
 
-        if '1' in monol:
-            args.lang = 'en'
-        print(classification_report(converted_test_data._ytest.argmax(1), pred))
-        print('Macro F1: {0:.3f}'.format(f1.mean()))
-        info0 = 'classifier' + str(args.classifier) + '\n' + 'test language: ' + str(args.lang)
-        infob = 'binary: ' + str(args.binary)
-        info1 = str(classification_report(converted_test_data._ytest.argmax(1), pred))
-        info2 = str('Macro F1: {0:.3f}'.format(f1.mean()))
-        with open('evals/{}_{}_{}_bi{}_evaluation_result.txt'.format(args.classifier, args.lang, data_type, args.binary), 'w') as file_pred:
-            for el in vars(args):
-                file_pred.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
-            file_pred.write(' \n' + info1 + ' \n'*2 + info2)
+            if '1' in monol:
+                args.lang = 'en'
+            #print(classification_report(converted_test_data._ytest.argmax(1), pred))
+            print(test_directory)
+            print('Macro F1: {0:.3f}'.format(f1.mean()))
+
+        #info0 = 'classifier' + str(args.classifier) + '\n' + 'test language: ' + str(args.lang)
+        #infob = 'binary: ' + str(args.binary)
+        #info1 = str(classification_report(converted_test_data._ytest.argmax(1), pred))
+        #info2 = str('Macro F1: {0:.3f}'.format(f1.mean()))
+        #with open('evals/{}_{}_{}_bi{}_evaluation_result.txt'.format(args.classifier, args.lang, data_type, args.binary), 'w') as file_pred:
+        #    for el in vars(args):
+        #        file_pred.write(str(el) + ': ' + str(vars(args)[el]) + ' \n')
+        #    file_pred.write(' \n' + info1 + ' \n'*2 + info2)
 
 
