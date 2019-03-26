@@ -94,7 +94,7 @@
 
 \setlength\titlebox{4in} %esto por defecto
 
-\title{On the Effect of Word Order on Cross-lingual Sentiment Analysis}
+\title{On the Effect of Word Order\\on Cross-lingual Sentiment Analysis}
 
 %\author {\textbf{Àlex R. Atrio$^1$}, \textbf{Toni Badia$^{1}$}, \textbf{Jeremy Barnes$^{2}$}\\[5pt]
 %$^1$Universitat Pompeu Fabra\\
@@ -107,28 +107,26 @@
 \author {\textbf{Anonymous Submission}
 }
 
-\seplntranstitle{Sobre el efecto del orden de las palabras en el análisis de sentimiento cross-lingüe}
+\seplntranstitle{Sobre el efecto del orden de las palabras\\en el análisis de sentimiento cross-lingüe}
 
 \seplnclave{análisis de sentimiento, cross-lingüe}
 
 \seplnresumen{Los modelos de análisis de sentimiento que actualmente representan el estado del arte hacen uso del orden
-de las palabras, o bien explícitamente entrenando con un objectivo de modelo de lenguaje, o bien implícitamente recurriendo a redes neuronales recurrentes o convolucionales. Esto resulta ser un problema para los acercamientos cross-lingües que emplean vectores bilingües para entrenar, ya que la diferencia del orden de las palabras entre la lengua de origen y la de destino no se resuelve. En este trabajo, exploramos el reordenamiento de las palabras como etapa de procesamiento previa para la clasificación de sentimiento cross-lingüe a nivel de frase, con dos combinaciones de idiomas (Inglés-Castellano, Inglés-Catalán). Descubrimos que el reordenamiento ayuda tanto a redes recurrentes como a redes convolucionales, y que un acercamiento simple al reordenamiento supera los resultados de un acercamiento más complejo inspirado en los métodos de reordenamiento de la traducción automática.}
+de las palabras, o bien explícitamente entrenando con un objectivo de modelo de lenguaje, o bien implícitamente recurriendo a redes neuronales recurrentes (RNR) o convolucionales (RNC). Esto resulta ser un problema para los acercamientos cross-lingües que emplean vectores bilingües para entrenar, ya que la diferencia del orden de las palabras entre la lengua de origen y la de destino no se resuelve. En este trabajo, exploramos el reordenamiento de las palabras como etapa de procesamiento previa para la clasificación de sentimiento cross-lingüe a nivel de frase, con dos combinaciones de idiomas (Inglés-Castellano, Inglés-Catalán). Descubrimos que aungque el reordenamiento ayuda a los dos modeles, los RNC son más sensibles al reordenamiento local, mientras un reordenamiento global beneficia a los RNR.}
 
 
 \seplnkey{sentiment analysis, cross-lingual}
 
 \seplnabstract{Current state-of-the-art models for sentiment analysis make use of word order
 either explicitly by pretraining on language modeling or implicitly
-by using \Rnns or \cnns.
+by using recurrent neural networks (\Rnns) or convolutional networks (\cnns).
 This is a problem for cross-lingual models that
 use bilingual embeddings as features, as the difference
 in word order between source and target languages is
 not resolved. In this work, we explore reordering
 as a preprocessing step for sentence-level cross-lingual sentiment
 classification with two language combinations
-(English-Spanish, English-Catalan). We find that reordering helps both \bilstms and \cnns and that a simple reordering
-approach outperforms a more complex MT-inspired reordering
-scheme.}
+(English-Spanish, English-Catalan). We find that while reordering helps both models, \cnns are more sensitive to local reorderings, while global reordering benefits \Rnns.}
 
 \firstpageno{1}
 
@@ -138,7 +136,7 @@ scheme.}
 % la siguiente instrucción sólo se debe usar si el abstract sobrescribe el texto
 % la longitud variará según se necesite
 
-\setlength\titlebox{17cm} % se aumenta el tamaño del espacio reservado para datos de título
+\setlength\titlebox{16cm} % se aumenta el tamaño del espacio reservado para datos de título
 
 
 \label{firstpage} \maketitle
@@ -155,9 +153,7 @@ scheme.}
 
 Cross-lingual Sentiment Analysis (CLSA) exploits resources, \eg labeled data of a high-resource language, to train a sentiment classifier for low-resource languages. This approach is useful when a target language lacks plentiful labeled data, particularly for specific domains. Machine Translation (MT) is often used to bridge the gap between languages \cite{Banea2008,Balahur2014d}, but requires abundant parallel data, which may be difficult to find for some low-resource languages. Approaches that use bilingual distributional representations, in contrast, have proven competitive while requiring less parallel data \cite{Chen2016,Barnes2018b}.
 
-Recently, sentiment classifiers pre-trained on a language modeling task have lead to state-of-the-art results \cite{Peters2018,Howard2018,Devlin2018}. This improvement suggests that sentiment analysis benefits from learning word order and fine-grained relationships between tokens, which can be gleaned from unlabeled data. These approaches, however, have only been applied in a monolingual setting and it is not clear how the difference in word orders would affect them in a cross-lingual setup.
-
-In this work, we perform an analysis of the effect of word order on cross-lingual sentiment classifiers that use bilingual embeddings as features. We show that these models are sensitive to word order and benefit from pre-reordering the target-language test data so that it resembles the source-language word order.
+Recently, sentiment classifiers pre-trained on a language modeling task have lead to state-of-the-art results \cite{Peters2018,Howard2018,Devlin2018}. This improvement suggests that sentiment analysis benefits from learning word order and fine-grained relationships between tokens, which can be gleaned from unlabeled data. These approaches, however, have only been applied in a monolingual setting and it is not clear how the difference in word orders would affect them in a cross-lingual setup. In this work, we perform an analysis of the effect of word order on cross-lingual sentiment classifiers that use bilingual embeddings as features. We show that these models are sensitive to word order and benefit from pre-reordering the target-language test data so that it resembles the source-language word order.
 
 
 \section{Related Work}
@@ -212,18 +208,6 @@ as well as the MultiBooked Catalan (CA) sentence-level datasets \cite{Agerri2013
 \label{datasetstats}
 \end{table}
 
-At document-level, bag-of-words models are often expressive enough to give good results without relying on word order. But because we are interested in word-order effects in cross-lingual sentiment analysis, we require datasets that are annotated at a fine-grained level, \ie sentence- or aspect-level.
-
-For this reason, we use the English and Spanish OpeNER corpora of hotel reviews \cite{Agerri2013} as well as the Catalan MultiBooked Dataset \cite{Barnes2018a}. Each sentence is annotated for four classes of sentiment\footnote{Strong positive, positive, negative, and strong negative.}. We use the English subset for training our classifiers and the Spanish and Catalan for testing the effects of word order on the target languages. Although these datasets are relatively small, they are all annotated similarly and
-are in-domain, which avoids problems with mapping labels or domain shifts.
-
-\subsection{Bilingual Word Embeddings}
-
-VecMap \cite{Artetxe2016,Artetxe2017} creates bilingual embeddings by learning an orthogonal projection between two precomputed monolingual vector spaces and requires only a small bilingual dictionary. We use the publicly available GoogleNews vectors for the English\footnote{Available at \\ \url{https://code.google.com/archive/p/word2vec/}}, and for Spanish and Catalan we create skip-gram embeddings with 300 dimensions trained on Wikipedia data. The bilingual dictionaries are translated sentiment lexicons with 5700 pairs for English -- Spanish (5271 for English -- Catalan).
-
-
-\subsection{Experimental Setup}
-
 \begin{table*}[]
 \centering\scriptsize
 \newcommand{\lex}[1]{{\setlength{\fboxsep}{1pt}\colorbox{lightred}{\textbf{#1}}}}
@@ -246,8 +230,17 @@ transformations applied, as well as its English translation. The \lex{bold token
 
 \end{table*}
 
+At document-level, bag-of-words models are often expressive enough to give good results without relying on word order \cite{Meng2012,Iyyer2015}. But because we are interested in word-order effects in cross-lingual sentiment analysis, we require datasets that are annotated at a fine-grained level, \ie sentence- or aspect-level.
+
+For this reason, we use the English and Spanish OpeNER corpora of hotel reviews \cite{Agerri2013} as well as the Catalan MultiBooked Dataset \cite{Barnes2018a}. Each sentence is annotated for four classes of sentiment (strong positive, positive, negative, and strong negative). We use the English subset for training our classifiers and the Spanish and Catalan for testing the effects of word order on the target languages. Although these datasets are relatively small, they are all annotated similarly and
+are in-domain, which avoids problems with mapping labels or domain shifts.
+
+\subsection{Bilingual Word Embeddings}
+
+VecMap \cite{Artetxe2016,Artetxe2017} creates bilingual embeddings by learning an orthogonal projection between two precomputed monolingual vector spaces and requires only a small bilingual dictionary. We use the publicly available GoogleNews vectors for the English (available at \url{https://code.google.com/archive/p/word2vec/}), and for Spanish and Catalan we create skip-gram embeddings with 300 dimensions trained on Wikipedia data. The bilingual dictionaries are translated sentiment lexicons with 5700 pairs for English -- Spanish (5271 for English -- Catalan).
 
 
+\subsection{Experimental Setup}
 
 
 In order to test whether a sentiment classifier trained on bilingual embeddings is sensitive to word order, we test classifiers on six versions of the target-language sentiment data, which we describe in the following section. An example of these six versions is shown in Table \ref{example}.
@@ -270,17 +263,9 @@ For the \emph{\nolex} experiment, we remove all of the words
 in a phrase which appear in the sentiment lexicon. If the models are attending to
 sentiment keywords, this approach should lead to the worst performance. 
 
-\paragraph{Baselines: }We perform additional experiments with monolingual and MT-based cross-lingual approaches. For these two setups, we only test the \random reordering, \onlylex, and \nolex approaches. The monolingual setup is not comparable to the MT and cross-lingual versions, as we use must use the target-language data for training, development, and testing (70\%/10\%/20\%).
+\paragraph{Baselines: }We perform additional experiments with monolingual and Machine Translation (MT)-based cross-lingual approaches. For the former, we use the Google API (available at \url{https://translate.google.com/}) and translate the target-language data to English. 
 
-\subsection{Models}
-
-To test our hypotheses, we compare three different classifiers: a Support Vector Machine (SVM) with Bag-of-Embeddings feature representations, a Convolutional Neural Network (\cnn) \cite{Santos2014,Severyn2015}, and a Bidirectional Long Short-Term Memory Network (\bilstm) \cite{Luong2015}. Each of these classifiers theoretically has an increasing reliance on word order. Although the SVM does not take into account word order at all, it is a strong baseline for sentiment analysis \cite{Kiritchenko2014c}. The \cnn considers only local word order, while the \bilstm relies on both local and long-distance dependencies.
-
-We implement a single-layered \bilstm classifier with a 100-dimensional hidden layer, which passes the concatenation of the two final hidden states to a softmax layer for classification. The \cnn has convolutional filters $\in \{3,4,5\}$ and a max-pooling layer of length $2$. Both models are initialized with the pretrained bilingual embeddings, use dropout of $0.3$ for regularization, and are trained for 100 epochs with a batch size of 32 using Adam as an optimizer. We choose the parameter for training epochs on the source-language development set and test this model on the target-language data. Finally, we implement a baseline bag-of-embeddings SVM, which is implemented in sklearn, while both neural models are implemented in Keras.
-
-\section{Results}
-
-
+For both baseline setups, we only test the \random reordering, \onlylex, and \nolex approaches. Additionally, the monolingual setup is not comparable to the MT and cross-lingual versions, as we use must use the target-language data for training, development, and testing (70\%/10\%/20\%).
 
 \begin{table*}[th!]
 \newcommand{\sep}{\cmidrule(r){4-6}\cmidrule(r){7-9}}
@@ -300,44 +285,44 @@ We implement a single-layered \bilstm classifier with a 100-dimensional hidden l
 %\centering
 \begin{tabular}{lllcccccccccccc}
 \toprule
-&& & \multicolumn{3}{c}{Binary} & \multicolumn{3}{c}{4-class} \\
+&& & \multicolumn{3}{c}{4-class} & \multicolumn{3}{c}{Binary} \\
 \sep
-\multirow{16}{*}{\rt{BWE}} 
+\multirow{20}{*}{\rt{BWE}} 
 	    &&& \bilstm & \cnn & SVM & \bilstm & \cnn & SVM \\
 	    \cmidrule(r){4-4}\cmidrule(r){5-5}\cmidrule(r){6-6}\cmidrule(r){7-7}\cmidrule(r){8-8}\cmidrule(r){9-9}
 	& \multirow{6}{*}{\rt{EN-ES}}
-		& \original 	 & 61.6 & 59.8 & 66.6 & 35.9 & 36.3 & 34.9 \\ 
-		&& \mtreordered  & \bestproj{61.9} & 59.9 & 66.6 & 35.7 & \bestproj{36.5} & 34.9 \\ 
-		&& N-ADJ  & 61.6 & \bestproj{60.2} & 66.6 & \bestproj{36.3} & \bestproj{36.5} & 34.9 \\ 
-		&& \random  & 60.4 & 58.2 & 66.6 & 34.2 & 35.3 & 34.9 \\ 
-		&& \onlylex  & 59.1 & 26.2 & 53.0 & 29.8 & 16.4 & 30.7 \\ 
-		&& \nolex  & 57.9 & 55.7 & 63.4 & 33.1 & 33.7 & 33.3 \\ 
+		& \original 	 & 33.3 \scriptsize{(1.8)}   & 35.4 \scriptsize{(1.1)} & 34.9 & 64.9 \scriptsize{(0.9)}  & 60.0 \scriptsize{(1.4)} & 66.6\\ 
+		&& \mtreordered  & \bestproj{34.0 \scriptsize{(1.6)}} & 35.6 \scriptsize{(1.4)} & 34.9 & \bestproj{65.1 \scriptsize{(1.3)}}  & 60.1 \scriptsize{(1.3)} & 66.6\\ 
+		&& N-ADJ         & \bestproj{34.0 \scriptsize{(1.8)}} & \bestproj{35.8 \scriptsize{(1.2)}} & 34.9 & 65.0 \scriptsize{(1.2)}  & \bestproj{60.2 \scriptsize{(1.4)}} & 66.6\\ 
+		&& \random       & 33.2 \scriptsize{(1.3)} & 35.3 \scriptsize{(1.1)} & 34.9 & 63.9 \scriptsize{(2.3)}  & 58.8 \scriptsize{(0.9)} & 66.6\\ 
+		&& \onlylex      & 28.2 \scriptsize{(3.8)} & 26.9 \scriptsize{(2.5)} & 30.7 & 57.6 \scriptsize{(5.5)}  & 34.2 \scriptsize{(5.5)} & 53.0\\ 
+		&& \nolex        & 31.9 \scriptsize{(1.6)} & 33.2 \scriptsize{(1.4)} & 33.3 & 61.1   & 57.1 \scriptsize{(2.8)} & 63.4\\ 
 	\sepp
 	& \multirow{6}{*}{\rt{EN-CA}}
-  		& \original & 68.2 & 65.7 & 68.2 & 31.9 & \bestproj{39.3} & 33.2 \\ 
-		&& \mtreordered  & 68.4 & 65.5 & 68.2 & \bestproj{32.3} & 38.1 & 33.2 \\ 
-		&& N-ADJ &  \bestproj{68.5} & \bestproj{65.8} & 68.2 & 31.8 & 38.9 & 33.2 \\ 
-		&& \random & 66.9 & 64.4 & 68.2 & 31.7 & 36.4 & 33.2 \\ 
-		&& \onlylex  & 55.1 & 41.3 & 39.1 & 30.3 & 27.4 & 23.8 \\ 
-		&& \nolex & 64.8 & 63.0 & 63.1 & 30.4 & 35.9 & 31.2 \\ 
+  		& \original      &  37.0 \scriptsize{(1.4)} & 37.4 \scriptsize{(1.5)} & 33.2 & 64.0 \scriptsize{(1.1)} & 61.9 \scriptsize{(6.8)} & 68.2\\ 
+		&& \mtreordered  &  \bestproj{37.8 \scriptsize{(1.2)}} & 37.9 \scriptsize{(1.5)} & 33.2 & \bestproj{65.6 \scriptsize{(1.5)}} & 62.6 \scriptsize{(5.8)} & 68.2\\ 
+		&& N-ADJ         &  37.7 \scriptsize{(1.5)} & \bestproj{38.1 \scriptsize{(1.6)}} & 33.2 & 65.5 \scriptsize{(1.5)} & \bestproj{62.8 \scriptsize{(6.3)}} &  68.2\\ 
+		&& \random       &  35.7 \scriptsize{(1.0)} & 35.6 \scriptsize{(1.5)} & 33.2 & 63.3 \scriptsize{(0.8)} & 60.8 \scriptsize{(5.5)} & 68.2\\ 
+		&& \onlylex      &  28.2 \scriptsize{(1.8)} & 25.7 \scriptsize{(3.2)} & 23.8 & 49.9 \scriptsize{(4.3)} & 40.5 \scriptsize{(6.7)} & 39.1 \\ 
+		&& \nolex        &  35.9 \scriptsize{(1.7)} & 34.3 \scriptsize{(1.8)} & 31.2 & 61.7 \scriptsize{(1.1)} & 58.1 \scriptsize{(5.3)} & 63.1\\ 
 
 
 
 \\
 \hline \\
 
-\multirow{9}{*}{\rt{MT}}
+\multirow{12}{*}{\rt{MT}}
 	& \multirow{4}{*}{\rt{EN-ES}}
-  		& \original & \bestmt{71.1} & \bestmt{67.4} & 69.6 & 47.1 & \bestmt{43.9} & 45.1 \\ 
-		&& \random & 71.0 & 65.9 & 69.6 & \bestmt{48.0} & 41.7 & 45.1 \\ 
-		&& \onlylex  & 61.8 & 47.3 & 54.5 & 32.2 & 27.3 & 35.7 \\ 
-		&& \nolex & 63.2 & 59.1 & 65.4 & 42.9 & 37.9 & 42.0 \\ 
+  		& \original      & \bestmt{46.5 \scriptsize{(1.2)}} & \bestmt{41.2 \scriptsize{(3.7)}} & 44.6 & \bestmt{71.8 \scriptsize{(1.1)}} & \bestmt{64.3 \scriptsize{(1.6)}} & 70.7\\ 
+		&& \random       & 46.0 \scriptsize{(1.8)} & 38.9 \scriptsize{(3.9)} & 44.6 & 71.0 \scriptsize{(1.4)} & 62.2 \scriptsize{(1.5)} & 70.7\\ 
+		&& \onlylex      & 32.9 \scriptsize{(2.5)} & 28.2 \scriptsize{(4.4)} & 36.2 & 63.0 \scriptsize{(3.8)} & 44.6 \scriptsize{(3.5)} & 51.9\\ 
+		&& \nolex        & 41.8 \scriptsize{(0.7)} & 37.0 \scriptsize{(3.0)} & 41.6 & 63.0 \scriptsize{(1.1)} & 54.8 \scriptsize{(2.6)} & 66.2\\ 
 	\sepp
 	& \multirow{4}{*}{\rt{EN-CA}}
-  		& \original & \bestmt{79.0} & \bestmt{77.3} & 74.7 & \bestmt{53.1} & \bestmt{49.2} & 45.5 \\ 
-		&& \random & 76.1 & 75.7 & 74.7 & 46.3 & 41.6 & 45.5 \\ 
-		&& \onlylex  & 52.1 & 59.6 & 43.9 & 26.1 & 30.1 & 32.7 \\ 
-		&& \nolex & 73.0 & 71.5 & 70.8 & 46.7 & 43.1 & 44.4 \\ 
+  		& \original      & \bestmt{51.5 \scriptsize{(3.1)}} & \bestmt{44.1 \scriptsize{(4.3)}} & 46.8 & \bestmt{79.9 \scriptsize{(1.5)}} & \bestmt{72.8 \scriptsize{(2.0)}}  & 74.2  \\ 
+		&& \random       & 49.7 \scriptsize{(1.4)} & 37.7 \scriptsize{(3.6)} & 46.8 & 76.5 \scriptsize{(2.2)} & 66.4 \scriptsize{(1.4)}  & 74.2  \\ 
+		&& \onlylex      & 32.0 \scriptsize{(2.7)} & 32.5 \scriptsize{(4.0)} & 36.1 & 58.4 \scriptsize{(7.8)} & 57.5 \scriptsize{(2.9)}  & 43.7  \\ 
+		&& \nolex        & 48.4 \scriptsize{(2.0)} & 40.9 \scriptsize{(2.9)} & 46.2 & 75.6 \scriptsize{(1.6)} & 65.6 \scriptsize{(2.8)}  & 70.4  \\ 
 		
 \\[3pt]
 \hline \\
@@ -350,16 +335,16 @@ We implement a single-layered \bilstm classifier with a 100-dimensional hidden l
 %		&& \nolex. &    70.6 & 61.1 & 70.7 & 46.5 & 45.2 & 40.3 \\ 
 %		\sepp
     & \multirow{4}{*}{\rt{ES}}
-  		& \original &    \bestmono{73.9} & \bestmono{66.1} & 49.7 & \bestmono{43.2} & \bestmono{38.0} & 32.1\\
-		&& \random &     71.7 & 60.4 & 49.7 & 41.7 & 33.6 & 32.1\\ 
-		&& \onlylex  & 47.2 & 46.5 & 45.2 & 26.0 & 25.6 & 27.0\\ 
-		&& \nolex &    68.2 & 65.2 & 47.9 & 40.1 & 37.2 & 30.3\\ 
+  		& \original  & \bestmono{43.2 \scriptsize{(3.3)}} & \bestmono{36.2 \scriptsize{(2.2)}} & 32.1  & \bestmono{68.5 \scriptsize{(3.4)}} & \bestmono{64.8 \scriptsize{(2.3)}} & 52.7 \\
+		&& \random 	 & 42.5 \scriptsize{(2.6)} & 32.7 \scriptsize{(1.8)} & 32.1  & 67.5 \scriptsize{(4.2)} & 63.1 \scriptsize{(2.7)} & 52.7 \\ 
+		&& \onlylex  & 27.0 \scriptsize{(0.5)} & 21.2 \scriptsize{(4.5)} & 27.0  & 45.2 \scriptsize{(0.0)} & 47.9 \scriptsize{(3.9)} & 45.2 \\ 
+		&& \nolex 	 & 37.9 \scriptsize{(1.9)} & 34.3 \scriptsize{(2.0)} & 30.3  & 64.7 \scriptsize{(2.7)} & 65.0 \scriptsize{(0.9)} & 51.8 \\ 
 		\sepp
 	& \multirow{4}{*}{\rt{CA}}
-  		& \original &    \bestmono{77.0} & \bestmono{75.2} & 75.0 & \bestmono{50.3} & \bestmono{46.7} & 46.8\\
-		&& \random &     73.1 & 67.9 & 75.0 & 46.5 & 40.3 & 46.8\\ 
-		&& \onlylex  & 43.0 & 56.7 & 39.6 & 13.9 & 32.2 & 16.7\\ 
-		&& \nolex &    73.6 & 75.4 & 74.8 & 48.3 & 45.9 & 45.8\\ 
+  		& \original  & \bestmono{48.6 \scriptsize{(1.6)}} & \bestmono{46.2 \scriptsize{(0.8)}}  & 46.8  & \bestmono{77.1 \scriptsize{(1.3)}} & \bestmono{76.4 \scriptsize{(1.2)}} & 75.0  \\
+		&& \random   & 47.4 \scriptsize{(1.9)} & 43.9 \scriptsize{(3.0)}  & 46.8  & 73.6 \scriptsize{(1.3)} & 71.9 \scriptsize{(1.9)} & 75.0  \\ 
+		&& \onlylex  & 20.3 \scriptsize{(2.8)} & 27.4 \scriptsize{(3.2)}  & 16.7  & 40.1 \scriptsize{(1.5)} & 56.4 \scriptsize{(5.2)} & 39.6  \\ 
+		&& \nolex    & 47.5 \scriptsize{(0.6)} & 45.8 \scriptsize{(1.6)}  & 45.8  & 75.0 \scriptsize{(1.6)} & 74.5 \scriptsize{(1.1)} & 74.8  \\ 
 		
 \\
 
@@ -372,7 +357,21 @@ We implement a single-layered \bilstm classifier with a 100-dimensional hidden l
 \label{results:all}
 \end{table*}
 
-\begin{table*}[h!]
+\subsection{Models}
+
+To test our hypotheses, we compare three different classifiers: a Support Vector Machine (SVM) with Bag-of-Embeddings feature representations, a Convolutional Neural Network (\cnn) \cite{Santos2014,Severyn2015}, and a Bidirectional Long Short-Term Memory Network (\bilstm) \cite{Luong2015}. Each of these classifiers theoretically has an increasing reliance on word order. Although the SVM does not take into account word order at all, it is a strong baseline for sentiment analysis \cite{Kiritchenko2014c}. The \cnn considers only local word order, while the \bilstm relies on both local and long-distance dependencies. 
+
+For the neural models, we train five classifiers on five random seeds and report the mean and standard deviation of the macro \F score, while we only report the macro \F score of a single run for the SVM.
+
+\paragraph{\bilstm} We implement a single-layered \bilstm classifier with a 100-dimensional hidden layer, which passes the concatenation of the two final hidden states to a softmax layer for classification. The cross-lingual model is initialized with the pretrained bilingual embeddings (monolingual embeddings for the monolingual and translation models), use dropout of $0.3$ for regularization, and are trained for 30 epochs with a batch size of 32 using Adam as an optimizer. We choose the parameter for training epochs on the source-language development set and test this model on the target-language data.
+
+\paragraph{\cnn} The \cnn has a single convolutional layer with filters $\in \{3,4,5\}$ followed by a max-pooling layer of length $2$. The pooled representation of the sentence is passed to a feed-forward layer and finally a softmax layer of size $\R^{|L|}$ where $L$ is the set of labels. The optimization is the same as the \bilstm, with dropout applied after the feed-forward layer.
+
+\paragraph{SVM}
+ Finally, we implement a baseline bag-of-embeddings SVM. For each sentence in the dataset, we create an averaged embedding representation $A= \frac{1}{n} (\sum_{i=1}^{n} e(t_{i}))$ where $e(t_{i})$ is the embedding representation of the $i$th token in the sentence $S \in \{t_{1}, t_{2}, \ldots, t_{n}\}$ of length $n$. For the cross-lingual approaches we use the bilingual embeddings (monolingual embeddings for the monolingual and translation approaches) and tune the $c$ parameter on the source-language development set.
+
+
+\begin{table*}[]
 \centering
 \newcommand{\sepp}{\cmidrule(rl){1-1}\cmidrule(rl){2-2}\cmidrule(rl){3-3}}
 \begin{tabular}{lll}
@@ -402,18 +401,24 @@ model & text & prediction \\
 \end{table*}
 
 
-Table \ref{results:all} shows the results of all experiments. Firstly, reordering the test data improves the results on seven of the eight experiments\footnote{We do not consider SVM experiments to calculate improvements as they are invariant to word order.}. Specifically, the \mtreordered approach improves the \bilstm results on three of four experiments (two of four for \cnn), while the simpler \nadj flip performs even better, with a small but consistent improvement over the \original ordering across \bilstm and \cnn experiments. This improvement confirms that pre-reordering is benefitial for cross-lingual models that use bilingual embeddings as features.
+\section{Results}
 
-\random has a more substantial negative effect on monolingual models (an average decrease of 2.9 percentage points (ppt.) for \bilstm and 6.0 ppt. for \cnn) than bilingual embedding models or MT-based models (1.1/1.7 and 2.3/3.2, respectively). Additionally, \random has a larger effect on the \cnn than on the \bilstm. This is likely because the \cnn relies on specific combinations of n-grams. If these are not present, the filters are not effective at classification.
 
-Although they are not comparable (the test datasets have fewer examples), the monolingual models generally perform better than the cross-lingual versions (6.3 -- 12.3 percentage points on binary and 1.7 -- 18.4 on 4-class) except for SVM on Spanish. The machine translation approaches fall in between these two.
+Table \ref{results:all} shows the results of all experiments. Firstly, reordering the test data improves the results on all of the eight experiments (we do not consider SVM experiments to calculate improvements as they are invariant to word order). Specifically, the \mtreordered approach improves the \bilstm results the most on all experiments, while the simpler \nadj flip is the best performing setup with \cnns. This indicates that local word reordering has more of an effect on \cnns, while the global reordering can be more helpful to \bilstms.
+
+While the improvements from reordering are often small (0.2 - 1.6 percentage points (ppt.)), they are stable. We perform random approximation tests \cite{Yeh2000} between runs and consider the models statistically different if a majority (at least 3) of the runs are statistically different ($p=0.01$, which corresponds to $p=0.05$ with Bonferroni correction for 5 hypotheses). This improvement confirms that pre-reordering is benefitial for cross-lingual models that use bilingual embeddings as features.
+
+\random has a more substantial negative effect on monolingual models (an average decrease of 1.6 ppt. for \bilstm and 3.0 ppt. for \cnn) and MT-based models (1.6/4.3 ppt., respectively) than bilingual embedding models (0.8/1.1). This indicates that noise from the embedding projection renders it more difficult for models to use word order in the cross-lingual setup.
+
+Additionally, \random has a larger effect on the \cnn than on the \bilstm. This is likely because the \cnn relies on specific combinations of n-grams. If these are not present, the filters are not effective at classification.
+
+Although they are not comparable (the test datasets have fewer examples), the monolingual models generally perform better than the cross-lingual versions, except for the SVM classifiers. The machine translation approaches perform better than the cross-lingual embedding methods.
 
 The classification models display different trends across the setups. On the monolingual and machine translations setups, the \bilstm is the strongest model, followed by the \cnn and SVM (SVM and \cnn, respectively for machine translation). With bilingual embeddings, however, the SVM outperforms both the \bilstm and \cnn on the Spanish binary setup, while the \cnn is strongest on the multiclass.  This shows that \bilstm displays a different behavior with bilingual embeddings.
 
-The machine translation models perform well but are surprisingly invariant to word order. They also suffer less than monolingual models from using only features from the sentiment lexicon (\onlylex), which suggests they rely more on these keywords while ignoring word order effects to a higher degree.
+The machine translation models perform well and surprisingly suffer less than monolingual models (an average decrease of 15.4 ppt. for MT \bilstm and \cnn models vs. 20.6 for monolingual)  from using only features from the sentiment lexicon (\onlylex). This suggests that MT models rely more on these keywords while ignoring word order effects to a higher degree.
 
 Finally, the \nolex and \onlylex baselines perform poorly. \onlylex is the worst performing model, which demonstrates that all models are doing more than attending to keywords.
-
 
 
 \section{Analysis}
@@ -424,27 +429,13 @@ Reordering tends to help both the \bilstm and \cnn models with shorter examples 
 \section{Conclusion and Future Work}
 
 In this work, we have shown that neural networks that rely on bilingual embeddings as features
-are sensitive to differences in source- and target-language word order and subsequently benefit from reordering the target language test data. 
+are sensitive to differences in source- and target-language word order and subsequently benefit from reordering the target language test data. The gains, however, are still relatively small, which suggests that currently bilingual embeddings introduce too much noise for a classifier to generalize well to the target language.
 
 Given that language modeling pre-training is benefitial for state-of-the-art results in monolingual sentiment analysis, it is important to realize that cross-lingual models based on bilingual word embeddings do not currently benefit from word order learned in the source language. In the future, it may be useful to pretrain bilingual language models for cross-lingual sentiment analysis.
 
-\section*{Agradecimientos}
-
-Los siguientes párrafos llevan una sangría en la primera línea de
-0,5 cm. El resto del texto vendrá con fuente Times New Roman
-tamaño 11 y justificado por ambos lados.
 
 
 \bibliographystyle{fullname_esp}
 \bibliography{lit}
-
-\appendix
-\section{Anexo 1: Descripción} Texto del anexo j klj ñlkj ñlkj ñlkj
-lkj ñlkj lkj lkj lkj ñlkj ñlkj ñlkj ñlk jñlkj ñlkj ñlkj
-ñlkjñlkjñlkjñlkjñlkjñlkj.
-
-\section{Anexo 2: Descripción} Texto del anexo j klj ñlkj ñlkj ñlkj
-lkj ñlkj lkj lkj lkj ñlkj ñlkj ñlkj ñlk jñlkj ñlkj ñlkj
-ñlkjñlkjñlkjñlkjñlkjñlkj.
 
 \end{document}
