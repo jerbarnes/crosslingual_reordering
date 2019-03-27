@@ -96,23 +96,24 @@
 
 \title{On the Effect of Word Order\\on Cross-lingual Sentiment Analysis}
 
-%\author {\textbf{Àlex R. Atrio$^1$}, \textbf{Toni Badia$^{1}$}, \textbf{Jeremy Barnes$^{2}$}\\[5pt]
-%$^1$Universitat Pompeu Fabra\\
-%{\tt alexratrio@gmail.com} \\[1pt]
-%{\tt toni.badia@upf.edu} \\[5pt]
-%$^2$University of Oslo\\
-%{\tt jeremycb@ifi.uio.no}
-%}
-
-\author {\textbf{Anonymous Submission}
+\author {\textbf{Àlex R. Atrio$^1$}, \textbf{Toni Badia$^{2}$}, \textbf{Jeremy Barnes$^{3}$}\\[5pt]
+$^1$ HEIG-VD \& EPFL\\ %name?
+[1pt]{\tt alexratrio@gmail.com} \\[5pt]
+$^2$Universitat Pompeu Fabra\\
+[1pt]{\tt toni.badia@upf.edu} \\[5pt]
+$^2$University of Oslo\\
+{\tt jeremycb@ifi.uio.no}
 }
+
+%\author {\textbf{Anonymous Submission}
+%}
 
 \seplntranstitle{Sobre el efecto del orden de las palabras\\en el análisis de sentimiento cross-lingüe}
 
 \seplnclave{análisis de sentimiento, cross-lingüe}
 
-\seplnresumen{Los modelos de análisis de sentimiento que actualmente representan el estado del arte hacen uso del orden
-de las palabras, o bien explícitamente entrenando con un objectivo de modelo de lenguaje, o bien implícitamente recurriendo a redes neuronales recurrentes (RNR) o convolucionales (RNC). Esto resulta ser un problema para los acercamientos cross-lingües que emplean vectores bilingües para entrenar, ya que la diferencia del orden de las palabras entre la lengua de origen y la de destino no se resuelve. En este trabajo, exploramos el reordenamiento de las palabras como etapa de procesamiento previa para la clasificación de sentimiento cross-lingüe a nivel de frase, con dos combinaciones de idiomas (Inglés-Castellano, Inglés-Catalán). Descubrimos que aungque el reordenamiento ayuda a los dos modeles, los RNC son más sensibles al reordenamiento local, mientras un reordenamiento global beneficia a los RNR.}
+\seplnresumen{Los modelos de análisis de sentimiento que actualmente representan el estado del arte utilizan el orden
+de las palabras, o bien explícitamente al entrenar con un objectivo de modelo de lenguaje, o bien implícitamente al recurrir a redes neuronales recurrentes (RNR) o convolucionales (RNC). Esto es un problema para los acercamientos cross-lingües que emplean vectores bilingües para entrenar, ya que la diferencia del orden de las palabras entre la lengua de origen y la de destino no se resuelve. En este trabajo, exploramos el reordenamiento de las palabras como etapa de procesamiento previa para la clasificación de sentimiento cross-lingüe a nivel de frase, con dos combinaciones de idiomas (Inglés-Castellano, Inglés-Catalán). Descubrimos que aunque el reordenamiento ayuda a los dos modelos, los RNC son más sensibles al reordenamiento local, mientras un reordenamiento global beneficia a los RNR.}
 
 
 \seplnkey{sentiment analysis, cross-lingual}
@@ -439,3 +440,4 @@ Given that language modeling pre-training is benefitial for state-of-the-art res
 \bibliography{lit}
 
 \end{document}
+
